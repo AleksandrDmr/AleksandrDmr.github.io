@@ -1,9 +1,5 @@
 $(function(){
-	/*$('.phone').on('click', function(){
-		$('.phone-list').toggleClass("list-up");
 
-	});
-*/
 
 	function MenuDisplay(obj, obj1, classVisible) {
 		var objClick = obj;
