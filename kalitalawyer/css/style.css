@@ -343,6 +343,9 @@ a:hover {
           box-shadow: -9.899px 9.899px 0px 0px #afafaf;
   height: 100%;
 }
+.services-block .full-height {
+  height: 100%;
+}
 .services-block h3 {
   background: #1d1d1d;
   padding: 10px 8px 10px;
@@ -379,7 +382,7 @@ a:hover {
   background: url(../img/5.jpg) no-repeat left top;
   -webkit-background-size: cover;
           background-size: cover;
-  height: 296px;
+  height: 100%;
   margin-left: 10px;
 }
 .services-list {
@@ -399,6 +402,7 @@ a:hover {
 }
 .services-list-finance {
   padding: 0 7px 0 10px;
+  margin-bottom: 30px;
 }
 .services-list-finance ul {
   margin: 12px 0 0 0;
