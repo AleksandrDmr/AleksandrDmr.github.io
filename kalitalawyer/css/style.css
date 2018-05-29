@@ -500,6 +500,9 @@ a:hover {
   top: 40px;
 }
 @media (max-width: 1199px) {
+  .services-block h3 {
+    font-size: 18px;
+  }
   .services-list-finance ul {
     margin: 0;
     padding: 15px 0 10px;
@@ -555,6 +558,9 @@ a:hover {
   }
   .news-media {
     height: 200px;
+  }
+  .services-block h3 {
+    font-size: 21px;
   }
   .services-wrap {
     margin-top: 25px;
