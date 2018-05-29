@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SantElia Script Bold DMO';
+    src: url('SantEliaScript-BoldDMO.eot');
+    src: url('SantEliaScript-BoldDMO.eot?#iefix') format('embedded-opentype'),
+        url('SantEliaScript-BoldDMO.woff2') format('woff2'),
+        url('SantEliaScript-BoldDMO.woff') format('woff'),
+        url('SantEliaScript-BoldDMO.ttf') format('truetype'),
+        url('SantEliaScript-BoldDMO.svg#SantEliaScript-BoldDMO') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
