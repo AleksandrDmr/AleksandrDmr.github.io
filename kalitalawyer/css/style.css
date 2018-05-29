@@ -278,7 +278,7 @@ a:hover {
           background-size: cover;
 }
 .news-wrapper {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(23, 23, 23, 0.75);
 }
 .news-media {
   background: url(../img/news.jpg) no-repeat left center;
