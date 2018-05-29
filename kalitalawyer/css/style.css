@@ -287,7 +287,6 @@ a:hover {
   height: 379px;
 }
 .news-tagline {
-  min-height: 90px;
   font-family: 'SantElia', sans-serif;
   font-size: 27px;
   color: #f2c526;
@@ -296,7 +295,7 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px 20px 5px 35px;
+  padding: 15px 20px 15px 35px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -304,7 +303,7 @@ a:hover {
 }
 .news-text {
   background: #00548a;
-  padding: 14px 20px 60px;
+  padding: 14px 20px 40px;
   height: 100%;
 }
 .news-text h1 {
@@ -327,8 +326,8 @@ a:hover {
 }
 .news-list li {
   border-bottom: 1px solid #c8c8c8;
-  padding: 10px 0;
-  letter-spacing: 1px;
+  padding: 12px 0;
+  letter-spacing: .3px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -399,14 +398,14 @@ a:hover {
 }
 .services-list a {
   font-size: 14px;
-  letter-spacing: .8px;
+  letter-spacing: .2px;
 }
 .services-list-finance {
   padding: 0 7px 0 10px;
   margin-bottom: 30px;
 }
 .services-list-finance ul {
-  margin: 12px 0 0 0;
+  margin: 10px 0 0 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -417,12 +416,12 @@ a:hover {
   list-style: none;
   border-top: 1px solid #c8c8c8;
   border-bottom: 1px solid #c8c8c8;
-  padding: 30px 0 22px;
+  padding: 30px 0 25px;
 }
 .services-list-finance ul li {
-  margin: 0 3px 8px 0;
+  margin: 0 3px 13px 0;
   font-size: 14px;
-  letter-spacing: .6;
+  letter-spacing: .2px;
 }
 .services .row-margin {
   margin-top: 40px;
@@ -502,6 +501,13 @@ a:hover {
   top: 40px;
 }
 @media (max-width: 1199px) {
+  .services-list-finance ul {
+    margin: 0;
+    padding: 15px 0 10px;
+  }
+  .services-list-finance ul li {
+    margin-bottom: 5px;
+  }
   .footer .foot-contacts {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -646,5 +652,8 @@ a:hover {
   }
   .news-tagline {
     font-size: 22px;
+  }
+  .footer .resources {
+    border-right: none;
   }
 }
