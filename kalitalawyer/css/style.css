@@ -281,7 +281,7 @@ a:hover {
   background: rgba(26, 26, 26, 0.75);
 }
 .news-media {
-  background: url(../img/news.jpg) no-repeat left center;
+  background: url(../img/news.jpg) no-repeat left bottom;
   -webkit-background-size: cover;
           background-size: cover;
   height: 379px;
