@@ -1,7 +1,7 @@
 $(function(){
 
 
-	function MenuDisplay(obj, obj1, classVisible) {
+	function MenuDisplay(obj, obj1, classVisible, callback) {
 		var objClick = obj;
 		var objDisplay = obj1;
 		var classVisible = classVisible;

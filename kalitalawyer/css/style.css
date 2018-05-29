@@ -204,9 +204,6 @@ a:hover {
   bottom: -87px;
   right: 0;
   padding: 8px 11px;
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
   z-index: 999;
 }
 .contacts .phone-list a {
@@ -226,8 +223,7 @@ a:hover {
   line-height: 3px;
 }
 .contacts .list-up {
-  opacity: 0;
-  overflow: hidden;
+  display: none;
 }
 .header-bottom {
   background: #1687d7;
@@ -250,13 +246,13 @@ a:hover {
   margin: 0;
   padding: 0;
 }
+.header-bottom .menu li a:hover {
+  color: #f2c526;
+}
 .header-bottom .menu a {
   text-decoration: none;
   font-size: 18px;
   letter-spacing: 1.44px;
-}
-.header-bottom .menu a:hover {
-  color: #f2c526;
 }
 .visible {
   display: block !important;
@@ -289,7 +285,6 @@ a:hover {
 .news-tagline {
   font-family: 'SantElia', sans-serif;
   font-size: 27px;
-  color: #f2c526;
   font-weight: bold;
   display: -webkit-box;
   display: -webkit-flex;
@@ -300,6 +295,10 @@ a:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.news-tagline a {
+  color: #f2c526;
+  text-decoration: none;
 }
 .news-text {
   background: #00548a;
@@ -354,36 +353,44 @@ a:hover {
   letter-spacing: 1.6px;
   margin: 0;
 }
+.services-block h3 a {
+  text-decoration: none;
+}
 .services-img-total {
   background: url(../img/1.jpg) no-repeat left top;
   -webkit-background-size: cover;
           background-size: cover;
   height: 111px;
+  display: block;
 }
 .services-img-arbitration {
   background: url(../img/2.jpg) no-repeat left top;
   -webkit-background-size: cover;
           background-size: cover;
   height: 111px;
+  display: block;
 }
 .services-img-taxes {
   background: url(../img/3.jpg) no-repeat left top;
   -webkit-background-size: cover;
           background-size: cover;
   height: 111px;
+  display: block;
 }
 .services-img-crime {
   background: url(../img/4.jpg) no-repeat left top;
   -webkit-background-size: cover;
           background-size: cover;
   height: 111px;
+  display: block;
 }
 .services-img-finance {
   background: url(../img/5.jpg) no-repeat left top;
   -webkit-background-size: cover;
           background-size: cover;
-  height: 100%;
   margin-left: 10px;
+  display: block;
+  height: 100%;
 }
 .services-list {
   padding: 8px 8px 10px;
@@ -439,6 +446,9 @@ a:hover {
   text-transform: uppercase;
   margin-bottom: 12px;
 }
+.footer .copyrighted-title a {
+  text-decoration: none;
+}
 .footer .copyrighted-text {
   text-align: justify;
   line-height: 1.3;
@@ -474,10 +484,14 @@ a:hover {
   font-weight: bold;
   margin-bottom: 20px;
 }
+.footer .foot-logo-title a {
+  text-decoration: none;
+}
 .footer .foot-logo-img {
   background: url(../img/gerb.png) no-repeat left top;
   -webkit-background-size: cover;
           background-size: cover;
+  display: block;
   height: 106px;
   width: 98px;
   position: absolute;
