@@ -383,6 +383,7 @@ ul {
 
 .catalog .list-offers {
   list-style: none;
+  line-height: 12px;
 }
 
 .catalog .list-offers__video {
@@ -395,20 +396,20 @@ ul {
 }
 
 .catalog .list-offers__cut-price {
-  background: url(../img/purse.png) no-repeat left top;
+  background: url(../img/purse.png) no-repeat left center;
 }
 
 .catalog .list-offers li {
-  min-height: 40px;
+  min-height: 20px;
   padding-left: 25px;
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .catalog .list-offers li a {
   color: #505050;
   text-decoration: none;
   font-size: 11px;
-  vertical-align: bottom;
+  vertical-align: sub;
 }
 
 .catalog .list-offers li a:hover {
