@@ -58,7 +58,7 @@ $(function(){
 		       }   
 		    },
 		     {
-		       breakpoint: 780,
+		       breakpoint: 560,
 		       settings: {
 		         slidesToShow: 1, 
 		         arrows: true,
@@ -98,7 +98,7 @@ $(function(){
 		       }   
 		    },
 		     {
-		       breakpoint: 780,
+		       breakpoint: 560,
 		       settings: {
 		       	 arrows: true,
 		         slidesToShow: 1, 
@@ -127,11 +127,8 @@ $(function(){
 		}
 	}	
 
-	
-	var asideMenu = new MenuDisplay('.aside-btn', '.catalog', "visible");
-	asideMenu.display();
-	var asideMenu = new MenuDisplay('.menu-btn-mobile', '.menu-mobile', "visible");
-	asideMenu.display();
+	var mobileMenu = new MenuDisplay('.menu-btn-mobile', '.menu-mobile', "visible");
+	mobileMenu.display();
 
 
 
