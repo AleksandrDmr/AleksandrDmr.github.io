@@ -1,5 +1,5 @@
 body {
-  font-family: verdana;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -152,40 +152,51 @@ ul {
   border-bottom-right-radius: 3px;
 }
 
-.address {
+.region {
   margin-right: auto;
 }
 
-.address__link {
+.region__value {
   color: #73bfe9;
   font-size: 15px;
   font-weight: bold;
-  text-decoration: none;
-  margin-bottom: 5px;
 }
 
-.address__text {
+.region__select {
   text-align: center;
   font-size: 11px;
   font-weight: bold;
+  margin-top: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #505050;
+}
+
+.region__select:hover {
+  text-decoration: underline;
 }
 
 .tel {
+  text-align: center;
   margin-right: auto;
 }
 
-.tel__link {
+.tel__number {
   color: #73bfe9;
   font-size: 15px;
   font-weight: bold;
-  text-decoration: none;
-  margin-bottom: 5px;
 }
 
-.tel__text {
-  text-align: center;
+.tel__link {
   font-size: 11px;
   font-weight: bold;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #505050;
+}
+
+.tel__link:hover {
+  text-decoration: underline;
 }
 
 .cart {
@@ -279,7 +290,6 @@ ul {
   font-size: 11px;
   color: #73bfe9;
   font-weight: bold;
-  cursor: pointer;
   border: none;
   outline: none;
   background: transparent;
@@ -302,10 +312,9 @@ ul {
 .menu__list li {
   list-style: none;
   margin-right: 27px;
-  line-height: 11px;
 }
 
-.menu__list li:hover ul {
+.menu__list li:hover .menu__sub-list-container {
   display: block;
 }
 
@@ -320,32 +329,35 @@ ul {
   color: #2b3584;
 }
 
-.menu__list li ul {
+.menu__sub-list-container {
   display: none;
   position: absolute;
-  left: -20px;
-  top: 28.64px;
+  z-index: 9999;
+  padding-top: 15px;
+  line-height: 11px;
+  background: transparent;
+}
+
+.menu__sub-list {
   background-color: rgba(115, 191, 233, 0.9);
-  padding: 16px 20px 30px;
+  -webkit-background-size: 30px 30px;
+  background-size: 30px;
+  padding: 16px 20px 20px;
 }
 
-.menu__list li ul:hover {
-  display: block;
-}
-
-.menu__list li ul li {
+.menu__sub-list li {
   margin-bottom: 8px;
 }
 
-.menu__list li ul li:last-child {
+.menu__sub-list li:last-child {
   margin-bottom: 0;
 }
 
-.menu__list li ul li a {
+.menu__sub-list li a {
   color: #fff;
 }
 
-.menu__list li ul li a:hover {
+.menu__sub-list li a:hover {
   color: #0d44a0;
 }
 
@@ -366,7 +378,6 @@ ul {
   box-sizing: border-box;
   position: relative;
   background: #fbfaf9;
-  display: none;
 }
 
 .catalog:before {
@@ -481,29 +492,36 @@ ul {
 }
 
 .slide-banner {
-  background: url(../img/banner.jpg) no-repeat center top;
+  background: url(../img/banner.jpg) no-repeat left top;
   -webkit-background-size: cover;
   background-size: cover;
-  padding: 45px 20px 45px 100px;
-  display: block;
-  color: white;
-  text-decoration: none;
-  height: 100px;
+  padding-top: 60px;
+  min-height: 250px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   text-transform: uppercase;
   font-weight: bold;
 }
 
+.slide-banner a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
 .slide-banner__title {
   font-size: 15px;
+  margin-left: 20%;
 }
 
 .slide-banner__text {
-  margin: 10px 0;
+  margin: 15px 0 15px 20%;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .slide-banner__button {
+  margin-left: 20%;
   font-size: 11px;
   background: #00d100;
   width: 160px;
@@ -547,6 +565,10 @@ ul {
   padding: 15px;
 }
 
+.advantages_mob {
+  display: none;
+}
+
 .advantages__title {
   margin-bottom: 10px;
 }
@@ -554,7 +576,7 @@ ul {
 h2 {
   color: #73bfe9;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 12px;
   margin: 0;
 }
 
@@ -571,7 +593,7 @@ h2 {
 }
 
 .row_margin {
-  margin-bottom: -73px;
+  margin-bottom: -40px;
 }
 
 .advant-block {
@@ -585,18 +607,30 @@ h2 {
 }
 
 .advant-block__img {
+  width: 60px;
   float: left;
-  margin-right: 5%;
-  width: 67px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.advant-block__img img {
+  height: 60px;
+  width: auto;
+}
+
+.advant-block__text-container {
+  /* float: right;
+			width: 60% ~"calc(100% - 80px)"; */
 }
 
 .advant-block__title {
-  font-size: 11px;
+  font-size: 12px;
   color: #0d44a0;
+  line-height: 11px;
 }
 
 .advant-block__text {
-  font-size: 10px;
+  font-size: 11px;
   color: #5e5e5e;
 }
 
@@ -667,7 +701,7 @@ h2 {
   border: 1px solid #888888;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  padding: 27px 5px;
+  padding: 15px 5px;
 }
 
 .products-container_slider {
@@ -704,7 +738,7 @@ h2 {
 }
 
 .card-product_mb {
-  margin-bottom: 73px;
+  margin-bottom: 40px;
 }
 
 .card-product img {
@@ -716,10 +750,22 @@ h2 {
   color: #3d69d9;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   display: block;
   text-decoration: none;
   text-align: center;
+}
+
+.card-product__old-price {
+  color: #949090;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.card-product__price {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .card-product__btn {
@@ -732,9 +778,9 @@ h2 {
   color: #393939;
   text-decoration: none;
   line-height: 26px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
   margin: 25px auto 0;
   font-size: 11px;
   font-weight: bold;
@@ -744,9 +790,6 @@ h2 {
 .card-product__btn:hover {
   background: #0d44a0;
   color: #fff;
-  width: 121px;
-  height: 33px;
-  line-height: 33px;
 }
 
 .section-news {
@@ -824,7 +867,7 @@ h2 {
 }
 
 .news__text {
-  font-size: 10px;
+  font-size: 12px;
   color: #5e5e5e;
 }
 
@@ -837,11 +880,11 @@ h2 {
 }
 
 .about-us__text {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .about-us__subtitle {
-  font-size: 11px;
+  font-size: 12px;
   color: #72c0e0;
 }
 
@@ -1088,7 +1131,7 @@ footer {
   margin: 0 auto 5px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .search {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -1099,7 +1142,7 @@ footer {
     margin-right: 0;
   }
 
-  .address {
+  .region {
     margin-right: 30px;
   }
 
@@ -1209,6 +1252,7 @@ footer {
     border-radius: 3px;
     font-size: 11px;
     margin: 5px;
+    padding-bottom: 20px;
   }
 
   .card-product__title {
@@ -1262,7 +1306,7 @@ footer {
     margin: 0;
   }
 
-  .address {
+  .region {
     display: none;
   }
 
@@ -1288,18 +1332,6 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
-  .slide-banner {
-    padding: 45px;
-  }
-
-  .slide-banner__title {
-    font-size: 10px;
-  }
-
-  .slide-banner__text {
-    font-size: 9px;
-  }
-
   .advant-block {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
