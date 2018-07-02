@@ -112,7 +112,7 @@ $(function(){
 
 
 	
-	function MenuDisplay(obj, obj1, classVisible) {
+	function MenuDisplay(obj, obj1) {
 		this.display = function() {
 			$(obj).on('click', function(){
 				$(obj1).slideToggle();
@@ -127,7 +127,7 @@ $(function(){
 		}
 	}	
 
-	var mobileMenu = new MenuDisplay('.menu-btn-mobile', '.menu-mobile', "visible");
+	var mobileMenu = new MenuDisplay('.menu-btn-mobile', '.menu-mobile');
 	mobileMenu.display();
 
 
