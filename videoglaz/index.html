@@ -34,13 +34,13 @@
   				<input type="search" placeholder="Выбирайте..." class="search__text">
   				<button class="search__btn" type="submit"></button>
   			</form>
-  			<div class="address">
-  				<a href="#" class="address__link"><img src="img/marker.png" alt="Маркер">Санкт-Петербург</a>
-  				<div class="address__text">и еще 40 городов</div>
+  			<div class="region">
+  				<div class="region__value"><img src="img/marker.png" alt="Маркер">Санкт-Петербург</div>
+  				<div class="region__select">и еще 40 городов</div>
   			</div>
   			<div class="tel">
-  				<a href="tel:+7 (812) 413 93 26" class="tel__link">+7(812)413-93-26</a>
-  				<div class="tel__text">Заказать звонок</div>
+  				<div  class="tel__number">+7(812)413-93-26</div>
+  				<a href="tel:+7 (812) 413 93 26" class="tel__link">Заказать звонок</a>
   			</div>
   			<div class="cart">
   				<a href="#"><img src="img/cart.png" alt="Корзина" class="cart__link"></a>
@@ -61,12 +61,14 @@
 	  			<ul class="menu__list">
 	  				<li>
 	  					<a href="#">О компании</a>
-						<ul class="menu__sub-list">
-							<li><a href="#">Клиенты</a></li>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">СМИ о нас</a></li>
-							<li><a href="#">Работа</a></li>
-						</ul>
+						<div class="menu__sub-list-container">
+              <ul class="menu__sub-list">
+  							<li><a href="#">Клиенты</a></li>
+  							<li><a href="#">Новости</a></li>
+  							<li><a href="#">СМИ о нас</a></li>
+  							<li><a href="#">Работа</a></li>
+              </ul>
+						</div>
 	  				</li>
 	  				<li><a href="#" class="nav__item">Доставка и Оплата</a></li>
 	  				<li><a href="#" class="nav__item">Гарантия</a></li>
@@ -96,7 +98,8 @@
   						<li><a href="#">Оптические приборы</a></li>
   						<li><a href="#">Здоровье и личная безопасность</a></li>
   						<li><a href="#">Источники электропитания</a></li>
-  						<li><a href="#">Системы звукового оповещения и музыкальной трансляции Средства пожаротушения</a></li>
+              <li><a href="#">Системы звукового оповещения и музыкальной трансляции</a></li>
+  						<li><a href="#">Средства пожаротушения</a></li>
   						<li><a href="#">Взрывозащищенное оборудование</a></li>
   						<li><a href="#">Металлодетекторы</a></li>
   						<li><a href="#">Техническая защита объектов</a></li>
@@ -120,20 +123,20 @@
   				</div>
   			<div class="content">
   				<div class="slider">
-	  				<div>
-	  					<a href="#" class="slide slide-banner">
-	  						<div class="slide-banner__title">Узнайте стоимость видеонаблоюдения для вашего загородного дома</div>
-	  						<div class="slide-banner__text">Всего 5 вопросов</div>
-	  						<div class="slide-banner__button">Начать опрос</div>
-	  					</a>
-	  				</div>
-	  				<div>
-	  					<a href="#" class="slide slide-banner">
-	  						<div class="slide-banner__title">Узнайте стоимость видеонаблоюдения для вашего загородного дома</div>
-	  						<div class="slide-banner__text">Всего 5 вопросов</div>
-	  						<div class="slide-banner__button">Начать опрос</div>
-	  					</a>
-	  				</div> 
+	  				 <div class="slide slide-banner">
+              <a href="#" >
+                <div class="slide-banner__title">Узнайте стоимость видеонаблоюдения<br> для вашего загородного дома</div>
+                <div class="slide-banner__text">Всего 5 вопросов</div>
+                <div class="slide-banner__button">Начать опрос</div>
+              </a>
+            </div>
+            <div class="slide slide-banner">
+              <a href="#" >
+                  <div class="slide-banner__title">Узнайте стоимость видеонаблоюдения<br> для вашего загородного дома</div>
+                  <div class="slide-banner__text">Всего 5 вопросов</div>
+                  <div class="slide-banner__button">Начать опрос</div>
+              </a>
+            </div>  
   				</div> 
   				<div class="slider-menu">
   					<div class="slider-menu__item">
@@ -152,29 +155,42 @@
   				<section class="advantages">
   					<h2 class="advantages__title">Почему покупают в магазине videoglaz.ru</h2>
   					<div class="row">
-  						<div class="advant-block">
-  							<img class="advant-block__img" src="img/return.png" alt="Преимущество">
-  							<a href="#" class="advant-block__title">28 дней на возврат</a>
-  							<div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
-  						</div>
-
-  						<div class="advant-block">
-  							<img class="advant-block__img" src="img/gift.png" alt="Преимущество">
-  							<a href="#" class="advant-block__title">28 дней на возврат</a>
-  							<div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
-  						</div>
-
-  						<div class="advant-block">
-  							<img class="advant-block__img" src="img/people.png" alt="Преимущество">
-  							<a href="#" class="advant-block__title">28 дней на возврат</a>
-  							<div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
-  						</div>
-
-  						<div class="advant-block">
-  							<img class="advant-block__img" src="img/human.png" alt="Преимущество">
-  							<a href="#" class="advant-block__title">28 дней на возврат</a>
-  							<div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>	
-  						</div>
+                <div class="advant-block">
+                  <div class="advant-block__img">
+                    <img src="img/return.png" alt="Преимущество">
+                  </div>
+                  <div class="advant-block__text-container">
+                     <a href="#" class="advant-block__title">28 дней на возврат</a>
+                     <div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
+                 </div>
+              </div>
+                <div class="advant-block">
+                  <div class="advant-block__img">
+                    <img src="img/gift.png" alt="Преимущество">
+                  </div>
+                  <div class="advant-block__text-container">
+                     <a href="#" class="advant-block__title">28 дней на возврат</a>
+                     <div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
+                 </div>
+              </div>
+                <div class="advant-block">
+                  <div class="advant-block__img">
+                    <img src="img/people.png" alt="Преимущество">
+                  </div>
+                  <div class="advant-block__text-container">
+                     <a href="#" class="advant-block__title">28 дней на возврат</a>
+                     <div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
+                 </div>
+              </div>
+                <div class="advant-block">
+                  <div class="advant-block__img">
+                    <img src="img/human.png" alt="Преимущество">
+                  </div>
+                  <div class="advant-block__text-container">
+                     <a href="#" class="advant-block__title">28 дней на возврат</a>
+                     <div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
+                 </div>
+              </div>
   					</div>
   				</section>
   				<section class="products">
@@ -184,30 +200,40 @@
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<a class="card-product__title" href="#">Видеорегистратор HD IPTRONIC AHDR0450QN</a>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
   						</div>
@@ -220,59 +246,79 @@
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<a class="card-product__title" href="#">Видеорегистратор HD IPTRONIC AHDR0450QN</a>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
   							<div class="card-product">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
   						</div>
@@ -283,59 +329,79 @@
   							<div class="card-product card-product_mb">
   								<img src="img/product-1.jpg" alt="Товар">
   								<a class="card-product__title" href="#">Видеорегистратор HD IPTRONIC AHDR0450QN</a>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product card-product_mb">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product card-product_mb">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product card-product_mb">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product card-product_mb">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product card-product_mb">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product card-product_mb">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product card-product_mb">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
   							<div class="card-product card-product_mb">
   								<img src="img/product-2.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
 
   							<div class="card-product card-product_mb">
   								<img src="img/product-1.jpg" alt="Товар">
   								<div class="card-product__title">Видеорегистратор HD IPTRONIC AHDR0450QN</div>
+                  <div class="card-product__old-price">13 520 руб</div>
+                  <div class="card-product__price">1 060 руб</div>
   								<a class="card-product__btn" href="#">В корзину</a>
   							</div>
   						</div>
@@ -345,29 +411,42 @@
   				<section class="advantages advantages_mob">
   					<h2 class="advantages__title">Почему покупают в магазине videoglaz.ru</h2>
   					<div class="row">
-  						<div class="advant-block">
-  							<img class="advant-block__img" src="img/return.png" alt="Преимущество">
-  							<a href="#" class="advant-block__title">28 дней на возврат</a>
-  							<div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
-  						</div>
-
-  						<div class="advant-block">
-  							<img class="advant-block__img" src="img/gift.png" alt="Преимущество">
-  							<a href="#" class="advant-block__title">28 дней на возврат</a>
-  							<div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
-  						</div>
-
-  						<div class="advant-block">
-  							<img class="advant-block__img" src="img/people.png" alt="Преимущество">
-  							<a href="#" class="advant-block__title">28 дней на возврат</a>
-  							<div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
-  						</div>
-
-  						<div class="advant-block">
-  							<img class="advant-block__img" src="img/human.png" alt="Преимущество">
-  							<a href="#" class="advant-block__title">28 дней на возврат</a>
-  							<div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>	
-  						</div>
+  						  <div class="advant-block">
+                  <div class="advant-block__img">
+                    <img src="img/return.png" alt="Преимущество">
+                  </div>
+                  <div class="advant-block__text-container">
+                     <a href="#" class="advant-block__title">28 дней на возврат</a>
+                     <div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
+                 </div>
+              </div>
+                <div class="advant-block">
+                  <div class="advant-block__img">
+                    <img src="img/gift.png" alt="Преимущество">
+                  </div>
+                  <div class="advant-block__text-container">
+                     <a href="#" class="advant-block__title">28 дней на возврат</a>
+                     <div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
+                 </div>
+              </div>
+                <div class="advant-block">
+                  <div class="advant-block__img">
+                    <img src="img/people.png" alt="Преимущество">
+                  </div>
+                  <div class="advant-block__text-container">
+                     <a href="#" class="advant-block__title">28 дней на возврат</a>
+                     <div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
+                 </div>
+              </div>
+                <div class="advant-block">
+                  <div class="advant-block__img">
+                    <img src="img/human.png" alt="Преимущество">
+                  </div>
+                  <div class="advant-block__text-container">
+                     <a href="#" class="advant-block__title">28 дней на возврат</a>
+                     <div class="advant-block__text">Гарантия возврата денежных средст за товар в течениии 26 дней<span class="advant-block__question">?<span class="advant-block__prompt">Гарантия возврата денежных средст за товар в течениии 26 дней Гарантия возврата денежных средст за товар в течениии 26 дней</span></span></div>
+                 </div>
+              </div>
   					</div>
   				</section>
   				<section class="section-news">
