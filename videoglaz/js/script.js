@@ -129,6 +129,9 @@ $(function(){
 
 	var mobileMenu = new MenuDisplay('.menu-btn-mobile', '.menu-mobile');
 	mobileMenu.display();
+	var regionShow = new MenuDisplay('.region', '.region__list');
+	regionShow.display();
+
 
 
 
