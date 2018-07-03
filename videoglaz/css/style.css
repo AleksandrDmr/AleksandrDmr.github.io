@@ -155,6 +155,8 @@ ul {
 .region {
   margin-right: auto;
   text-align: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .region__value {
@@ -168,12 +170,57 @@ ul {
   font-weight: bold;
   margin-top: 8px;
   text-decoration: none;
-  cursor: pointer;
   color: #505050;
 }
 
 .region__select:hover {
   text-decoration: underline;
+}
+
+.region__list {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 45px;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  color: #b0b0b0;
+  padding: 10px 0 4px 15px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 489px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.region__list ul {
+  margin-right: 15px;
+  float: left;
+  list-style: none;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.region__list ul li {
+  margin-bottom: 5px;
+}
+
+.region__list ul a {
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+.region__list ul a:hover {
+  color: #fff;
+}
+
+.region__list ul .region__country {
+  margin: 0;
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 .tel {
@@ -193,6 +240,7 @@ ul {
   margin-top: 8px;
   text-decoration: none;
   color: #505050;
+  display: block;
 }
 
 .tel__link:hover {
@@ -620,11 +668,6 @@ h2 {
   width: auto;
 }
 
-.advant-block__text-container {
-  /* float: right;
-			width: 60% ~"calc(100% - 80px)"; */
-}
-
 .advant-block__title {
   font-size: 12px;
   color: #0d44a0;
@@ -749,16 +792,12 @@ h2 {
 
 .card-product__title {
   font-size: 12px;
-  color: #3d69d9;
+  color: #0d44a0;
   text-align: left;
   margin-bottom: 8px;
   display: block;
   text-decoration: none;
   text-align: center;
-}
-
-.card-product__title:hover {
-  color: #fcc300;
 }
 
 .card-product__old-price {
