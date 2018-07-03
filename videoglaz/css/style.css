@@ -799,6 +799,7 @@ h2 {
   display: block;
   text-decoration: none;
   text-align: center;
+  outline: none;
 }
 
 .card-product__old-price {
