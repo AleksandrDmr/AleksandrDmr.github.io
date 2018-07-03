@@ -194,6 +194,7 @@ ul {
   width: 489px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  display: none;
 }
 
 .region__list ul {
