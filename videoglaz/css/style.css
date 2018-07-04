@@ -1163,7 +1163,15 @@ footer {
   background: url(../img/inst.png) no-repeat center;
 }
 
+.slider-wrap {
+  margin: 0 -50px;
+}
+
 .slider-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 10px;
   padding: 15px;
   display: none;
@@ -1174,6 +1182,7 @@ footer {
   color: #4c4c4c;
   font-size: 9px;
   text-align: center;
+  margin-right: 30px;
 }
 
 .slider-menu__item a {
@@ -1181,7 +1190,7 @@ footer {
 }
 
 .slider-menu__item img {
-  margin: 0 auto 5px;
+  margin: 0 auto 8px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1404,7 +1413,7 @@ footer {
   }
 
   .slider-menu {
-    padding: 15px 20px;
+    padding: 15px 53px;
   }
 }
 
