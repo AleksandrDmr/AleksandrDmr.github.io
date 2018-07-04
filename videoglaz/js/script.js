@@ -25,7 +25,11 @@ $(function(){
 		     {
 		       breakpoint: 780,
 		       settings: {
-		        slidesToShow: 2,
+		        slidesToShow: 2.6,
+
+
+
+
 		       }
 		     }
 		]
@@ -60,7 +64,7 @@ $(function(){
 		     {
 		       breakpoint: 560,
 		       settings: {
-		         slidesToShow: 1, 
+		         slidesToShow: 2, 
 		         arrows: true,
 		         nextArrow: '<button class="slider-btn slider-btn_prev slider-btn_product" type="button"><img src="img/next-product.png" alt="Назад"></button>',
 		 		 prevArrow: '<button class="slider-btn slider-btn_next slider-btn_product" type="button"><img src="img/prev-product.png" alt="Вперед"></button>'
@@ -101,7 +105,7 @@ $(function(){
 		       breakpoint: 560,
 		       settings: {
 		       	 arrows: true,
-		         slidesToShow: 1, 
+		         slidesToShow: 2, 
 		         nextArrow: '<button class="slider-btn slider-btn_prev slider-btn_product" type="button"><img src="img/next-product.png" alt="Назад"></button>',
 		 		 prevArrow: '<button class="slider-btn slider-btn_next slider-btn_product" type="button"><img src="img/prev-product.png" alt="Вперед"></button>'
 		       }   
