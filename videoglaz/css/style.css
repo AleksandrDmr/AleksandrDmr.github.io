@@ -3,10 +3,6 @@ body {
   margin: 0;
 }
 
-input[type=text] {
-  -webkit-appearance: none;
-}
-
 .slick-slide {
   outline: none;
 }
@@ -136,11 +132,14 @@ ul {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   padding: 12px;
   font-size: 11px;
   outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-appearance: none;
 }
 
 .search__btn {
@@ -1168,12 +1167,8 @@ footer {
 }
 
 .slider-menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 10px;
-  padding: 15px;
+  padding: 15px 0;
   display: none;
 }
 
@@ -1406,11 +1401,6 @@ footer {
   .content-wrapper {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .slider-menu {
-    padding: 15px 0;
-    overflow: hidden;
   }
 }
 
