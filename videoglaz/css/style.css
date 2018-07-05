@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+input[type=text] {
+  -webkit-appearance: none;
+}
+
 .slick-slide {
   outline: none;
 }
@@ -1178,15 +1182,16 @@ footer {
   color: #4c4c4c;
   font-size: 9px;
   text-align: center;
-  margin-right: 30px;
 }
 
 .slider-menu__item a {
   outline: none;
+  text-align: center;
 }
 
 .slider-menu__item img {
   margin: 0 auto 8px;
+  display: block;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1247,11 +1252,6 @@ footer {
 @media screen and (max-width: 960px) {
   .menu-btn-mobile {
     display: block;
-  }
-
-  .search__text {
-    -webkit-border-radius: 0;
-    border-radius: 0;
   }
 
   .aside-btn {
