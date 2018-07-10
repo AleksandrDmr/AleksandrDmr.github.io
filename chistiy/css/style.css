@@ -387,12 +387,6 @@ footer .copy {
     height: 21px;
   }
 
-  .services {
-    -webkit-background-size: 100% 750px;
-    background-size: 100% 750px;
-    background: none;
-  }
-
   .row-services {
     margin-left: -5px;
     margin-right: -5px;
@@ -425,11 +419,6 @@ footer .copy {
 
   .services-item a {
     font-size: 12px;
-  }
-
-  .content {
-    -webkit-background-size: 100% 50%;
-    background-size: 100% 50%;
   }
 }
 
@@ -468,11 +457,6 @@ footer .copy {
     left: 0;
   }
 
-  .services {
-    -webkit-background-size: 100% 26%;
-    background-size: 100% 26%;
-  }
-
   .mobile-bg {
     background: url(../img/background.png) no-repeat left top;
     -webkit-background-size: 100% 50%;
@@ -486,10 +470,5 @@ footer .copy {
 
   .services-item a {
     font-size: 13px;
-  }
-
-  .content {
-    -webkit-background-size: 100% 30%;
-    background-size: 100% 30%;
   }
 }
