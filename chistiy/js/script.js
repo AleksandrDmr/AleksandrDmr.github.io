@@ -1,4 +1,4 @@
-$(function(){
+$(window).load(function() {
 
 	function MenuDisplay(obj, obj1) {
 		this.display = function() {
@@ -14,11 +14,28 @@ $(function(){
 
 	var mobileMenu = new MenuDisplay('.hamburger', '.nav');
 	mobileMenu.display();
+
+
+	 	 function autoHeight(){
+
+	 	 		var itemHeight = $('.blockHeight');
+	 	 	    var item = $('.services-item__img-wrap');
+	 	 		var maxColHeight = 0; 
+	 	 		$(itemHeight).each(function() { 
+	 	 			if ($(this).height() > maxColHeight) { 
+	 	 				maxColHeight = $(this).height(); 
+	 	 			}
+	 	 		});
+	 	 		$(item).height(maxColHeight); 
+
+	 	 }	
+ 	autoHeight();
+ 	$(window).resize(autoHeight);
+
+
+
 	
-
-
 });
-
-
+	
 
 
