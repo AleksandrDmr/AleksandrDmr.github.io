@@ -57,8 +57,8 @@ img {
   word-wrap: break-word;
   margin-left: 10px;
   margin-right: 10px;
-  width: -webkit-calc(33.333333333333336% - 20px);
-  width: calc(33.333333333333336% - 20px);
+  width: -webkit-calc(37.5% - 20px);
+  width: calc(37.5% - 20px);
 }
 
 .contacts {
@@ -67,8 +67,8 @@ img {
   word-wrap: break-word;
   margin-left: 10px;
   margin-right: 10px;
-  width: -webkit-calc(50% - 20px);
-  width: calc(50% - 20px);
+  width: -webkit-calc(54.16666666666667% - 20px);
+  width: calc(54.16666666666667% - 20px);
 }
 
 .region {
@@ -318,7 +318,7 @@ footer .copy {
 
 .content .about-list {
   list-style: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 0;
   text-indent: 20px;
 }
@@ -375,7 +375,7 @@ footer .copy {
   }
 
   .phone img {
-    width: 22px;
+    width: 18px;
     height: auto;
     margin-right: 3px;
   }
