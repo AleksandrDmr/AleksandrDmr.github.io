@@ -475,8 +475,8 @@ footer .copy {
 
   .mobile-bg {
     background: url(../img/background.png) no-repeat left top;
-    -webkit-background-size: 100% 33%;
-    background-size: 100% 33%;
+    -webkit-background-size: 100% 50%;
+    background-size: 100% 50%;
   }
 
   .services-item {
