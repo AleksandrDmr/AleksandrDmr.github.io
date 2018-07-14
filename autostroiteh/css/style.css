@@ -201,6 +201,32 @@ img {
   box-sizing: border-box;
 }
 
+.social__wh {
+  background: #8899c0 url(../img/whatsapp-logo.png) no-repeat 50% 45%;
+}
+
+.social__mail {
+  background: #8899c0 url(../img/email.png) no-repeat 50% 45%;
+}
+
+.social__skype {
+  background: #8899c0 url(../img/skype-logo.png) no-repeat 5.5px 5px;
+}
+
+.social a {
+  width: 23px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-size: 12px 12px;
+  background-size: 12px;
+  display: inline-block;
+}
+
+.social a:hover {
+  background-color: #536ba4;
+}
+
 .header-border {
   height: 106px;
   position: absolute;
