@@ -314,6 +314,7 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  color: #3b3c3d;
 }
 
 .services-card__text {
