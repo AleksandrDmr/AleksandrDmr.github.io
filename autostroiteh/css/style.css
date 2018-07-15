@@ -51,11 +51,10 @@ img {
   padding: 5px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .logo a {
-  display: block;
-  text-align: center;
   font-size: 30px;
   text-decoration: none;
   color: #4b5166;
@@ -280,15 +279,6 @@ img {
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   margin-bottom: 80px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -303,7 +293,7 @@ img {
   box-shadow: 1.721px 2.457px 8.7px 1.3px rgba(73, 73, 73, 0.71);
 }
 
-.services-card:hover .services-card__text {
+.services-card__text:hover .services-card {
   background: #d6d6d6;
 }
 
@@ -313,12 +303,24 @@ img {
   box-sizing: border-box;
 }
 
+.services-card__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
 .services-card__text {
   margin-top: auto;
   display: block;
   color: #3b3c3d;
   text-transform: uppercase;
-  text-decoration: none;
   font-size: 11px;
   padding: 17px 0;
   background: #ffcc33;
