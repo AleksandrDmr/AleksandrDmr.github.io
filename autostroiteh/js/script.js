@@ -1,4 +1,4 @@
-window.onload = (function(){
+$(function(){
 
 
 	$('.slider').slick({
@@ -9,7 +9,8 @@ window.onload = (function(){
 		 autoplay: true,
 		 autoplaySpeed: 3000,
 		 cssEase: 'linear',
-		 arrows: false
+		 nextArrow: '<button class="slider-btn slider-btn_prev" type="button"><img src="img/next.png" alt="Назад"></button>',
+		 prevArrow: '<button class="slider-btn slider-btn_next" type="button"><img src="img/prev.png" alt="Вперед"></button>'
 		
 	});
 
