@@ -293,7 +293,7 @@ img {
   box-shadow: 1.721px 2.457px 8.7px 1.3px rgba(73, 73, 73, 0.71);
 }
 
-.services-card__text:hover .services-card {
+.services-card:hover .services-card__text {
   background: #d6d6d6;
 }
 
