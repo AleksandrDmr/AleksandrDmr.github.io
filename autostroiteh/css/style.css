@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'New World Vibes';
-  src: url('../fonts/NWV.eot');
-  src: url('../fonts/NWV.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   margin: 0;
   font: 14px arial, sans-serif;
@@ -238,6 +230,40 @@ img {
   z-index: 9999;
 }
 
+.slider {
+  visibility: hidden;
+}
+
+.slick-initialized {
+  visibility: visible;
+}
+
+.slider-btn {
+  background: transparent;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  top: 50%;
+  outline: none;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99999;
+  opacity: .5;
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn_next {
+  left: 10px;
+}
+
+.slider-btn_prev {
+  right: 10px;
+}
+
 .slide {
   position: relative;
   outline: none;
@@ -247,7 +273,7 @@ img {
 .slide__text {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 50px;
   background: rgba(255, 255, 255, 0.6);
   width: 51.25%;
   min-height: 108px;
@@ -704,6 +730,11 @@ img {
     margin-top: 10px;
     padding-left: 0;
     text-align: right;
+  }
+
+  .slider-btn {
+    top: auto;
+    bottom: 10px;
   }
 
   .slide__text {
