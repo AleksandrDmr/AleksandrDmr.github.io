@@ -1,0 +1,359 @@
+<?php session_start(); ?>
+   <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ContaEco</title>
+        <link rel='stylesheet' id='BNS-Corner-Logo-Style-css'  href='css/social-icons.css' type='text/css' media='screen'/>
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+      <body>
+      <div class="container">
+        <div class="content-container">
+          <div class="wrapper form-wrapper">
+           <div class="description">
+             <h1 class="description__title">Бесплатно для PYMES<br> навсегда</h1>
+             <p class="description__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. </p>
+             <p class="description__text">При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+           </div>
+<!--==================================== form-index -->
+           <div class="form form-index">
+              <div class="form-header">
+                <a href="#"><img src="img/logo-form.png" alt=""></a>
+                <div class="form-header__title">
+                <span class="form-header__text form-header__text_green">Conta</span><span class="form-header__text form-header__text_blue">ECO</span></div>
+                <div class="form-header__description form-header__description_big">If you are not registered yet</div>
+              </div>
+              <button type="button" class="registration-btn">new user registration</button>
+              <div class="form__text form__text_big">or</div>
+              <a href="#" class="download__link">Download ContaEco</a>
+              <div class="form__text">If you are already a registered user:</div>
+              <div class="sign-in"><img src="img/sign-in.png" alt=""><span class="sign-in-btn">Sign in to your account</span></div>
+           </div>
+<!--==================================== form-sign-in -->     
+          <form class="form form-sign-in">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Фoрма</span> <span class="form-header__text form-header__text_blue">входа</span></div>
+               <div class="form-header__description">для зарегистрированных пользователей</div>
+             </div>
+            <div class="form-container">
+              <div class="form-input-container">
+                <label for="user-id-sign-in">CIF / NIF</label>
+                <input id="user-id-sign-in"  type="text"  >
+              </div>
+              <div class="form-input-container">
+                <label for="psw-sign-in">Password</label>
+                <input id="psw-sign-in" type="password">
+              </div>
+              <div class="form-wrong wrong-sign-in">Wrong login or password</div>
+              <div class="form-input-container">
+                <label>Enter captcha</label>                  
+                <img class="img-captcha" src="captcha/captcha.php" width="232" height="62" >                               
+              </div>
+              <div class="form-input-container container-captcha">                                                     
+                <input  class="text-captcha" type="text" name="captcha">
+                 <div class="form-wrong form-wrong_captcha">Wrong captcha</div>
+              </div>
+            </div>
+            <button type="button" class="form-btn save-sign-in" >Enter</button>  
+            <div class="form__text">  Forgot login / password: <span class="form__recovery-btn">Recovery</span></div>     
+          </form> 
+<!--==================================== form-recover -->   
+          <form class="form form-recover">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Восстановить</span> <span class="form-header__text form-header__text_blue">логин/пароль</span></div>
+               <div class="form-header__description">для зарегистрированных пользователей</div>
+             </div>
+            <div class="form-container">
+              <div class="form-input-container">
+                <label for="user-id-sign-in">CIF / NIF</label>
+                <input id="user-id-recover" type="text"  >
+              </div>
+              <div class="form-input-container">
+                <label for="mail-recover">E-mail</label>
+                <input id="mail-recover" type="email">
+              </div>
+              <div class="form-wrong wrong-recover">Wrong login or e-mail</div>
+              <div class="form-input-container">
+                <label for="text-captcha">Enter captcha</label>                  
+                <img class="img-captcha" src="captcha/captcha.php" width="232" height="62" >                               
+              </div>
+              <div class="form-input-container container-captcha">                                                     
+                <input  class="text-captcha" type="text" name="captcha">
+                 <div class="form-wrong form-wrong_captcha">Wrong captcha</div>
+              </div>
+            </div>
+            <button type="button" class="form-btn save-recover" >Enter</button>      
+          </form> 
+          <!--==================================== data-sent -->  
+          <div class="form data-sent">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Данные</span> <span class="form-header__text form-header__text_blue">отправлены!</span></div>
+               <div class="form-header__description">Перейдите в указанный Вами E-mail<br>для восстановления доступа в системы</div>
+             </div>
+            <button type="button" class="form-btn data-sent-btn" >exit</button>      
+          </div> 
+          <!--==================================== user cabinet -->   
+          <form class="form user-cabinet">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Данные</span> <span class="form-header__text form-header__text_blue">пользователя</span></div>
+               <div class="form-header__description">web вход для зарегистрированного пользователя</div>
+             </div>
+            <div class="form-container  form-container_padding">
+              <div class="form-input-container form-input-container_user-cabinet">
+                <label>Name</label>
+                <input type="text" readonly value="Robert">
+                <span class="edit-name-btn">Edit</span>
+              </div>
+              <div class="form-input-container form-input-container_user-cabinet">
+                <label>CIF / NIF</label>
+                <input type="text" readonly value="112334">
+              </div>
+              <div class="form-input-container form-input-container_user-cabinet">
+                <label>E-mail</label>
+                <input type="text" readonly value="mail@mail.ru">
+                <span class="edit-mail-btn">Edit</span>
+              </div>
+              <div class="form-input-container form-input-container_user-cabinet">
+                <label>Password</label>
+                <input type="password" readonly value="1111111">
+                <span class="edit-psw-btn">Edit</span>
+              </div>
+              <button type="button" class="form-btn exit-user-cab-btn" >Exit</button>  
+              </div>               
+          </form> 
+          <!--==================================== Edit password  -->  
+          <form class="form edit-password">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Редактировать</span> <span class="form-header__text form-header__text_blue">пароль</span></div>
+               <div class="form-header__description">web кабинет зарегистрированного пользователя</div>
+             </div>
+            <div class="form-container form-container_padding">
+              <div class="form-input-container form-input-container_data-change">
+                <label for="new-password">New password</label>
+                <input id="new-password" type="password"  value="111111">
+                <span class="good">Good</span>
+                 <span  class="not-valid">Is not valid</span>
+              </div>
+              <div class="form-input-container form-input-container_data-change">
+                <label for="repeat-password">Repeat</label>
+                <input id="repeat-password" type="password"  value="1111111">
+                <span class="good">Good</span>
+                <span class="not-match">Not match</span>
+              </div>
+              <button type="button" class="form-btn save-date save-date-psw" >Save Data</button> 
+              <button type="button" class="form-btn cancel edit-psw-cancel" >Cancel</button>  
+              </div>        
+          </form> 
+          <!--==================================== Edit mail  --> 
+          <form class="form edit-mail">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Редактировать</span> <span class="form-header__text form-header__text_blue">e-mail</span></div>
+               <div class="form-header__description">web кабинет зарегистрированного пользователя</div>
+             </div>
+            <div class="form-container form-container_padding">
+              <div class="form-input-container form-input-container_data-change">
+                <label for="new-mail">New e-mail</label>
+                <input id="new-mail" type="email"  value="ivan@gmail.com">
+                <span class="good">Good</span>
+                 <span  class="exist">Exist</span>
+                <span  class="not-valid">Is not valid</span>
+              </div>
+              <div class="form-input-container form-input-container_data-change">
+                <label for="repeat-mail">Repeat</label>
+                <input id="repeat-mail" type="email"  value="ivan@gmail.com">
+                <span class="good">Good</span>
+                <span class="not-match">Not match</span>
+              </div>
+              <button type="button" class="form-btn save-date save-date-mail" >Save Data</button> 
+              <button type="button" class="form-btn cancel edit-mail-cancel" >Cancel</button>  
+              </div>        
+          </form> 
+             <!--==================================== Edit Name  --> 
+
+          <form class="form edit-name">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Редактировать</span> <span class="form-header__text form-header__text_blue">Name</span></div>
+               <div class="form-header__description">web кабинет зарегистрированного пользователя</div>
+             </div>
+            <div class="form-container form-container_padding">
+              <div class="form-input-container form-input-container_data-change">
+                <label for="new-name">Name</label>
+                <input id="new-name" type="text"  value="Ivan">
+                <span class="good">Good</span>
+                 <span  class="not-valid">Is not valid</span>
+                  <span  class="exist">Exist</span>
+              </div>
+              <div class="form-input-container form-input-container_data-change">
+                <label for="repeat-name">Repeat</label>
+                <input id="repeat-name" type="text"  value="Ivan">
+                <span class="good">Good</span>
+                <span class="not-match">Not match</span>
+              </div>
+              <button type="button" class="form-btn save-date save-date-name" >Save Data</button> 
+              <button type="button" class="form-btn cancel edit-name-cancel">Cancel</button>  
+              </div>        
+          </form> 
+              <!--==================================== data saved  --> 
+          <div class="form data-saved">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Данные </span> <span class="form-header__text form-header__text_blue">сохранены!</span></div>
+             </div>
+            <button type="button" class="form-btn data-save-btn" >exit</button>      
+          </div>
+
+          <!--==================================== registration  --> 
+          <form class="form user-registration">
+             <div class="form-header">
+               <a href="#"><img src="img/logo-form.png" alt=""></a>
+               <div class="form-header__title">
+               <span class="form-header__text form-header__text_green">Регистрация</span> <span class="form-header__text form-header__text_blue">пользователя</span></div>
+               <div class="form-header__description">web регистрация для нового пользователя</div>
+             </div>
+            <div class="form-container form-container_padding">
+              <div class="form-input-container form-input-container_registration">
+                <label for="reg-name">Name</label>
+                <input id="reg-name" type="text"  value="Robert">
+                <span class="good">Good</span>
+                <span  class="not-valid">Is not valid</span>
+                <span  class="exist">Exist</span>
+
+              </div>
+              <div class="form-input-container form-input-container_registration">
+                <label for="reg-user-id">CIF / NIF</label>
+                <input id="reg-user-id" type="text" value="112334">
+                <span class="good">Good</span>
+                <span  class="not-valid">Is not valid</span>
+                 <span  class="exist">Exist</span>
+              </div>
+              <div class="form-input-container form-input-container_registration">
+                <label for="reg-mail">New e-mail</label>
+                <input id="reg-mail" type="email"  value="ivan@gmail.com">
+                <span class="good">Good</span>
+                <span  class="not-valid">Is not valid</span>
+              </div>
+              <div class="form-input-container form-input-container_registration">
+                <label for="rep-reg-mail">Repeat</label>
+                <input id="rep-reg-mail" type="email"  value="ivan@gmail.com">
+                <span class="good">Good</span>
+                <span  class="not-match">Not match</span>
+              </div>
+              <div class="form-input-container form-input-container_registration">
+                <label for="reg-password">New password</label>
+                <input id="reg-password" type="password"  value="111111">
+                <span class="good">Good</span>
+                <span  class="not-valid">Is not valid</span>
+                <span  class="not-match">Not match</span>
+              </div>
+              <div class="form-input-container form-input-container_registration">
+                <label for="rep-reg-password">Repeat</label>
+                <input id="rep-reg-password" type="password"  value="111111">
+                <span class="good">Good</span>
+                <span  class="not-match">Not match</span>
+              </div>
+              <button type="button" class="form-btn save-reg-btn" >Save</button>  
+              </div>    
+          </form> 
+           <!--==================================== cookies-modal  --> 
+          <div class="cookies-modal">
+             <span class="cookies__accept">Aceptar</span>
+          </div>
+
+           <!--==================================== social  --> 
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li class="twitter" style="background-color: #f0f0f0">
+                <a href="http://www.twitter.com/techandallcom" target="_blank">Twitter</a>
+              </li>
+
+              <li class="facebook" style="background-color: #f0f0f0">
+                <a href="http://www.twitter.com/techandallcom" target="_blank">Facebook</a>
+              </li>
+
+              <li class="youtube" style="background-color: #f0f0f0">
+                <a href="http://www.twitter.com/techandallcom" target="_blank">YouTube</a>
+              </li>
+
+              <li class="googleplus" style="background-color: #f0f0f0">
+                <a href="http://www.twitter.com/techandallcom" target="_blank">Google +r</a>
+              </li>
+
+              <li class="pinterest" style="background-color: #f0f0f0">
+                <a href="http://www.twitter.com/techandallcom" target="_blank">Pinterest</a>
+              </li>
+
+              <li class="paypal" style="background-color: #f0f0f0">
+                <a href="http://www.twitter.com/techandallcom" target="_blank">Paypal</a>
+              </li>
+
+              <li class="linkedin" style="background-color: #f0f0f0">
+                <a href="http://www.twitter.com/techandallcom" target="_blank">LinkedIN</a>
+              </li>
+
+              <li class="flickr" style="background-color: #f0f0f0">
+                <a href="http://www.twitter.com/techandallcom" target="_blank">Flickrr</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cookies">
+            Esta web utiliza cookies. Al navegar en esta página, aceptas el uso que hacemos de las cookies. <span class="cookies__accept">Aceptar</span><span class="cookies__read">Leer más</span>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="wrapper footer-wrapper">
+            <a href="#" class="logo-footer"><img src="img/logo-footer.png" alt=""></a>
+
+            <div class="footer-copy">
+              © Adonaire.com<br>
+              Tots els derts reservats
+            </div>
+
+            <div class="footer-adress">
+              <div class="footer-adress__title">
+                <img src="img/marker.png" alt="">
+                SEDE CENTRAL
+              </div>
+              <div class="footer-adress__text">
+                C/ Pontevedra, 21 98000 Barcelona<br> 
+                Tel. 93 000 00 00
+              </div>
+            </div>
+            <div class="works-hours">
+              <div class="works-hours__title">
+                <img src="img/calendar.png" alt="">
+                HORARIO ATENCIÓN
+              </div>
+              <div class="works-hours__text">
+                Telefónica: 8:00 a 14:00 y de 15:30 a 19:30<br>
+                Personal: 9:00 a 13:30 y de 15:30 a 18:30<br>
+                (desde 1 de Julio a 15 de Septiembre sólo por las mañanas)  
+              </div>       
+            </div>
+          </div>
+        </footer>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/js-form.js"></script>
+      <script src="js/script.js"></script>
+      </body>
+    </html>
+    
