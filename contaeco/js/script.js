@@ -7,27 +7,110 @@ $(document).ready(function() {
 	
 		var flagMail = true;
 		var flagUserId = true;
-	function FormValidation() {
-		
 
-		/*Валидация емейла*/
-		this.validationMail = function(input, messageError,objclassError, otherInput) {
-			$(input).blur(function() {
+		var flagInput1 = true;
+		var flagInput2 = true;
+
+	function FormValidation() {
+
+		this.validValTwoinput = function(input1, input2, messageError,objclassError, otherInput, btn, pattern1, pattern2) {
+
+		
+		
+		var validVal1 =	function() {
+				if($(input1).val() != '') {
+					if(pattern1.test($(input1).val())){
+						flagInput1 = true;
+						if(flagInput2) {
+							$(messageError).removeClass(objclassError.messageErrorClass);
+							$(input1).removeClass(objclassError.inputClass);
+							$(input2).removeClass(objclassError.inputClass);
+							$(otherInput).removeClass(objclassError.inputClass);
+
+						}
+								
+					} 
+					else {						
+						$(messageError).addClass(objclassError.messageErrorClass);
+						$(input1).addClass(objclassError.inputClass);
+						$(input2).addClass(objclassError.inputClass);
+						$(otherInput).addClass(objclassError.inputClass);
+						flagInput1 = false;
+					}
+				}
+				else {
+						
+					$(messageError).addClass(objclassError.messageErrorClass);
+					$(input1).addClass(objclassError.inputClass);
+					$(input2).addClass(objclassError.inputClass);
+					$(otherInput).addClass(objclassError.inputClass);
+					flagInput1 = false;
+				}
+
+
+			}
+			$(input1).on('keyup', validVal1);
+			$(btn).on('click', validVal1);
+
+
+
+			var validVal2 =	function() {
+					if($(input2).val() != '') {
+						if(pattern2.test($(input2).val())){
+							flagInput2 = true;
+							if(flagInput1) {
+								$(messageError).removeClass(objclassError.messageErrorClass);
+								$(input1).removeClass(objclassError.inputClass);
+								$(input2).removeClass(objclassError.inputClass);
+								$(otherInput).removeClass(objclassError.inputClass);
+
+							}
+									
+						} 
+						else {						
+							$(messageError).addClass(objclassError.messageErrorClass);
+							$(input1).addClass(objclassError.inputClass);
+							$(input2).addClass(objclassError.inputClass);
+							$(otherInput).addClass(objclassError.inputClass);
+							flagInput2 = false;
+						}
+					}
+					else {
+							
+						$(messageError).addClass(objclassError.messageErrorClass);
+						$(input1).addClass(objclassError.inputClass);
+						$(input2).addClass(objclassError.inputClass);
+						$(otherInput).addClass(objclassError.inputClass);
+						flagInput2 = false;
+					}				
+
+
+				}
+			$(input2).on('keyup', validVal2);
+			$(btn).on('click', validVal2);
+			
+		}
+
+	/*		/*Валидация емейла*/
+		/*this.validationMail = function(input, messageError,objclassError, otherInput, btn) {
+
+			
+
+		var validMail =	function() {
 				var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-				if($(this).val() != '') {
+				if($(input).val() != '') {
 					if(pattern.test($(this).val())){
 						flagMail = true;
 						if(flagUserId) {
 							$(messageError).removeClass(objclassError.messageErrorClass);
-							$(this).removeClass(objclassError.inputClass);
+							$(input).removeClass(objclassError.inputClass);
 							$(otherInput).removeClass(objclassError.inputClass);
 						}
 								
 					} 
-					else {
-						
+					else {						
 						$(messageError).addClass(objclassError.messageErrorClass);
-						$(this).addClass(objclassError.inputClass);
+						$(input).addClass(objclassError.inputClass);
 						$(otherInput).addClass(objclassError.inputClass);
 						flagMail = false;
 					}
@@ -35,23 +118,29 @@ $(document).ready(function() {
 				else {
 						
 					$(messageError).addClass(objclassError.messageErrorClass);
-					$(this).addClass(objclassError.inputClass);
+					$(input).addClass(objclassError.inputClass);
 					$(otherInput).addClass(objclassError.inputClass);
+					flagMail = false;
 				}
 
+				
 
-			});
+
+			}
+			$(input).on('keyup', validMail);
+			$(btn).on('click', validMail);
+			
 		}
-		/*Валидация id пользователя на ввод только чисел*/
-		this.validationID = function(input, messageError,objclassError, otherInput) {
-			$(input).blur(function() {
+		Валидация id пользователя на ввод только чисел
+		this.validationID = function(input, messageError, objclassError, otherInput, btn) {
+		var ValidID =	function() {
 				var pattern = /^\d+$/;
-				if($(this).val() != '') {
+				if($(input).val() != '') {
 					if(pattern.test($(this).val())){
 						flagUserId = true;
 						if(flagMail) { 
 							$(messageError).removeClass(objclassError.messageErrorClass);
-							$(this).removeClass(objclassError.inputClass);
+							$(input).removeClass(objclassError.inputClass);
 							$(otherInput).removeClass(objclassError.inputClass);
 						}
 						
@@ -62,67 +151,78 @@ $(document).ready(function() {
 					else {
 						
 						$(messageError).addClass(objclassError.messageErrorClass);
-						$(this).addClass(objclassError.inputClass);
+						$(input).addClass(objclassError.inputClass);
 						$(otherInput).addClass(objclassError.inputClass);
 						flagUserId = false;
+
+
 					}
 				} 
 
 				else {
 										
 					$(messageError).addClass(objclassError.messageErrorClass);
-					$(this).addClass(objclassError.inputClass);
+					$(input).addClass(objclassError.inputClass);
 					$(otherInput).addClass(objclassError.inputClass);
 					flagUserId = false;
+	
 				}
-			});
+			}
+
+			$(input).on('keyup', ValidID );
+			$(btn).on('click', ValidID );
 		}
 
+*/
 
-
-		this.regValidation = function(input, messageError, messageGood, messageShow, objClassInput, pattern) {
-			$(input).blur(function() {
+		this.regValidation = function(input, messageError, messageGood, messageShow, objClassInput, pattern, btn) {
+			
+			var validation = function() {
 					
 				
-				if($(this).val() != '') {
-					if(pattern.test($(this).val())){
-						$(this).parent().find(messageError).removeClass(messageShow);
-						$(this).removeClass(objClassInput.objError);
-						$(this).addClass(objClassInput.objGood);
-						$(this).parent().find(messageGood).addClass(messageShow);
-											
+				if($(input).val() != '') {
+					if(pattern.test($(input).val())){
+						$(input).parent().find(messageError).removeClass(messageShow);
+						$(input).removeClass(objClassInput.objError);
+						$(input).addClass(objClassInput.objGood);
+						$(input).parent().find(messageGood).addClass(messageShow);
+						
 					} 
 					else {
-						
-						$(this).parent().find(messageError).addClass(messageShow);
-						$(this).addClass(objClassInput.objError);
-						$(this).removeClass(objClassInput.objGood);
-						$(this).parent().find(messageGood).removeClass(messageShow);
-											
+
+						$(input).parent().find(messageError).addClass(messageShow);
+						$(input).addClass(objClassInput.objError);
+						$(input).removeClass(objClassInput.objGood);
+						$(input).parent().find(messageGood).removeClass(messageShow);
+													
 					}
 				}
 				else {
-						
-						$(this).parent().find(messageError).addClass(messageShow);
-						$(this).addClass(objClassInput.objError);
-						$(this).removeClass(objClassInput.objGood);
-						$(this).parent().find(messageGood).removeClass(messageShow);
+
+						$(input).parent().find(messageError).addClass(messageShow);
+						$(input).addClass(objClassInput.objError);
+						$(input).removeClass(objClassInput.objGood);
+						$(input).parent().find(messageGood).removeClass(messageShow);
 											
 				}
 
 
-			});
+			};
+
+
+			$(input).on('keyup', validation);
+			$(btn).on('click', validation);
 		}
 
-		this.matchValue = function(input1, input2) {
+		this.matchValue = function(input1, input2, btn) {
 
-				$(input1).blur(function() {
-
-					if($(input1).val() == $(input2).val()) {
-					$(input2).parent().find('.not-match').removeClass('show');
-					$(input2).parent().find('.good').addClass('show');
-					$(input2).addClass('input-good');
-					$(input2).removeClass('input-error');
+			var	matchFirst = function() {
+					if($(input1).val() != '' && $(input1).val() == $(input2).val()) {
+						$(input2).parent().find('.not-match').removeClass('show');
+						$(input2).parent().find('.good').addClass('show');
+						$(input2).addClass('input-good');
+						$(input2).removeClass('input-error');			
+	
 					
 					}
 				else {
@@ -130,19 +230,23 @@ $(document).ready(function() {
 						$(input2).parent().find('.good').removeClass('show');
 						$(input2).removeClass('input-good');
 						$(input2).addClass('input-error');
-				}	
-
-				});
+	
 
 
+					}	
 
-				$(input2).blur(function() {
+			}
+			$(input1).on('keyup', matchFirst); 
+			$(btn).on('click', matchFirst); 			
 
-					if($(input1).val() == $(input2).val()) {
+			var matchSecond = function() {
+
+					if($(input2).val() != '' && $(input1).val() == $(input2).val()) {
 					$(input2).parent().find('.not-match').removeClass('show');
 					$(input2).parent().find('.good').addClass('show');
 					$(input2).addClass('input-good');
 					$(input2).removeClass('input-error');
+
 				
 
 
@@ -153,12 +257,19 @@ $(document).ready(function() {
 						$(input2).parent().find('.good').removeClass('show');
 						$(input2).removeClass('input-good');
 						$(input2).addClass('input-error');
+
 				}	
 
-				});
+				}
+				$(input2).on('keyup', matchSecond); 
+				$(btn).on('click', matchSecond); 
 				
 
 		}
+
+
+
+
 
 					
 
@@ -170,39 +281,41 @@ $(document).ready(function() {
 
 	/*проверка  имени при регистрации на правильность ввода*/
 	var regPswValid = new FormValidation();
-	regPswValid.regValidation('#reg-name', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternName);
+	regPswValid.regValidation('#reg-name', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternName, '.save-reg-btn');
 
 	/*проверка  id пользователя при регистрации на правильность ввода*/
 	var regPswValid = new FormValidation();
-	regPswValid.regValidation('#reg-user-id', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternNum);
+	regPswValid.regValidation('#reg-user-id', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternNum, '.save-reg-btn');
 
 	/*проверка  мейл при регистрации на правильность ввода*/
 	var regMailValid = new FormValidation();
-	regMailValid.regValidation('#reg-mail', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternMail);
+	regMailValid.regValidation('#reg-mail', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternMail, '.save-reg-btn');
 
 	/*проверка  пароля при регистрации на правильность ввода*/
 	var regPswValid = new FormValidation();
-	regPswValid.regValidation('#reg-password', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternPsw);
+	regPswValid.regValidation('#reg-password', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternPsw, '.save-reg-btn');
 
 	/*проверка совпадения мейл при регистрации*/
 	var mailRegMatch = new FormValidation();
-	mailRegMatch.matchValue('#reg-mail', '#rep-reg-mail');
+	mailRegMatch.matchValue('#reg-mail', '#rep-reg-mail', '.save-reg-btn');
+
 	/*проверка совпадения пароля при регистрации*/
 	var pswRegMatch = new FormValidation();
-	pswRegMatch. matchValue('#reg-password', '#rep-reg-password');
+	pswRegMatch. matchValue('#reg-password', '#rep-reg-password', '.save-reg-btn');
 
 	
 	/*Валидация id пользователя и мейла восстановления пароля*/
 	var recoverPswMail = new FormValidation();
-	recoverPswMail.validationMail('#mail-recover', '.wrong-recover', {messageErrorClass:'show', inputClass:'input-error'}, '#user-id-recover');
+	recoverPswMail.validValTwoinput('#mail-recover', '#user-id-recover',  '.wrong-recover', {messageErrorClass:'show', inputClass:'input-error'}, '#user-id-recover', '.save-recover', patternMail, patternNum);
 
-	var recoverPswId = new FormValidation();
-	recoverPswId.validationID('#user-id-recover', '.wrong-recover', {messageErrorClass:'show', inputClass:'input-error'}, '#mail-recover');
+	/*var recoverPswId = new FormValidation();
+	recoverPswId.validationID('#user-id-recover', '.wrong-recover', {messageErrorClass:'show', inputClass:'input-error'}, '#mail-recover', '.save-recover');*/
 
 
-	/*Валидация Id пользователя при входе*/
-	var recoverSignInId = new FormValidation();
-	recoverSignInId.validationID('#user-id-sign-in', '.wrong-sign-in', {messageErrorClass:'show', inputClass:'input-error'}, '#psw-sign-in');
+	/*Валидация Id пользователя и пароля при входе*/
+	var SignInId = new FormValidation();
+
+	SignInId.validValTwoinput('#user-id-sign-in', '#psw-sign-in', '.wrong-sign-in', {messageErrorClass:'show', inputClass:'input-error'}, '#psw-sign-in', '.save-sign-in', patternNum, patternPsw);
 
 
 
@@ -233,7 +346,28 @@ function Modal() {
 		});
 	}
 
+
+
+	this.formValidAndNext = function (formName, errorName, btn, nextModal) {
+					
+				 $(btn).on('click', function() {
+				 	if(!$(formName).find(errorName).is(':visible') && $(formName).find('input').val != '') {
+				 		$(formName).fadeOut(function() {
+							$(nextModal).fadeIn();
+					});	
+				 	}
+					
+
+				});
+
+			
+		}
+
 }
+
+
+
+
 /*переход к авторизации*/
 var signIn = new Modal();
 signIn.nextModal('.sign-in-btn', '.form-index', '.form-sign-in');
@@ -243,7 +377,7 @@ recoverPsw.nextModal('.form__recovery-btn', '.form-sign-in', '.form-recover');
 
 /*переход от восстановления пароля к сообщению*/
 var recoverPswMessage = new Modal();
-recoverPswMessage.nextModal('.save-recover', '.form-recover', '.data-sent');
+recoverPswMessage.formValidAndNext('.form-recover', '.error', '.save-recover',  '.data-sent');
 
 /*переход к регистрации*/
 var registration = new Modal();
@@ -268,11 +402,11 @@ editNameCancel.nextModal('.edit-name-cancel', '.edit-name', '.user-cabinet');
 
 /*проверка  имени при смене на правильность ввода*/
 var NameValid = new FormValidation();
-NameValid.regValidation('#new-name', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternName);
+NameValid.regValidation('#new-name', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternName, '.save-date-name');
 
 /*проверка совпадения имени при смене*/
 var NameMatch = new FormValidation();
-	NameMatch. matchValue('#new-name', '#repeat-name');
+	NameMatch. matchValue('#new-name', '#repeat-name', '.save-date-name');
 
 
 /*переход к изменению почты*/
@@ -284,11 +418,11 @@ editMailCancel.nextModal('.edit-mail-cancel', '.edit-mail', '.user-cabinet');
 
 /*проверка  почты при смене на правильность ввода*/
 var mailValid = new FormValidation();
-mailValid.regValidation('#new-mail', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternMail);
+mailValid.regValidation('#new-mail', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternMail,'.save-date-mail');
 
 /*проверка совпадения почты при смене*/
 var mailMatch = new FormValidation();
-	mailMatch. matchValue('#new-mail', '#repeat-mail');	
+	mailMatch. matchValue('#new-mail', '#repeat-mail','.save-date-mail');	
 
 
 
@@ -302,11 +436,11 @@ editPswCancel.nextModal('.edit-psw-cancel', '.edit-password', '.user-cabinet');
 
 /*проверка  пароля при смене на правильность ввода*/
 var pswValid = new FormValidation();
-pswValid.regValidation('#new-password', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternPsw);
+pswValid.regValidation('#new-password', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternPsw, '.save-date-psw');
 
 /*проверка совпадения пароля при смене*/
 var pswMatch = new FormValidation();
-	pswMatch. matchValue('#new-password', '#repeat-password');		
+	pswMatch. matchValue('#new-password', '#repeat-password', '.save-date-psw');		
 
 
 /*выход из кабинета*/
@@ -324,24 +458,24 @@ dataSent.nextModal('.data-sent-btn', '.data-sent', '.form-index');
 
 /*переход в личный кабинет при авторизации*/
 var authorization = new Modal();
-authorization.nextModal('.save-sign-in', '.form-sign-in', '.user-cabinet');
+authorization.formValidAndNext('.form-sign-in', '.error', '.save-sign-in',  '.user-cabinet');
 
 
 /*переход к оповещению что данные изменены пароль*/
 var savePsw = new Modal();
-savePsw.nextModal('.save-date-psw', '.edit-password', '.data-saved');
+savePsw.formValidAndNext('.edit-password', '.error', '.save-date-psw', '.data-saved');
 
 /*переход к оповещению что данные изменены имя*/
 var saveName = new Modal();
-saveName.nextModal('.save-date-name', '.edit-name', '.data-saved');
+saveName.formValidAndNext('.edit-name', '.error', '.save-date-name', '.data-saved');
 /*переход к оповещению что данные изменены почта*/
 var saveMail = new Modal();
-saveMail.nextModal('.save-date-mail', '.edit-mail', '.data-saved');
+saveMail.formValidAndNext('.edit-mail', '.error', '.save-date-mail',  '.data-saved');
 
 
 /*переход к авторизации после регистрации*/
 var saveMail = new Modal();
-saveMail.nextModal('.save-reg-btn', '.user-registration', '.form-index');
+saveMail.formValidAndNext('.user-registration', '.error', '.save-reg-btn', '.form-index');
 
 });
 
