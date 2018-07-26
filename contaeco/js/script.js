@@ -281,19 +281,19 @@ $(document).ready(function() {
 
 	/*проверка  имени при регистрации на правильность ввода*/
 	var regPswValid = new FormValidation();
-	regPswValid.regValidation('#reg-name', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternName, '.save-reg-btn');
+	regPswValid.regValidation('#reg-name', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error'}, patternName, '.save-reg-btn');
 
 	/*проверка  id пользователя при регистрации на правильность ввода*/
 	var regPswValid = new FormValidation();
-	regPswValid.regValidation('#reg-user-id', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternNum, '.save-reg-btn');
+	regPswValid.regValidation('#reg-user-id', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error'}, patternNum, '.save-reg-btn');
 
 	/*проверка  мейл при регистрации на правильность ввода*/
 	var regMailValid = new FormValidation();
-	regMailValid.regValidation('#reg-mail', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternMail, '.save-reg-btn');
+	regMailValid.regValidation('#reg-mail', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error'}, patternMail, '.save-reg-btn');
 
 	/*проверка  пароля при регистрации на правильность ввода*/
 	var regPswValid = new FormValidation();
-	regPswValid.regValidation('#reg-password', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternPsw, '.save-reg-btn');
+	regPswValid.regValidation('#reg-password', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error'}, patternPsw, '.save-reg-btn');
 
 	/*проверка совпадения мейл при регистрации*/
 	var mailRegMatch = new FormValidation();
@@ -402,7 +402,7 @@ editNameCancel.nextModal('.edit-name-cancel', '.edit-name', '.user-cabinet');
 
 /*проверка  имени при смене на правильность ввода*/
 var NameValid = new FormValidation();
-NameValid.regValidation('#new-name', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternName, '.save-date-name');
+NameValid.regValidation('#new-name', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error'}, patternName, '.save-date-name');
 
 /*проверка совпадения имени при смене*/
 var NameMatch = new FormValidation();
@@ -418,7 +418,7 @@ editMailCancel.nextModal('.edit-mail-cancel', '.edit-mail', '.user-cabinet');
 
 /*проверка  почты при смене на правильность ввода*/
 var mailValid = new FormValidation();
-mailValid.regValidation('#new-mail', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternMail,'.save-date-mail');
+mailValid.regValidation('#new-mail', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error'}, patternMail,'.save-date-mail');
 
 /*проверка совпадения почты при смене*/
 var mailMatch = new FormValidation();
@@ -436,7 +436,7 @@ editPswCancel.nextModal('.edit-psw-cancel', '.edit-password', '.user-cabinet');
 
 /*проверка  пароля при смене на правильность ввода*/
 var pswValid = new FormValidation();
-pswValid.regValidation('#new-password', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error_border-red'}, patternPsw, '.save-date-psw');
+pswValid.regValidation('#new-password', '.not-valid', '.good', 'show', {objGood: 'input-good', objError: 'input-error'}, patternPsw, '.save-date-psw');
 
 /*проверка совпадения пароля при смене*/
 var pswMatch = new FormValidation();
