@@ -81,9 +81,6 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  /* 	.lg-block({
-	align-items: flex-start;
-}); */
 }
 
 .form-wrapper {
@@ -613,8 +610,25 @@ body {
   color: #666;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .container {
-    /* 	padding-top: 100px; */
+    min-width: 900px;
+  }
+
+  .wrapper {
+    min-width: 800px;
+    width: 800px;
+  }
+
+  .description__title {
+    font-size: 30px;
+  }
+
+  .form-header__text {
+    font-size: 20px;
+  }
+
+  .form-header__description {
+    font-size: 13px;
   }
 }
