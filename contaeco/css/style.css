@@ -631,4 +631,12 @@ body {
   .form-header__description {
     font-size: 13px;
   }
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .footer-copy {
+    margin-left: 3%;
+  }
 }
