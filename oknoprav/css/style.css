@@ -331,6 +331,14 @@ header .angle {
   width: calc(33.333333333333336% - 20px);
 }
 
+.first-form .form-title {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .first-form input {
   display: block;
   width: 250px;
