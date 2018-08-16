@@ -31,6 +31,18 @@ header {
   z-index: 99;
 }
 
+header .row {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 90px;
+}
+
 header .angle {
   width: 0;
   height: 0;
@@ -66,15 +78,6 @@ header .angle {
   flex-wrap: wrap;
   margin-left: -10px;
   margin-right: -10px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-height: 90px;
 }
 
 .btn-menu {
@@ -240,18 +243,34 @@ header .angle {
 .phones {
   font-family: "Play";
   z-index: 5;
+  text-align: center;
 }
 
 .phones a {
-  display: block;
   color: #fff;
   text-decoration: none;
   margin-bottom: 5px;
   font-size: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.phones a img {
+  width: 18px;
+  height: 18px;
 }
 
 .phones img {
-  vertical-align: top;
   margin-right: 5px;
 }
 
@@ -259,6 +278,23 @@ header .angle {
   color: #fff;
   text-align: center;
   font-size: 14px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.phones .work-hours img {
+  width: 13px;
+  height: 13px;
 }
 
 /* end header */
@@ -392,6 +428,14 @@ h2 {
 }
 
 .services h2 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: -webkit-calc(33.333333333333336% - 20px);
+  width: calc(33.333333333333336% - 20px);
+  white-space: nowrap;
   text-align: center;
 }
 
@@ -509,8 +553,6 @@ h2 {
   margin-right: 10px;
   width: -webkit-calc(33.333333333333336% - 20px);
   width: calc(33.333333333333336% - 20px);
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(14, 14, 14, 0.5);
-  box-shadow: 0px 3px 5px 0px rgba(14, 14, 14, 0.5);
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -522,6 +564,8 @@ h2 {
 
 .works-item img {
   max-width: 100%;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(14, 14, 14, 0.5);
+  box-shadow: 0px 3px 5px 0px rgba(14, 14, 14, 0.5);
 }
 
 .works .add-services {
@@ -674,7 +718,8 @@ footer {
   }
 
   .services h2 {
-    margin: 0 auto;
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
   }
 
   .services-item {
@@ -683,7 +728,7 @@ footer {
   }
 
   .price h2 {
-    margin: 0 auto;
+    margin: 0 auto 35px;
   }
 
   .price .row {
@@ -705,7 +750,7 @@ footer {
   }
 
   .works h2 {
-    margin: 0 auto;
+    margin: 0 auto 35px;
   }
 
   .contact-item {
@@ -751,6 +796,11 @@ footer {
   }
 
   .offer {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+  }
+
+  .services h2 {
     margin-left: 7.5px;
     margin-right: 7.5px;
   }
