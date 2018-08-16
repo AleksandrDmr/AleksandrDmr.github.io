@@ -40,6 +40,14 @@ $(document).ready(function() {
     	type: 'image'
     });
 
+    $('#top-form').validate({
+    	rules: {
+    		name_first_form: {
+    			required: true
+    		}
+    	}
+    });
+
 });
 
 
