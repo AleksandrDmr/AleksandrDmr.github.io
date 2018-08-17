@@ -1,10 +1,4 @@
-@font-face {
-  font-family: 'Play';
-  src: url('../css/Play-Regular.eot');
-  src: url('../css/Play-Regular.eot?#iefix') format('embedded-opentype'), url('../css/Play-Regular.woff2') format('woff2'), url('../css/Play-Regular.woff') format('woff'), url('../css/Play-Regular.ttf') format('truetype'), url('../css/Play-Regular.svg#Play-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 * {
   margin: 0;
@@ -12,7 +6,7 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .header-container {
@@ -144,8 +138,12 @@ header .angle {
 
 .logo {
   z-index: 999;
-  width: 216px;
+  width: 250px;
   height: 42px;
+}
+
+.menu {
+  width: 45%;
 }
 
 .menu ul {
@@ -154,10 +152,14 @@ header .angle {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .menu li {
-  margin-left: 10px;
+  /* 	margin-left: 25px; */
 }
 
 .menu li:first-child {
@@ -555,7 +557,7 @@ h2 {
 }
 
 .works .add-services {
-  margin: 0 auto;
+  margin: 20px auto 0;
   text-align: center;
   font-size: 32px;
 }
