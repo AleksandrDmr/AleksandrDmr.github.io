@@ -158,14 +158,6 @@ header .angle {
   justify-content: space-between;
 }
 
-.menu li {
-  /* 	margin-left: 25px; */
-}
-
-.menu li:first-child {
-  margin-left: 0;
-}
-
 .menu a {
   color: #fff;
   text-decoration: none;
@@ -243,7 +235,6 @@ header .angle {
 }
 
 .phones {
-  font-family: "Play";
   z-index: 5;
   text-align: center;
 }
@@ -324,6 +315,7 @@ header .angle {
   box-shadow: 0px 3px 46px 0px rgba(0, 0, 0, 0.4);
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -349,12 +341,12 @@ header .angle {
   box-sizing: border-box;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(14, 14, 14, 0.3);
+  box-shadow: 0px 3px 5px 0px rgba(14, 14, 14, 0.3);
   outline: none;
   font-size: 16px;
   border: none;
   margin: 12px auto 0;
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(14, 14, 14, 0.3);
-  box-shadow: 0px 3px 5px 0px rgba(14, 14, 14, 0.3);
 }
 
 .first-form button {
@@ -495,10 +487,15 @@ h2 {
   margin-top: 35px;
 }
 
+.price .second-form .error-message {
+  bottom: 10px;
+}
+
 .price .second-form .form-title {
   font-size: 32px;
   text-align: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  position: relative;
 }
 
 .price .second-form input,
@@ -612,6 +609,59 @@ footer {
 .contact-item img {
   width: 91px;
   height: 91px;
+}
+
+input.error {
+  border: 1px solid #e74c3c !important;
+}
+
+.error-message {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #e74c3c;
+  text-align: center;
+  bottom: 30px;
+  font-size: 12px;
+  z-index: 99;
+  font-weight: bold;
+}
+
+.succes-modal {
+  max-width: 400px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  padding: 40px 30px;
+  position: relative;
+  line-height: 1.5;
+  background: #ecf0f1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.succes-modal .close-modal {
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  background: #222f3e;
+  border: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: background .2s;
+  -o-transition: background .2s;
+  transition: background .2s;
+  color: #ecf0f1;
+}
+
+.succes-modal img {
+  display: block;
+  margin: 0 auto 15px;
 }
 
 @media screen and (max-width: 1040px) {
