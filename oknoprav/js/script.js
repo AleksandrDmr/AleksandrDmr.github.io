@@ -40,13 +40,69 @@ $(document).ready(function() {
     	type: 'image'
     });
 
-    $('#top-form').validate({
+    $('.first-form').validate({
     	rules: {
     		name_first_form: {
-    			required: true
+    			required: true,
+
+    		},
+
+    		phone_first_form: {
+    			required: true,
+    			digits: true,
+    			minlength: 11
     		}
+    	}, 
+    	invalidHandler: function(event, validator){
+
+    			$('.first-form .error-message').text('Пожалуйста, введите корректные данные!');   		
+    					
+    	},
+    	onkeyup: function(element) {
+    		$('.first-form .error-message').text('');
+    	},
+
+    	errorPlacement: function(error, element) {
+    		return true;
     	}
     });
+
+
+
+
+    $('.second-form').validate({
+    	rules: {
+    		name_second_form: {
+    			required: true,
+
+    		},
+
+    		phone_second_form: {
+    			required: true,
+    			digits: true,
+    			minlength: 11
+    		},
+    		mail_second_form: {
+    			required: true,
+    			email: true
+    		}
+    	}, 
+    	invalidHandler: function(event, validator){
+
+    		$('.second-form .error-message').text('Пожалуйста, введите корректные данные!');
+
+    	},
+    	onkeyup: function(element) {
+    		$('.second-form .error-message').text('');
+    	},
+
+    	errorPlacement: function(error, element) {
+    		return true;
+    	}
+    });
+
+
+
 
 });
 
