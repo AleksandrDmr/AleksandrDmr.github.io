@@ -1,6 +1,6 @@
   <!DOCTYPE html>
   <html lang="ru">
-     <head>
+    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device_width, initial-scale=1">
@@ -36,7 +36,7 @@
             </a>
              <nav class="menu nav" >
                <ul>
-                 <li><a href="#our-services"> Наши услуги</a></li>
+                 <li><a href="#our-services">Наши услуги</a></li>
                  <li><a href="#our-price">Прайс</a></li>
                  <li><a href="#our-works">Наши работы </a></li>
                  <li><a href="#our-contacts">Контакты</a></li>
@@ -51,9 +51,6 @@
              </div>
            </div>
          </div>
-       <!--   <div class="decorate">
-         <div class="decorate-angle"></div>
-       </div> -->
          <div class="angle"></div>
        </header>
      </div>
@@ -62,9 +59,11 @@
           <div class="row">
             <form action="mail/mail.php" method="POST" class="first-form">
               <div class="form-title">Оставьте заявку</div>
-              <input type="text" name="name_first-form" placeholder="Имя" >
-              <input type="tel" name="phone_first-form" placeholder="Телефон" >
+              <input type="text" name="name_first_form" placeholder="Имя" required>
+              <input type="tel" name="phone_first_form" placeholder="Телефон" required>
+              <input type="hidden" name="flag_first_form" value="1">
               <button>Отправить</button>
+              <div class="error-message"></div>
             </form>
             <div class="offer">
               <h1><strong>Ремонт пластиковых окон</strong><br>в Перми и Пермском крае</h1>
@@ -160,11 +159,13 @@
           </div>
          
             <form action="mail/mail.php" class="second-form">
-               <div class="form-title">Оставьте заявку на сайте</div>
+               <div class="form-title">Оставьте заявку на сайте
+                <div class="error-message"></div>
+               </div>
               <div class="row">              
-                <input type="text" placeholder="Имя" required>
-                <input type="tel" placeholder="Телефон" required>
-                <input type="mail" placeholder="E-mail" required>
+                <input type="text" name="name_second_form" placeholder="Имя" required>
+                <input type="tel" name="phone_second_form" placeholder="Телефон" required>
+                <input type="mail" name="mail_second_form" placeholder="E-mail" required>
                 <button>Отправить</button>
               </div>
             </form>
@@ -196,14 +197,14 @@
            
          </div>
          <div class="row">
-           <div class="add-services">Также мы устанавливаем <span class="blue-text">натяжные потолки </span><br>
-          и <span class="blue-text">входные двери </span>  
+           <div class="add-services">Также мы устанавливаем <span class="blue-text">натяжные потолки</span>,<br>
+           <span class="blue-text">входные</span> и  <span class="blue-text">металлические двери</span>  
           </div>
          </div>
        </div>
       </section>
       <footer id="our-contacts">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8abce479fa3b8859c9c507e8d39bf72ec4ff96ead808c10689c170027f816ba7&amp;width=100%25&amp;height=355&amp;lang=ru_RU&amp;scroll=false"></script>
+       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8abce479fa3b8859c9c507e8d39bf72ec4ff96ead808c10689c170027f816ba7&amp;width=100%25&amp;height=355&amp;lang=ru_RU&amp;scroll=false"></script>
         <div class="footer-contacts">
           <div class="wrapper">
             <div class="row">
@@ -219,18 +220,17 @@
                 </div>
                 <div class="contact-item">
                   <img src="img/mail.png" alt="">
-                  <a href="">74957419805@mail.ru</a>
+                  <a href="">zakaz@oknoprav.ru</a>
                 </div>
               </div>
             </div>
           </div>
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
       <script src="js/jquery.magnific-popup.min.js"></script>
       <script src="js/jquery.validate.min.js"></script>
+      <script src="js/common.js"></script>
       <script src="js/script.js"></script>
-      <script src="js/commosn.js"></script>
     </body>
   </html>
   
