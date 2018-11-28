@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /fonts/
+Allow: /js/
+Allow: /css/
+Allow: /img/
+Sitemap: http://kaluga-medspravki.ru/sitemap.xml
