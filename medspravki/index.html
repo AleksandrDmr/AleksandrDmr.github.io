@@ -163,9 +163,9 @@
                                height: 100%;
 
                              }
-                              .video:hover:after {
-                              background-image: url(img/youtube-hover.png);
-                            }
+                          /*     .video:hover:after {
+                          background-image: url(img/youtube-hover.png);
+                                                      } */
                              
                              @media screen and (max-width: 900px){
                                 .video {
@@ -593,7 +593,7 @@ setTimeout(chatView, 15000);
           }
           
           iframe = `
-            <iframe class="promo-video__frame" src="https://www.youtube.com/embed/IIH-_F3-aU4" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+            <iframe class="promo-video__frame" src="https://www.youtube.com/embed/IIH-_F3-aU4" autoplay; encrypted-media" allowfullscreen ></iframe> 
           `;
           this.cont.innerHTML = iframe;
         });
@@ -610,3 +610,4 @@ setTimeout(chatView, 15000);
 <script type="text/javascript" src="js/common.js"></script>
  </body>
 </html>
+
