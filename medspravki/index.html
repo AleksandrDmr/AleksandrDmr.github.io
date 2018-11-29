@@ -129,7 +129,45 @@
                     <div class="vgr vgr_3"><img src="img/vgr3.png" alt="img"></div>
                     <div class="vgr vgr_4"><img src="img/vgr4.png" alt="img"></div>
                     <div class="promo-video">
-                       <iframe class="promo-video__frame" src="https://www.youtube.com/embed/IIH-_F3-aU4"></iframe> 
+                         <div class="video"></div>
+                         <style>
+                             .video {
+                               display: block;
+                               position: relative;
+                               background-color: tomato;
+                               margin: 0;
+                               padding: 0;
+                               cursor: pointer;
+                               width: 560px;
+                               height: 315px;
+                             }
+                             .video iframe {
+                               display: block;
+                               margin: 0;
+                               padding: 0;
+                             }
+                             .video_load:after {
+                               display: none !important;
+                             }
+                             .video:after {
+                               content: '';
+                               display: block;
+                               position: absolute;
+                               background-image: url();
+                               background-position: center center;
+                               background-repeat: no-repeat;
+                               top: 0;
+                               left: 0;
+                               width: 100%;
+                               height: 100%;
+                             }
+                             .video:hover:after {
+                               background-image: url();
+                             }
+                           </style>
+
+                           
+                     <!--   <iframe class="promo-video__frame" src="https://www.youtube.com/embed/IIH-_F3-aU4" allow="autoplay; encrypted-media" allowfullscreen></iframe>  -->
                           
                     </div>
                 </div>
@@ -479,6 +517,20 @@
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script> -->
 <!-- {/literal} END JIVOSITE CODE -->
 <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script>
+    function videoLoader(block, video) {
+      block.click(function() {
+        if (block.hasClass('video_load')) {
+          return false;
+        }
+        block.html(video);
+        block.addClass('video_load');
+      });
+    }
+    videoLoader(
+      $('.video'),
+      '<iframe class="promo-video__frame" src="https://www.youtube.com/embed/IIH-_F3-aU4" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+</script>
 <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
 <script type="text/javascript" src="js/libs.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
