@@ -517,7 +517,7 @@
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script> -->
 <!-- {/literal} END JIVOSITE CODE -->
 <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
-<script>
+<!-- <script>
     function videoLoader(block, video) {
       block.click(function() {
         if (block.hasClass('video_load')) {
@@ -528,9 +528,76 @@
       });
     }
     videoLoader(
-      $('.video'),
+      jQuery.('.video'),
       '<iframe class="promo-video__frame" src="https://www.youtube.com/embed/IIH-_F3-aU4" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
       );
+</script> -->
+<script>
+    class VideoLoader {
+      constructor(container, // Блок в который будем загружать видео
+      {
+        id = false, // id видео
+        type = 'youtube', // тип, youtube или vimeo
+        // Для Youtube
+        control = true, // Показывать/скрывать элементы управления видео
+        rel = true, // Показывать/скрывать показ похожих видео, после окончания ролика
+        info = true, // Показывать/скрывать информацию о ролике
+        logo = true, // Показывать/скрывать логотип youtube на элементах управления
+        
+        // Для Vimeo
+        loop = false // Проигрывать ли видео по кругу
+      }) {        
+        this.cont = document.querySelector(container);
+        
+        this.id = id;
+        this.type = type;
+        this.rel = rel ? 1 : 0;
+        this.info = info ? 1 : 0;
+        this.logo = logo ? 0 : 1;
+        this.loop = loop ? 1 : 0;
+        
+        if (this.id === false) {
+          alert('Введите ID видео!');
+        }
+      }
+      
+      init() {
+        let iframe, url;
+        
+        this.cont.addEventListener('click', ()=> {
+          if (this.cont.classList.contains('video_load')) {
+            return false;
+          }
+          this.cont.classList.add('video_load');
+          
+          switch (this.type) {
+            case 'vimeo':
+              url = `https://player.vimeo.com/video/${this.id}?autoplay=1&loop=${this.loop}`;
+              break;
+            default:
+              url = `https://www.youtube.com/embed/${this.id}?autoplay=1&autohide=1&rel=${this.rel}&showinfo=${this.info}&modestbranding=${this.logo}&controls=${this.control}`;
+          }
+          
+          iframe = `
+            <iframe
+              src="https://www.youtube.com/embed/IIH-_F3-aU4"
+              frameborder="0"
+              width="100%"
+              height="100%"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
+          `;
+          this.cont.innerHTML = iframe;
+        });
+      }
+    }
+    // Вызов
+    new VideoLoader('.video', {
+      id: '197047485',
+      type: 'youtube'
+    }).init();
 </script>
 <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
 <script type="text/javascript" src="js/libs.min.js"></script>
