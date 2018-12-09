@@ -211,7 +211,7 @@ h2 {
 }
 
 .projects {
-  margin: 150px 0;
+  margin: 185px 0 150px;
   /* &-box {
 	padding: 90px 15px;
 	} */
@@ -238,9 +238,13 @@ h2 {
   height: auto;
 }
 
+.contacts {
+  padding: 35px 0;
+}
+
 .contacts-box {
   background: #DBD9D9;
-  padding: 90px 15px;
+  padding: 110px 15px;
 }
 
 .contacts-adress {
@@ -313,7 +317,7 @@ h2 {
 
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 40px 0;
 }
 
 .up {
