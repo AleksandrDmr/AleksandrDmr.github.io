@@ -435,4 +435,12 @@ nav .active .nav-text {
     width: -webkit-calc(66.66666666666667% - 15px);
     width: calc(66.66666666666667% - 15px);
   }
+
+  .projects {
+    margin: 140px 0;
+  }
+
+  .contacts {
+    padding: 0;
+  }
 }
