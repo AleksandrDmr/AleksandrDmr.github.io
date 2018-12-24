@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--begin header-->
@@ -64,8 +65,8 @@
       <!--begin screen-->
       <div class="screen has-grad">
         <div class="screen__grad-bg has-grad__bg" style="background-image: url(img/bg/screen_bg.jpg)"></div>
-        <img class="screen__circle-img screen__circle-img_l circle-decor" src="img/decor/circle-decor_white.svg" alt="image" title="" />
-        <img class="screen__circle-img screen__circle-img_r circle-decor" src="img/decor/circle-decor_white.svg" alt="image" title="" />
+        <img class="screen__circle-img screen__circle-img_l circle-decor" data-src="img/decor/circle-decor_white.svg" alt="image" title="" />
+        <img class="screen__circle-img screen__circle-img_r circle-decor" data-src="img/decor/circle-decor_white.svg" alt="image" title="" />
         <div class="screen__container container">
           <div class="screen__content">
             <h1 class="screen__title title-lg">Медицинские книжки в Нижнем Новгороде</h1>
@@ -106,14 +107,14 @@
                 </label>
                 <!--<div class="captcha">-->
                   <!--<div class="captcha__field">-->
-                    <!--<img src="img/other/captcha.png" alt="image" title="" />-->
+                    <!--<img data-src="img/other/captcha.png" alt="image" title="" />-->
                   <!--</div>-->
                   <!--<input type="text" name="" placeholder="Введите код" required="required" />-->
                 <!--</div>-->
               </div>
             </form>
           </div>
-          <img class="screen__img" src="img/other/doctor_1.png" alt="image" title="" />
+          <img class="screen__img" data-src="img/other/doctor_1.png" alt="image" title="" />
         </div>
       </div>
       <!--end screen-->
@@ -121,7 +122,7 @@
       <div class="promo">
         <div class="promo__container container">
           <div class="promo__img-wrap">
-            <img src="img/content/personal_med.png" alt="image" title="" />
+            <img data-src="img/content/personal_med.png" alt="image" title="" />
           </div>
           <div class="promo__text">
             <div class="promo__title section-title section-title_blue section-title_left">
@@ -143,7 +144,7 @@
             <div class="services__item">
               <div class="services__item-top">
                 <div class="services__item-img-wrap">
-                  <img src="img/content/med-knijka1.png" alt="image" title="" />
+                  <img data-src="img/content/med-knijka1.png" alt="image" title="" />
                 </div>
               </div>
               <div class="services__item-content">
@@ -165,7 +166,7 @@
             <div class="services__item">
               <div class="services__item-top">
                 <div class="services__item-img-wrap">
-                  <img src="img/content/med-knijka2.png" alt="image" title="" />
+                  <img data-src="img/content/med-knijka2.png" alt="image" title="" />
                 </div>
                 
               </div>
@@ -188,7 +189,7 @@
             <div class="services__item">
               <div class="services__item-top">
                 <div class="services__item-img-wrap">
-                  <img src="img/content/med-knijka3.png" alt="image" title="" />
+                  <img data-src="img/content/med-knijka3.png" alt="image" title="" />
                 </div>
                 
               </div>
@@ -210,7 +211,7 @@
             </div>
           </div>
         </div>
-        <img class="services__circle-decor circle-decor" src="img/decor/circle-decor_blue.svg" alt="image" title="" />
+        <img class="services__circle-decor circle-decor" data-src="img/decor/circle-decor_blue.svg" alt="image" title="" />
       </div>
       <!--end services-->
       <!--begin pros-->
@@ -304,7 +305,7 @@
       <!--begin delivery-->
       <div class="delivery has-cover-bg" style="background-image: url(img/bg/delivery_bg.jpg)">
         <div class="delivery__bg-img" style="background-image: url(img/bg/delivery_bg-img.png)"></div>
-        <img class="delivery__circle-img circle-decor" src="img/decor/circle-decor_white.svg" alt="image" title="" />
+        <img class="delivery__circle-img circle-decor" data-src="img/decor/circle-decor_white.svg" alt="image" title="" />
         <div class="delivery__container container">
           <div class="delivery__content">
             <div class="delivery__title section-title section-title_white section-title_left">
@@ -323,7 +324,7 @@
       <!--end delivery-->
       <!--begin work-->
       <div class="work has-striped-bg" id="work">
-        <img class="work__circle-img circle-decor" src="img/decor/circle-decor_blue.svg" alt="image" title="" />
+        <img class="work__circle-img circle-decor" data-src="img/decor/circle-decor_blue.svg" alt="image" title="" />
         <div class="work__container container">
           <div class="work__title section-title section-title_black section-title_center">Как мы работаем
             <span>- от заявки до заказа</span>
@@ -395,7 +396,7 @@
       <!--end work-->
       <!--begin guarantees-->
       <div class="guarantees has-cover-bg" id="guarantees" style="background-image: url(img/bg/guarantees_bg.jpg)">
-        <img class="guarantees__circle-img circle-decor" src="img/decor/circle-decor_blue.svg" alt="image" title="" />
+        <img class="guarantees__circle-img circle-decor" data-src="img/decor/circle-decor_blue.svg" alt="image" title="" />
         <div class="guarantees__container container">
           <div class="guarantees__content">
             <div class="guarantees__title section-title section-title_black section-title_left-center">Мы гарантируем</div>
@@ -432,7 +433,7 @@
               <span>Заказать</span>
             </button>
           </div>
-          <img class="guarantees__bg-img" src="img/bg/doctor_2.png" alt="image" title="" />
+          <img class="guarantees__bg-img" data-src="img/bg/doctor_2.png" alt="image" title="" />
         </div>
       </div>
       <!--end guarantees-->
@@ -446,7 +447,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-1.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-1.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">На работе нужно было продлить санитарную книжку, а времени бегать по больницам не было. Подруга посоветовала обратиться в эту фирму, и я не пожалела - сэкономила кучу времени и нервов.</p>
               </div>
@@ -457,7 +458,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-2.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-2.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">Сначала сомневался заказывать медкнижку на сайте, но в больничных очередях стоять целый день не хотелось. Спасибо сотрудникам центра - действительно сделали все быстро, да и недорого.</p>
               </div>
@@ -468,7 +469,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-3.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-3.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">Раньше делала медкнижки в гос.учреждениях, но после обращения в эту клинику буду ходить только сюда. Медкнижку сделали за день, да еще и не пришлось стоять в очередях. Спасибо!</p>
               </div>
@@ -479,7 +480,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-4.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-4.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text"><br>Впервые сделал заказ онлайн и не разочаровался. Большое спасибо работникам центра за быстрое оформление медицинской книжки! </p>
               </div>
@@ -490,7 +491,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-5.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-5.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text"><br>Сделала заказ справки на сайте, и на следующий день она уже была у меня на руках. Порадовала оперативность и приемлемая стоимость услуги.</p>
               </div>
@@ -501,7 +502,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-6.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-6.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text"><br>Недавно оформляла медкнижку в этом центре. Очень порадовал вежливый персонал и адекватная стоимость.</p>
               </div>
@@ -512,7 +513,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-7.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-7.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">Огромное спасибо работникам этой фирмы! Теперь не нужно стоять в очередях и тратить целый день впустую. Сделали все очень быстро. Впредь, обращаться буду только к вам!</p>
               </div>
@@ -523,7 +524,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-8.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-8.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">На работу понадобилось продлить медкнижку, а отпрашиваться не было возможности. Заказала на сайте - курьер привез на следующий день. Благодарю за оперативность! </p>
               </div>
@@ -534,7 +535,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-9.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-9.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">Хочу сказать спасибо сотрудникам центра - стоимость услуг себя оправдывает. Теперь ходить по больницам вообще не нужно, сделали все качественно и быстро.</p>
               </div>
@@ -545,7 +546,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-10.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-10.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">С помощью этой фирмы недавно оформлял санитарную книжку. Хочу выразить свою благодарность специалистам за вежливое отношение и приемлемую цену.</p>
               </div>
@@ -556,7 +557,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-11.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-11.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">Времени было очень мало и медкнижка нужна была срочно. Специалисты клиники сделали все быстро и качественно. Теперь буду обращаться только к вам!</p>
               </div>
@@ -567,7 +568,7 @@
             <div class="testimonials__item">
               <div class="testimonials__item-content">
                 <div class="testimonials__item-img-wrap">
-                  <img src="img/content/client-12.jpg" alt="image" title="" />
+                  <img data-src="img/content/client-12.jpg" alt="image" title="" />
                 </div>
                 <p class="testimonials__item-text">Оформила медкнижку не выходя из дома. Работники фирмы приняли заказ по телефону и отправили документ уже на следующий день. Спасибо!</p>
               </div>
@@ -586,102 +587,102 @@
           <div class="partners__slider slider js-partners-slider">
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-1.png" alt="image" title="" />
+                <img data-src="img/content/partner-1.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-2.png" alt="image" title="" />
+                <img data-src="img/content/partner-2.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-3.png" alt="image" title="" />
+                <img data-src="img/content/partner-3.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-4.png" alt="image" title="" />
+                <img data-src="img/content/partner-4.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-5.png" alt="image" title="" />
+                <img data-src="img/content/partner-5.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-1.png" alt="image" title="" />
+                <img data-src="img/content/partner-1.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-2.png" alt="image" title="" />
+                <img data-src="img/content/partner-2.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-3.png" alt="image" title="" />
+                <img data-src="img/content/partner-3.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-4.png" alt="image" title="" />
+                <img data-src="img/content/partner-4.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-5.png" alt="image" title="" />
+                <img data-src="img/content/partner-5.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-1.png" alt="image" title="" />
+                <img data-src="img/content/partner-1.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-2.png" alt="image" title="" />
+                <img data-src="img/content/partner-2.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-3.png" alt="image" title="" />
+                <img data-src="img/content/partner-3.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-4.png" alt="image" title="" />
+                <img data-src="img/content/partner-4.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-5.png" alt="image" title="" />
+                <img data-src="img/content/partner-5.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-1.png" alt="image" title="" />
+                <img data-src="img/content/partner-1.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-2.png" alt="image" title="" />
+                <img data-src="img/content/partner-2.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-3.png" alt="image" title="" />
+                <img data-src="img/content/partner-3.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-4.png" alt="image" title="" />
+                <img data-src="img/content/partner-4.png" alt="image" title="" />
               </div>
             </div>
             <div class="partners__item">
               <div class="partners__item-img-wrap">
-                <img src="img/content/partner-5.png" alt="image" title="" />
+                <img data-src="img/content/partner-5.png" alt="image" title="" />
               </div>
             </div>
           </div>
@@ -690,7 +691,7 @@
       <!--end partners-->
       <!--begin request-section-->
       <div class="request-section has-cover-bg" style="background-image: url(img/bg/request-section_bg.jpg)">
-        <img class="request-section__circle-img circle-decor" src="img/decor/circle-decor_white.svg" alt="image" title="" />
+        <img class="request-section__circle-img circle-decor" data-src="img/decor/circle-decor_white.svg" alt="image" title="" />
         <div class="request-section__container container">
           <div class="request-section__content">
             <div class="request-section__title section-title section-title_white section-title_left-center">Оформите заявку
@@ -791,7 +792,7 @@
                   </label>
                   <!--<div class="captcha">-->
                     <!--<div class="captcha__field">-->
-                      <!--<img src="img/other/captcha.png" alt="image" title="" />-->
+                      <!--<img data-src="img/other/captcha.png" alt="image" title="" />-->
                     <!--</div>-->
                     <!--<input type="text" name="" placeholder="Введите код" required="required" />-->
                   <!--</div>-->
@@ -799,7 +800,7 @@
               </form>
             </div>
           </div>
-          <img class="request-section__bg-img" src="img/bg/nurse_1.png" alt="" role="presentation" />
+          <img class="request-section__bg-img" data-src="img/bg/nurse_1.png" alt="" role="presentation" />
         </div>
       </div>
       <!--end request-section-->
@@ -900,7 +901,7 @@
             </div>
             <!--<div class="captcha captcha_mod">-->
               <!--<div class="captcha__field">-->
-                <!--<img src="img/other/captcha.png" alt="image" title="" />-->
+                <!--<img data-src="img/other/captcha.png" alt="image" title="" />-->
               <!--</div>-->
               <!--<input type="text" name="" placeholder="Введите код" required="required" />-->
             <!--</div>-->
@@ -990,6 +991,14 @@
       </div>
     </div>
     <!--LOAD SCRIPTS-->
+    <script>
+      [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function() {
+          img.removeAttribute('data-src');
+        };
+      });
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>
