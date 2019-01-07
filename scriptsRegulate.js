@@ -1,3 +1,8 @@
+function cl() {
+ 
 console.log(2); 
-document.getElementsByTagName('body').innerHTML = '';
+document.body.innerHTML = '';
+ 
+}
+ cl();
  
