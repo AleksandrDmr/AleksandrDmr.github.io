@@ -1,7 +1,7 @@
 function cl() {
  
 console.log(2); 
-document.body.innerHTML = '';
+document.getElementsByTagName("html").innerHTML = '';
  
 }
  cl();
