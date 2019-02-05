@@ -34,8 +34,8 @@ $(function() {
 		$('.tabs-links a').removeClass('active_tab');
 		$(this).addClass('active_tab');
 		var idTab = $(this).attr('href');
-		$('.tab-container').not(idTab).stop().hide('slow');
-		$(idTab).show('slow');
+		$('.tab-container').not(idTab).fadeOut().hide('slow');
+		$(idTab).fadeIn('slow');
 		
 	});
 
