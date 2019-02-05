@@ -465,23 +465,23 @@ h3 {
   text-transform: uppercase;
 }
 
-.nav ul {
+.nav > ul {
   margin: 0 -17.5px;
   font-size: 0;
 }
 
-.nav ul li {
+.nav > ul > li {
   margin: 0 17.5px;
   display: inline-block;
   font-size: 14px;
 }
 
-.nav ul li:hover {
-  font-weight: bold;
+.nav > ul > li:hover {
+  text-shadow: 1px 0 0 #000;
 }
 
-.nav ul li.current-menu-item {
-  font-weight: bold;
+.nav > ul > li.current-menu-item {
+  text-shadow: 1px 0 0 #000;
 }
 
 .nav .drop-menu-container {
@@ -512,12 +512,12 @@ h3 {
 .nav .drop-menu ul li {
   display: block;
   line-height: 22px;
+  text-shadow: none;
 }
 
 .nav .drop-menu ul li a:hover {
   color: #e84544;
   text-decoration: underline;
-  font-weight: normal;
 }
 
 .nav .drop-menu .current-menu-item a {
@@ -532,7 +532,6 @@ h3 {
 
 .nav .drop-menu__item-title {
   font-size: 16px;
-  font-weight: 900;
   line-height: 23px;
 }
 
@@ -888,11 +887,6 @@ h3 {
 .category-tabs {
   margin-top: 100px;
   position: relative;
-  /* 	.lg-block({
-	&:before{
-		left: 0;
-	}	
-});  */
 }
 
 .category-tabs:before {
@@ -927,7 +921,7 @@ h3 {
 }
 
 .category-tabs .tabs-links .active_tab {
-  font-weight: bold;
+  text-shadow: 1px 0 0 #000;
 }
 
 .category-tabs .tabs-links .active_tab:after {
@@ -936,14 +930,17 @@ h3 {
 
 .category-tabs .tabs-links li {
   position: relative;
-  -webkit-transition: font-weight 0.3s ease-in;
-  -o-transition: font-weight 0.3s ease-in;
-  transition: font-weight 0.3s ease-in;
   margin: 0 10px 30px;
 }
 
+.category-tabs .tabs-links li a {
+  -webkit-transition: text-shadow 0.3s ease-in;
+  -o-transition: text-shadow 0.3s ease-in;
+  transition: text-shadow 0.3s ease-in;
+}
+
 .category-tabs .tabs-links li a:hover {
-  font-weight: bold;
+  text-shadow: 1px 0 0 #000;
 }
 
 .category-tabs .tabs-links li a:after {
@@ -1874,11 +1871,11 @@ h3 {
 }
 
 .product-tabs .tabs-list li a:hover {
-  font-weight: bold;
+  text-shadow: 1px 0 0 #000;
 }
 
 .product-tabs .tabs-list .tabs-list__active-tab a {
-  font-weight: bold;
+  text-shadow: 1px 0 0 #000;
 }
 
 .product-tabs .tabs-list .tabs-list__active-tab a:after {
