@@ -101,7 +101,10 @@ $(function() {
 
 
 /*Options select*/
-	$('.custom-select').styler();
+	if ($('.custom-select').length) {
+
+		$('.custom-select').styler();
+	}
 
 
 /*Product-page tabs*/
