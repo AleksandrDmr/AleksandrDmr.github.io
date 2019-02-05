@@ -1261,6 +1261,10 @@ h3 {
   margin-bottom: 53px;
 }
 
+.about .about-text p:last-child {
+  margin-bottom: 0;
+}
+
 .about .about-banner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
