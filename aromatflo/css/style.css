@@ -860,6 +860,7 @@ h3 {
   font-size: 35px;
   font-family: Playfair;
   font-weight: bold;
+  text-align: left;
 }
 
 .category .cat-item_decor {
