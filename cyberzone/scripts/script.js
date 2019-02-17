@@ -1,4 +1,5 @@
 $(function() {
+	alert(window.location.hostname);
 	if (window.location.hostname == 'AleksandrDmr.github.io') {
 
 		$('.wrapper-dots li').on('click', function(event) {
