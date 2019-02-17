@@ -33,8 +33,8 @@ $(function() {
 		$('.business-slider').slick({
 			slidesToShow: 4,
 			slidesToScroll: 4,
-			nextArrow: '<button class="slider-btn slider-btn_next" type="button"><img src="../img/arrow-next.png" alt="Вперед"/></button>',
-			 prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><img src="../img/arrow-prev.png" alt="Назад"/></button>',
+			nextArrow: '<button class="slider-btn slider-btn_next" type="button"><img src="/img/arrow-next.png" alt="Вперед"/></button>',
+			 prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><img src="/img/arrow-prev.png" alt="Назад"/></button>',
 			 responsive: [
 			     {
 			       breakpoint: 1200,
