@@ -1,6 +1,5 @@
 $(function() {
-	if (window.location.href = 'https://github.com/AleksandrDmr/AleksandrDmr.github.io/tree/master/cyberzone/') {
-
+	if (window.location.href == 'AleksandrDmr.github.io/cyberzone/') {
 
 		$('.wrapper-dots li').on('click', function(event) {
 			event.preventDefault();
