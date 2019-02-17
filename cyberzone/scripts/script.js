@@ -14,7 +14,7 @@ $(function() {
 
 		});
 
-		$('.nav-menu a').on('click', function (e) {
+		$('.nav-menu a, a.button').on('click', function (e) {
 		    e.preventDefault();
 		    
 		    $('.menu a').removeClass('active').filter(this).addClass('active');
