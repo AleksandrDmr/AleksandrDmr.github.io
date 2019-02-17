@@ -1503,7 +1503,7 @@ body {
   }
 
   .advantage-row h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .advantage-row_second .img-wrap {
@@ -1736,6 +1736,10 @@ body {
   .section-price .price-item {
     width: 80%;
     margin: 0 auto 20px;
+  }
+
+  .advantage-row h2 {
+    font-size: 30px;
   }
 
   .advantage-row li {
