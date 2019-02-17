@@ -1,5 +1,6 @@
 $(function() {
-	if (window.location.href == 'AleksandrDmr.github.io/cyberzone/') {
+	alert(window.location.hostname);
+	if (window.location.hostname == 'AleksandrDmr.github.io/') {
 
 		$('.wrapper-dots li').on('click', function(event) {
 			event.preventDefault();
