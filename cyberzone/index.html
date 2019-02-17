@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Битва роботов</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="first-section"  data-vide-bg="video/background/background">
+		<div class="wrapper">
+			<header class="header">
+				<img src="img/logo.png" alt="Логотип">
+				<nav class="nav-menu">
+					<ul>
+						<li><a href="#descr">Об аттракционе</a></li>
+						<li><a href="#equipment">Комплектация</a></li>
+						<li><a href="#equipment">Цены</a></li>
+						<li><a href="#about">О нас</a></li>
+						<li><a href="#footer">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="callback">
+						<a href="tel:88005517138"><img src="img/phone.png" alt="Телефон">8 (800) 551-71-38</a>
+						<a href="mailto:welcome@cyberzone.su"><img src="img/mail-close.png" alt="Почта">welcome@cyberzone.su</a>
+				</div>
+				<button class="menu-toggle">
+					<span></span>
+				</button>
+			</header>
+			<h1 class="page-title">
+				Готовый бизнес<br>в сфере аттракционов
+				<span>«Бои Роботов»</span>
+				<img class="turnkey" src="img/key.png" alt="Бизнес под ключ">
+			</h1>
+		</div>
+		<div class="header-bottom">
+			<div class="offer">
+				<div class="offer__date">Только до 28.02.2019</div>
+				<div class="offer__old-price">Комплект за<span>1 098 000р</span> </div>
+				<div class="offer__price">868 000р</div>
+				<a href="#" class="button button_white">Узнать подробнее</a>
+			</div>
+		</div>
+	</section>
+	<section class="video-section" id="descr">
+		<div class="wrapper">	
+			<h2 class="section-title section-title_video"><img src="img/robot-red.png" alt="Робот"><span>Настоящие бои роботов!<br>Новейшие технологии.</span></h2>	
+			<div class="video-slider">
+				<div class="video-player video-player_active new-video">
+					<video id='my-video' class='video-js' controls preload='none' 
+						poster='video/video-slides/poster-1.jpg' data-setup='{}'>
+					  <source src='video/video-slides/video-1.mp4' type='video/mp4'>
+					  <source src='video/video-slides/video-1.webm' type='video/webm'>
+					</video>
+					<div class="video-player__bg">
+						<span class="video-player__decr">Битвы роботов, февраль 2019г.</span>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-dots">
+				<ul>
+					<li class="active-dot"></li>
+				</ul>
+		</div>
+			<div class="wrapper-btn"><a href="#" class="button button_purple">Записаться на тест-драйв</a></div>
+		</div>
+	</section>
+	<section class="section-specifications" id="about">
+		<div class="wrapper">
+			<h2 class="section-title section-title_white">Технические характеристики</h2>
+			<ul class="specifications-list">
+				<li class="specifications-list__item specifications-list__item_bb specifications-list__item_circle-lg">
+					<h3>АККАМУЛЯТОР</h3>
+					<div>Контроль заряда аккумулятора</div>
+				</li>
+				<li class="specifications-list__item specifications-list__item_bb specifications-list__item_circle-lg">
+					<h3>Время работы</h3>
+					<div>Время работы<br>до 5 часов</div>
+					<span class="specifications-list__circle specifications-list__circle_empty"></span>
+					<span class="specifications-list__circle specifications-list__circle_full"></span>
+				</li>
+				<li class="specifications-list__item specifications-list__item_bb ">
+					<h3>Оружие</h3>
+					<div>Лазерное оружие (полная безопасность)</div>
+					<span class="specifications-list__circle specifications-list__circle_empty specifications-list__circle_empty-lg"></span>
+					<span class="specifications-list__circle specifications-list__circle_full specifications-list__circle_full-lg"></span>
+				</li>
+				<li class="specifications-list__item specifications-list__item_bb">
+					<h3>звук</h3>
+					<div>Эффектное звуковое сопровождение</div>
+					<span class="specifications-list__circle specifications-list__circle_full"></span>
+				</li>
+				<li class="specifications-list__item specifications-list__item_bb">
+					<h3>Попадание</h3>
+					<div>Игра оснащена датчиками  попадания</div>
+				</li>
+				<li class="specifications-list__item specifications-list__item_bb">
+					<h3>Скорость</h3>
+					<div>Скорость роботов<br>до 10 км/ч</div>
+					<span class="specifications-list__circle specifications-list__circle_empty"></span>
+					<span class="specifications-list__circle specifications-list__circle_full specifications-list__circle_full-lg"></span>
+				</li>
+				<li class="specifications-list__item specifications-list__item_bb specifications-list__item_br">
+					<h3>Подсветка</h3>
+					<div>Разноцветное освещение</div>
+					<span class="specifications-list__circle specifications-list__circle_empty"></span>
+					<span class="specifications-list__circle specifications-list__circle_full"></span>
+				</li>
+				<li class="specifications-list__item specifications-list__item_backwards">
+					<h3>Обозрение</h3>
+					<div>First Person View<br>Вид от первого лица</div>
+				</li>
+				<li class="specifications-list__item specifications-list__item_backwards">
+					<h3>Статистика</h3>
+					<div>Полная статитстика игры</div>
+					<span class="specifications-list__circle specifications-list__circle_full specifications-list__circle_full-lg"></span>
+				</li>
+				<li class="specifications-list__item specifications-list__item_backwards specifications-list__item_circle-lg">
+					<h3>Вес</h3>
+					<div>Вес составляет<br>7 кг</div>
+					<span class="specifications-list__circle specifications-list__circle_full"></span>
+				</li>
+				<li class="specifications-list__item specifications-list__item_backwards specifications-list__item_circle-lg">
+					<h3>Управление</h3>
+					<div>Управление дистанционное</div>
+				</li>
+				<li class="specifications-list__item specifications-list__item_backwards specifications-list__item_circle-lg">
+					<h3>Управление оботом</h3>
+					<div>С помощью геймпада</div>
+					<span class="specifications-list__circle specifications-list__circle_empty specifications-list__circle_empty-lg specifications-list__circle_empty-xs"></span>
+					<span class="specifications-list__circle specifications-list__circle_full specifications-list__circle_full-lg"></span>
+				</li>
+				<li class="specifications-list__item specifications-list__item_br specifications-list__item_backwards specifications-list__item_circle-lg">
+					<h3>Управление игрой</h3>
+					<div>С планшета/смартфона</div>
+					<span class="specifications-list__circle specifications-list__circle_empty"></span>
+					<span class="specifications-list__circle specifications-list__circle_full"></span>
+				</li>
+			</ul>
+			<div class="specifications-block specifications-block_first">
+				<div class="specifications-block__img-wrap">
+					<img src="img/vr-2.jpg" alt="VR">
+					<img src="img/vr-1.jpg" alt="VR" class="specifications-block__abs">
+				</div>
+				<div class="specifications-block__text">
+					<h3>First Person View (FPV)<br>(вид от первого лица)</h3>
+					<p>Беспроводные очки реального времени Система контроля разрядки аккумулятора Видео с робота передается без задержки в реальном времени</p>
+					<ul>
+						<li>Отображение статистики игры:</li>
+						<li>- прицел</li>
+						<li>- количество попаданий</li>
+						<li>- уровень заряда аккумулятора робота</li>
+					</ul>
+				</div>		
+			</div>
+			<div class="specifications-block specifications-block_two">
+				<div class="specifications-block__text">
+					<h3>Ход игры на мониторе</h3>
+					<p>Вся информация о ходе боя выводится на экран.<br>Играть можно в очках или ориентируясь на изображение в мониторе.</p>
+				</div>
+				<div class="specifications-block__img-wrap">
+					<img src="img/monitor-2.jpg" alt="VR">
+					<img src="img/monitor-1.jpg" alt="VR" class="specifications-block__abs">
+				</div>		
+			</div>
+			<div class="specifications-block specifications-block_third">
+				<div class="specifications-block__img-wrap">
+					<img src="img/gamepad-1.jpg" alt="VR">
+					<img src="img/gamepad-2.jpg" alt="VR" class="specifications-block__abs">
+				</div>	
+				<div class="specifications-block__text">
+					<h3>Простое управление</h3>
+					<p>Простое управление геймпадом, с которым легко справятся даже юные или неопытные игроки!</p>
+				</div>	
+			</div>
+		</div>
+		<div class="wrapper-btn"><a href="#" class="button button_white">Записаться на тест-драйв</a></div>
+	</section>
+	<section class="section-price" id="equipment">
+		<div class="wrapper">
+			<h2 class="section-title">Цены и комплектации</h2>
+			<div class="price-row">
+				<img src="img/robot-gray.png" alt="Робот">
+				<div class="price-item">
+					<h3>Railgun four</h3>
+					<ul>
+						<li>4 робота</li>
+						<li>4 пары очков</li>
+						<li>4 монитора+4 видео<br>приемника</li>
+						<li>4 игровых кресла</li>
+						<li>4 пульта управления<br>планшет управления игрой<br>сервер <br>программное обеспечение<br>звуковое сопровождение</li>
+					</ul>
+					<div class="price price_old">1 098 000р</div>
+					<div class="price">868 000р</div>
+					<div><a href="#" class="button button_black">Заказать</a></div>
+				</div>
+				<div class="price-item">
+					<h3>Railgun six</h3>
+					<ul>
+						<li>6 робота</li>
+						<li>6 пары очков</li>
+						<li>6 монитора+4 видео<br>приемника</li>
+						<li>6 игровых кресла</li>
+						<li>6 пульта управления<br>планшет управления игрой<br>сервер <br>программное обеспечение<br>звуковое сопровождение</li>
+					</ul>
+					<div class="price price_old">1 498 600р</div>
+					<div class="price">1 298 600р</div>
+					<div><a href="#" class="button button_black">Заказать</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-advantage">
+		<div class="wrapper">		
+			<div class="advantage-row">
+				<img src="img/robot-1.jpg" alt="Робот">
+				<div class="advantage-text advantage-text_ml">
+					<h2>Ваши выгоды:</h2>
+					<ul>
+						<li><span>1</span>Окупаемость 6-8 месяцев</li>
+						<li><span>2</span> Необходимая площадь от 20м2</li>
+					</ul>
+				</div>
+			</div>
+			<div class="advantage-row advantage-row_second">
+				<div class="advantage-text">
+					<ul>
+						<li><span>3</span> Аттракцион не требующий затрат на  расходные материалы</li>
+						<li><span>4</span> Полная техническая поддержка аттракциона в гарантийный и в пост гарантийный период</li>
+						<li><span>5</span> Возможность участия в выездных мероприятиях</li>
+					</ul>
+				</div>
+				 <div class="img-wrap"> 
+					<img src="img/robot-2.jpg" alt="Робот">
+				</div> 
+			</div>
+		</div>
+	</section>
+	<section class="section-safety">
+		<div class="wrapper">
+			<h2 class="section-title section-title_pink">Надежность</h2>
+			<ul class="safety-list">
+				<li>Уникальные разработки</li>
+				<li>Собственное производство</li>
+				<li>8 лет на рынке</li>
+				<li>Работаем по всему миру</li>
+			</ul>
+		</div>
+		<div class="business">
+			<h2 class="section-title">Ваш новый бизнес - ваш успех!</h2>
+			<div class="business-slider">
+				<div class="slick-img"><img src="img/slides/1/foto-1.jpg" alt="Слайд"></div>
+				<div class="slick-img"><img src="img/slides/1/foto-2.jpg" alt="Слайд"></div>
+				<div class="slick-img"><img src="img/slides/1/foto-3.jpg" alt="Слайд"></div>
+				<div class="slick-img"><img src="img/slides/1/foto-4.jpg" alt="Слайд"></div>
+				<div class="slick-img"><img src="img/slides/1/foto-1.jpg" alt="Слайд"></div>
+				<div class="slick-img"><img src="img/slides/1/foto-2.jpg" alt="Слайд"></div>
+				<div class="slick-img"><img src="img/slides/1/foto-3.jpg" alt="Слайд"></div>
+				<div class="slick-img"><img src="img/slides/1/foto-4.jpg" alt="Слайд"></div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="contact-form">
+				<div class="form-title">
+					<div class="form-title__text-violet">Остались вопросы?</div>
+					<div class="form-title__text-pink">Отправьте Ваши контакты и мы свяжемся с Вами!</div>
+					<div class="form-title__text-rotate"><span>или</span></div>
+					<div class="form-title__text-violet">запишитесь на тест-драв,</div>
+					<div class="form-title__text-pink">что бы лично испытать роботов в деле!</div>
+					<img src="img/arrows.png" alt="" class="form-arrows">
+				</div>
+				<form class="form" action="#">
+					<input type="text" placeholder="Имя">
+					<input type="tel" placeholder="Телефон">
+					<input type="email" placeholder="E-mail">
+					<button type="submit" class="button button_purple">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="#footer">
+		<div class="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae9ecee91160a0d41f80be47a2678ae4b3e0d38552c048bf3971edc4b8401c72a&amp;width=100%25&amp;height=553&amp;lang=ru_RU&amp;scroll=false"></script>
+			<div class="contacts">
+				<button class="contacts__toggle"></button>
+				<h3>Контакты</h3>
+				<div class="contacts__item"><span class="contacts__icon-wrap"><img src="img/phone-2.png" alt="Телефон"></span><a href="tel:88005517138">8 (800) 551-71-38</a></div>
+				<div class="contacts__item"><span class="contacts__icon-wrap"><img src="img/mail-open.png" alt="Эл. почта"></span><a href="mailto:welcome@cyberzone.su">welcome@cyberzone.su</a></div>
+				<div class="contacts__item"><span class="contacts__icon-wrap"><img src="img/www.png" alt="Веб сайт"></span><a href="https://www.cyberzone.su">www.cyberzone.su</a></div>
+				<div class="contacts__item"><span class="contacts__icon-wrap"><img src="img/marker.png" alt="Адрес"></span>наб. Обводного канала 88</div>
+				<div class="contacts__item contacts__item_social">
+					<div class="contacts__wrap">
+						<a href="https://www.instagram.com/kiberzone"target="_blank"><img src="img/ins.png" alt="Instagram"></a>
+						<a href="https://www.facebook.com/Kyberzone"target="_blank"><img src="img/facebook.png" alt="Instagram"></a>
+						<a href="https://vk.com/kiber.zona"target="_blank"><img src="img/vk.png" alt="Instagram"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="overlay"></div>
+	 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	 <script src="scripts/jquery.vide.min.js"></script>
+	 <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
+	 <script src="scripts/slick.min.js"></script>
+	 <script src="scripts/script.js"></script>
+</body>
+</html>
