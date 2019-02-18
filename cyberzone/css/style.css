@@ -593,7 +593,7 @@ body {
 
 /* video player */
 
-.video-js .vjs-big-play-button {
+.video-player .video-js .vjs-big-play-button {
   width: 88px;
   height: 56px;
   top: 50%;
