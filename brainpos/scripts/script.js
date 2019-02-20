@@ -21,7 +21,7 @@ $(function() {
 		event.preventDefault();
 		$(this).removeClass('overlay_active');
 		$('.nav-menu_mobile').removeClass('nav-menu_active');
-		$('.menu-toggle').removeClass('menu-toggle_active');
+		$('.menu-toggle').removeClass('menu-toggle_active menu-toggle_z-index');
 		$('.contacts-popup').removeClass('contacts-popup_active');
 		$('.menu-toggle').removeClass('menu-toggle_z-index');
 	});
@@ -40,10 +40,9 @@ $(function() {
 	$('.popup-active').on('click', function(event) {
 		event.preventDefault();
 		$('.nav-menu_mobile').removeClass('nav-menu_active');
-		$('.menu-toggle').removeClass('menu-toggle_active');
+		$('.menu-toggle').removeClass('menu-toggle_active').addClass('menu-toggle_z-index');;
 		$('.contacts-popup').addClass('contacts-popup_active');
 		$('.overlay').addClass('overlay_active');
-		$('.menu-toggle').addClass('menu-toggle_z-index');
 	});
 
 	$('.button_contact').on('click', function(event) {
