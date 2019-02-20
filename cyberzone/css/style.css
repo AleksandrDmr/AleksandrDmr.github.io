@@ -1665,6 +1665,10 @@ body {
     padding-right: 20px;
   }
 
+  .nav-menu ul li {
+    font-size: 13px;
+  }
+
   .page-title {
     font-size: 30px;
   }
