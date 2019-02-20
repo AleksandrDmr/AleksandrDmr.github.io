@@ -1,5 +1,5 @@
 $(function() {
-	if (window.location.hostname == 'aleksandrdmr.github.io') {
+	/*if (window.location.hostname == 'aleksandrdmr.github.io') {*/
 
 		$('.wrapper-dots li').on('click', function(event) {
 			event.preventDefault();
@@ -14,11 +14,8 @@ $(function() {
 
 		});
 
-		$('.nav-menu a, a.button').on('click', function (e) {
+		$('.nav-menu a').on('click', function (e) {
 		    e.preventDefault();
-		    
-		    $('.menu a').removeClass('active').filter(this).addClass('active');
-		    
 		    var selector = $(this).attr('href'); 
 		    var h = $(selector); 
 		    
@@ -63,9 +60,11 @@ $(function() {
 
 			$('.overlay').on('click', function(event) {
 			event.preventDefault();
-			$(this).toggleClass('overlay_active');
-			$('.nav-menu').toggleClass('nav-menu_active');
-			$('.menu-toggle').toggleClass('menu-toggle_active');
+			$(this).removeClass('overlay_active');
+			$('.nav-menu').removeClass('nav-menu_active');
+			$('.menu-toggle').removeClass('menu-toggle_active');
+			$('.popup_thank').fadeOut();
+			$('.popup_form').fadeOut();
 		});
 
 			var width = $(window).width();
@@ -75,6 +74,8 @@ $(function() {
 			    $('.nav-menu').removeClass('nav-menu_active');
 				$('.overlay').removeClass('overlay_active');
 				$('.contacts').removeClass('contacts_active');
+				$('.popup_form').fadeOut();
+				$('.popup_thank').fadeOut();
 			    width = $(window).width();
 			  }
 			});
@@ -85,7 +86,22 @@ $(function() {
 				$('.contacts').toggleClass('contacts_active');
 			});
 
-	}
+			$('.button_popup').on('click', function(event) {
+				event.preventDefault();
+				$('.popup_form').fadeIn();
+				$('.overlay').addClass('overlay_active');
+				
+			});
+
+			$('.button_popup-form').on('click', function(event) {
+				event.preventDefault();
+					$('.popup_form').fadeOut();
+					$('.popup_thank').fadeIn();
+				
+				
+			});
+
+/*	}*/
 
 	
 });

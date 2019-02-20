@@ -1199,20 +1199,53 @@ body {
   margin-top: 6px;
 }
 
-.contact-form .form {
+.form {
   max-width: 354px;
   margin: 24px auto 0;
   position: relative;
 }
 
-.contact-form .form:before,
-.contact-form .form:after {
+.form .form__check {
+  margin-bottom: 21px;
+}
+
+.form label {
+  position: relative;
+  padding-left: 20px;
+}
+
+.form input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.form a,
+.form label {
+  font-size: 14px;
+}
+
+.form a:hover {
+  -webkit-text-decoration: uppercase;
+  text-decoration: uppercase;
+}
+
+.form:before,
+.form:after {
   display: block;
   content: "";
   position: absolute;
 }
 
-.contact-form .form:before {
+.form:before {
   background: url(../img/people-1.png) no-repeat;
   width: 443px;
   height: 313px;
@@ -1220,7 +1253,7 @@ body {
   left: -480px;
 }
 
-.contact-form .form:after {
+.form:after {
   background: url(../img/people-2.png) no-repeat;
   width: 404px;
   height: 307px;
@@ -1228,7 +1261,7 @@ body {
   right: -450px;
 }
 
-.contact-form .form input {
+.form input {
   width: 100%;
   border: 1px solid #c4c4c4;
   padding: 18px 17px;
@@ -1238,7 +1271,7 @@ body {
   margin-bottom: 21px;
 }
 
-.contact-form .form button {
+.form button {
   width: 100%;
   cursor: pointer;
   outline: none;
@@ -1370,10 +1403,107 @@ body {
   background: #000;
   opacity: .8;
   display: none;
+  cursor: pointer;
 }
 
 .overlay_active {
   display: block;
+}
+
+.popup {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.popup_form {
+  display: none;
+}
+
+.popup_form_active {
+  display: block;
+}
+
+.popup_thank {
+  display: none;
+  top: 150px;
+}
+
+.popup_thank_active {
+  display: block;
+}
+
+.popup_thank .popup__title {
+  padding: 80px 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 480px;
+}
+
+.popup__title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 10px;
+  background: #553C66;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.popup__title span {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.form {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form_popup {
+  width: 480px;
+  padding: 0 60px 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 480px;
+}
+
+.form_popup input {
+  padding: 15px 17px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form_popup input:focus {
+  border-color: #AB81B7;
+}
+
+.form_popup:before,
+.form_popup:after {
+  display: none;
+}
+
+.form_popup .button {
+  padding: 12px 20px;
+  display: block;
+  width: 70%;
+  margin: 21px auto 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1523,8 +1653,8 @@ body {
     display: none;
   }
 
-  .contact-form .form:before,
-  .contact-form .form:after {
+  .form:before,
+  .form:after {
     display: none;
   }
 }
@@ -1766,6 +1896,24 @@ body {
   .footer .contacts_active h3 {
     left: 10px;
   }
+
+  .popup_thank .popup__title {
+    width: 320px;
+    padding: 30px 30px;
+  }
+
+  .popup__title {
+    font-size: 14px;
+  }
+
+  .popup__title span {
+    font-size: 14px;
+  }
+
+  .form_popup {
+    width: 320px;
+    padding: 0 30px 30px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1852,5 +2000,15 @@ body {
 
   .footer .contacts_active .contacts__item {
     font-size: 14px;
+  }
+
+  .popup_thank .popup__title {
+    width: 280px;
+    padding: 30px 30px;
+  }
+
+  .form_popup {
+    width: 280px;
+    padding: 0 30px 30px;
   }
 }

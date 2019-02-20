@@ -17,7 +17,7 @@
 				<nav class="nav-menu">
 					<ul>
 						<li><a href="#descr">Об аттракционе</a></li>
-						<li><a href="#equipment">Комплектация</a></li>
+						<li><a href="#specifications">Характеристики</a></li>
 						<li><a href="#equipment">Цены</a></li>
 						<li><a href="#about">О нас</a></li>
 						<li><a href="#footer">Контакты</a></li>
@@ -39,10 +39,10 @@
 		</div>
 		<div class="header-bottom">
 			<div class="offer">
-				<div class="offer__date">Только до 28.02.2019</div>
-				<div class="offer__old-price">Комплект за<span>1 098 000р</span> </div>
-				<div class="offer__price">868 000р</div>
-				<a href="#form" class="button button_white">Узнать подробнее</a>
+				<div class="offer__date">Только до 10.03.2019</div>
+				<div class="offer__old-price">Комплект за<span>1 098 400р</span> </div>
+				<div class="offer__price"> 898 400р</div>
+				<a href="#form" class="button button_popup button_white">Узнать подробнее</a>
 			</div>
 		</div>
 	</section>
@@ -57,7 +57,7 @@
 					  <source src='video/video-slides/video-1.webm' type='video/webm'>
 					</video>
 					<div class="video-player__bg">
-						<span class="video-player__decr">Битвы роботов, февраль 2019г.</span>
+						<span class="video-player__decr">Бои роботов, февраль 2019</span>
 					</div>
 				</div>
 			</div>
@@ -66,10 +66,10 @@
 					<li class="active-dot"></li>
 				</ul>
 		</div>
-			<div class="wrapper-btn"><a href="#form" class="button button_purple">Записаться на тест-драйв</a></div>
+			<div class="wrapper-btn"><a href="#" class="button button_popup button_purple">Записаться на тест-драйв</a></div>
 		</div>
 	</section>
-	<section class="section-specifications" id="about">
+	<section class="section-specifications" id="specifications">
 		<div class="wrapper">
 			<h2 class="section-title section-title_white">Технические характеристики</h2>
 			<ul class="specifications-list">
@@ -178,7 +178,7 @@
 				</div>	
 			</div>
 		</div>
-		<div class="wrapper-btn"><a href="#form" class="button button_white">Записаться на тест-драйв</a></div>
+		<div class="wrapper-btn"><a href="#" class="button button_popup button_white">Записаться на тест-драйв</a></div>
 	</section>
 	<section class="section-price" id="equipment">
 		<div class="wrapper">
@@ -194,9 +194,9 @@
 						<li>4 игровых кресла</li>
 						<li>4 пульта управления<br>планшет управления игрой<br>сервер <br>программное обеспечение<br>звуковое сопровождение</li>
 					</ul>
-					<div class="price price_old">1 098 000р</div>
-					<div class="price">868 000р</div>
-					<div><a href="#form" class="button button_black">Заказать</a></div>
+					<div class="price price_old">1 098 400р</div>
+					<div class="price">898 400р</div>
+					<div><a href="#" class="button button_popup button_black">Заказать</a></div>
 				</div>
 				<div class="price-item">
 					<h3>Railgun six</h3>
@@ -209,7 +209,7 @@
 					</ul>
 					<div class="price price_old">1 498 600р</div>
 					<div class="price">1 298 600р</div>
-					<div><a href="#form" class="button button_black">Заказать</a></div>
+					<div><a href="#" class="button button_popup button_black">Заказать</a></div>
 				</div>
 			</div>
 		</div>
@@ -277,7 +277,8 @@
 					<input type="text" placeholder="Имя">
 					<input type="tel" placeholder="Телефон">
 					<input type="email" placeholder="E-mail">
-					<button type="submit" class="button button_purple">Отправить</button>
+					<div class="form__check"><label><input type="checkbox">Cогласие на обработку данных</label> <a href="files/agreement.docx">«Соглашение»</a></div>
+					<button type="submit" class="button button_popup-form button_purple">Отправить</button>
 				</form>
 			</div>
 		</div>
@@ -303,6 +304,25 @@
 		</div>
 	</footer>
 	<div class="overlay"></div>
+	<div class="popup popup_form">
+		<div class="popup__title">
+			Вы можете связаться с нами<br>
+			<span>наиболее подходящим для вас способом</span>
+		</div>
+		<form class="form form_popup" action="#">
+			<input type="text" placeholder="Имя">
+			<input type="tel" placeholder="Телефон">
+			<input type="email" placeholder="E-mail">
+			<label><input type="checkbox">Cогласие на обработку данных</label> <a href="files/agreement.docx">«Соглашение»</a>
+			<button type="submit" class="button button_popup-form button_purple">Отправить</button>
+		</form>	
+	</div>
+	<div class="popup popup_thank">
+		<div class="popup__title">
+			Спасибо!<br>
+			<span>Мы свяжемся с Вами в ближайшее время!</span>
+		</div>
+	</div>
 	 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	 <script src="scripts/jquery.vide.min.js"></script>
 	 <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
