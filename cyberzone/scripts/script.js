@@ -97,6 +97,7 @@ $(function() {
 				event.preventDefault();
 					$('.popup_form').fadeOut();
 					$('.popup_thank').fadeIn();
+					$('.overlay').addClass('overlay_active');
 				
 				
 			});
