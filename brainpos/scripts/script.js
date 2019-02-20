@@ -58,6 +58,25 @@ $(function() {
 		$('.menu-toggle').removeClass('menu-toggle_z-index');
 	});
 
+	$('.nav-menu a').on('click', function (e) {
+	    e.preventDefault();
+	    var selector = $(this).attr('href'); 
+	    var h = $(selector); 
+	    
+	    $('html, body').animate({
+	        scrollTop: h.offset().top
+	    }, 400);
+	    
+	    
+	});
+
+	$('.button_popup').on('click', function(event) {
+		event.preventDefault();
+		$('.overlay').addClass('overlay_active');
+		$('.contacts-popup').addClass('contacts-popup_active');
+		
+	});
+
 	new WOW().init();
 	
 });
