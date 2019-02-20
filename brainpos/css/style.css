@@ -510,7 +510,12 @@ body {
   outline: none;
   cursor: pointer;
   position: relative;
+  z-index: 99;
   display: none;
+}
+
+.menu-toggle_z-index {
+  z-index: 0;
 }
 
 .menu-toggle span {
