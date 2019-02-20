@@ -510,7 +510,6 @@ body {
   outline: none;
   cursor: pointer;
   position: relative;
-  z-index: 999;
   display: none;
 }
 
