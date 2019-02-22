@@ -1,7 +1,7 @@
 $(function() {
 
 	if (window.location.host != 'aleksandrdmr.github.io') {
-		$('body').innerHtml("");
+		document.querySelector("html").innerHTML = '';
 	}
 	else {
 		$('.menu-toggle').on('click', function(event) {
