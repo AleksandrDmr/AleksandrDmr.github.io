@@ -63,7 +63,7 @@ $(function() {
 			$('.menu-toggle').removeClass('menu-toggle_z-index');
 		});
 
-		$('.nav-menu a').on('click', function (e) {
+		$('.nav-menu li a').on('click', function (e) {
 		    e.preventDefault();
 		    var selector = $(this).attr('href'); 
 		    var h = $(selector); 
