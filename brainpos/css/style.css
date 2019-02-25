@@ -216,6 +216,7 @@ body {
   background: #fff;
   text-align: center;
   padding: 90px 0;
+  z-index: 999;
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -968,7 +969,6 @@ body {
   -webkit-border-radius: 20px;
   border-radius: 20px;
   position: relative;
-  z-index: 99;
   padding: 0 46px;
 }
 
@@ -1029,6 +1029,7 @@ body {
 .contacts-popup {
   max-width: 668px;
   width: 100%;
+  z-index: 99;
   position: fixed;
   top: 50%;
   left: 50%;
