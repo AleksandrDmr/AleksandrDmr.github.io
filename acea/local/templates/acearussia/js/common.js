@@ -1,8 +1,8 @@
 $(function () {
 
-	setTimeout(go, 1000);
 
-	function go() {
+
+
 		$("#request-form-phone").mask("+7 (999) 999-99-99");
 		$("#contacts-form__phone").mask("+7 (999) 999-99-99");
 
@@ -354,7 +354,7 @@ $(function () {
 				});
 
 		}
-	}
+	
 
 
 
