@@ -507,7 +507,6 @@ body {
   outline: none;
   cursor: pointer;
   position: relative;
-  z-index: 99;
   display: none;
 }
 
@@ -551,6 +550,10 @@ body {
   -webkit-transform: translateY(-8px);
   -ms-transform: translateY(-8px);
   transform: translateY(-8px);
+}
+
+.menu-toggle_active {
+  z-index: 99;
 }
 
 .menu-toggle_active span {
