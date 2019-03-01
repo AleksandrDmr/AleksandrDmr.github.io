@@ -141,6 +141,7 @@ $(function () {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				fade: true,
+				variableWidth: true,
 				asNavFor: '.product-nav',
 				nextArrow: '<button class="slider-btn slider-btn_next" type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
 				prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
