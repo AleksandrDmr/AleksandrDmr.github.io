@@ -460,16 +460,12 @@ body {
   background-image: -o-linear-gradient(left, #9804d4 0%, #6059d4 100%);
   background-image: linear-gradient(to right, #9804d4 0%, #6059d4 100%);
   margin-right: 30px;
-  padding: 20px 0px;
-  max-width: 240px;
-  width: 100%;
+  padding: 20px 40px;
 }
 
 .button_gray {
   background: rgba(255, 255, 255, 0.15);
-  padding: 20px 0px;
-  max-width: 240px;
-  width: 100%;
+  padding: 20px 40px;
 }
 
 .button_form {
@@ -622,6 +618,11 @@ body {
 
 .section-form .req-text {
   margin-top: 37.5px;
+}
+
+.section-form .req-text_note {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 .section-form .system-req {
@@ -952,6 +953,12 @@ body {
   line-height: 1.4375;
 }
 
+.section-brands .free-install_note {
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 0;
+}
+
 .brand-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1081,6 +1088,29 @@ body {
   line-height: 1.875;
 }
 
+.contacts-popup_form {
+  max-width: 400px;
+}
+
+.contacts-popup_form .form {
+  margin: 0 auto;
+  width: auto;
+  min-width: auto;
+}
+
+.contacts-popup_thank .contacts-popup__title {
+  text-transform: uppercase;
+}
+
+.contacts-popup_thank span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contacts-popup_thank .contacts_popup {
+  padding: 30px 0;
+}
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1145,6 +1175,12 @@ body {
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+}
+
+a.disabled {
+  pointer-events: none !important;
+  cursor: default !important;
+  color: #888 !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1364,7 +1400,7 @@ body {
   }
 
   .button {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .section-form {
@@ -1453,6 +1489,10 @@ body {
   .contacts-popup__title span {
     font-size: 14px;
   }
+
+  .contacts-popup_thank span {
+    line-height: 1.4;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1525,5 +1565,38 @@ body {
 
   .contacts-popup {
     max-width: 280px;
+  }
+
+  .contacts-popup_form {
+    max-width: 260px;
+  }
+
+  .contacts-popup_form .form form {
+    padding: 25px;
+  }
+
+  .contacts-popup_form .form__text-wrap {
+    padding: 15px 10px;
+  }
+
+  .contacts-popup_form .form__title {
+    font-size: 18px;
+  }
+
+  .contacts-popup_form .form__subtitle {
+    font-size: 14px;
+  }
+
+  .contacts-popup_form .form .button_form {
+    margin-bottom: 0;
+  }
+
+  .contacts-popup_form .form .form__input-wrap_mb {
+    margin-bottom: 20px;
+  }
+
+  .contacts-popup_form .form .form__input-wrap input,
+  .contacts-popup_form .form .form__input-wrap textarea {
+    font-size: 10px;
   }
 }

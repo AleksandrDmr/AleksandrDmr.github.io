@@ -1,9 +1,6 @@
 $(function() {
 
-	if (window.location.host != 'aleksandrdmr.github.io') {
-		document.querySelector("html").innerHTML = '';
-	}
-	else {
+
 		$('.menu-toggle').on('click', function(event) {
 			event.preventDefault();
 			$(this).toggleClass('menu-toggle_active');
@@ -22,6 +19,30 @@ $(function() {
 			selectorTab.addClass('tab_active');
 
 		});
+
+		$('a[href="#functional"]').on('click', function(event) {
+			event.preventDefault();
+			btn = $('#functional');
+			tabIndex = $('.tab:eq(0)');
+			$('.list-control__item').not(btn).removeClass('list-control__item_active');
+			btn.addClass('list-control__item_active');
+			$('.tab').not(tabIndex).removeClass('tab_active');
+			tabIndex.addClass('tab_active');
+
+		});
+
+		$('a[href="#benefit"]').on('click', function(event) {
+			event.preventDefault();
+			btn = $('#benefit');
+			tabIndex = $('.tab:eq(1)');
+			$('.list-control__item').not(btn).removeClass('list-control__item_active');
+			btn.addClass('list-control__item_active');
+			$('.tab').not(tabIndex).removeClass('tab_active');
+			tabIndex.addClass('tab_active');
+
+		});
+
+		
 		$('.overlay').on('click', function(event) {
 			event.preventDefault();
 			$(this).removeClass('overlay_active');
@@ -42,11 +63,19 @@ $(function() {
 		  }
 		});
 
-		$('.popup-active').on('click', function(event) {
+		$('.btn-popup-contacts').on('click', function(event) {
 			event.preventDefault();
 			$('.nav-menu_mobile').removeClass('nav-menu_active');
 			$('.menu-toggle').removeClass('menu-toggle_active').addClass('menu-toggle_z-index');;
-			$('.contacts-popup').addClass('contacts-popup_active');
+			$('.contacts-popup_info').addClass('contacts-popup_active');
+			$('.overlay').addClass('overlay_active');
+		});
+
+		$('.btn-popup-form').on('click', function(event) {
+			event.preventDefault();
+			$('.nav-menu_mobile').removeClass('nav-menu_active');
+			$('.menu-toggle').removeClass('menu-toggle_active').addClass('menu-toggle_z-index');;
+			$('.contacts-popup_form').addClass('contacts-popup_active');
 			$('.overlay').addClass('overlay_active');
 		});
 
@@ -64,7 +93,6 @@ $(function() {
 		});
 
 		$('.nav-menu li a').on('click', function (e) {
-		    e.preventDefault();
 		    var selector = $(this).attr('href'); 
 		    var h = $(selector); 
 		    
@@ -83,7 +111,6 @@ $(function() {
 		});
 
 		new WOW().init();
-	}
 	
 	
 });
