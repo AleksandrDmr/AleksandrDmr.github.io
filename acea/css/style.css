@@ -8643,7 +8643,7 @@ strong {
 
 @media (max-width: 767.98px) {
   .header-wrapper {
-    height: 100%;
+    height: auto;
   }
 
   .header-wrapper .logo {
