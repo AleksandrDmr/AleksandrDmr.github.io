@@ -1,8 +1,8 @@
 $(function () {
 
+	setTimeout(go, 1000);
 
-
-
+	function go() {
 		$("#request-form-phone").mask("+7 (999) 999-99-99");
 		$("#contacts-form__phone").mask("+7 (999) 999-99-99");
 
@@ -107,17 +107,22 @@ $(function () {
 			$('input:checkbox').styler();
 		}
 
-		$('.contacts-form__ckeck-all input:checkbox').on('click', function(event) {
+		$('.contacts-form__ckeck-all input').on('click', function(event) {
+			if ($('.contacts-form__ckeck-all input').prop('checked') == true) {
+				
+				$('.contacts-form__ckeck .contacts-form__ckeck-item input:checkbox').attr('checked', false);
+				$('.contacts-form__ckeck .contacts-form__ckeck-item').removeClass('contacts-form__ckeck-item_active');
+				$('.contacts-form__ckeck .jq-checkbox').removeClass('checked');
 
-			if($('.contacts-form__ckeck-item_active').length) {
-				$('.contacts-form__ckeck-item input:checkbox').attr('checked', false);
-				$('.contacts-form__ckeck-item').removeClass('contacts-form__ckeck-item_active');
-				$('.jq-checkbox ').removeClass('checked');
-				return
 			}
-			$('.contacts-form__ckeck-item input:checkbox').attr('checked', true);
-			$('.contacts-form__ckeck-item').addClass('contacts-form__ckeck-item_active');
-			$('.jq-checkbox ').addClass('checked');
+
+			else {
+				$('.contacts-form__ckeck .contacts-form__ckeck-item input:checkbox').attr('checked', true);
+				$('.contacts-form__ckeck .contacts-form__ckeck-item').addClass('contacts-form__ckeck-item_active');
+				$('.contacts-form__ckeck .jq-checkbox').addClass('checked');
+			}
+
+		
 
 
 		});
@@ -127,12 +132,14 @@ $(function () {
 			if($(this).hasClass('contacts-form__ckeck-item_active')) {
 				$(this).removeClass('contacts-form__ckeck-item_active');
 				$(this).find('input:checkbox').attr('checked', false);
-				$('.jq-checkbox ').removeClass('checked');
-				return
+				$(this).find('.jq-checkbox ').removeClass('checked');
 			}
-			$(this).addClass('contacts-form__ckeck-item_active');
-			$(this).find('input:checkbox').attr('checked', true);
-			$(this).find('.jq-checkbox ').addClass('checked');
+			else {
+				$(this).addClass('contacts-form__ckeck-item_active');
+				$(this).find('input:checkbox').attr('checked', true);
+				$(this).find('.jq-checkbox ').addClass('checked');
+			}
+				
 			
 		});
 
@@ -141,10 +148,9 @@ $(function () {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				fade: true,
-				variableWidth: true,
 				asNavFor: '.product-nav',
 				nextArrow: '<button class="slider-btn slider-btn_next" type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
-				prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+				prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>'
 				
 			});
 
@@ -336,8 +342,7 @@ $(function () {
 			  	arrows: true,
 			  	prevArrow: ".slider-gallery-navigation .arrow-prev",
 			  	nextArrow: ".slider-gallery-navigation .arrow-next",
-			  	asNavFor: '.photo-gallery__slider',
-			  	fade: true,
+			  	asNavFor: '.photo-gallery__slider'
 			  	
 			  });
 			}
@@ -355,11 +360,24 @@ $(function () {
 				});
 
 		}
-	
+	}
 
 
 
+	$('.contacts-form__ckeck i').on('click', function(event) {
+		$('.contacts-form__ckeck').toggleClass('contacts-form__ckeck-active');
+	});
 
+
+	$('.review-block a').fancybox({
+		transitionEffect: "fade",
+		touch: false,
+		animationDuration: 700,
+		autoFocus: false,
+		closeBtn: false,
+		smallBtn: true,
+		closeExisting: true
+	});
 
 
 });
