@@ -2751,7 +2751,7 @@ strong {
 }
 
 .mrequest-section {
-  min-height: 333px;
+  height: 333px;
   background: url(../img/bg_request.png) 0 100% no-repeat;
   display: -webkit-box;
   display: -webkit-flex;
