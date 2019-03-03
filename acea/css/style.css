@@ -3738,7 +3738,7 @@ strong {
 }
 
 .product-pic {
-  max-width: 350px;
+  width: 350px;
   margin-left: 25px;
   text-align: center;
   margin-bottom: -201px;
