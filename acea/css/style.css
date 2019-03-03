@@ -4257,15 +4257,19 @@ strong {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-top: 14px;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .category-block a img:nth-child(2) {
   right: 69px;
+  opacity: 1;
 }
 
 .category-block a img:nth-child(3) {
   right: 69px;
-  display: none;
+  opacity: 0;
 }
 
 .category-block a span {
@@ -4290,7 +4294,7 @@ strong {
 }
 
 .category-block a:hover img:nth-child(3) {
-  display: block;
+  opacity: 1;
 }
 
 .category-block_skin a {
@@ -4301,8 +4305,11 @@ strong {
   background: #ddd9ee;
 }
 
-.category-block_skin a:hover:after {
+.category-block_skin a:after {
   background: url(../img/category/skin.jpg) no-repeat;
+}
+
+.category-block_skin a:hover:after {
   height: 100%;
 }
 
@@ -4314,8 +4321,11 @@ strong {
   background: #c9e6e9;
 }
 
-.category-block_oxygen a:hover:after {
+.category-block_oxygen a:after {
   background: url(../img/category/oxygen.jpg) no-repeat;
+}
+
+.category-block_oxygen a:hover:after {
   height: 100%;
 }
 
@@ -4327,8 +4337,11 @@ strong {
   background: #d2e7d4;
 }
 
-.category-block_disinfection a:hover:after {
+.category-block_disinfection a:after {
   background: url(../img/category/disinfection.jpg) no-repeat;
+}
+
+.category-block_disinfection a:hover:after {
   height: 100%;
 }
 
@@ -4340,8 +4353,11 @@ strong {
   background: #99d4da;
 }
 
-.category-block_hygiene a:hover:after {
+.category-block_hygiene a:after {
   background: url(../img/category/hygiene.jpg) no-repeat;
+}
+
+.category-block_hygiene a:hover:after {
   height: 100%;
 }
 
@@ -4353,8 +4369,11 @@ strong {
   background: #f0bf83;
 }
 
-.category-block_sterilants a:hover:after {
+.category-block_sterilants a:after {
   background: url(../img/category/sterilants.jpg) no-repeat;
+}
+
+.category-block_sterilants a:hover:after {
   height: 100%;
 }
 
@@ -4366,8 +4385,11 @@ strong {
   background: #fbe8e8;
 }
 
-.category-block_additionally a:hover:after {
+.category-block_additionally a:after {
   background: url(../img/category/additionally.jpg) no-repeat;
+}
+
+.category-block_additionally a:hover:after {
   height: 100%;
 }
 
