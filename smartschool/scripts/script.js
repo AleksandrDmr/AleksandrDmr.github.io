@@ -128,6 +128,7 @@ if ($('.form').length) {
 				autoplay: true,
   				autoplaySpeed: 5000,
   				centerPadding: '0',
+  				focusOnSelect: true,
 				responsive: [{
 						breakpoint: 768,
 						settings: {
