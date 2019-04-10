@@ -2230,6 +2230,9 @@ body {
 .form__checkbox-wrap {
   text-align: center;
   margin-top: 15px;
+  /* .sm-block({
+			text-align: left;
+		}); */
 }
 
 .form .jq-selectbox,
@@ -2554,9 +2557,6 @@ label {
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .manager-list {
@@ -4390,8 +4390,29 @@ br.br-mob {
     margin-left: 0;
   }
 
+  .manager-row {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
   .manager-list {
-    margin: 0 auto;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .manager-list__item {
+    max-width: 100%;
+    padding-left: 80px;
+  }
+
+  .manager-list__item br {
+    display: none;
+  }
+
+  .manager-list__img-wrap {
+    width: 60px;
+    height: 60px;
   }
 
   .manager-chat {
@@ -4679,30 +4700,8 @@ br.br-mob {
     padding: 60px 0;
   }
 
-  .manager-list {
-    margin-top: 40px;
-  }
-
-  .manager-list {
-    margin-left: 0;
-  }
-
-  .manager-list__item {
-    max-width: 100%;
-    padding-left: 80px;
-  }
-
-  .manager-list__item br {
-    display: none;
-  }
-
   .manager-list p {
     font-size: 15px;
-  }
-
-  .manager-list__img-wrap {
-    width: 60px;
-    height: 60px;
   }
 
   .manager-list__img-wrap img {
@@ -4988,10 +4987,6 @@ br.br-mob {
     padding-right: 10px;
   }
 
-  .form__checkbox-wrap {
-    text-align: left;
-  }
-
   .quiz__checkbox-wrap br {
     display: none;
   }
@@ -5137,8 +5132,16 @@ br.br-mob {
     padding-right: 10px;
   }
 
+  .main-title {
+    padding-top: 30px;
+  }
+
   .dynamic-title {
     font-size: 25px;
+  }
+
+  .dynamic-title .dinamic:after {
+    width: 100%;
   }
 
   .main-plus {
@@ -5197,7 +5200,6 @@ br.br-mob {
   }
 
   .form label {
-    display: block;
     margin: 0 0 8px 12px;
   }
 
