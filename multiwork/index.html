@@ -1,0 +1,2775 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Multiwork</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,400i&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper-header">
+			<div class="logo">
+				<a href="#">
+					<img src="img/logo.png" alt="Multiwork">
+					<div>Помощь студентам<br>с письменными работами</div>
+				</a>
+			</div>
+			<!-- /.logo -->
+			<nav class="nav-menu">
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Стоимость</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<!-- /.nav-menu -->
+			<a href="#" class="header-adress">Красноярск</a>
+			<div class="info-phone">
+				<a href="#" class="info-phone__link">8 800 707-85-35</a>
+				<a href="#" class="info-phone__link">8 495 668-08-13</a>
+				<a href="#" class="info-phone__modal">Позвоните мне</a>
+			</div> 
+			<!-- /.info-phone -->
+			<div class="account-login">
+				<a href="#" class="account-login__link">Личный кабинет</a>
+				<button class="btn btn_order-work">Заказать работу</button>
+			</div>
+			<!-- /.account-login -->
+			<button class="nav-open"><span></span></button>
+			<nav class="nav-mobile">
+				<button class="nav-close"></button>
+				<div class="info-phone info-phone_mob">
+					<a href="#" class="info-phone__link info-phone__link_mob">8 800 707-85-35</a>
+					<a href="#" class="info-phone__link info-phone__link_mob">8 495 668-08-13</a>
+					<a href="#" class="info-phone__modal">Позвоните мне</a>
+				</div> 
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Стоимость</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="nav-mobile__block">
+					<a href="#" class="header-adress header-adress_mob">Красноярск</a>
+					<div class="account-login account-login_mob">
+						<a href="#" class="account-login__link account-login__link_mob">Личный кабинет</a>
+						<button class="btn btn_order-work btn_order-work_mob">Заказать работу</button>
+					</div>
+				</div>
+			</nav>
+			<!-- /.nav-mobile -->
+		</div>
+	</header>
+	<section class="sect-quiz">
+		<div class="main-offer">
+			<div class="main-title">
+				<div class="dynamic-title">Пишете <span class="dinamic" id="dynamic"></span></div>
+				<h1>
+					Поможем сдать работу<br class="br-mob"> в срок и получить<br class="br-mob"><br>
+					«4» и «5», даже если нет<br class="br-mob"> времени на учебу
+				</h1>
+			</div>
+			<!-- /.main-title -->
+			<div class="btn-wrap btn-wrap_quiz-popup" >
+				<button class="btn btn_quiz-popup">Узнать сроки и цену</button>
+			</div>
+			<ul class="main-plus">
+				<li>Работаем с 2011 года</li>
+				<li>Анонимно</li>
+				<li>Оригинальность<br>работ 80-90%</li>
+				<li>Авторы работ – <br>преподаватели вузов</li>
+			</ul>
+		</div>
+		<div class="wrapper">
+			<div class="quiz quiz_pc">
+				<div class="quiz__content">
+					<div class="quiz__text">
+						<div class="quiz__title">Сколько стоит ваша работа?</div>
+						<div class="quiz__subtitle">Ответьте на 9 вопросов и узнайте стоимость и сроки выполнения работы</div>
+						<div class="quiz__progress">
+							<div class="quiz__progress-field">
+								<span class="quiz__progress-line quiz__progress-line_first active-field"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line quiz__progress-line_last"></span>
+							</div>
+						</div>
+					</div>
+					<div class="quiz-form">
+						<form action="#">
+							<div class="quiz-step quiz-step_current">
+								<div class="quiz__progress-bar">
+									1 из 9. Какую работу вы хотите рассчитать?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_active"><label><input type="radio" name="step-1" checked ><span class="quiz-form__checkbox"></span>Дипломная</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Курсовая</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Реферат</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Контрольная работа</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Отчет<br>по практике</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Эссе</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Статья</label></div>
+									<div class="quiz-form__item quiz-form__other"><span>Другое</span>
+										<div class="quiz-form__tooltip">
+											<div class="quiz-form__tooltip-wrap">
+												<ul>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+													<li><label><input type="radio" name="step-1">Курсовая</label></li>
+													<li><label><input type="radio" name="step-1">Реферат</label></li>
+													<li><label><input type="radio" name="step-1">Контрольная<br>работа</label></li>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+												</ul>
+												<ul>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+													<li><label><input type="radio" name="step-1">Курсовая</label></li>
+													<li><label><input type="radio" name="step-1">Реферат</label></li>
+													<li><label><input type="radio" name="step-1">Контрольна<br> работа</label></li>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+												</ul>
+												<ul>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+													<li><label><input type="radio" name="step-1">Курсовая</label></li>
+													<li><label><input type="radio" name="step-1">Реферат</label></li>
+													<li><label><input type="radio" name="step-1">Контрольная<br>работа</label></li>
+												</ul>
+											</div>	
+										</div>
+										<!-- /.quiz-form__tooltip -->
+									</div>
+									<!-- /.quiz-form__other -->
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									2 из 9. Какой именно диплом нужен?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-2" checked ><span class="quiz-form__checkbox"></span>Магистерский диплом</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа (бакалавр/специалист)</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа(колледж/техникум)</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Аттестационная работа (ВАР/ВКР)</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Часть дипломной работы</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Сопроводительные материалы к диплому</label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									3 из 9. Сколько страниц нужно написать?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-3" checked ><span class="quiz-form__checkbox"></span>Меньше 60 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>60-70 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>70-80 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>Большее 80 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									4 из 9. Когда нужно сдать работу?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_xl quiz-form__date"><span>Я знаю точную дату:</span><input type="text" class="datepicker-here"></div>
+									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-4" ><span class="quiz-form__checkbox"></span>Я не знаю точной даты</label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									5 из 9. По какому предмету надо написать работу?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__text-field"><input type="text" placeholder="Например, мировая экономика"></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									6 из 9. У вас есть методичка для диплома?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-6" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6"><span class="quiz-form__checkbox"></span>Нет</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									7 из 9. Нужна ли проверка на оригинальность/антиплагиат?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-7" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7"><span class="quiz-form__checkbox"></span>Нет</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
+									<div class="quiz-form__item-wrap">
+										<div class="quiz-form__item-title">Система проверки:</div>
+										<div class="quiz-form__item quiz-form__item_lg quiz-form__select">
+											<select name="type">
+												<option value="">ВУЗ</option>
+												<option value="">Antiplagiat.ru</option>
+												<option value="">Etxt</option>
+												<option value="">Advego</option>
+												<option value="">Text.ru</option>
+												<option value="">Несколько систем проверки</option>
+											</select>
+										</div>
+									</div>
+									<div class="quiz-form__item-wrap">
+										<div class="quiz-form__item-title">Процент оригинальности:</div>
+										<div class="quiz-form__item quiz-form__item_lg quiz-form__select">
+											<select name="percent">
+												<option value="">50-60%</option>
+												<option value="">60-70%</option>
+												<option value="">70-80%</option>
+												<option value="">Больше 80%</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									8 из 9. Вы знаете тему своего диплома?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_xl quiz-form__item_active"><label><input type="radio" name="step-8" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет, не знаю</label></div>
+									<div class="quiz-form__text-field"><textarea placeholder="Укажите тему диплома"></textarea></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									9 из 9. У вас уже есть план диплом?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_xl quiz-form__item_active"><label><input type="radio" name="step-8" checked ><span class="quiz-form__checkbox"></span>Да, есть</label></div>
+									<div class="quiz-form__item quiz-form__item_sm-text quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет плана.<br><b> Хочу получить его бесплатно</b></label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step quiz-step_payment"> 
+								<div class="quiz__payment-title">
+									Идет расчет стоимости и сроков выполнения работы
+								</div>
+								<div class="quiz-step-wrap">
+									<img class="quiz__payment-img" src="img/clock.png" alt="">
+									<div class="quiz__payment-text">Это займет 3-5 секунд</div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__sending-title">
+									Спасибо за ожидание. Мы посчитали<br>стоимость и сроки выполнения работы
+								</div>
+								<div class="quiz__sending-subtitle">
+									Укажите ваши данные — и мы отправим вам на email<br>стоимость и сроки написания диплома
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item-sending"><input type="email" placeholder="Введите ваш e-mail"></div>
+									<div class="quiz-form__item-sending"><input type="tel" placeholder="Введите ваш телефон"></div>
+									<div class="quiz-step_btn-wrap">
+										<button class="btn btn__quiz-sending">Отправить свои данные</button>
+									</div>
+									<div class="quiz__checkbox-wrap ">
+										<label><input type="checkbox" checked>Даю согласие на обработку  <a href="#">персональных данных</a></label>
+									</div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-form__btn-wrap">
+								<button class="quiz-prev">Назад</button>
+								<button class="btn btn_quiz">Далее</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="manager">
+					<div class="manager__head">
+						<div class="manager__photo"><img src="img/manager.png" alt=""></div>
+						<div class="manager__descr">
+							<div class="manager__name">Артем<br>Иванов</div>
+							<div class="manager__spec">Менеджер</div>
+						</div>
+					</div>
+					<div class="manager__text">
+						<p>Здравствуйте, я помогу вам рассчитать стоимость Полированного Бетона по технологии Klindex. </p>
+						<p>Сначала оцените примерное состояние вашего пола. Мы поймем какие работы будем проводить на начальном этапе. </p>
+					</div>
+					<div class="manager__raccon">
+						<img src="img/raccon-quiz.png" alt="">
+					</div>	
+				</div>
+				<!-- /.manager -->
+			</div>
+			<!-- /.quiz -->
+			<div class="quiz quiz_mob">
+				<div class="quiz__content">
+					<div class="quiz-form">
+						<form action="#">
+							<div class="quiz-step quiz-step_current">
+								<div class="quiz__progress-bar">
+									Какую работу вы хотите рассчитать?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_active"><label><input type="radio" name="step-1" checked ><span class="quiz-form__checkbox"></span>Дипломная</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Курсовая</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Реферат</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Контрольная работа</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Отчет<br>по практике</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Эссе</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Статья</label></div>
+									<div class="quiz-form__item quiz-form__other"><span>Показать еще</span>
+										<div class="quiz-form__tooltip">
+											<div class="quiz-form__tooltip-wrap">
+												<ul>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+													<li><label><input type="radio" name="step-1">Курсовая</label></li>
+													<li><label><input type="radio" name="step-1">Реферат</label></li>
+													<li><label><input type="radio" name="step-1">Контрольная<br>работа</label></li>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+												</ul>
+												<ul>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+													<li><label><input type="radio" name="step-1">Курсовая</label></li>
+													<li><label><input type="radio" name="step-1">Реферат</label></li>
+													<li><label><input type="radio" name="step-1">Контрольна<br> работа</label></li>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+												</ul>
+												<ul>
+													<li><label><input type="radio" name="step-1">Дипломная</label></li>
+													<li><label><input type="radio" name="step-1">Курсовая</label></li>
+													<li><label><input type="radio" name="step-1">Реферат</label></li>
+													<li><label><input type="radio" name="step-1">Контрольная<br>работа</label></li>
+												</ul>
+											</div>	
+										</div>
+										<!-- /.quiz-form__tooltip -->
+									</div>
+									<!-- /.quiz-form__other -->
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									Какой именно диплом нужен?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-2" checked ><span class="quiz-form__checkbox"></span>Магистерский диплом</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа (бакалавр/специалист)</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа(колледж/техникум)</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Аттестационная работа (ВАР/ВКР)</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Часть дипломной работы</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Сопроводительные материалы к диплому</label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									Сколько страниц нужно написать?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-3" checked ><span class="quiz-form__checkbox"></span>Меньше 60 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>60-70 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>70-80 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>Большее 80 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									 Когда нужно сдать работу?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_xl quiz-form__date"><span>Я знаю точную дату:</span><input type="text" class="datepicker-here"></div>
+									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-4" ><span class="quiz-form__checkbox"></span>Я не знаю точной даты</label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									По какому предмету надо написать работу?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__text-field"><textarea rows="4" name="" placeholder="Например, мировая экономика"></textarea></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									У вас есть методичка для диплома?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-6" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6"><span class="quiz-form__checkbox"></span>Нет</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									Нужна ли проверка на оригинальность/антиплагиат?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-7" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7"><span class="quiz-form__checkbox"></span>Нет</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
+									<div class="quiz-form__item-wrap">
+										<div class="quiz-form__item-title">Система проверки:</div>
+										<div class="quiz-form__item quiz-form__item_lg quiz-form__select">
+											<select name="type">
+												<option value="">ВУЗ</option>
+												<option value="">Antiplagiat.ru</option>
+												<option value="">Etxt</option>
+												<option value="">Advego</option>
+												<option value="">Text.ru</option>
+												<option value="">Несколько систем проверки</option>
+											</select>
+										</div>
+									</div>
+									<div class="quiz-form__item-wrap">
+										<div class="quiz-form__item-title">Процент оригинальности:</div>
+										<div class="quiz-form__item quiz-form__item_lg quiz-form__select">
+											<select name="percent">
+												<option value="">50-60%</option>
+												<option value="">60-70%</option>
+												<option value="">70-80%</option>
+												<option value="">Больше 80%</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									Вы знаете тему своего диплома?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_xl quiz-form__item_active"><label><input type="radio" name="step-8" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет, не знаю</label></div>
+									<div class="quiz-form__text-field"><textarea rows="4" placeholder="Укажите тему диплома"></textarea></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__progress-bar">
+									У вас уже есть план диплом?
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item quiz-form__item_xl quiz-form__item_active"><label><input type="radio" name="step-8" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_sm-text quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет плана.<br><b> Хочу получить его бесплатно</b></label></div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step quiz-step_payment"> 
+								<div class="quiz__payment-title">
+									Идет расчет стоимости и сроков выполнения работы
+								</div>
+								<div class="quiz-step-wrap">
+									<img class="quiz__payment-img" src="img/clock.png" alt="">
+									<div class="quiz__payment-text">Это займет 3-5 секунд</div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-step">
+								<div class="quiz__sending-title">
+									Спасибо за ожидание.<br> Мы посчитали стоимость и<br> сроки выполнения работы
+								</div>
+								<div class="quiz__sending-subtitle">
+									Укажите ваши данные — и мы отправим вам на email стоимость и сроки написания диплома
+								</div>
+								<div class="quiz-step-wrap">
+									<div class="quiz-form__item-sending"><input type="email" placeholder="Введите ваш e-mail"></div>
+									<div class="quiz-form__item-sending"><input type="tel" placeholder="Введите ваш телефон"></div>
+									<div class="quiz-step_btn-wrap">
+										<button class="btn btn__quiz-sending">Отправить свои данные</button>
+									</div>
+									<div class="quiz__checkbox-wrap">
+										<label><input type="checkbox" checked>Даю согласие на обработку <br><a href="#">персональных данных</a></label>
+									</div>
+								</div>
+								<!-- /.quiz-step-wrap -->
+							</div>
+							<!-- /.quiz-step -->
+							<div class="quiz-form__btn-wrap">
+								<div class="quiz__progress">
+							<div class="quiz__progress-field">
+								<div class="quiz__progress-text">Готово <span>1</span> из 9</div>
+								<span class="quiz__progress-line quiz__progress-line_first active-field"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line"></span>
+								<span class="quiz__progress-line quiz__progress-line_last"></span>
+							</div>
+						</div>
+
+								<button class="quiz-prev"></button>
+								<button class="btn btn_quiz">Далее</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="manager">
+					<div class="manager__head">
+						<div class="manager__photo"><img src="img/manager.png" alt=""></div>
+						<div class="manager__descr">
+							<div class="manager__name">Артем<br>Иванов</div>
+							<div class="manager__spec">Менеджер</div>
+						</div>
+					</div>
+					<div class="manager__text">
+						<p>Здравствуйте, я помогу вам рассчитать стоимость Полированного Бетона по технологии Klindex. </p>
+						<p>Сначала оцените примерное состояние вашего пола. Мы поймем какие работы будем проводить на начальном этапе. </p>
+					</div>
+					<div class="manager__raccon">
+						<img src="img/raccon-quiz.png" alt="">
+					</div>	
+				</div>
+				<!-- /.manager -->
+			</div>
+			<!-- /.quiz -->
+		</div>
+	</section>
+	<!-- /.sect-quiz -->
+	<section class="sect-advantages">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_center">Все услуги</h2>
+			<div class="advan-slider">
+				<!-- <div class="advan-block">
+					<div class="advan-block__icon"><img src="img/i-avdv_1.svg" alt=""></div>
+					<div class="advan-block__title">Курсовая<br>работа</div>
+					<a href="#" class="advan-block__link">Перейти</a>
+				</div>
+				/.adv-block
+				<div class="advan-block">
+					<div class="advan-block__icon"><img src="img/i-adv_2.svg" alt=""></div>
+					<div class="advan-block__title">Дипломная<br>работа</div>
+					<a href="#" class="advan-block__link">Перейти</a>
+				</div>
+				/.adv-block
+				<div class="advan-block">
+					<div class="advan-block__icon"><img src="img/i-adv_3.svg" alt=""></div>
+					<div class="advan-block__title">Реферат</div>
+					<a href="#" class="advan-block__link">Перейти</a>
+				</div>
+				/.adv-block
+				<div class="advan-block">
+					<div class="advan-block__icon"><img src="img/i-adv_4.svg" alt=""></div>
+					<div class="advan-block__title">Контрольная</div>
+					<a href="#" class="advan-block__link">Перейти</a>
+				</div> -->
+				<!-- /.adv-block -->
+				<div class="adv-block__wrap">
+					<div class="advan-block">
+						<div class="advan-block__icon"><img src="img/i-adv_1.svg" alt=""></div>
+						<div class="advan-block__title">Дипломная<br>работа</div>
+						<a href="#" class="advan-block__link">Перейти</a>
+					</div>
+					<!-- /.adv-block -->
+				</div>
+				<!-- /.adv-block__wrap -->
+				<div class="adv-block__wrap">
+					<div class="advan-block">
+						<div class="advan-block__icon"><img src="img/i-adv_2.svg" alt=""></div>
+						<div class="advan-block__title">Курсовая<br>работа</div>
+						<a href="#" class="advan-block__link">Перейти</a>
+					</div>
+					<!-- /.adv-block -->
+				</div>
+				<!-- /.adv-block__wrap -->
+				<div class="adv-block__wrap">
+					<div class="advan-block">
+						<div class="advan-block__icon"><img src="img/i-adv_3.svg" alt=""></div>
+						<div class="advan-block__title">Реферат</div>
+						<a href="#" class="advan-block__link">Перейти</a>
+					</div>
+					<!-- /.adv-block -->
+				</div>
+				<!-- /.adv-block__wrap -->
+				<div class="adv-block__wrap">
+					<div class="advan-block">
+						<div class="advan-block__icon"><img src="img/i-adv_4.svg" alt=""></div>
+						<div class="advan-block__title">Контрольная<br>работа</div>
+						<a href="#" class="advan-block__link">Перейти</a>
+					</div>
+					<!-- /.adv-block -->
+				</div>
+				<!-- /.adv-block__wrap -->
+				<div class="adv-block__wrap">
+					<div class="advan-block">
+						<div class="advan-block__icon"><img src="img/i-adv_5.svg" alt=""></div>
+						<div class="advan-block__title">Отчет<br>по практике</div>
+						<a href="#" class="advan-block__link">Перейти</a>
+					</div>
+					<!-- /.adv-block -->
+				</div>
+				<!-- /.adv-block__wrap -->
+			</div>
+			<div class="slider-swipe"></div>
+			<div class="btn-wrap">
+				<a class="btn btn_advan">Все виды работ</a>
+			</div>
+			<!-- /.btn-wrap -->
+		</div>
+	</section>
+	<!-- /.sect-advantages -->
+	<section class="sect-deadline">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_white">Сроки.<br> А что насчет дедлайнов?</h2>
+			<div class="sect-subtitle sect-subtitle_white">
+				Перестаньте переживать о дедлайнах.<br>
+				Вы сдадите работу в срок
+			</div>
+			<div class="row">
+				<ul class="list-advan">
+					<li class="list-advan__item">
+						<div class="list-advan__img-wrap">
+							<img src="img/i-deadlines_1.png" alt="">
+						</div>
+						<p>
+							<span class="blue-text">У автора свой дедлайн</span> – <br class="br-mob"> на несколько<br> дней раньше,<br class="br-mob">  чем ваши сроки сдачи<br> работы.<br class="br-mob"> В оставшееся время мы проверяем<br class="br-mob"><br> и перепроверяем работу
+						</p>
+					</li >
+					<!-- /li -->
+					<li class="list-advan__item">
+						<div class="list-advan__img-wrap">
+							<img src="img/i-deadlines_2.png" alt="">
+						</div>
+						<p>
+							<span class="blue-text">Менеджер каждый день </span><br class="br-mob">контролирует <br> ход работы<br class="br-mob"> и держит руку на пульсе
+						</p>
+					</li>
+					<!-- /li -->
+					<li class="list-advan__item">
+						<div class="list-advan__img-wrap">
+							<img src="img/i-deadlines_3.png" alt="">
+						</div>
+						<p>
+							Вашу работу будет выполнять <span class="blue-text">автор<br><br class="br-mob"> с отличным рейтингом.</span> Это такой<br class="br-mob"> автор,<br> который НЕ задерживает<br class="br-mob"> работу даже<br> на 5 минут
+						</p>
+					</li>
+					<!-- /li -->
+				</ul>
+				<!-- /ul -->
+				<div class="table-deadline">
+					<div class="table-deadline__title">
+						Сколько дней нужно автору,<br> чтобы написать хорошую работу?
+					</div>
+					<div class="table-deadline__wrap-table">
+						<table>
+							<thead>
+							    <tr>
+							      <th>Тип<br>работы</th>
+							      <th>Срочное<br>выполнение</th>
+							      <th>Стандартные<br>сроки</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							  	<tr>
+							  		<td>Дипломная работа</td>
+							  		<td>1-2 дня</td>
+							  		<td>2 недели</td>
+							  	</tr>
+							  	<tr>
+							  		<td>Курсовая работа</td>
+							  		<td>1 день</td>
+							  		<td>5 дней</td>
+							  	</tr>
+							  </tbody>
+							  <tr>
+							  		<td>Контрольная работа</td>
+							  		<td>4 часа</td>
+							  		<td>5 дней</td>
+							  	</tr>
+							  	<tr>
+							  		<td>Реферат</td>
+							  		<td>3 часа</td>
+							  		<td>3 дня</td>
+							  	</tr>
+							  	<tr>
+							  		<td>Отчет о практике</td>
+							  		<td>4 часа</td>
+							  		<td>5 дней</td>
+							  	</tr>
+						</table>
+					</div>
+					<!-- /.table-deadline__wrap-table -->
+					<div class="table-deadline__swap-icon"></div>
+				</div>
+				<!-- /.table-deadline -->
+			</div>
+			<!-- /.row -->
+			<div class="btn-wrap btn-wrap_deadline">
+				<button class="btn btn_deadline">Узнать сроки выполнения вашей работы</button>
+			</div>
+		</div>
+	</section>
+	<!-- /.sect-deadline -->
+	<section class="sect-authors">
+		<div class="wrapper">
+			<div class="row">
+				<div class="author-man-wrap">
+					<div class="author-man">
+						<img src="img/author-man.png" alt="">
+						<div class="author-man__descr">
+							<div class="author-man__name">Артем Иванов</div>
+							<div class="author-man__spec">Менеджер по работе<br> с авторами Multiwork</div>
+						</div>
+					</div>
+					<!-- /.auethor-man -->
+				</div>
+				<!-- /.author-man-wrap -->
+				<div class="author-title">
+					<h2 class="sect-title sect-title_authors sect-title_white">Авторы.<br> Кто будет выполнять мою работу?</h2>
+					<div class="sect-subtitle sect-subtitle_white">Действующие преподаватели вузов, единственные и уникальные в своем роде специалисты</div>
+					<button class="btn btn__authors">Подобрать автора в 2 клика</button>
+				</div>
+				<!-- /.author-title-block -->
+			</div>
+			<!-- /.row -->
+		</div>
+	</section>
+	<!-- /.sect-authors -->
+	<section class="sect-best-authors">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_center">Лучшие авторы месяца</h2>
+			<div class="tabs-best-authors">
+				<div class="tabs-nav tabs-nav-best-authors">
+					<div class="tabs-nav__item">
+						<div class="tabs-nav__title">
+							<span class="dotted-line">Экономические</span><br>
+							<span class="dotted-line">науки</span>
+					</div> 
+						<div class="tabs-nav__descr">Экономика, бухгалтерский<br> учет, финансы и др.</div>
+					</div>
+					<div class="tabs-nav__item">
+						<div class="tabs-nav__title"><span class="dotted-line">Гуманитарные</span> <br><span class="dotted-line">науки</span></div>
+						<div class="tabs-nav__descr">История, педагогика, филология,<br> политология, культурология и др.</div>
+					</div>
+					<div class="tabs-nav__item">
+						<div class="tabs-nav__title"><span class="dotted-line">Естественные</span> <br><span class="dotted-line">науки</span></div>
+						<div class="tabs-nav__descr">Физика, химия, геология,<br> география, медицина и др.</div>
+					</div>
+					<div class="tabs-nav__item">
+						<div class="tabs-nav__title"><span class="dotted-line">Технические</span><br><span class="dotted-line">науки</span></div>
+						<div class="tabs-nav__descr">Информатика, робототехника,<br> строительство, кибернетика и др.</div>
+					</div>
+					<div class="tabs-nav__item">
+						<div class="tabs-nav__title"><span class="dotted-line">Общественные</span><br><span class="dotted-line">науки</span></div>
+						<div class="tabs-nav__descr">Социология, психология,<br> юриспруденция и др.</div>
+					</div>
+				</div>
+				<!-- /.tabs-nav -->	
+				<div class="best-authors__slider">
+					<div class="best-authors best-authors_current">
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_1.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Игорь Р. </div>
+										<div class="best-authors__id">ID 98</div>
+										<div class="best-authors__descr">Кандидат филологических наук, преподает на филфаке 16 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star"></span>
+											<span class="best-authors__stars-quan">(10 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Заказывала диплом. Отличная работа! Очень меня выручили. Диплом написали в срок, внеси исправления. Защитилась на 5»
+									</div>
+									<div class="best-authors__review">
+										«Нужно было сделать часть курсовой в очень сжатые сроки. Делали ночью, чтобы успеть к утру. Преподаватель осталась довольна 
+										<img src="img/emoji_1.png" alt=""> 
+										<img src="img/emoji_2.png" alt=""> 
+										<img src="img/emoji_3.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 98</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_2.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Виктория Б.</div>
+										<div class="best-authors__id">ID 361</div>
+										<div class="best-authors__descr">Доктор исторических наук, профессор, стаж в вузе – 26 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(8 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+									<div class="best-authors__review">
+										«Заказал контрольную, выполнили даже в два раза раньше срока все сделано отлично))теперь буду заказывать здесь))» 
+									</div>
+									<div class="best-authors__review">
+										«Курсовую работу сделали за два дня! Советую заказывать!» 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 361</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_3.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Николай Я.  </div>
+										<div class="best-authors__id">D 514</div>
+										<div class="best-authors__descr">Магистр педагогики, старший преподаватель 5 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(13 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«2 курсовые работы сделаны в срок! Спасибо, с вами приятно иметь дело! С дипломом уже знаю, куда обратиться <img src="img/emoji_4.png" alt="">»
+									</div>
+									<div class="best-authors__review">«Заказывала главу из диплома, выполнили быстро и отлично, спасибо большое:)))»</div>
+									<div class="best-authors__review">«Советую , как только оплатила , все очень быстро сделали) Работа(курсовая) оценена на 95 из 100 баллов!) Спасибо!»</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 514</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+					</div>
+					<!-- /.best-authors -->
+					<div class="best-authors">
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_1.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Игорь Р. </div>
+										<div class="best-authors__id">ID 98</div>
+										<div class="best-authors__descr">Кандидат филологических наук, преподает на филфаке 16 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star"></span>
+											<span class="best-authors__stars-quan">(10 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Заказывала диплом. Отличная работа! Очень меня выручили. Диплом написали в срок, внеси исправления. Защитилась на 5»
+									</div>
+									<div class="best-authors__review">
+										«Нужно было сделать часть курсовой в очень сжатые сроки. Делали ночью, чтобы успеть к утру. Преподаватель осталась довольна 
+										<img src="img/emoji_1.png" alt=""> 
+										<img src="img/emoji_2.png" alt=""> 
+										<img src="img/emoji_3.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 98</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_2.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Виктория Б.</div>
+										<div class="best-authors__id">ID 361</div>
+										<div class="best-authors__descr">Доктор исторических наук, профессор, стаж в вузе – 26 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(8 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+									<div class="best-authors__review">
+										«Заказал контрольную, выполнили даже в два раза раньше срока все сделано отлично))теперь буду заказывать здесь))» 
+									</div>
+									<div class="best-authors__review">
+										«Курсовую работу сделали за два дня! Советую заказывать!» 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 361</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_3.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Николай Я.  </div>
+										<div class="best-authors__id">D 514</div>
+										<div class="best-authors__descr">Магистр педагогики, старший преподаватель 5 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(13 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«2 курсовые работы сделаны в срок! Спасибо, с вами приятно иметь дело! С дипломом уже знаю, куда обратиться <img src="img/emoji_4.png" alt="">»
+									</div>
+									<div class="best-authors__review">«Заказывала главу из диплома, выполнили быстро и отлично, спасибо большое:)))»</div>
+									<div class="best-authors__review">«Советую , как только оплатила , все очень быстро сделали) Работа(курсовая) оценена на 95 из 100 баллов!) Спасибо!»</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 514</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+					</div>
+					<!-- /.best-authors -->
+					<div class="best-authors">
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_1.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Игорь Р. </div>
+										<div class="best-authors__id">ID 98</div>
+										<div class="best-authors__descr">Кандидат филологических наук, преподает на филфаке 16 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star"></span>
+											<span class="best-authors__stars-quan">(10 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Заказывала диплом. Отличная работа! Очень меня выручили. Диплом написали в срок, внеси исправления. Защитилась на 5»
+									</div>
+									<div class="best-authors__review">
+										«Нужно было сделать часть курсовой в очень сжатые сроки. Делали ночью, чтобы успеть к утру. Преподаватель осталась довольна 
+										<img src="img/emoji_1.png" alt=""> 
+										<img src="img/emoji_2.png" alt=""> 
+										<img src="img/emoji_3.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 98</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_2.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Виктория Б.</div>
+										<div class="best-authors__id">ID 361</div>
+										<div class="best-authors__descr">Доктор исторических наук, профессор, стаж в вузе – 26 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(8 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+									<div class="best-authors__review">
+										«Заказал контрольную, выполнили даже в два раза раньше срока все сделано отлично))теперь буду заказывать здесь))» 
+									</div>
+									<div class="best-authors__review">
+										«Курсовую работу сделали за два дня! Советую заказывать!» 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 361</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_3.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Николай Я.  </div>
+										<div class="best-authors__id">D 514</div>
+										<div class="best-authors__descr">Магистр педагогики, старший преподаватель 5 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(13 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«2 курсовые работы сделаны в срок! Спасибо, с вами приятно иметь дело! С дипломом уже знаю, куда обратиться <img src="img/emoji_4.png" alt="">»
+									</div>
+									<div class="best-authors__review">«Заказывала главу из диплома, выполнили быстро и отлично, спасибо большое:)))»</div>
+									<div class="best-authors__review">«Советую , как только оплатила , все очень быстро сделали) Работа(курсовая) оценена на 95 из 100 баллов!) Спасибо!»</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 514</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+					</div>
+					<!-- /.best-authors -->
+					<div class="best-authors">
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_1.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Игорь Р. </div>
+										<div class="best-authors__id">ID 98</div>
+										<div class="best-authors__descr">Кандидат филологических наук, преподает на филфаке 16 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star"></span>
+											<span class="best-authors__stars-quan">(10 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Заказывала диплом. Отличная работа! Очень меня выручили. Диплом написали в срок, внеси исправления. Защитилась на 5»
+									</div>
+									<div class="best-authors__review">
+										«Нужно было сделать часть курсовой в очень сжатые сроки. Делали ночью, чтобы успеть к утру. Преподаватель осталась довольна 
+										<img src="img/emoji_1.png" alt=""> 
+										<img src="img/emoji_2.png" alt=""> 
+										<img src="img/emoji_3.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 98</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_2.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Виктория Б.</div>
+										<div class="best-authors__id">ID 361</div>
+										<div class="best-authors__descr">Доктор исторических наук, профессор, стаж в вузе – 26 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(8 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+									<div class="best-authors__review">
+										«Заказал контрольную, выполнили даже в два раза раньше срока все сделано отлично))теперь буду заказывать здесь))» 
+									</div>
+									<div class="best-authors__review">
+										«Курсовую работу сделали за два дня! Советую заказывать!» 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 361</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_3.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Николай Я.  </div>
+										<div class="best-authors__id">D 514</div>
+										<div class="best-authors__descr">Магистр педагогики, старший преподаватель 5 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(13 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«2 курсовые работы сделаны в срок! Спасибо, с вами приятно иметь дело! С дипломом уже знаю, куда обратиться <img src="img/emoji_4.png" alt="">»
+									</div>
+									<div class="best-authors__review">«Заказывала главу из диплома, выполнили быстро и отлично, спасибо большое:)))»</div>
+									<div class="best-authors__review">«Советую , как только оплатила , все очень быстро сделали) Работа(курсовая) оценена на 95 из 100 баллов!) Спасибо!»</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 514</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+					</div>
+					<!-- /.best-authors -->
+					<div class="best-authors">
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_1.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Игорь Р. </div>
+										<div class="best-authors__id">ID 98</div>
+										<div class="best-authors__descr">Кандидат филологических наук, преподает на филфаке 16 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star"></span>
+											<span class="best-authors__stars-quan">(10 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Заказывала диплом. Отличная работа! Очень меня выручили. Диплом написали в срок, внеси исправления. Защитилась на 5»
+									</div>
+									<div class="best-authors__review">
+										«Нужно было сделать часть курсовой в очень сжатые сроки. Делали ночью, чтобы успеть к утру. Преподаватель осталась довольна 
+										<img src="img/emoji_1.png" alt=""> 
+										<img src="img/emoji_2.png" alt=""> 
+										<img src="img/emoji_3.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо огромное, очень качественная курсовая, соответствующая всем критериям и в краткий срок <img src="img/emoji_5.png" alt=""> » 
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 98</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_2.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Виктория Б.</div>
+										<div class="best-authors__id">ID 361</div>
+										<div class="best-authors__descr">Доктор исторических наук, профессор, стаж в вузе – 26 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(8 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+									<div class="best-authors__review">
+										«Заказал контрольную, выполнили даже в два раза раньше срока все сделано отлично))теперь буду заказывать здесь))» 
+									</div>
+									<div class="best-authors__review">
+										«Курсовую работу сделали за два дня! Советую заказывать!» 
+									</div>
+									<div class="best-authors__review">
+										«Спасибо большое! Прекрасные работы и сделаны в короткий срок! Все отлично,спасибо еще раз.»
+									</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 361</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+						<div class="best-authors__item-wrap">
+							<div class="best-authors__item">
+								<div class="best-authors__header">
+									<div class="best-authors__photo">
+										<img src="img/best-author_3.png" alt="">
+									</div>
+									<div class="best-authors__text">
+										<div class="best-authors__name">Николай Я.  </div>
+										<div class="best-authors__id">D 514</div>
+										<div class="best-authors__descr">Магистр педагогики, старший преподаватель 5 лет</div>
+										<div class="best-authors__stars"> 
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__star best-authors__star_full"></span>
+											<span class="best-authors__stars-quan">(13 оценок)</span>
+										</div>
+									</div>
+									<!-- /.best-authors__text -->
+								</div>
+								<!-- /.best-authors__header -->
+								<div class="best-authors__reviews">
+									<div class="best-authors__review">
+										«2 курсовые работы сделаны в срок! Спасибо, с вами приятно иметь дело! С дипломом уже знаю, куда обратиться <img src="img/emoji_4.png" alt="">»
+									</div>
+									<div class="best-authors__review">«Заказывала главу из диплома, выполнили быстро и отлично, спасибо большое:)))»</div>
+									<div class="best-authors__review">«Советую , как только оплатила , все очень быстро сделали) Работа(курсовая) оценена на 95 из 100 баллов!) Спасибо!»</div>
+								</div>
+								<!-- /.best-authors__reviews -->
+							</div>
+							<!-- /.best-authors__item -->
+							<div class="best-authors__id-link">
+								<a href="#"><span class="dotted-line dotted-line_orange">Узнать стоимость работы</span><br><span class="dotted-line dotted-line_orange">у автора ID 514</span></a>
+							</div>
+						</div>
+						<!-- /.best-authors__item-wrap -->
+					</div>
+					<!-- /.best-authors -->
+				</div>
+				<!-- /.best-authors__slider -->
+			</div>
+			<!-- /.tabs-best-authors -->
+		</div>
+	</section>
+	<!-- /.sect-best-authors -->
+	<section class="sect-form-calc">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_center sect-title_xs-sm ">Рассчитайте стоимость работы прямо сейчас <br> <span class="orange">и сэкономьте до 40% или до 3 000 ₽</span></h2>
+			<div class="sect-subtitle sect-subtitle_center"">Чем раньше вы заказываете работу,  тем больше скидка</div>
+		</div>
+		<div class="wrapper-form-calc">
+			<div class="form form_calc">
+				<form  action="#">
+					<div class="form__row">
+						<div class="form__col">
+							<div class="form__caption">Укажите информацию о задании:</div>
+							<select data-placeholder="Выберите тип работы">
+								<option value=""></option>
+								<option value="">Дипломная</option>
+								<option value="">Курсовая</option>
+								<option value="">Реферат</option>
+								<option value="">Контрольная работа</option>
+								<option value="">Дипломная</option>
+							</select>
+							<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+							<input type="text" placeholder="Предмет (как в расписании)">
+							<textarea placeholder="Требования"></textarea>
+							<div class="form__date">
+								<input type="text" class="datepicker-here" placeholder="Срок сдачи">
+							</div>
+						</div>
+						<!-- /.form-col -->
+						<div class="form__col">
+							<div class="form__caption">Ваши контактные данные:</div>
+							<input type="text" placeholder="Введите ваше имя">
+							<input type="tel" placeholder="Введите ваш телефон">
+							<input type="email" placeholder="Введите ваше e-mail">
+								<div class="form__caption form__caption_mt">Промокод:
+									<span class="help" data-help="Оплатить заказ можно не выходя из дома – банковской картой. Все доработки - бесплатно.">?</span>
+								</div>
+								<input type="text" placeholder="Промокод, если есть">
+						</div>
+						<!-- /.form-col -->
+					</div>
+					<div class="btn-wrap"><button class="btn btn_calc-form">Рассчитать стоимость и сэкономить до 40%</button></div>
+					<div class="form__checkbox-wrap">
+						<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+						<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+					</div>
+					
+				</form>
+			</div>
+			<!-- /.form-calc -->
+		</div>
+		<!-- /.wrapper_form-calc -->		
+	</section>
+	<!-- /.sect-form -->
+	<section class="sect-garant">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_white garant-title">Гарантии.<br class="br-mob"> Кто отвечает<br> за выполнение работы?</h2>
+			<div class="sect-subtitle sect-subtitle_white">3 человека – автор, ваш личный<br class="br-mob"> менеджер<br> и отдел контроля<br class="br-mob"> качества</div>
+			<div class="row-garant">
+				<ul class="list-garant">
+					<li class="list-garant__item">
+						<div class="list-garant__img-wrap">
+							<img src="img/i-garant_1.png" alt="">
+						</div>
+						<div class="list-garant__text">
+							<div class="list-garant__item-title">Работу точно примут</div>
+							<p>У нас есть отдел контроля качества, который проверяет КАЖДУЮ работу. Так что к моменту сдачи вашу работу<br class="br-mob"> как минимум дважды вычитают преподаватели с ученым званием</p>
+						</div>
+					</li >
+					<!-- /.list-garant__item -->
+					<li class="list-garant__item">
+						<div class="list-garant__img-wrap">
+							<img src="img/i-garant_2.png" alt="">
+						</div>
+						<div class="list-garant__text">
+							<div class="list-garant__item-title">Правки и исправления</div>
+							<p>Если речь о курсовой или дипломе,<br class="br-mob"> то ваш научрук, скорее всего,<br class="br-mob"> попросит внести правки. Таков регламент. И на оценку это не<br class="br-mob"> влияет. Автор внесет все правки,<br class="br-mob"> а вы получите идеально<br class="br-mob"> выполненную работу</p>
+						</div>
+					</li >
+					<!-- /.list-garant__item -->
+				</ul>
+				<!-- /.list-garant -->
+				<ul class="list-garant">
+					<li class="list-garant__item">
+						<div class="list-garant__img-wrap">
+							<img src="img/i-garant_3.png" alt="">
+						</div>
+						<div class="list-garant__text list-garant__text_lg">
+							<div class="list-garant__item-title">Вы сдадите работу в срок</div>
+							<p>И даже правки будут внесены автором к моменту сдачи работы</p>
+						</div>
+					</li >
+					<!-- /.list-garant__item -->
+					<li class="list-garant__item">
+						<div class="list-garant__img-wrap">
+							<img src="img/i-garant_4.png" alt="">
+						</div>
+						<div class="list-garant__text list-garant__text_lg">
+							<div class="list-garant__item-title">Ваша работа уникальна</div>
+							<p>Мы проверяем каждую работу<br class="br-mob"> на антиплагиат. Средний процент уникальности работ составляет<br class="br-mob"> 80-90%</p>
+						</div>
+					</li >
+					<!-- /.list-garant__item -->
+					<li class="list-garant__item">
+						<div class="list-garant__img-wrap">
+							<img src="img/i-garant_5.png" alt="">
+						</div>
+						<div class="list-garant__text list-garant__text_lg">
+							<div class="list-garant__item-title">Никому о вас не расскажем</div>
+							<p>По закону о защите персональных данных, ни одна живая душа<br class="br-mob"> не узнает, что вы обратились к нам<br class="br-mob"> за помощью</p>
+						</div>
+					</li >
+					<!-- /.list-garant__item -->
+				</ul>
+				<!-- /.list-garant -->
+				<div class="garant-info">
+					<div class="garant-info__warning">ВАЖНО!</div>
+					<div class="garant-info__title">Вы ничем не рискуете и сможете в случае чего вернуть деньги</div>
+					<p>При оплате вы получаете чек. <br>Это значит, если работа выполнена неудовлетворительно и ее не<br> исправить, вы получаете назад <br>ваши деньги</p>
+				</div>
+				<!-- /.garant__info-block -->
+			</div>
+			<div class="garant-time">
+				<div class="garant-time__title">Любая гарантия –<br>
+					<span class="garant-time__days">30 дней</span>
+				</div>
+				<div class="garant-time__descr">За это время вы успеете сдать работу, получить обратную связь от преподавателя и получить хорошую оценку</div>
+			</div>
+			<!-- /.garant-time -->
+		</div>
+	</section>
+	<!-- /.sect-garant -->
+	<section class="sect-manager">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_white sect-title_center">Менеджер<br class="br-mob"> на связи<br> почти <br class="br-mob">24 часа в сутки</h2>
+			<div class="sect-subtitle sect-subtitle_white sect-subtitle_center">Вы в любой момент <br class="br-mob">можете с ним связаться<br> и<br class="br-mob"> проконтролировать ход работы</div>
+			<div class="manager-row">
+				<div class="manager-chat">
+					<div class="manager-chat__container">
+						<div class="manager-chat__message manager-chat__message_green manager-chat__message_one wow zoomInRight">
+							<div class="manager-chat__text">Добрый день, Михаил, сегодня внес аванс</div>
+							<div class="manager-chat__time">сегодня 11:19</div>
+						</div>
+						<div class="manager-chat__message manager-chat__message_gray manager-chat__message_two wow zoomInLeft" data-wow-delay="2s">
+							<div class="manager-chat__name">Барбашин Михаил</div>
+							<div class="manager-chat__text">Добрый день! Да, вижу в системе. Автор уже <br>подобрал материал, скоро предоставит первую главу</div>
+							<div class="manager-chat__time">сегодня 11:19</div>
+						</div>
+						<div class="manager-chat__message manager-chat__message_gray  manager-chat__message_three wow zoomInLeft" data-wow-delay="4s">
+							<div class="manager-chat__name">Барбашин Михаил</div>
+							<div class="manager-chat__text">И напоминаю про методичку)</div>
+							<div class="manager-chat__time">сегодня 11:19</div>
+						</div>
+						<div class="manager-chat__message manager-chat__message_green manager-chat__message_four wow zoomInRight"  data-wow-delay="6s">
+							<div class="manager-chat__text">Да-да, преподаватель наконец-то дал ее мне.</div>
+						</div>
+					</div>
+					<div class="manager-chat__descr">Вы можете переписываться с<br class="br-mob"> менеджером в вашем личном<br> кабинете<br class="br-mob"> и дублировать сообщения на телефон</div>
+				</div>
+				<ul class="manager-list">
+					<li class="manager-list__item">
+						<div class="manager-list__img-wrap">
+							<img src="img/i-manager_1.svg" alt="">
+						</div>
+						<div class="manager-list__text">
+							<div class="manager-list__title">Все идет по плану</div>
+							<p>Вы будете спокойны, зная, что все идет по плану. А потому сможете заняться другими, более важными делами</p>
+						</div>
+					</li>
+					<li class="manager-list__item">
+						<div class="manager-list__img-wrap">
+							<img src="img/i-manager_2.svg" alt="">
+						</div>
+						<div class="manager-list__text">
+							<div class="manager-list__title">Моментальное реагирование</div>
+							<p>Любые правки по работе вы получите <br>если не моментально, то очень быстро</p>
+						</div>
+					</li>
+					<li class="manager-list__item">
+						<div class="manager-list__img-wrap">
+							<img src="img/i-manager_3.svg" alt="">
+						</div>
+						<div class="manager-list__text">
+							<div class="manager-list__title">Мобильный чат</div>
+							<p>Вы наконец-то забудете о тех временах, когда вам приходилось часами ходить за преподавателем, чтобы задать ему вопрос. Теперь все вопросы можно задать за 5 секунд в чате вашего телефона и так же быстро получить ответы</p>
+						</div>
+					</li>
+				</ul>
+				<!-- /.manager-list -->
+			</div>
+			<!-- /.manager-row -->
+		</div>
+	</section>
+	<!-- /.sect-manager -->
+	<section class="sect-price">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_center">Цены. <br class="br-mob"> Сколько это стоит?</h2>
+			<div class="sect-subtitle sect-subtitle_center">Спорим, ваш одногруппник заплатил дороже<br>за работу такого же качества?</div>
+		</div>
+		<div class="prices-wrapper">
+			<div class="prices">
+				<ul class="price-nav">
+					<li>Автор</li>
+					<li>Сроки стандарт</li>
+					<li>Объем</li>
+					<li>Срочно</li>
+					<li>Оригинальность</li>
+					<li>Гарантия</li>
+				</ul>
+				<div class="price-slider">
+					<div class="price-block-wrap">
+						<div class="price-block">
+							<div class="price-block__title">Курсовая<br>работа</div>
+							<ul class="price-block__list">
+								<li>
+									<div class="price-block__mob-title">Автор:</div>
+									преподаватель вуза
+								</li>
+								<li>
+									<div class="price-block__mob-title">Сроки стандарт:</div>
+									5 дней</li>
+								<li>
+									<div class="price-block__mob-title">Срочно:</div>
+									1 день
+								</li>
+								<li>
+									<div class="price-block__mob-title">Объем:</div>
+									25-35 стр.
+								</li>
+								<li>
+									<div class="price-block__mob-title">Оригинальность:</div>
+									от 55%
+								</li>
+								<li>
+									<div class="price-block__mob-title">Гарантия:</div>
+									30 дней	
+								</li>
+							</ul>
+							<div class="price-block__info">
+								<div class="price-block__price">от 1 490 ₽</div>
+								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
+								<button class="btn btn_price">Узнать подробнее</button>
+								<div class="price-block__name-work">курсовой работы</div>
+							</div>
+						</div>
+						<!-- /.price-block -->
+					</div>
+					<!-- /.price-block-wrap -->
+					<div class="price-block-wrap">
+						<div class="price-block">
+							<div class="price-block__title">Дипломная<br>работа</div>
+							<ul class="price-block__list">
+								<li>
+									<div class="price-block__mob-title">Автор:</div>
+									преподаватель вуза
+								</li>
+								<li>
+									<div class="price-block__mob-title">Сроки стандарт:</div>
+									2 недели</li>
+								<li>
+									<div class="price-block__mob-title">Срочно:</div>
+									1-2 дня
+								</li>
+								<li>
+									<div class="price-block__mob-title">Объем:</div>
+									60-70 стр.
+								</li>
+								<li>
+									<div class="price-block__mob-title">Оригинальность:</div>
+									от 65%
+								</li>
+								<li>
+									<div class="price-block__mob-title">Гарантия:</div>
+									30 дней								
+								</li>
+							</ul>
+							<div class="price-block__info">
+								<div class="price-block__price">от 11 990 ₽</div>
+								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
+								<button class="btn btn_price">Узнать подробнее</button>
+								<div class="price-block__name-work">дипломной работы</div>
+							</div>
+						</div>
+						<!-- /.price-block -->
+					</div>
+					<!-- /.price-block-wrap -->
+					<div class="price-block-wrap">
+						<div class="price-block">
+							<div class="price-block__title">Отчет<br>по практике</div>
+							<ul class="price-block__list">
+								<li>
+									<div class="price-block__mob-title">Автор:</div>
+									преподаватель вуза
+								</li>
+								<li>
+									<div class="price-block__mob-title">Сроки стандарт:</div>
+									2 недели</li>
+								<li>
+									<div class="price-block__mob-title">Срочно:</div>
+									4 часа
+								</li>
+								<li>
+									<div class="price-block__mob-title">Объем:</div>
+									25-36 стр.
+								</li>
+								<li>
+									<div class="price-block__mob-title">Оригинальность:</div>
+									от 55%
+								</li>
+								<li>
+									<div class="price-block__mob-title">Гарантия:</div>
+									30 дней								
+								</li>
+							</ul>
+							<div class="price-block__info">
+								<div class="price-block__price">от 1 990 ₽</div>
+								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
+								<button class="btn btn_price">Узнать подробнее</button>
+								<div class="price-block__name-work">отчета по практике</div>
+							</div>
+						</div>
+						<!-- /.price-block -->
+					</div>
+					<!-- /.price-block-wrap -->
+					<div class="price-block-wrap">
+						<div class="price-block">
+							<div class="price-block__title">Контрольная<br>работа</div>
+							<ul class="price-block__list">
+								<li>
+									<div class="price-block__mob-title">Автор:</div>
+									преподаватель вуза
+								</li>
+								<li>
+									<div class="price-block__mob-title">Сроки стандарт:</div>
+									2 недели</li>
+								<li>
+									<div class="price-block__mob-title">Срочно:</div>
+									4 часа
+								</li>
+								<li>
+									<div class="price-block__mob-title">Объем:</div>
+									15-20 стр.
+								</li>
+								<li>
+									<div class="price-block__mob-title">Оригинальность:</div>
+									от 50%
+								</li>
+								<li>
+									<div class="price-block__mob-title">Гарантия:</div>
+									30 дней								
+								</li>
+							</ul>
+							<div class="price-block__info">
+								<div class="price-block__price">от 690 ₽</div>
+								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
+								<button class="btn btn_price">Узнать подробнее</button>
+								<div class="price-block__name-work">контрольной работы</div>
+							</div>
+						</div>
+						<!-- /.price-block -->
+					</div>
+					<!-- /.price-block-wrap -->
+					<div class="price-block-wrap">
+						<div class="price-block">
+							<div class="price-block__title">Реферат</div>
+							<ul class="price-block__list">
+								<li>
+									<div class="price-block__mob-title">Автор:</div>
+									преподаватель вуза
+								</li>
+								<li>
+									<div class="price-block__mob-title">Сроки стандарт:</div>
+									3 дня</li>
+								<li>
+									<div class="price-block__mob-title">Срочно:</div>
+									3 часа
+								</li>
+								<li>
+									<div class="price-block__mob-title">Объем:</div>
+									15-20 стр.
+								</li>
+								<li>
+									<div class="price-block__mob-title">Оригинальность:</div>
+									от 50%
+								</li>
+								<li>
+									<div class="price-block__mob-title">Гарантия:</div>
+									30 дней								
+								</li>
+							</ul>
+							<div class="price-block__info">
+								<div class="price-block__price">от 590 ₽</div>
+								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
+								<button class="btn btn_price">Узнать подробнее</button>
+								<div class="price-block__name-work">Реферата</div>
+							</div>
+						</div>
+						<!-- /.price-block -->
+					</div>
+					<!-- /.price-block-wrap -->
+
+					
+				</div>
+			</div>
+			<!-- /.prices -->
+		</div>
+		<!-- /.prices-wrapper -->
+	</section>
+	<!-- /.sect-price -->
+	<section class="sect-reviews">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_center">Отзывы клиентов<br class="br-mob"> о Multiwork</h2>
+		</div>
+		<div class="wrapper-reviews">
+			<div class="tabs-nav tabs-nav-reviews">
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Курсовая</span> <br><span class="dotted-line">работа</span></div>
+				</div>
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Дипломная</span> <br><span class="dotted-line">работа</span></div>
+				</div>
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Отчет</span> <br><span class="dotted-line">по практике</span></div>
+				</div>
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Контрольная</span> <br><span class="dotted-line">работа</span></div>
+				</div>
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Реферат</span></div>
+				</div>
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Магистерский </span> <br><span class="dotted-line">диплом</span></div>
+				</div>
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Вопросы </span> <br><span class="dotted-line">к экзамену</span></div>
+				</div>
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Презентация </span> </div>
+				</div>
+				<div class="tabs-nav__item">
+					<div class="tabs-nav__title"><span class="dotted-line">Другое </span> </div>
+				</div>
+			</div>
+			<!-- /.tabs-nav -->
+			<div class="reviews-tabs">
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="reviews-tab">
+					<div class="reviews-tab__slide">
+						<img src="img/review_1.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_2.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_3.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+					<div class="reviews-tab__slide">
+						<img src="img/review_4.png" alt="">
+					</div>
+					<!-- /.review-tab__slide -->
+				</div>
+				<!-- /.reviews-tab -->
+				<div class="tab-dots-wrapper">
+					<div class="tab-dots">
+						<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+						<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+					</div>
+					<!-- /.tab-dots -->
+				</div>
+				<div class="btn-reviews-wrap">
+					<a class="btn btn_write-reviews">Оставить свой отзыв</a>
+					<a class="btn btn_all-reviews">Смотреть все отзывы</a>
+				</div>
+				<!-- /.btn-reviews-wrap -->
+			</div>
+			<!-- /.reviews-tabs -->
+		</div>
+		<!-- /.wrapper-reviews -->
+	</section>
+	<!-- /.sect-reviews -->
+	<section class="sect-reasons">
+		<div class="wrapper">
+			<h2 class="reasons-title">Написание курсовых работ –<br>5 причин заказать курсовую работу в Multiwork</h2>
+			<div class="row">
+				<div class="reason-col">
+					<p class="reason-block">Как быть, если нет опыта и времени на написание курсовой?  Если работа нужна срочно, нужные мысли не приходят в голову, а вид чистого листа вызывает страх? Можно попытаться написать текст самому, а можно сэкономить время и нервы, обратившись к профессионалам на сайте Multiwork.</p>
+					<!-- /.reason-block -->
+					<div class="reason-block reason-block_sm">
+						<div class="reason-block__title reason-block__title_big">Курсовые от Multiwork – это:</div>
+						<ul>
+							<li>– максимально быстрый выбор исполнителя</li>
+							<li>– крупнейшая база готовых работ</li>
+							<li>– выполнение по высшему разряду</li>
+						</ul>
+					</div>
+					<!-- /.reason-block -->
+					<div class="reason-block reason-block_sm">
+						<div class="reason-block__title">1 причина заказать курсовую работу – большой опыт</div>
+						<p>Мы работаем с 2011 года, помогли студентам написать более 100 000 работ. Мы писали тексты для почти каждого вуза страны, знаем стандарты и требования к оформлению и написанию студенческих работ. Вы можете положиться на наш сайт курсовых работ.</p>
+					</div>
+					<!-- /.reason-block -->
+					<div class="reason-block reason-block_sm">
+						<div class="reason-block__title">2 причина – качественное исполнение</div>
+						<p>Качественные и уникальные тексты реферата или контрольной, написанные профессионалами в разных областях для вашей дипломной – только на нашем сайте. Наши авторы – действующие или бывшие преподаватели вузов, а это значит, что ваша работа будет 100% уникальной.</p>
+					</div>
+					<!-- /.reason-block -->
+				</div>
+				<!-- /.reason-col -->
+				<div class="reason-col">
+					<div class="reason-block">
+						<div class="reason-block__title">3 причина – у нас все официально!</div>
+						<p>Мы платим налоги, для вашего удобства работаем он-лайн и всегда на связи. Мы производим бесплатную оценку реферата или диплома, которая не обязывает вас сразу заказывать работу.</p>
+					</div>
+					<!-- /.reason-block -->
+					<div class="reason-block">
+						<div class="reason-block__title">4 причина – понятный сервис</div>
+						<p>Multiwork – это бесплатный номер для связи, смс-уведомления, удобная навигация по сайту. Наш менеджер ответит на все вопросы. Многоканальный call – центр поможет подобрать специалиста, сориентирует по базе курсовых работ 7 дней в неделю. Максимальное время ожидания на линии – 30 секунд.</p>
+					</div>
+					<!-- /.reason-block -->
+					<div class="reason-block">
+						<div class="reason-block__title">5 причина – удобная оплата и гарантии качества</div>
+						<p>Оплатить заказ можно не выходя из дома – банковской картой. Все доработки - бесплатно. Мы рассчитываем на долгосрочное сотрудничество, поэтому вернем вам деньги, если результат вас не устроит.</p>
+					</div>
+					<!-- /.reason-block -->
+					<p class="reason-block">Multiwork – скорая помощь для студента, который заказывает диплом, сочинение или реферат. Вы получаете готовую работу с гарантией качества. Написание дипломной работы на заказ в Multiwork – это просто, быстро и качественно!
+					</p>
+					<!-- /.reason-block -->
+				</div>
+				<!-- /.reason-col -->
+			</div>
+		</div>
+		
+	</section>
+	<!-- /.sect-reasons -->
+	<section class="sect-answers">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_center">Ответы<br class="br-mob"> на популярные вопросы</h2>
+			<div class="answers">
+				<div class="answers__item">
+					<div class="answers__icon">?</div>
+					<div class="answers__title">Что будет, если преподаватель поймет,<br> что работу писал не я?</div>
+					<p class="answers__text">Авторы пишут их под ваши конкретные требования. Доказать, что работу написал кто-то другой, просто невозможно. <br>Во-вторых, студенческие работы на<br class="br-mob"> заказ – это разновидность редакторских услуг. А этот вид работы разрешен и легален.</p>
+				</div>
+				<!-- /.answers__item -->
+				<div class="answers__item">
+					<div class="answers__icon">?</div>
+					<div class="answers__title">Мне очень важны сроки. <br class="br-mob">Вы точно успеете написать работу вовремя?</div>
+					<p class="answers__text">Если мы взялись за вашу работу, то точно успеем. Несколько раз мы даже делали диплом на заказ сверхсрочно — за один день. Но лучше не тянуть до последнего и заказывать работы заблаговременно</p>
+				</div>
+				<!-- /.answers__item -->
+				<div class="answers__item">
+					<div class="answers__icon">?</div>
+					<div class="answers__title">Скидки есть?</div>
+					<p class="answers__text">Конечно!</p>
+					<p class="answers__text">1. Если вы обращаетесь к нам повторно (например, в прошлом году вы заказывали курсовую, а сейчас нужен диплом), то мы даем хорошую скидку</p>
+					<p class="answers__text">2. Если вы обращаетесь к нам заблаговременно, хотя бы на пару дней раньше основного потока студентов, тогда скидки на работу могут достигать  40%</p>
+					<p class="answers__text">3. Если вы рекомендуете нас своим знакомым, мы начисляем вам деньги, которые вы можете потратить на написание работ</p>
+				</div>
+				<!-- /.answers__item -->
+				<div class="answers__item">
+					<div class="answers__icon">?</div>
+					<div class="answers__title">Если преподавателю не понравится работа и он скажет все переделать?</div>
+					<p class="answers__text">Как правило преподаватель дает конкретные замечания по работе — такова его работа. Эти замечания автор исправляет в течение 30 дней. Но если вдруг преподаватель попросить полностью переделать работу, хотя такого в нашей практике еще не было, мы назначим нового автора и переделаем работу или вернем вам деньги — все до копейки.</p>
+				</div>
+				<!-- /.answers__item -->
+			</div>
+			<!-- /.answers -->	
+		</div>
+	</section>
+	<!-- /.sect-answers -->
+	<section class="sect-blog">
+		<div class="wrapper">
+			<h2 class="sect-title sect-title_center sect-title_white">Блог</h2>
+			<div class="sect-subtitle sect-subtitle_center sect-subtitle_white">Топ полезных статей <br class="br-mob">для студента в 2019</div>
+			<div class="row sect-blog__row">
+				<div class="article">
+					<div class="article__img">
+						<img src="img/articles_1.jpg" alt="">
+					</div>
+					<div class="article__text">
+						<a href="#" class="article__tag">Лайфхаки</a>
+						<a href="#" class="article__link">Как выбрать тему<br><br class="br-mob"> курсовой работы?</a>
+					</div>
+				</div>
+				<!-- /.article -->
+				<div class="article">
+					<div class="article__img">
+						<img src="img/articles_2.jpg" alt="">
+					</div>
+					<div class="article__text">
+						<a href="#" class="article__tag">Методички</a>
+						<a href="#" class="article__link">Речь к защите диплома:<br class="br-mob"> о чем<br> говорить и как<br class="br-mob"> себя вести</a> 
+					</div>
+				</div>
+				<!-- /.article -->
+				<div class="article">
+					<div class="article__img">
+						<img src="img/articles_3.jpg" alt="">
+					</div>
+					<div class="article__text">
+						<a href="#" class="article__tag">Знания</a>
+						<a href="#" class="article__link">Как работает антиплагиат?</a>
+					</div>
+				</div>
+				<!-- /.article -->
+			</div>
+			<!-- /.row -->
+			<div class="mailer">
+				<div class="mailer__title">Читайте нашу рассылку</div>
+				<div class="mailer__subtitle">Еженедельно, информативно, без напрягов</div>
+				<form action="#">
+					<input type="text" placeholder="Введите ваше имя">
+					<input type="email" placeholder="Введите ваш e-mail">
+					<div class="mailer__send">
+						<button class="btn btn_mailer">Подписаться</button>
+						<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- /.sect-blog -->
+	<div class="block-information">
+		<div class="wrapper">
+			<div class="row">
+				<div class="reason-col">
+					<p class="reason-block reason-block_sm">Нужно срочно сдать реферат, курсовую или диплом, но совершенно нет времени? Если близок дедлайн – не отчаивайтесь! Больше не нужно корпеть над текстом, забыв о сне и отдыхе. Теперь есть Multiwork – студенческий сервис, который возьмет вашу работу на себя.</p>
+					<!-- /.reason-block -->
+					<p class="reason-block reason-block_sm">Команда Multiwork – это опытные преподаватели, досконально знающие все нюансы написания и оформления студенческих работ. Каждый автор хорошо знаком и с системами проверки на плагиат, использующимися в современных ВУЗах. Поэтому Multiwork гарантирует высокое качество и уникальность всех написанных текстов. Специалисты Multiwork выполнили более 100 000 работ, начиная с 2011 года. Дипломы, курсовые, рефераты, контрольные и отчеты по практике, созданные в Multiwork, успешно прошли проверку в десятках ВУЗов страны.</p>
+					<!-- /.reason-block -->
+					<div class="reason-block reason-block_sm">
+						<div class="reason-block__title reason-block__title_big">Оперативная помощь студентам по всей РФ</div>
+						<p class="reason-block__mb">Сайт Multiwork – быстрое решение «дипломной» проблемы:</p>
+						<p ><span class="reason-block__b">• Оперативное исполнение заказа.</span> Если нужно как можно скорее сдать работу – обращайтесь! «Горящие» заказы мы ставим в приоритет и выполняем в сжатые сроки – 3-4 часа для рефератов и отчетов, 1 день – для курсовой и диплома.</p>
+					</div>
+					<!-- /.reason-block -->
+				</div>
+				<!-- /.reason-col -->
+				<div class="reason-col">
+					<div class="reason-block">
+						<p class="reason-block__mb"><span class="reason-block__b">• Удобная оплата онлайн</span>– банковской картой, со счета телефона или электронного кошелька.</p>
+						<p class="reason-block__mb"><span class="reason-block__b">• 100% гарантия качества</span>– бесплатные доработки до полного принятия работы преподавателем.</p>
+						<p class="reason-block__mb"><span class="reason-block__b">• Всегда на связи </span>– менеджеры оперативно ответят на вопросы, помогут подобрать автора и сориентируют по срокам выполнения текущего заказа. Наш часовой пояс – Москва, но горячая линия работает круглосуточно и бесплатно.</p>
+					</div>
+					<!-- /.reason-block -->
+					<div class="reason-block">
+						<div class="reason-block__title reason-block__title_big">Вы получите отличную оценку – или мы вернем деньги</div>
+						<p>Кредо Multiwork – выполнение заказов на «отлично». Каждая работа дважды проверяется перед сдачей – отдел контроля качества проверяет оригинальность с помощью Антиплагиата, смотрят оформление и соблюдение требований. Только после этого отправляем заказ клиенту. Мы не пишем по шаблонам. К каждому заказу подходим индивидуально и гарантируем оригинальность. Если преподаватель не примет работу и напишет замечания, мы бесплатно исправим их. Если не справимся – вернем деньги. Но в большинстве случаев, мы справляемся)</p>
+					</div>
+					<!-- /.reason-block -->
+					<p class="reason-block">Закажите написание работы в сервисе Multiwork – и спите спокойно!</p>
+					<!-- /.reason-block -->
+				</div>
+				<!-- /.reason-col -->
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
+	<!-- /.block-information -->
+	<section class="sect-contacts">
+		<div class="wrapper-contacts">
+			<h2 class="sect-title sect-title_white">Пишите или звоните<br><br class="br-mob"> нам в любое время</h2>
+			<div class="sect-subtitle sect-subtitle_white">На связи ежедневн<br class="br-mob"> с 9.00 до 22.00</div>
+			<div class="row">
+				<div class="contacts-block contacts-block_phone">
+					
+					<div class="contacts-block__content">
+						<div class="contacts-block__title">Телефоны:</div>
+						<!-- /.contacts-block__titile -->
+						<div class="contacts-block__icon">
+							<img src="img/i-phone.svg" alt="">
+						</div>
+						<!-- /.contacts-block__icon -->
+						<div class="contacts-block__text">
+							<a href="tel:88007078535" class="contacts-block__link">
+								8 800 707-85-35
+								<span class="contacts-block__descr">Бесплатно по России</span>
+							</a>
+							<a href="tel:84956680813" class="contacts-block__link">
+									8 495 668-08-13
+								<span class="contacts-block__descr">Звонки по Москве</span>
+							</a>
+						</div>
+						<!-- /.contacts-block__text -->
+					</div>
+					<!-- /.contacts-block__content -->
+						<button class="btn btn_cal-me">Позвоните мне</button>
+				</div>
+				<!-- /.contacts-block -->
+
+				<div class="contacts-block contacts-block_messengers">
+					<div class="contacts-block__content">
+						<div class="contacts-block__title">Почта:</div>
+					<!-- /.contacts-block__titile -->
+						<div class="contacts-block__icon">
+							<img src="img/i-envelope.svg" alt="">
+						</div>
+						<!-- /.contacts-block__icon -->
+						<div class="contacts-block__text">
+							<a href="mailto:info@multiwork.org" class="contacts-block__link">
+								<span class="line">info@multiwork.org</span>
+								<span class="contacts-block__descr">Для студентов, по всем вопросам</span>
+							</a>
+							<a href="mailto:partner@multiwork.org" class="contacts-block__link">
+								<span class="line">partner@multiwork.org</span>
+								<span class="contacts-block__descr">Для авторов, заявки на сотрудничество</span>
+							</a>
+						</div>
+						<!-- /.contacts-block__text -->
+					</div>
+					<!-- /.contacts-block__content -->
+					<div class="contacts-block__content contacts-block__content_teleg">
+						<div class="contacts-block__title">Telegram:</div>
+						<!-- /.contacts-block__titile -->
+						<div class="contacts-block__icon">
+							<img src="img/i-plane.svg" alt="">
+						</div>
+						<!-- /.contacts-block__icon -->
+						<div class="contacts-block__text">
+							<a href="#" class="contacts-block__link contacts-block__link_line">
+								<span class="line">multiworkorg</span>
+								<span class="contacts-block__descr">Официальный канал</span>
+							</a>
+						</div>
+						<!-- /.contacts-block__text -->
+					</div>
+					<!-- /.contacts-block__content -->
+				</div>
+				<!-- /.contacts-block -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.wrapper -->
+	</section>
+	<!-- /.sect-contacts -->
+	<footer class="footer">
+		<div class="wrapper-footer">
+			<div class="footer-col">
+				<div class="logo logo_footer">
+				<a href="#">
+					<img src="img/logo.png" alt="Multiwork">
+					<div>Помощь студентам<br>с письменными работами</div>
+				</a>
+			</div>
+			<!-- /.logo -->
+			<div class="footer-documents">
+				<a href="#">Политика конфиденциальности</a>
+				<a href="#">Договор оферты</a>
+			</div>
+			 <!-- /.footer-documents -->
+			</div>
+			<!-- /.footer-col -->
+			<nav class="footer-nav">
+				<div class="footer-nav__title">услуги и цены</div>
+				<ul >
+					<li><a href="">Заказать дипломную работу</a></li>
+					<li><a href="">Заказать курсовую работу</a></li>
+					<li><a href="">Заказать диссертацию</a></li>
+					<li><a href="">Заказать реферат</a></li>
+					<li><a href="">Заказать отчет по практике</a></li>
+					<li><a href="">Заказать контрольную работу</a></li>
+				</ul>
+			</nav>
+			<!-- /.footer-nav -->
+			<nav class="footer-nav footer-nav_no-title">
+				<ul >
+					<li><a href="">Заказать дипломную работу</a></li>
+					<li><a href="">Заказать курсовую работу</a></li>
+					<li><a href="">Заказать диссертацию</a></li>
+					<li><a href="">Заказать реферат</a></li>
+					<li><a href="">Заказать отчет по практике</a></li>
+					<li><a href="">Заказать контрольную работу</a></li>
+				</ul>
+			</nav>
+			<!-- /.footer-nav -->
+			<nav class="footer-nav">
+				<div class="footer-nav__title">сервис</div>
+				<ul >
+					<li><a href="">О проекте</a></li>
+					<li><a href="">Отзывы</a></li>
+					<li><a href="">Стоимость</a></li>
+					<li><a href="">Стоимость</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</nav>
+			<!-- /.footer-nav -->
+			<div class="info-phone  info-phone_footer">
+				<a href="#" class="info-phone__link">8 800 707-85-35</a>
+				<a href="#" class="info-phone__link">8 495 668-08-13</a>
+				<a href="#" class="info-phone__modal">Позвоните мне</a>
+				<div class="btn-wrap info-phone__btn-wrap">
+					<button class="btn btn_order-work">Заказать работу</button>
+				</div>
+			</div> 
+			<!-- /.info-phone -->
+			<div class="footer-documents footer-documents_md">
+				<a href="#">Политика конфиденциальности</a>
+				<a href="#">Договор оферты</a>
+			</div>
+			 <!-- /.footer-documents -->
+		</div>
+		<!-- /.wrapper-footer -->
+		<div class="footer-info">
+			<div class="wrapper">
+				<p>Специалисты сайта multiwork.org осуществляют работу по сбору, обработке и структурированию информации по предложенной клиентом теме. <br> Результат подобной работы не является готовым научным трудом, но может служить источником для его написания.</p>
+				<p>© 2019 Multiwork. Все права защищены</p>
+			</div>
+		</div>
+		<!-- /.footer-info -->
+	</footer>
+	<!-- /.footer -->
+
+	<div class="overlay"></div>
+	<div class="modal modal_thank modal_raccon">
+		<button class="modal-close"></button>
+		<h3 class="modal__title">Спасибо за обращение. <br>Мы получили вашу заявку<br> Ее номер 938152</h3>
+		<div class="modal__subtitle">СМС будет автоматически <br class="br-mob"> отправлено в течение<br class="br-mob"> 5 минут</div>
+		<div class="modal__text">Если у вас срочный вопрос,<br class="br-mob"> звоните нам по номеру<br> 8 800 707-85-35 или<br class="br-mob"> <a href="" class="modal__link">закажите бесплатный звонок</a></div>
+		<div class="modal__row">
+			<div class="modal__block modal__block_raccon_mob">
+				<div class="modal__block-title">Пока вы ждете, переходите в наш <img src="img/i-telegram.png" alt=""> <a href="#" class="modal__link">Telegram-канал</a></div>
+				<div class="modal__list">
+					<div class="modal__list-title">Там вы найдете:</div>
+					<ul>
+						<li class="modal__list-item modal__list-item_dash">как и сколько можно сэкономить <br> при заказе работы</li>
+						<li class="modal__list-item modal__list-item_dash">лайфхаки, как составить речь на защиту</li>
+						<li class="modal__list-item modal__list-item_dash">как за несколько минут оформить список литературы по ГОСТу</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.modal__block -->
+			<div class="modal__block modal__block_raccon">
+				<div class="modal__block-title">Что почитать, <br class="br-mob">пока вы <br>ждете СМС? <br class="br-mob">Топ-3 статей <br>в<br class="br-mob"> <a href="#" class="modal__link">блоге Multiwork</a></div>
+				<div class="modal__list">
+					<ul>
+						<li class="modal__list-item"><a href="#">Как выбрать тему дипломной работы?</a></li>
+						<li class="modal__list-item"><a href="#">3 способа, как стащить себя с дивана и начать учиться</a></li>
+						<li class="modal__list-item"><a href="#">Речь к защите диплома: о чем нужно говорить, чтобы получить «5»</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.modal__block -->
+		</div>
+	</div>
+	<!-- /.modal -->
+	<div class="modal modal_thank-two  modal_raccon">
+		<button class="modal-close"></button>
+		<h3 class="modal__title">Спасибо за обращение. <br>Мы получили вашу заявку</h3>
+		<div class="modal__subtitle">СМС будет автоматически <br class="br-mob"> отправлено в течение 5 минут<br> в рабочее время с 10.00 до 20.00</div>
+		<div class="modal__text">Если у вас срочный вопрос,<br class="br-mob"> звоните нам по номеру<br> 8 800 707-85-35 или<br class="br-mob"> <a href="" class="modal__link">закажите бесплатный звонок</a></div>
+		<div class="modal__row">
+			<div class="modal__block modal__block_raccon_mob">
+				<div class="modal__block-title">Пока вы ждете, переходите в наш <img src="img/i-telegram.png" alt=""> <a href="#" class="modal__link">Telegram-канал</a></div>
+				<div class="modal__list">
+					<div class="modal__list-title">Там вы найдете:</div>
+					<ul>
+						<li class="modal__list-item modal__list-item_dash">как и сколько можно сэкономить <br> при заказе работы</li>
+						<li class="modal__list-item modal__list-item_dash">лайфхаки, как составить речь на защиту</li>
+						<li class="modal__list-item modal__list-item_dash">как за несколько минут оформить список литературы по ГОСТу</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.modal__block -->
+			<div class="modal__block modal__block_raccon">
+				<div class="modal__block-title">Что почитать, <br class="br-mob">пока вы <br>ждете СМС? <br class="br-mob">Топ-3 статей <br>в<br class="br-mob"> <a href="#" class="modal__link">блоге Multiwork</a></div>
+				<div class="modal__list">
+					<ul>
+						<li class="modal__list-item"><a href="#">Как выбрать тему дипломной работы?</a></li>
+						<li class="modal__list-item"><a href="#">3 способа, как стащить себя с дивана и начать учиться</a></li>
+						<li class="modal__list-item"><a href="#">Речь к защите диплома: о чем нужно говорить, чтобы получить «5»</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.modal__block -->
+		</div>
+	</div>
+	<!-- /.modal -->
+	<div class="modal modal_form-manager ">
+		<button class="modal-close"></button>
+		<h3 class="modal__title modal__title_center modal__title_sm-mob">Менеджер <br class="br-mob">Multiwork<br> позвонит в течение 7 минут</h3>
+		<div class="modal__subtitle modal__subtitle_center">или в удобное для вас время</div>
+		<form action="#">
+			<div class="modal__text-input">
+	    		<input type="text" placeholder="Введите ваше имя">
+			</div>
+			<div class="modal__text-input">
+	   			 <input type="tel" placeholder="Введите ваш телефон">
+			</div>
+			<div class="modal__radio-btn">
+				<input type="radio" name="time-call" id="now" checked><label for="now">Позвонить сейчас</label>
+				<input type="radio" name="time-call" id="choose"><label for="choose">Выбрать время</label>
+			</div>
+			<div class="modal__time">
+				<div class="modal__text-input modal__text-input_sm">
+					<label for="modal-time">Позвонить в</label>
+					<input type="text" id="modal-time" placeholder="13 : 00" disabled>
+				</div>
+				<div class="modal__time-radio">
+					<label><input type="radio" name="time" disabled><span class="icon-check"></span>Сегодня</label>
+					<label><input type="radio" name="time" disabled><span class="icon-check"></span>Завтра</label>
+				</div>
+			</div>
+			<div class="btn-wrap"><button class="btn  btn_form">Позвоните мне</button></div>
+				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+				</div>
+		</form>
+	</div>
+	<!-- /.modal -->
+	<div class="modal form form_calc modal_form-calc">
+		<button class="modal-close"></button>
+		<h3 class="modal__title modal__title_center ">Заказать работу</h3>
+		<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Сколько стоит написать работу?</div>
+		<form action="#">
+			<div class="form__col form__col_center">
+				<div class="form__caption">Укажите информацию о задании:</div>
+				<select data-placeholder="Выберите тип работы">
+					<option value=""></option>
+					<option value="">Дипломная</option>
+					<option value="">Курсовая</option>
+					<option value="">Реферат</option>
+					<option value="">Контрольная работа</option>
+					<option value="">Дипломная</option>
+				</select>
+				<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+				<input type="text" placeholder="Предмет (как в расписании)">
+				<textarea placeholder="Требования"></textarea>
+				<div class="form__date">
+					<input type="text" class="datepicker-here" placeholder="Срок сдачи">
+				</div>
+				<div class="form__caption">Ваши контактные данные:</div>
+				<input type="text" placeholder="Введите ваше имя">
+				<input type="tel" placeholder="Введите ваш телефон">
+				<input type="email" placeholder="Введите ваше e-mail">
+					<div class="form__caption form__caption_mt">Промокод:
+						<span class="help" data-help="Оплатить заказ можно не выходя из дома – банковской картой. Все доработки - бесплатно.">?</span>
+					</div>
+					<input type="text" placeholder="Промокод, если есть">
+				</div>
+				<!-- /.form-col -->
+				<div class="btn-wrap"><button class="btn btn_calc-form">Рассчитать стоимость и сэкономить до 40%</button></div>
+				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+				</div>
+		</form>
+	</div>
+	<!-- /.modal -->
+	<div class="modal form form_calc modal_price  ">
+		<button class="modal-close"></button>
+		<h3 class="modal__title modal__title_center ">Узнайте стоимость<br> работы у автора ID 514</h3>
+		<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер <br>Multiwork свяжется с вами и назовет<br> стоимость работы</div>
+		<form action="#">
+			<div class="form__col form__col_center">
+				<select data-placeholder="Выберите тип работы">
+					<option value=""></option>
+					<option value="">Дипломная</option>
+					<option value="">Курсовая</option>
+					<option value="">Реферат</option>
+					<option value="">Контрольная работа</option>
+					<option value="">Дипломная</option>
+				</select>
+				<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+				<input type="tel" placeholder="Введите ваш телефон">
+				<input type="email" placeholder="Введите ваше e-mail">
+				</div>
+				<!-- /.form-col -->
+				<div class="btn-wrap"><button class="btn  btn_form">Позвоните мне</button></div>
+				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+				</div>
+		</form>
+	</div>
+	<!-- /.modal -->
+	<div class="modal form form_calc modal_review">
+		<button class="modal-close"></button>
+		<h3 class="modal__title modal__title_center ">Оставьте свой отзыв<br> о работе сервиса Multiwork</h3>
+		<form action="#">
+			<div class="form__col form__col_center">
+				<div class="form__caption">Ваша общая оценка:</div>
+				<div class="rating_block">
+					  <input name="rating" value="5" id="rating_5" type="radio" />
+					  <label for="rating_5" class="label_rating"></label>
+					 
+					  <input name="rating" value="4" id="rating_4" type="radio" />
+					  <label for="rating_4" class="label_rating"></label>
+					 
+					  <input name="rating" value="3" id="rating_3" type="radio" />
+					  <label for="rating_3" class="label_rating"></label>
+					 
+					  <input name="rating" value="2" id="rating_2" type="radio" />
+					  <label for="rating_2" class="label_rating"></label>
+					 
+					  <input name="rating" value="1" id="rating_1" type="radio" />
+					  <label for="rating_1" class="label_rating"></label>
+				</div>
+				<div class="form__caption">Заголовок вашего отзыва:</div>
+				<input type="text" placeholder="Опишите кратко ваш опыт">
+				<div class="form__caption">Ваш отзыв:</div>
+				<textarea rows="4" placeholder="Расскажите другим, как вам помог сервис Multiwork"></textarea>
+				<div class="form__caption">Укажите ваше имя:</div>
+				<input type="text" placeholder="Имя или ваш логин">
+				<input type="file">
+			</div>
+				<!-- /.form-col -->
+				<div class="btn-wrap"><button class="btn  btn_form">Отправить отзыв</button></div>
+				<div class="form__checkbox-wrap">
+					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+				</div>
+		</form>
+	</div>
+	<!-- /.modal -->
+	<div class="modal form form_calc modal_author">
+		<button class="modal-close"></button>
+		<h3 class="modal__title modal__title_center ">Подберите автора своей работы в 2 клика</h3>
+		<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер Multiwork свяжется с вами и подберет в базе подходящего автора</div>
+		<form action="#">
+			<div class="form__col form__col_center">
+				<select data-placeholder="Выберите тип работы">
+					<option value=""></option>
+					<option value="">Дипломная</option>
+					<option value="">Курсовая</option>
+					<option value="">Реферат</option>
+					<option value="">Контрольная работа</option>
+					<option value="">Дипломная</option>
+				</select>
+				<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+				<input type="tel" placeholder="Введите ваш телефон">
+				<input type="email" placeholder="Введите ваше e-mail">
+				</div>
+				<!-- /.form-col -->
+				<div class="btn-wrap"><button class="btn btn_calc-form">Подобрать автора</button></div>
+				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+				</div>
+		</form>
+	</div>
+	<!-- /.modal -->
+	<div class="modal form form_calc modal_deadlines">
+	<button class="modal-close"></button>
+	<h3 class="modal__title modal__title_center ">Узнайте <br>сроки выполнения<br> вашей работы</h3>
+	<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер Multiwork свяжется с вами и назовет сроки выполнения вашей работы</div>
+		<form action="#">
+			<div class="form__col form__col_center">
+				<select data-placeholder="Выберите тип работы">
+					<option value=""></option>
+					<option value="">Дипломная</option>
+					<option value="">Курсовая</option>
+					<option value="">Реферат</option>
+					<option value="">Контрольная работа</option>
+					<option value="">Дипломная</option>
+				</select>
+				<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+				<input type="tel" placeholder="Введите ваш телефон">
+				<input type="email" placeholder="Введите ваше e-mail">
+				</div>
+				<!-- /.form-col -->
+				<div class="btn-wrap"><button class="btn btn_calc-form">Узнать сроки<br> выполнения работы</button></div>
+				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+				</div>
+		</form>
+	</div>
+	<!-- /.modal -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/smooth-scrollbar.js"></script>
+	<script src="scripts/jquery.formstyler.min.js"></script>
+	<script src="scripts/datepicker.min.js"></script>
+	<script src="scripts/wow.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
+
+
