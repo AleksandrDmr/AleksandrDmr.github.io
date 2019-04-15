@@ -16,7 +16,7 @@
 		<div class="wrapper-header">
 			<div class="logo">
 				<a href="#">
-					<img src="img/logo.png" alt="Multiwork">
+					<img src="img/logo.svg" alt="Multiwork">
 					<div>Помощь студентам<br>с письменными работами</div>
 				</a>
 			</div>
@@ -116,7 +116,7 @@
 									1 из 9. Какую работу вы хотите рассчитать?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_active"><label><input type="radio" name="step-1" checked ><span class="quiz-form__checkbox"></span>Дипломная</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1" ><span class="quiz-form__checkbox"></span>Дипломная</label></div>
 									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Курсовая</label></div>
 									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Реферат</label></div>
 									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Контрольная работа</label></div>
@@ -130,7 +130,7 @@
 													<li><label><input type="radio" name="step-1">Дипломная</label></li>
 													<li><label><input type="radio" name="step-1">Курсовая</label></li>
 													<li><label><input type="radio" name="step-1">Реферат</label></li>
-													<li><label><input type="radio" name="step-1">Контрольная<br>работа</label></li>
+													<li><label><input type="radio" name="step-1">Контрольная<br> работа</label></li>
 													<li><label><input type="radio" name="step-1">Дипломная</label></li>
 												</ul>
 												<ul>
@@ -144,7 +144,7 @@
 													<li><label><input type="radio" name="step-1">Дипломная</label></li>
 													<li><label><input type="radio" name="step-1">Курсовая</label></li>
 													<li><label><input type="radio" name="step-1">Реферат</label></li>
-													<li><label><input type="radio" name="step-1">Контрольная<br>работа</label></li>
+													<li><label><input type="radio" name="step-1">Контрольная<br> работа</label></li>
 												</ul>
 											</div>	
 										</div>
@@ -160,9 +160,9 @@
 									2 из 9. Какой именно диплом нужен?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-2" checked ><span class="quiz-form__checkbox"></span>Магистерский диплом</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"  ><span class="quiz-form__checkbox"></span>Магистерский диплом</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа (бакалавр/специалист)</label></div>
-									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа(колледж/техникум)</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа (колледж/техникум)</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Аттестационная работа (ВАР/ВКР)</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Часть дипломной работы</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Сопроводительные материалы к диплому</label></div>
@@ -175,7 +175,7 @@
 									3 из 9. Сколько страниц нужно написать?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-3" checked ><span class="quiz-form__checkbox"></span>Меньше 60 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3" ><span class="quiz-form__checkbox"></span>Меньше 60 страниц</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>60-70 страниц</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>70-80 страниц</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>Большее 80 страниц</label></div>
@@ -189,7 +189,7 @@
 									4 из 9. Когда нужно сдать работу?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_xl quiz-form__date"><span>Я знаю точную дату:</span><input type="text" class="datepicker-here"></div>
+									<div class="quiz-form__item quiz-form__item_xl quiz-form__date"><span>Я знаю точную дату:</span><input type="text" id="quiz-date" class="datepicker-here"><label for="quiz-date" class="icon-calendar"></div>
 									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-4" ><span class="quiz-form__checkbox"></span>Я не знаю точной даты</label></div>
 								</div>
 								<!-- /.quiz-step-wrap -->
@@ -210,7 +210,7 @@
 									6 из 9. У вас есть методичка для диплома?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-6" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6" ><span class="quiz-form__checkbox"></span>Да</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6"><span class="quiz-form__checkbox"></span>Нет</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
 								</div>
@@ -220,14 +220,16 @@
 							<div class="quiz-step">
 								<div class="quiz__progress-bar">
 									7 из 9. Нужна ли проверка на оригинальность/антиплагиат?
+
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-7" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7" ><span class="quiz-form__checkbox"></span>Да</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7"><span class="quiz-form__checkbox"></span>Нет</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
+
 									<div class="quiz-form__item-wrap">
 										<div class="quiz-form__item-title">Система проверки:</div>
-										<div class="quiz-form__item quiz-form__item_lg quiz-form__select">
+										<div class="quiz-form__item quiz-form__select">
 											<select name="type">
 												<option value="">ВУЗ</option>
 												<option value="">Antiplagiat.ru</option>
@@ -240,7 +242,7 @@
 									</div>
 									<div class="quiz-form__item-wrap">
 										<div class="quiz-form__item-title">Процент оригинальности:</div>
-										<div class="quiz-form__item quiz-form__item_lg quiz-form__select">
+										<div class="quiz-form__item  quiz-form__select">
 											<select name="percent">
 												<option value="">50-60%</option>
 												<option value="">60-70%</option>
@@ -258,7 +260,7 @@
 									8 из 9. Вы знаете тему своего диплома?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_xl quiz-form__item_active"><label><input type="radio" name="step-8" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8" ><span class="quiz-form__checkbox"></span>Да</label></div>
 									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет, не знаю</label></div>
 									<div class="quiz-form__text-field"><textarea placeholder="Укажите тему диплома"></textarea></div>
 								</div>
@@ -270,8 +272,8 @@
 									9 из 9. У вас уже есть план диплом?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_xl quiz-form__item_active"><label><input type="radio" name="step-8" checked ><span class="quiz-form__checkbox"></span>Да, есть</label></div>
-									<div class="quiz-form__item quiz-form__item_sm-text quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет плана.<br><b> Хочу получить его бесплатно</b></label></div>
+									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-9" ><span class="quiz-form__checkbox"></span>Да, есть</label></div>
+									<div class="quiz-form__item quiz-form__item_sm-text quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет плана.<b> Хочу получить его бесплатно</b></label></div>
 								</div>
 								<!-- /.quiz-step-wrap -->
 							</div>
@@ -342,7 +344,7 @@
 									Какую работу вы хотите рассчитать?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_active"><label><input type="radio" name="step-1" checked ><span class="quiz-form__checkbox"></span>Дипломная</label></div>
+									<div class="quiz-form__item"><label><input type="radio" name="step-1" ><span class="quiz-form__checkbox"></span>Дипломная</label></div>
 									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Курсовая</label></div>
 									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Реферат</label></div>
 									<div class="quiz-form__item"><label><input type="radio" name="step-1"><span class="quiz-form__checkbox"></span>Контрольная работа</label></div>
@@ -386,9 +388,9 @@
 									Какой именно диплом нужен?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-2" checked ><span class="quiz-form__checkbox"></span>Магистерский диплом</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2" ><span class="quiz-form__checkbox"></span>Магистерский диплом</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа (бакалавр/специалист)</label></div>
-									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа(колледж/техникум)</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Дипломная работа (колледж/техникум)</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Аттестационная работа (ВАР/ВКР)</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Часть дипломной работы</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-2"><span class="quiz-form__checkbox"></span>Сопроводительные материалы к диплому</label></div>
@@ -401,7 +403,7 @@
 									Сколько страниц нужно написать?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-3" checked ><span class="quiz-form__checkbox"></span>Меньше 60 страниц</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3" ><span class="quiz-form__checkbox"></span>Меньше 60 страниц</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>60-70 страниц</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>70-80 страниц</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-3"><span class="quiz-form__checkbox"></span>Большее 80 страниц</label></div>
@@ -415,7 +417,7 @@
 									 Когда нужно сдать работу?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_xl quiz-form__date"><span>Я знаю точную дату:</span><input type="text" class="datepicker-here"></div>
+									<div class="quiz-form__item quiz-form__item_xl quiz-form__date"><span>Я знаю точную дату:</span><input type="text" class="datepicker-here" id="quiz-date_mob"><label for="quiz-date_mob" class="icon-calendar"></label></div>
 									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-4" ><span class="quiz-form__checkbox"></span>Я не знаю точной даты</label></div>
 								</div>
 								<!-- /.quiz-step-wrap -->
@@ -436,7 +438,7 @@
 									У вас есть методичка для диплома?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-6" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6" ><span class="quiz-form__checkbox"></span>Да</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6"><span class="quiz-form__checkbox"></span>Нет</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-6"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
 								</div>
@@ -448,7 +450,7 @@
 									Нужна ли проверка на оригинальность/антиплагиат?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_lg quiz-form__item_active"><label><input type="radio" name="step-7" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7" ><span class="quiz-form__checkbox"></span>Да</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7"><span class="quiz-form__checkbox"></span>Нет</label></div>
 									<div class="quiz-form__item quiz-form__item_lg"><label><input type="radio" name="step-7"><span class="quiz-form__checkbox"></span>Не знаю</label></div>
 									<div class="quiz-form__item-wrap">
@@ -484,7 +486,7 @@
 									Вы знаете тему своего диплома?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_xl quiz-form__item_active"><label><input type="radio" name="step-8" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8" ><span class="quiz-form__checkbox"></span>Да</label></div>
 									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет, не знаю</label></div>
 									<div class="quiz-form__text-field"><textarea rows="4" placeholder="Укажите тему диплома"></textarea></div>
 								</div>
@@ -496,7 +498,7 @@
 									У вас уже есть план диплом?
 								</div>
 								<div class="quiz-step-wrap">
-									<div class="quiz-form__item quiz-form__item_xl quiz-form__item_active"><label><input type="radio" name="step-8" checked ><span class="quiz-form__checkbox"></span>Да</label></div>
+									<div class="quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-9" ><span class="quiz-form__checkbox"></span>Да</label></div>
 									<div class="quiz-form__item quiz-form__item_sm-text quiz-form__item quiz-form__item_xl"><label><input type="radio" name="step-8"><span class="quiz-form__checkbox"></span>Нет плана.<br><b> Хочу получить его бесплатно</b></label></div>
 								</div>
 								<!-- /.quiz-step-wrap -->
@@ -721,7 +723,6 @@
 							  		<td>1 день</td>
 							  		<td>5 дней</td>
 							  	</tr>
-							  </tbody>
 							  <tr>
 							  		<td>Контрольная работа</td>
 							  		<td>4 часа</td>
@@ -737,6 +738,7 @@
 							  		<td>4 часа</td>
 							  		<td>5 дней</td>
 							  	</tr>
+							  	</tbody>
 						</table>
 					</div>
 					<!-- /.table-deadline__wrap-table -->
@@ -1492,7 +1494,8 @@
 							<input type="text" placeholder="Предмет (как в расписании)">
 							<textarea placeholder="Требования"></textarea>
 							<div class="form__date">
-								<input type="text" class="datepicker-here" placeholder="Срок сдачи">
+								<input type="text" id="calc-form" class="datepicker-here" placeholder="Срок сдачи">
+								<label for="calc-form" class="icon-calendar"></label>
 							</div>
 						</div>
 						<!-- /.form-col -->
@@ -1606,23 +1609,48 @@
 			<div class="manager-row">
 				<div class="manager-chat">
 					<div class="manager-chat__container">
-						<div class="manager-chat__message manager-chat__message_green manager-chat__message_one wow zoomInRight">
-							<div class="manager-chat__text">Добрый день, Михаил, сегодня внес аванс</div>
-							<div class="manager-chat__time">сегодня 11:19</div>
+						<div class="manager-chat__s-hidden">
+							 	<div class="manager-chat__message-wrap"> 
+										<div class="manager-chat__message manager-chat__message_green manager-chat__message_green_lg">
+											<div class="manager-chat__text">Добрый день, Михаил, сегодня внес аванс</div>
+											<div class="manager-chat__time">сегодня 11:19</div>
+										</div>
+										<div class="manager-chat__message manager-chat__message_gray manager-chat__message_gray_lg">
+											<div class="manager-chat__name">Барбашин Михаил</div>
+											<div class="manager-chat__text">Добрый день! Да, вижу в системе. Автор уже <br>подобрал материал, скоро предоставит первую главу</div>
+											<div class="manager-chat__time">сегодня 11:19</div>
+										</div>
+										<div class="manager-chat__message manager-chat__message_gray manager-chat__message_gray_sm">
+											<div class="manager-chat__name">Барбашин Михаил</div>
+											<div class="manager-chat__text">И напоминаю про методичку)</div>
+											<div class="manager-chat__time">сегодня 11:19</div>
+										</div>
+										<div class="manager-chat__message manager-chat__message_green manager-chat__message_green_lg"">
+											<div class="manager-chat__text">Да-да, преподаватель наконец-то дал ее мне.</div>
+											<div class="manager-chat__time">сегодня 11:19</div>
+										</div>
+										<div class="manager-chat__message manager-chat__message_green manager-chat__message_green_lg"">
+											<div class="manager-chat__text">Сказал, что офрормление должно быть точно по ней</div>
+											<div class="manager-chat__time">сегодня 11:19</div>
+										</div>
+										<div class="manager-chat__message manager-chat__message_gray  manager-chat__message_gray_xs">
+											<div class="manager-chat__name">Барбашин Михаил</div>
+											<div class="manager-chat__text">Окей, сделаем!</div>
+											<div class="manager-chat__time">сегодня 11:19</div>
+										</div>
+										<div class="manager-chat__message manager-chat__message_gray  manager-chat__message_gray_lg">
+											<div class="manager-chat__name">Барбашин Михаил</div>
+											<div class="manager-chat__text">Через 3 дня автор уже сдаст первую главу.</div>
+											<div class="manager-chat__time">сегодня 11:19</div>
+										</div>	
+										<div class="manager-chat__message manager-chat__message_green manager-chat__message_green_xs"">
+											<div class="manager-chat__text">Супер <img src="img/emoji_6.png" alt=""></div>
+											<div class="manager-chat__time">сегодня 11:19</div>
+										</div>
+							 	</div>
+								<!-- /.manager-chat__message-wrap -->
 						</div>
-						<div class="manager-chat__message manager-chat__message_gray manager-chat__message_two wow zoomInLeft" data-wow-delay="2s">
-							<div class="manager-chat__name">Барбашин Михаил</div>
-							<div class="manager-chat__text">Добрый день! Да, вижу в системе. Автор уже <br>подобрал материал, скоро предоставит первую главу</div>
-							<div class="manager-chat__time">сегодня 11:19</div>
-						</div>
-						<div class="manager-chat__message manager-chat__message_gray  manager-chat__message_three wow zoomInLeft" data-wow-delay="4s">
-							<div class="manager-chat__name">Барбашин Михаил</div>
-							<div class="manager-chat__text">И напоминаю про методичку)</div>
-							<div class="manager-chat__time">сегодня 11:19</div>
-						</div>
-						<div class="manager-chat__message manager-chat__message_green manager-chat__message_four wow zoomInRight"  data-wow-delay="6s">
-							<div class="manager-chat__text">Да-да, преподаватель наконец-то дал ее мне.</div>
-						</div>
+						<!-- /.manager-chat__s-hidden -->
 					</div>
 					<div class="manager-chat__descr">Вы можете переписываться с<br class="br-mob"> менеджером в вашем личном<br> кабинете<br class="br-mob"> и дублировать сообщения на телефон</div>
 				</div>
@@ -1912,263 +1940,318 @@
 			</div>
 			<!-- /.tabs-nav -->
 			<div class="reviews-tabs">
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
+				<div class="rewiews-tab-wrap">
+					<div class="reviews-tab">
+						<div class="reviews-tab__slide">
+							<img src="img/review_1.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_2.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_3.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
+					<!-- /.reviews-tab -->		
+					<div class="tab-dots-wrapper">
+						<div class="tab-dots">
+							<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+							<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+						</div>
+						<!-- /.tab-dots -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
+					<!-- /.tab-dots-wrapper -->
 				</div>
-				<!-- /.reviews-tab -->
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
+				<!-- /.rewiews-tab-wrap -->
+				<div class="rewiews-tab-wrap">
+					<div class="reviews-tab">
+						<div class="reviews-tab__slide">
+							<img src="img/review_1.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_2.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_3.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
+					<!-- /.reviews-tab -->		
+					<div class="tab-dots-wrapper">
+						<div class="tab-dots">
+							<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+							<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+						</div>
+						<!-- /.tab-dots -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
+					<!-- /.tab-dots-wrapper -->
 				</div>
-				<!-- /.reviews-tab -->
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
+				<!-- /.rewiews-tab-wrap -->
+				<div class="rewiews-tab-wrap">
+					<div class="reviews-tab">
+						<div class="reviews-tab__slide">
+							<img src="img/review_1.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_2.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_3.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
+					<!-- /.reviews-tab -->		
+					<div class="tab-dots-wrapper">
+						<div class="tab-dots">
+							<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+							<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+						</div>
+						<!-- /.tab-dots -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
+					<!-- /.tab-dots-wrapper -->
 				</div>
-				<!-- /.reviews-tab -->
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
+				<!-- /.rewiews-tab-wrap -->
+				<div class="rewiews-tab-wrap">
+					<div class="reviews-tab">
+						<div class="reviews-tab__slide">
+							<img src="img/review_1.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_2.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_3.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
+					<!-- /.reviews-tab -->		
+					<div class="tab-dots-wrapper">
+						<div class="tab-dots">
+							<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+							<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+						</div>
+						<!-- /.tab-dots -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
+					<!-- /.tab-dots-wrapper -->
 				</div>
-				<!-- /.reviews-tab -->
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
+				<!-- /.rewiews-tab-wrap -->
+				<div class="rewiews-tab-wrap">
+					<div class="reviews-tab">
+						<div class="reviews-tab__slide">
+							<img src="img/review_1.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_2.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_3.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
+					<!-- /.reviews-tab -->		
+					<div class="tab-dots-wrapper">
+						<div class="tab-dots">
+							<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+							<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+						</div>
+						<!-- /.tab-dots -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
+					<!-- /.tab-dots-wrapper -->
 				</div>
-				<!-- /.reviews-tab -->
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
+				<!-- /.rewiews-tab-wrap -->
+				<div class="rewiews-tab-wrap">
+					<div class="reviews-tab">
+						<div class="reviews-tab__slide">
+							<img src="img/review_1.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_2.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_3.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
+					<!-- /.reviews-tab -->		
+					<div class="tab-dots-wrapper">
+						<div class="tab-dots">
+							<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+							<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+						</div>
+						<!-- /.tab-dots -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
+					<!-- /.tab-dots-wrapper -->
 				</div>
-				<!-- /.reviews-tab -->
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
+				<!-- /.rewiews-tab-wrap -->
+				<div class="rewiews-tab-wrap">
+					<div class="reviews-tab">
+						<div class="reviews-tab__slide">
+							<img src="img/review_1.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_2.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_3.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
+					<!-- /.reviews-tab -->		
+					<div class="tab-dots-wrapper">
+						<div class="tab-dots">
+							<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+							<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+						</div>
+						<!-- /.tab-dots -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
+					<!-- /.tab-dots-wrapper -->
 				</div>
-				<!-- /.reviews-tab -->
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
+				<!-- /.rewiews-tab-wrap -->
+				<div class="rewiews-tab-wrap">
+					<div class="reviews-tab">
+						<div class="reviews-tab__slide">
+							<img src="img/review_1.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_2.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_3.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
+						<div class="reviews-tab__slide">
+							<img src="img/review_4.png" alt="">
+						</div>
+						<!-- /.review-tab__slide -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
+					<!-- /.reviews-tab -->		
+					<div class="tab-dots-wrapper">
+						<div class="tab-dots">
+							<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
+							<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
+						</div>
+						<!-- /.tab-dots -->
 					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
+					<!-- /.tab-dots-wrapper -->
 				</div>
-				<!-- /.reviews-tab -->
-				<div class="reviews-tab">
-					<div class="reviews-tab__slide">
-						<img src="img/review_1.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_2.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_3.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-					<div class="reviews-tab__slide">
-						<img src="img/review_4.png" alt="">
-					</div>
-					<!-- /.review-tab__slide -->
-				</div>
-				<!-- /.reviews-tab -->
-				<div class="tab-dots-wrapper">
-					<div class="tab-dots">
-						<div class="btn-slider-wrap prev"><button class="nav-tab-btn nav-tab-btn_prev"></button>Назад</div>
-						<div class="btn-slider-wrap next">Далее<button class="nav-tab-btn nav-tab-btn_next"></button></div>
-					</div>
-					<!-- /.tab-dots -->
-				</div>
-				<div class="btn-reviews-wrap">
-					<a class="btn btn_write-reviews">Оставить свой отзыв</a>
-					<a class="btn btn_all-reviews">Смотреть все отзывы</a>
-				</div>
-				<!-- /.btn-reviews-wrap -->
+				<!-- /.rewiews-tab-wrap -->
+
 			</div>
 			<!-- /.reviews-tabs -->
+			<div class="btn-reviews-wrap">
+				<a class="btn btn_write-reviews">Оставить свой отзыв</a>
+				<a class="btn btn_all-reviews">Смотреть все отзывы</a>
+			</div>
+			<!-- /.btn-reviews-wrap -->
 		</div>
 		<!-- /.wrapper-reviews -->
 	</section>
@@ -2355,7 +2438,7 @@
 	<section class="sect-contacts">
 		<div class="wrapper-contacts">
 			<h2 class="sect-title sect-title_white">Пишите или звоните<br><br class="br-mob"> нам в любое время</h2>
-			<div class="sect-subtitle sect-subtitle_white">На связи ежедневн<br class="br-mob"> с 9.00 до 22.00</div>
+			<div class="sect-subtitle sect-subtitle_white">На связи ежедневно<br class="br-mob"> с 9.00 до 22.00</div>
 			<div class="row">
 				<div class="contacts-block contacts-block_phone">
 					
@@ -2433,7 +2516,7 @@
 			<div class="footer-col">
 				<div class="logo logo_footer">
 				<a href="#">
-					<img src="img/logo.png" alt="Multiwork">
+					<img src="img/logo.svg" alt="Multiwork">
 					<div>Помощь студентам<br>с письменными работами</div>
 				</a>
 			</div>
@@ -2622,7 +2705,8 @@
 				<input type="text" placeholder="Предмет (как в расписании)">
 				<textarea placeholder="Требования"></textarea>
 				<div class="form__date">
-					<input type="text" class="datepicker-here" placeholder="Срок сдачи">
+					<input type="text" class="datepicker-here"  id="modal-calc"	placeholder="Срок сдачи">
+					<label for="modal-calc" class="icon-calendar"></label>
 				</div>
 				<div class="form__caption">Ваши контактные данные:</div>
 				<input type="text" placeholder="Введите ваше имя">

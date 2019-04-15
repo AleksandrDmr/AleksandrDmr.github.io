@@ -10,7 +10,6 @@ $(function() {
 	});
 
 	// dynamic text 
-
 	var typed = new Typed('#dynamic', {
 	    strings: ["диплом?", "курсовую?", "контрольную?", "реферат?"],
   		typeSpeed: 120,
@@ -21,21 +20,20 @@ $(function() {
 	 });
 
 
-	// quiz
-
-
+	// quiz steps
 	function Quiz( elem ) {
 
 		var el = $(elem),
 			$item = $(this).find('.quiz-form__item'),
-			$otherLabels = el.find('.quiz-form__other label'),
 			$otherLabels = el.find('.quiz-form__other label'),
 			$quizItems = el.find('.quiz-form__item'),
 			i = 0,
 			$quizStep = el.find('.quiz-step'),
 			$quizPrev = el.find('.quiz-prev'),
 			$progressField = el.find('.quiz__progress-field .quiz__progress-line'),
-			$btnQuiz = el.find('.btn_quiz');
+			$btnQuiz = el.find('.btn_quiz'),
+			$quizSend = el.find('.btn__quiz-sending'),
+			$radio = el.find('input[type="radio"]');
 
 
 
@@ -43,8 +41,9 @@ $(function() {
 			if( !$(this).hasClass('quiz-form__other') ) {
 				$quizItems.removeClass('quiz-form__item_active');
 				$(this).addClass('quiz-form__item_active');
-				$(this).find('input[type="radio"]').attr('checked', 'true');
 				$otherLabels.removeClass('active');	
+
+				
 			}
 		};
 
@@ -53,16 +52,25 @@ $(function() {
 			$(this).parents('.quiz-form__other').addClass('quiz-form__item_active');
 			$otherLabels.removeClass('active');
 			$(this).addClass('active');
+			var text = $(this).text(),
+				$parent = $(this).parents('.quiz-form__other');
+			$parent.find('span').text(text);
 		};
 
 
 		this.nexStep = function(event) {
 			event.preventDefault();
-			if ( i >= 0 && i <= $quizStep.length - 1) {
+			if ( i >= 0 && i <= $quizStep.length - 1 && $quizStep.eq(i).find()) {
+				
+				if ( $quizStep.eq(i).find('input[type="radio"]').length  && !$quizStep.eq(i).find('input[type="radio"]').is(':checked') && i != 3 )  {
+						return false;
+				} 
+
 				i++;
 				$quizStep.removeClass('quiz-step_current')
 				$quizStep.eq(i).addClass('quiz-step_current');
 				$progressField.eq(i).addClass('active-field');
+
 				if(el.hasClass('quiz_mob')){
 					el.find('.quiz__progress-text span').text(i + 1);
 				}
@@ -107,155 +115,55 @@ $(function() {
 			}
 		} 
 
-
-
-		$(this).on('keyup keypress', function(e) {
-		  var keyCode = e.keyCode || e.which;
-		  if (keyCode === 13) { 
-		    e.preventDefault();
-		    return false;
-		 }
-		});
-
-
-		$quizItems.click( this.activeItem );
-		$otherLabels.click( this.otherActive );
-		$btnQuiz.click(this.nexStep);
-		$quizPrev.click(this.prevStep);
-	}
-
-	var quizMob = new Quiz( '.quiz_mob' );
-	var quizPc = new Quiz( '.quiz_pc' );
-
-		/*$('.quiz form').on('keyup keypress', function(e) {
-		  var keyCode = e.keyCode || e.which;
-		  if (keyCode === 13) { 
-		    e.preventDefault();
-		    return false;
-		 }
-		});*/
-
-
-	/*var $otherLabels = $('.quiz-form__other label'),
-		$quizItems = $('.quiz-form__item');
-
-
-	$quizItems.click(function(event) {
-		if( !$(this).hasClass('quiz-form__other') ) {
-			$quizItems.removeClass('quiz-form__item_active');
-			$(this).addClass('quiz-form__item_active');
-			$(this).find('input[type="radio"]').attr('checked', 'true');
-			$otherLabels.removeClass('active');	
-		}
-			
-	});*/
-
-/*	$otherLabels.click(function(event) {
-		$quizItems.removeClass('quiz-form__item_active');
-		$(this).parents('.quiz-form__other').addClass('quiz-form__item_active');
-		$otherLabels.removeClass('active');
-		$(this).addClass('active')
-	});*/
-
-/*
-	var i = 0,
-		$quizStep = $('.quiz-step'),
-		$quizPrev = $('.quiz-prev'),
-		$progressField = $('.quiz__progress-field span');
-
-	$('.btn_quiz').click(function(event) {
-		event.preventDefault();
-		if ( i >= 0 && i <= $quizStep.length - 1) {
-			i++;
-			$quizStep.removeClass('quiz-step_current')
+		this.quizSend = function(event) {
+			event.preventDefault();
+			i = 0;
+			$quizStep.removeClass('quiz-step_current');
 			$quizStep.eq(i).addClass('quiz-step_current');
+			$item.removeClass('quiz-form__item_active');
+			$radio.each(function(index, el) {
+				$(el).prop('checked', false);
+			});
+			$('.quiz__text').removeClass('quiz__text_disable');
+			$('.quiz-form__btn-wrap').removeClass('quiz-form__btn-wrap_disable');
+			$progressField.removeClass('active-field');
 			$progressField.eq(i).addClass('active-field');
-
-			if (i == 9) {
-				$('.quiz__text').addClass('quiz__text_disable');
-				$('.quiz-form__btn-wrap').addClass('quiz-form__btn-wrap_disable');
-
-				setTimeout(function() {
-					i++;
-					$quizStep.removeClass('quiz-step_current');
-					$quizStep.eq(i).addClass('quiz-step_current');
-				}, 1000);
+			
+			if(el.hasClass('quiz_mob')){
+				el.removeClass('quiz_mob_active');
 			}
+			$('.overlay').addClass('overlay_active')
+			$('.modal_thank').addClass('modal_active')
 		}
 
-		if(i == 0) {
-			$quizPrev.removeClass('quiz-prev_active');
-			
-		} else {
-			$quizPrev.addClass('quiz-prev_active');
-		}
 
+
+	$(this).on('keyup keypress', function(e) {
+	  var keyCode = e.keyCode || e.which;
+	  if (keyCode === 13) { 
+	    e.preventDefault();
+	    return false;
+	 }
 	});
-*/
-	/*$quizPrev.click(function(event) {
-		event.preventDefault();
-		if ( i > 0 && i < $quizStep.length) {
-			$progressField.eq(i).removeClass('active-field');
-			i--;
-			$quizStep.removeClass('quiz-step_current')
-			$quizStep.eq(i).addClass('quiz-step_current');
 
-			
-		}
-		
-	});
-*/
-/*	$.datepicker.regional['ru'] = {
-	            closeText: 'Закрыть',
-	            prevText: '&#x3c;Пред',
-	            nextText: 'След&#x3e;',
-	            currentText: 'Сегодня',
-	            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-	            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-	            monthNamesShort: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-	            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-	            dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
-	            dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
-	            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-	            weekHeader: 'Нед',
-	            dateFormat: 'dd.mm.yy',
-	            firstDay: 1,
-	            isRTL: false,
-	            showMonthAfterYear: false,
-	            yearSuffix: ''
-	        };
-	$.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+	$quizItems.click( this.activeItem );
+	$otherLabels.click( this.otherActive );
+	$btnQuiz.click(this.nexStep);
+	$quizPrev.click(this.prevStep);
+	$quizSend.click(this.quizSend);
+}
+
+var quizMob = new Quiz( '.quiz_mob' );
+var quizPc = new Quiz( '.quiz_pc' );
+
 
 	
-
-	$(".quiz-form__date input").datepicker({
-      showOn: "button",
-      buttonImage: "../img/calendar.svg",
-      buttonImageOnly: true,
-	  showAnim: "slideDown"   
-	});*/
-
-/*	$(".quiz-form__date input").datepicker("setDate", '+7');*/
-
-
-
-
-
-
-/*$( ".quiz-form__select select" ).selectmenu({
-	position: {
-		at:"left-15 bottom+2"
-	},
-});*/
-	
-
-
 	// Advantages slider
 
 	$('.advan-slider').slick({
 		slidesToShow: 5,
 		 arrows: false,
-		 centerPadding: '40px',
+		centerPadding: '0',
 		 responsive: [
 	    {
 	      breakpoint: 968,
@@ -265,14 +173,17 @@ $(function() {
 	        slidesToShow: 3,
 	        slidesToScroll: 1,
 	        infinite: true,
+	         centerMode: true
 	       
 	      }
 	    },
 	    {
 	      breakpoint: 568,
-	      settings: {
+	      settings: { 
+	      	centerPadding: '40px',
 	        slidesToShow: 1,
-	        centerMode: true,
+	        centerMode: true
+	       
 	      }
 	    },
 
@@ -332,7 +243,7 @@ if ($('.tabs-best-authors').length) {
 		      }
 		    },
 		    {
-		      breakpoint: 568,
+		      breakpoint: 768,
 		      settings: {
 		        slidesToShow: 1,
 		      }
@@ -350,19 +261,60 @@ if ($('.tabs-best-authors').length) {
 	}); 
 
 
-
-
 	}
+
+	// chat inamation
+	var $chat = $('.manager-chat__message-wrap'),
+		$message = $chat.find('.manager-chat__message')
+		i = 0,
+		h = 0,
+		hMessage = 0;
+
+		setInterval(function(){
+			if (i <= $message.length - 1) {
+
+				$message.eq(i).addClass('manager-chat__message_visible');
+
+				h += $message.eq(i).outerHeight(true);
+
+				if(h > $chat.innerHeight()) {
+					hMessage += $message.eq(i).outerHeight(true);
+					$chat.animate({
+
+			   		 scrollTop: hMessage
+
+		  			}, 400);
+				}
+				i++;
+			} else {
+				h = 0;
+				hMessage = 0;
+				i = 0;
+				$chat.animate({
+					 scrollTop: 0
+				}, 400);
+				$message.removeClass('manager-chat__message_visible');
+			}
+
+
+		},3000);
+		
+		$chat.bind('mousewheel DOMMouseScroll', function (e) { return false; });
+
+
 
 	//custom scroll
 	var Scrollbar = window.Scrollbar,
 		scrollBlock = document.querySelectorAll('.best-authors__reviews');
+		
 
 		for (var k = 0; k<= scrollBlock.length -1 ; k++) {
 			 Scrollbar.init(scrollBlock[k], {
 			 	alwaysShowTracks:true
 			 });
 		}
+
+
 
 	 
 	 $('select').styler();
@@ -470,48 +422,44 @@ if ($('.tabs-best-authors').length) {
 	}); 
 
 
-	$('.reviews-tab').slick({
-		slidesToShow: 4,
-		dots: true,
-		infinite: false,
-		nextArrow: '.tab-dots .nav-tab-btn_next',
-		prevArrow: '.tab-dots .nav-tab-btn_prev',
-		centerPadding: '40px',
-		appendDots: '.tab-dots',
+	$('.rewiews-tab-wrap').each(function (idx, item) {
+	 var $context =  $(this);
 
-		responsive: [
-		    {
-		      breakpoint: 968,
-		      settings: {
-		        slidesToShow: 3,
-		       
-		      }
-		    },
-		    {
-		      breakpoint: 568,
-		      settings: {
-		        slidesToShow: 1,
-		        infinite: true,
-		        centerMode: true
-		      }
-		    },
+			$context.find('.reviews-tab').slick({
+				slidesToShow: 4,
+				dots: true,
+				infinite: false,
+				nextArrow: $context.find('.tab-dots-wrapper .tab-dots .nav-tab-btn_next'),
+				prevArrow: $context.find('.tab-dots-wrapper .tab-dots .nav-tab-btn_prev'),
+				centerPadding: '40px',
+				appendDots: $context.find('.tab-dots-wrapper .tab-dots'),
 
-	  ]
-	});
+				responsive: [
+				    {
+				      breakpoint: 968,
+				      settings: {
+				        slidesToShow: 3,
+				       
+				      }
+				    },
+				    {
+				      breakpoint: 568,
+				      settings: {
+				        slidesToShow: 1,
+				        infinite: true,
+				        centerMode: true
+				      }
+				    },
 
-	$('.btn_quiz-popup').click(function(event) {	
-		event.preventDefault();
+			  ]
+			});
 
-		$('.quiz_mob').css({
-			'opacity': '1',
-			'z-index': '1'
-		});
+
 	});
 
 
 
-	// modals
-
+	// modal forms
 	$('.modal-close').click(function(event) {
 		$('.overlay').removeClass('overlay_active');
 		$('.modal').removeClass('modal_active');
@@ -539,6 +487,46 @@ if ($('.tabs-best-authors').length) {
 	});
 		
 	new WOW().init();
+
+
+
+
+
+	function OpenModal (btn, modal) {
+
+		var $btn = $(btn);
+
+		if( !$btn.hasClass('btn_quiz-popup') ) {
+			$(btn).on('click', function(event) {
+				event.preventDefault();
+				$(modal).addClass('modal_active');
+				$('.overlay').addClass('overlay_active');
+
+
+			});
+
+		} else {
+
+			$btn.on('click', function(event) {
+				event.preventDefault();
+				$(modal).addClass('quiz_mob_active');
+				
+			});
+		}
+
+		
+
+	}
+
+	var  modalAuthorsActive = new OpenModal ('.btn__authors', '.modal_author'),
+		 modalAuthorsPrice = new OpenModal ('.best-authors__id-link a', '.modal_price'),
+		 modalDeadlines = new OpenModal ('.btn_deadline', '.modal_deadlines'),
+		 modalManager = new OpenModal ('.info-phone__modal', '.modal_form-manager'),
+		 modalFormCalc = new OpenModal ('.btn_order-work', '.modal_form-calc'),
+		 modalQuiz = new OpenModal ('.btn_quiz-popup', '.quiz_mob');
+
+
+
 
 });
 
