@@ -473,7 +473,9 @@ if ($('.tabs-best-authors').length) {
 
 			} else {
 				$('.modal__time input').attr('disabled', 'true');
-				$('.modal__time-radio input').removeAttr('checked');
+				$('.modal__time-radio input').each(function(index, el) {
+					$(el).prop('checked', false);
+				});
 			}
 
 	});
