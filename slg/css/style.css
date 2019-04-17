@@ -2276,9 +2276,9 @@ p.about-home-text__dark {
   background-color: #3b3e43;
   z-index: -1;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in;
-  -o-transition: opacity 0.3s ease-in;
-  transition: opacity 0.3s ease-in;
+  -webkit-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .overlay_active {
@@ -2300,11 +2300,9 @@ p.about-home-text__dark {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 20px;
-  -webkit-transition: -webkit-transform 3s ease-in;
-  transition: -webkit-transform 3s ease-in;
-  -o-transition: transform 3s ease-in;
-  transition: transform 3s ease-in;
-  transition: transform 3s ease-in, -webkit-transform 3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .modal-form_active {

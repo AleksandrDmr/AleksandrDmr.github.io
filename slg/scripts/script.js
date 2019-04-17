@@ -44,6 +44,13 @@ $(function() {
 		$('.overlay').removeClass('overlay_active');
 		
 	});
+
+	$('.btn_geography').on('click', function(event) {
+		event.preventDefault();
+		$('.modal-form').addClass('modal-form_active');
+		$('.overlay').addClass('overlay_active');
+		
+	});
 	
 });
 
