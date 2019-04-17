@@ -34,8 +34,19 @@ $(function() {
 			$btnQuiz = el.find('.btn_quiz'),
 			$quizSend = el.find('.btn__quiz-sending'),
 			$radio = el.find('input[type="radio"]');
+			$inputOther = el.find('.quiz-form__other');
 
 
+		this.otherTooltipToggle = function() {
+			$(this).parent('.quiz-form__other').find('.quiz-form__tooltip').toggleClass('quiz-form__tooltip_active');
+			$(this).toggleClass('rotate');
+		}
+
+		this.otherChange = function() {
+				$(this).parents('.quiz-form__tooltip').removeClass('quiz-form__tooltip_active');
+				$inputOther.find('.rotate').removeClass('rotate');
+
+		}
 
 		this.activeItem = function() {
 			if( !$(this).hasClass('quiz-form__other') ) {
@@ -151,6 +162,8 @@ $(function() {
 	$btnQuiz.click(this.nexStep);
 	$quizPrev.click(this.prevStep);
 	$quizSend.click(this.quizSend);
+	$inputOther.find('.quiz-form__other-toggle').click(this.otherTooltipToggle);
+	$inputOther.find('.quiz-form__tooltip input[type="radio"]').change(this.otherChange);
 }
 
 var quizMob = new Quiz( '.quiz_mob' );
@@ -429,8 +442,8 @@ if ($('.tabs-best-authors').length) {
 				slidesToShow: 4,
 				dots: true,
 				infinite: false,
-				nextArrow: $context.find('.tab-dots-wrapper .tab-dots .nav-tab-btn_next'),
-				prevArrow: $context.find('.tab-dots-wrapper .tab-dots .nav-tab-btn_prev'),
+				nextArrow: $context.find('.tab-dots-wrapper .tab-dots .btn-slider-wrap.next'),
+				prevArrow: $context.find('.tab-dots-wrapper .tab-dots .btn-slider-wrap.prev'),
 				centerPadding: '40px',
 				appendDots: $context.find('.tab-dots-wrapper .tab-dots'),
 
@@ -463,6 +476,7 @@ if ($('.tabs-best-authors').length) {
 	$('.modal-close').click(function(event) {
 		$('.overlay').removeClass('overlay_active');
 		$('.modal').removeClass('modal_active');
+		$('.quiz_mob').removeClass('quiz_mob_active');
 	});
 
 
