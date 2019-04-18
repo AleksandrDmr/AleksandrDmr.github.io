@@ -3817,16 +3817,12 @@ br.br-mob {
   left: 50%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 944.5px;
   padding: 40px 60px;
   -webkit-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
-  -webkit-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -1000px);
-  -ms-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -1000px);
-  transform: translate(-50%, -50%);
   transform: translate(-50%, -1000px);
   opacity: 0;
   -webkit-border-radius: 10px;
@@ -4423,6 +4419,16 @@ br.br-mob {
 .slick-slide a {
   outline: none;
 }
+
+input[type='text']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+input[type='email']:focus,
+textarea:focus {
+  font-size: 16px;
+}
+
+/* disable auto-zoom on iphone input field focus */
 
 @media screen and (max-width: 1200px) {
   .nav-menu {
@@ -5571,9 +5577,9 @@ br.br-mob {
   }
 
   .modal {
-    width: 100%;
-    max-width: -webkit-calc(100% - 20px);
-    max-width: calc(100% - 20px);
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+    max-width: 100%;
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
@@ -5642,12 +5648,6 @@ br.br-mob {
     top: 10px;
     right: 10px;
   }
-
-  select:focus,
-  textarea:focus,
-  input:focus {
-    font-size: 16px;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -5662,8 +5662,12 @@ br.br-mob {
   .modal_price {
     padding: 40px 10px 60px;
   }
+}
 
-  .modal_deadlines {
-    max-width: 300px;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
   }
 }
