@@ -3842,6 +3842,7 @@ br.br-mob {
   opacity: .9;
   opacity: 0;
   background-color: #222;
+  -webkit-overflow-scrolling: touch;
 }
 
 .overlay_active {
