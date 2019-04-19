@@ -1488,7 +1488,7 @@
 						<div class="form__col">
 							<div class="form__caption">Укажите информацию о задании:</div>
 							<select data-placeholder="Выберите тип работы">
-								<option value=""> </option>
+								<option value=""></option>
 								<option value="">Дипломная</option>
 								<option value="">Курсовая</option>
 								<option value="">Реферат</option>
@@ -1741,7 +1741,7 @@
 							<div class="price-block__info">
 								<div class="price-block__price">от 1 490 ₽</div>
 								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
-								<button class="btn btn_price">Узнать подробнее</button>
+								<button class="btn btn_price">Узнать стоимость</button>
 								<div class="price-block__name-work">курсовой работы</div>
 							</div>
 						</div>
@@ -1779,7 +1779,7 @@
 							<div class="price-block__info">
 								<div class="price-block__price">от 11 990 ₽</div>
 								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
-								<button class="btn btn_price">Узнать подробнее</button>
+								<button class="btn btn_price">Узнать стоимость</button>
 								<div class="price-block__name-work">дипломной работы</div>
 							</div>
 						</div>
@@ -1817,7 +1817,7 @@
 							<div class="price-block__info">
 								<div class="price-block__price">от 1 990 ₽</div>
 								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
-								<button class="btn btn_price">Узнать подробнее</button>
+								<button class="btn btn_price">Узнать стоимость</button>
 								<div class="price-block__name-work">отчета по практике</div>
 							</div>
 						</div>
@@ -1855,7 +1855,7 @@
 							<div class="price-block__info">
 								<div class="price-block__price">от 690 ₽</div>
 								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
-								<button class="btn btn_price">Узнать подробнее</button>
+								<button class="btn btn_price">Узнать стоимость</button>
 								<div class="price-block__name-work">контрольной работы</div>
 							</div>
 						</div>
@@ -1893,7 +1893,7 @@
 							<div class="price-block__info">
 								<div class="price-block__price">от 590 ₽</div>
 								<a href="" class="price-block__more"><span>Узнать подробнее</span></a>
-								<button class="btn btn_price">Узнать подробнее</button>
+								<button class="btn btn_price">Узнать стоимость</button>
 								<div class="price-block__name-work">Реферата</div>
 							</div>
 						</div>
@@ -2593,40 +2593,46 @@
 	</footer>
 	<!-- /.footer -->
 
-	<div class="overlay"></div>
-	<div class="modal modal_thank modal_raccon">
-		<button class="modal-close"></button>
-		<h3 class="modal__title">Спасибо за обращение. <br>Мы получили вашу заявку<br> Ее номер 938152</h3>
-		<div class="modal__subtitle">СМС будет автоматически <br class="br-mob"> отправлено в течение<br class="br-mob"> 5 минут</div>
-		<div class="modal__text">Если у вас срочный вопрос,<br class="br-mob"> звоните нам по номеру<br> 8 800 707-85-35 или<br class="br-mob"> <a href="" class="modal__link">закажите бесплатный звонок</a></div>
-		<div class="modal__row">
-			<div class="modal__block modal__block_raccon_mob">
-				<div class="modal__block-title">Пока вы ждете, переходите в наш <img src="img/i-telegram.png" alt=""> <a href="#" class="modal__link">Telegram-канал</a></div>
-				<div class="modal__list">
-					<div class="modal__list-title">Там вы найдете:</div>
-					<ul>
-						<li class="modal__list-item modal__list-item_dash">как и сколько можно сэкономить <br> при заказе работы</li>
-						<li class="modal__list-item modal__list-item_dash">лайфхаки, как составить речь на защиту</li>
-						<li class="modal__list-item modal__list-item_dash">как за несколько минут оформить список литературы по ГОСТу</li>
-					</ul>
-				</div>
-			</div>
-			<!-- /.modal__block -->
-			<div class="modal__block modal__block_raccon">
-				<div class="modal__block-title">Что почитать, <br class="br-mob">пока вы <br>ждете СМС? <br class="br-mob">Топ-3 статей <br>в<br class="br-mob"> <a href="#" class="modal__link">блоге Multiwork</a></div>
-				<div class="modal__list">
-					<ul>
-						<li class="modal__list-item"><a href="#">Как выбрать тему дипломной работы?</a></li>
-						<li class="modal__list-item"><a href="#">3 способа, как стащить себя с дивана и начать учиться</a></li>
-						<li class="modal__list-item"><a href="#">Речь к защите диплома: о чем нужно говорить, чтобы получить «5&quot;</a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- /.modal__block -->
+	<div class="overlay overlay_thank">
+	 	<div class="modal-close-wrap">
+			<button class="modal-close modal-close_mob"></button>
 		</div>
+		<div class="modal modal_thank modal_raccon">
+			<button class="modal-close"></button>
+			<h3 class="modal__title">Спасибо за обращение. <br>Мы получили вашу заявку<br> Ее номер 938152</h3>
+			<div class="modal__subtitle">СМС будет автоматически <br class="br-mob"> отправлено в течение<br class="br-mob"> 5 минут</div>
+			<div class="modal__text">Если у вас срочный вопрос,<br class="br-mob"> звоните нам по номеру<br> 8 800 707-85-35 или<br class="br-mob"> <a href="" class="modal__link">закажите бесплатный звонок</a></div>
+			<div class="modal__row">
+				<div class="modal__block modal__block_raccon_mob">
+					<div class="modal__block-title">Пока вы ждете, переходите в наш <img src="img/i-telegram.png" alt=""> <a href="#" class="modal__link">Telegram-канал</a></div>
+					<div class="modal__list">
+						<div class="modal__list-title">Там вы найдете:</div>
+						<ul>
+							<li class="modal__list-item modal__list-item_dash">как и сколько можно сэкономить <br> при заказе работы</li>
+							<li class="modal__list-item modal__list-item_dash">лайфхаки, как составить речь на защиту</li>
+							<li class="modal__list-item modal__list-item_dash">как за несколько минут оформить список литературы по ГОСТу</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /.modal__block -->
+				<div class="modal__block modal__block_raccon">
+					<div class="modal__block-title">Что почитать, <br class="br-mob">пока вы <br>ждете СМС? <br class="br-mob">Топ-3 статей <br>в<br class="br-mob"> <a href="#" class="modal__link">блоге Multiwork</a></div>
+					<div class="modal__list">
+						<ul>
+							<li class="modal__list-item"><a href="#">Как выбрать тему дипломной работы?</a></li>
+							<li class="modal__list-item"><a href="#">3 способа, как стащить себя с дивана и начать учиться</a></li>
+							<li class="modal__list-item"><a href="#">Речь к защите диплома: о чем нужно говорить, чтобы получить «5&quot;</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- /.modal__block -->
+			</div>
+		</div>
+		<!-- /.modal -->	
 	</div>
-	<!-- /.modal -->
-	<div class="modal modal_thank-two  modal_raccon">
+	<!-- /.overlay -->
+	
+	<!-- <div class="modal modal_thank-two  modal_raccon">
 		<button class="modal-close"></button>
 		<h3 class="modal__title">Спасибо за обращение. <br>Мы получили вашу заявку</h3>
 		<div class="modal__subtitle">СМС будет автоматически <br class="br-mob"> отправлено в течение 5 минут<br> в рабочее время с 10.00 до 20.00</div>
@@ -2643,7 +2649,7 @@
 					</ul>
 				</div>
 			</div>
-			<!-- /.modal__block -->
+			/.modal__block
 			<div class="modal__block modal__block_raccon">
 				<div class="modal__block-title">Что почитать, <br class="br-mob">пока вы <br>ждете СМС? <br class="br-mob">Топ-3 статей <br>в<br class="br-mob"> <a href="#" class="modal__link">блоге Multiwork</a></div>
 				<div class="modal__list">
@@ -2654,43 +2660,96 @@
 					</ul>
 				</div>
 			</div>
-			<!-- /.modal__block -->
+			/.modal__block
 		</div>
-	</div>
+	</div> -->
 	<!-- /.modal -->
-	<div class="modal modal_form-manager ">
-		<button class="modal-close"></button>
-		<h3 class="modal__title modal__title_center modal__title_sm-mob">Менеджер <br class="br-mob">Multiwork<br> позвонит в течение 7 минут</h3>
-		<div class="modal__subtitle modal__subtitle_center">или в удобное для вас время</div>
-		<form action="#">
-			<div class="modal__text-input">
-	    		<input type="text" placeholder="Введите ваше имя">
-			</div>
-			<div class="modal__text-input">
-	   			 <input type="tel" placeholder="Введите ваш телефон">
-			</div>
-			<div class="modal__radio-btn">
-				<input type="radio" name="time-call" id="now" checked><label for="now">Позвонить сейчас</label>
-				<input type="radio" name="time-call" id="choose"><label for="choose">Выбрать время</label>
-			</div>
-			<div class="modal__time">
-				<div class="modal__text-input modal__text-input_sm">
-					<label for="modal-time">Позвонить в</label>
-					<input type="text" id="modal-time" placeholder="13 : 00" disabled>
+
+	<div class="overlay overlay_form-manager">
+	 	<div class="modal-close-wrap">
+			<button class="modal-close modal-close_mob"></button>
+		</div>
+		<div class="modal modal_form-manager ">
+			<button class="modal-close"></button>
+			<h3 class="modal__title modal__title_center modal__title_sm-mob">Менеджер <br class="br-mob">Multiwork<br> позвонит в течение 7 минут</h3>
+			<div class="modal__subtitle modal__subtitle_center">или в удобное для вас время</div>
+			<form action="#">
+				<div class="modal__text-input">
+		    		<input type="text" placeholder="Введите ваше имя">
 				</div>
-				<div class="modal__time-radio">
-					<label><input type="radio" name="time" disabled><span class="icon-check"></span>Сегодня</label>
-					<label><input type="radio" name="time" disabled><span class="icon-check"></span>Завтра</label>
+				<div class="modal__text-input">
+		   			 <input type="tel" placeholder="Введите ваш телефон">
 				</div>
-			</div>
-			<div class="btn-wrap"><button class="btn  btn_form">Позвоните мне</button></div>
-				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
-					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
-					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+				<div class="modal__radio-btn">
+					<input type="radio" name="time-call" id="now" checked><label for="now">Позвонить сейчас</label>
+					<input type="radio" name="time-call" id="choose"><label for="choose">Выбрать время</label>
 				</div>
-		</form>
+				<div class="modal__time">
+					<div class="modal__text-input modal__text-input_sm">
+						<label for="modal-time">Позвонить в</label>
+						<input type="text" id="modal-time" placeholder="13 : 00" disabled>
+					</div>
+					<div class="modal__time-radio">
+						<label><input type="radio" name="time" disabled><span class="icon-check"></span>Сегодня</label>
+						<label><input type="radio" name="time" disabled><span class="icon-check"></span>Завтра</label>
+					</div>
+				</div>
+				<div class="btn-wrap"><button class="btn  btn_form">Позвоните мне</button></div>
+					<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+						<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+						<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+					</div>
+			</form>
+		</div>
+		<!-- /.modal -->
 	</div>
-	<!-- /.modal -->
+	<!-- /.overlay -->
+	<div class="overlay overlay_form-calc">
+	 	<div class="modal-close-wrap">
+			<button class="modal-close modal-close_mob"></button>
+		</div>
+		<div class="modal form form_calc modal_form-calc">
+			<button class="modal-close"></button>
+			<h3 class="modal__title modal__title_center ">Заказать работу</h3>
+			<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Сколько стоит написать работу?</div>
+			<form action="#">
+				<div class="form__col form__col_center">
+					<div class="form__caption">Укажите информацию о задании:</div>
+					<select data-placeholder="Выберите тип работы">
+						<option value=""></option>
+						<option value="">Дипломная</option>
+						<option value="">Курсовая</option>
+						<option value="">Реферат</option>
+						<option value="">Контрольная работа</option>
+						<option value="">Дипломная</option>
+					</select>
+					<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+					<input type="text" placeholder="Предмет (как в расписании)">
+					<textarea placeholder="Требования"></textarea>
+					<div class="form__date">
+						<input type="text" class="datepicker-here"  id="modal-calc"	placeholder="Срок сдачи">
+						<label for="modal-calc" class="icon-calendar"></label>
+					</div>
+					<div class="form__caption">Ваши контактные данные:</div>
+					<input type="text" placeholder="Введите ваше имя">
+					<input type="tel" placeholder="Введите ваш телефон">
+					<input type="email" placeholder="Введите ваше e-mail">
+						<div class="form__caption form__caption_mt">Промокод:
+							<span class="help" data-help="Оплатить заказ можно не выходя из дома – банковской картой. Все доработки - бесплатно.">?</span>
+						</div>
+						<input type="text" placeholder="Промокод, если есть">
+					</div>
+					<!-- /.form-col -->
+					<div class="btn-wrap"><button class="btn btn_calc-form">Рассчитать стоимость и сэкономить до 40%</button></div>
+					<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+						<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+						<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+					</div>
+			</form>
+		</div>
+		<!-- /.modal -->
+	</div>
+	<!-- /.overlay -->
 	<div class="modal form form_calc modal_form-calc">
 		<button class="modal-close"></button>
 		<h3 class="modal__title modal__title_center ">Заказать работу</h3>
@@ -2699,7 +2758,7 @@
 			<div class="form__col form__col_center">
 				<div class="form__caption">Укажите информацию о задании:</div>
 				<select data-placeholder="Выберите тип работы">
-					<option value=""> </option>
+					<option value=""></option>
 					<option value="">Дипломная</option>
 					<option value="">Курсовая</option>
 					<option value="">Реферат</option>
@@ -2731,125 +2790,153 @@
 		</form>
 	</div>
 	<!-- /.modal -->
-	<div class="modal form form_calc modal_price  ">
-		<button class="modal-close"></button>
-		<h3 class="modal__title modal__title_center ">Узнайте стоимость<br> работы у автора ID 514</h3>
-		<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер <br>Multiwork свяжется с вами и назовет<br> стоимость работы</div>
-		<form action="#">
-			<div class="form__col form__col_center">
-				<select data-placeholder="Выберите тип работы">
-					<option value=""> </option>
-					<option value="">Дипломная</option>
-					<option value="">Курсовая</option>
-					<option value="">Реферат</option>
-					<option value="">Контрольная работа</option>
-					<option value="">Дипломная</option>
-				</select>
-				<textarea placeholder="Напишите тему работу, если знаете"></textarea>
-				<input type="tel" placeholder="Введите ваш телефон">
-				<input type="email" placeholder="Введите ваше e-mail">
-				</div>
-				<!-- /.form-col -->
-				<div class="btn-wrap"><button class="btn  btn_form">Позвоните мне</button></div>
-				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
-					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
-					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
-				</div>
-		</form>
+	<div class="overlay overlay_price">
+	 	<div class="modal-close-wrap">
+			<button class="modal-close modal-close_mob"></button>
+		</div>
+		<div class="modal form form_calc modal_price  ">
+			<button class="modal-close"></button>
+			<h3 class="modal__title modal__title_center ">Узнайте стоимость<br> работы у автора ID 514</h3>
+			<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер <br>Multiwork свяжется с вами и назовет<br> стоимость работы</div>
+			<form action="#">
+				<div class="form__col form__col_center">
+					<select data-placeholder="Выберите тип работы">
+						<option value=""></option>
+						<option value="">Дипломная</option>
+						<option value="">Курсовая</option>
+						<option value="">Реферат</option>
+						<option value="">Контрольная работа</option>
+						<option value="">Дипломная</option>
+					</select>
+					<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+					<input type="tel" placeholder="Введите ваш телефон">
+					<input type="email" placeholder="Введите ваше e-mail">
+					</div>
+					<!-- /.form-col -->
+					<div class="btn-wrap"><button class="btn  btn_form">Позвоните мне</button></div>
+					<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+						<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+						<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+					</div>
+			</form>
+		</div>
+		<!-- /.modal -->
 	</div>
-	<!-- /.modal -->
-	<div class="modal form form_calc modal_review">
-		<button class="modal-close"></button>
-		<h3 class="modal__title modal__title_center ">Оставьте свой отзыв<br> о работе сервиса Multiwork</h3>
-		<form action="#">
-			<div class="form__col form__col_center">
-				<div class="form__caption">Ваша общая оценка:</div>
-				<div class="rating_block">
-					  <input name="rating" value="5" id="rating_5" type="radio" />
-					  <label for="rating_5" class="label_rating"></label>
-					 
-					  <input name="rating" value="4" id="rating_4" type="radio" />
-					  <label for="rating_4" class="label_rating"></label>
-					 
-					  <input name="rating" value="3" id="rating_3" type="radio" />
-					  <label for="rating_3" class="label_rating"></label>
-					 
-					  <input name="rating" value="2" id="rating_2" type="radio" />
-					  <label for="rating_2" class="label_rating"></label>
-					 
-					  <input name="rating" value="1" id="rating_1" type="radio" />
-					  <label for="rating_1" class="label_rating"></label>
+	<!-- /.overlay -->
+	<div class="overlay overlay_review">
+	 	<div class="modal-close-wrap">
+			<button class="modal-close modal-close_mob"></button>
+		</div>
+		<div class="modal form form_calc modal_review">
+			<button class="modal-close"></button>
+			<h3 class="modal__title modal__title_center ">Оставьте свой отзыв<br> о работе сервиса Multiwork</h3>
+			<form action="#">
+				<div class="form__col form__col_center">
+					<div class="form__caption">Ваша общая оценка:</div>
+					<div class="rating_block">
+						  <input name="rating" value="5" id="rating_5" type="radio" />
+						  <label for="rating_5" class="label_rating"></label>
+						 
+						  <input name="rating" value="4" id="rating_4" type="radio" />
+						  <label for="rating_4" class="label_rating"></label>
+						 
+						  <input name="rating" value="3" id="rating_3" type="radio" />
+						  <label for="rating_3" class="label_rating"></label>
+						 
+						  <input name="rating" value="2" id="rating_2" type="radio" />
+						  <label for="rating_2" class="label_rating"></label>
+						 
+						  <input name="rating" value="1" id="rating_1" type="radio" />
+						  <label for="rating_1" class="label_rating"></label>
+					</div>
+					<div class="form__caption">Заголовок вашего отзыва:</div>
+					<input type="text" placeholder="Опишите кратко ваш опыт">
+					<div class="form__caption">Ваш отзыв:</div>
+					<textarea rows="4" placeholder="Расскажите другим, как вам помог сервис Multiwork"></textarea>
+					<div class="form__caption">Укажите ваше имя:</div>
+					<input type="text" placeholder="Имя или ваш логин">
+					<input type="file">
 				</div>
-				<div class="form__caption">Заголовок вашего отзыва:</div>
-				<input type="text" placeholder="Опишите кратко ваш опыт">
-				<div class="form__caption">Ваш отзыв:</div>
-				<textarea rows="4" placeholder="Расскажите другим, как вам помог сервис Multiwork"></textarea>
-				<div class="form__caption">Укажите ваше имя:</div>
-				<input type="text" placeholder="Имя или ваш логин">
-				<input type="file">
-			</div>
-				<!-- /.form-col -->
-				<div class="btn-wrap"><button class="btn  btn_form">Отправить отзыв</button></div>
-				<div class="form__checkbox-wrap">
-					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
-				</div>
-		</form>
+					<!-- /.form-col -->
+					<div class="btn-wrap"><button class="btn  btn_form">Отправить отзыв</button></div>
+					<div class="form__checkbox-wrap">
+						<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+					</div>
+			</form>
+		</div>
+		<!-- /.modal -->
 	</div>
-	<!-- /.modal -->
-	<div class="modal form form_calc modal_author">
-		<button class="modal-close"></button>
-		<h3 class="modal__title modal__title_center ">Подберите автора своей работы в 2 клика</h3>
-		<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер Multiwork свяжется с вами и подберет в базе подходящего автора</div>
-		<form action="#">
-			<div class="form__col form__col_center">
-				<select data-placeholder="Выберите тип работы">
-					<option value=""> </option>
-					<option value="">Дипломная</option>
-					<option value="">Курсовая</option>
-					<option value="">Реферат</option>
-					<option value="">Контрольная работа</option>
-					<option value="">Дипломная</option>
-				</select>
-				<textarea placeholder="Напишите тему работу, если знаете"></textarea>
-				<input type="tel" placeholder="Введите ваш телефон">
-				<input type="email" placeholder="Введите ваше e-mail">
-				</div>
-				<!-- /.form-col -->
-				<div class="btn-wrap"><button class="btn btn_calc-form">Подобрать автора</button></div>
-				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
-					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
-					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
-				</div>
-		</form>
+	<!-- /.overlay -->	
+
+	<div class="overlay overlay_author">
+	 	<div class="modal-close-wrap">
+			<button class="modal-close modal-close_mob"></button>
+		</div>
+		<div class="modal form form_calc modal_author">
+			<button class="modal-close"></button>
+			<h3 class="modal__title modal__title_center ">Подберите автора своей работы в 2 клика</h3>
+			<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер Multiwork свяжется с вами и подберет в базе подходящего автора</div>
+			<form action="#">
+				<div class="form__col form__col_center">
+					<select data-placeholder="Выберите тип работы">
+						<option value=""></option>
+						<option value="">Дипломная</option>
+						<option value="">Курсовая</option>
+						<option value="">Реферат</option>
+						<option value="">Контрольная работа</option>
+						<option value="">Дипломная</option>
+					</select>
+					<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+					<input type="tel" placeholder="Введите ваш телефон">
+					<input type="email" placeholder="Введите ваше e-mail">
+					</div>
+					<!-- /.form-col -->
+					<div class="btn-wrap"><button class="btn btn_calc-form">Подобрать автора</button></div>
+					<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+						<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+						<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+					</div>
+			</form>
+		</div>
+		<!-- /.modal -->
 	</div>
-	<!-- /.modal -->
-	<div class="modal form form_calc modal_deadlines">
-	<button class="modal-close"></button>
-	<h3 class="modal__title modal__title_center ">Узнайте <br>сроки выполнения<br> вашей работы</h3>
-	<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер Multiwork свяжется с вами и назовет сроки выполнения вашей работы</div>
-		<form action="#">
-			<div class="form__col form__col_center">
-				<select data-placeholder="Выберите тип работы">
-					<option value=""> </option>
-					<option value="">Дипломная</option>
-					<option value="">Курсовая</option>
-					<option value="">Реферат</option>
-					<option value="">Контрольная работа</option>
-					<option value="">Дипломная</option>
-				</select>
-				<textarea placeholder="Напишите тему работу, если знаете"></textarea>
-				<input type="tel" placeholder="Введите ваш телефон">
-				<input type="email" placeholder="Введите ваше e-mail">
-				</div>
-				<!-- /.form-col -->
-				<div class="btn-wrap"><button class="btn btn_calc-form">Узнать сроки<br> выполнения работы</button></div>
-				<div class="form__checkbox-wrap form__checkbox-wrap_modal">
-					<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
-					<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
-				</div>
-		</form>
+	<!-- /.overlay -->
+
+	<div class="overlay overlay_deadlines">
+	 	<div class="modal-close-wrap">
+			<button class="modal-close modal-close_mob"></button>
+		</div>
+		<div class="modal form form_calc modal_deadlines">
+			<button class="modal-close"></button>
+			<h3 class="modal__title modal__title_center ">Узнайте <br>сроки выполнения<br> вашей работы</h3>
+			<div class="modal__subtitle modal__subtitle_center modal__subtitle_normal">Заполните форму ниже — и менеджер Multiwork свяжется с вами и назовет сроки выполнения вашей работы</div>
+			<form action="#">
+				<div class="form__col form__col_center">
+					<select data-placeholder="Выберите тип работы">
+						<option value=""></option>
+						<option value="">Дипломная</option>
+						<option value="">Курсовая</option>
+						<option value="">Реферат</option>
+						<option value="">Контрольная работа</option>
+						<option value="">Дипломная</option>
+					</select>
+					<textarea placeholder="Напишите тему работу, если знаете"></textarea>
+					<input type="tel" placeholder="Введите ваш телефон">
+					<input type="email" placeholder="Введите ваше e-mail">
+					</div>
+					<!-- /.form-col -->
+					<div class="btn-wrap"><button class="btn btn_calc-form">Узнать сроки<br> выполнения работы</button></div>
+					<div class="form__checkbox-wrap form__checkbox-wrap_modal">
+						<label><input type="checkbox" checked>Даю согласие на обработку <br>персональных данных</label>
+						<label><input type="checkbox" checked>Даю согласие на получение рассылки<br>об акциях и подписку на блог</label>
+					</div>
+			</form>
+		</div>
+		<!-- /.modal -->
+		
 	</div>
-	<!-- /.modal -->
+	<!-- /.overlay -->
+	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 	<script src="scripts/slick.min.js"></script>
@@ -2857,6 +2944,7 @@
 	<script src="scripts/jquery.formstyler.min.js"></script>
 	<script src="scripts/datepicker.min.js"></script>
 	<script src="scripts/wow.min.js"></script>
+	<script src="scripts/jquery.mask.min.js"></script>
 	<script src="scripts/script.js"></script>
 </body>
 </html>

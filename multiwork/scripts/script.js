@@ -19,6 +19,7 @@ $(function() {
 
 	 });
 
+	var j = 0;
 
 	// quiz steps
 	function Quiz( elem ) {
@@ -33,8 +34,21 @@ $(function() {
 			$progressField = el.find('.quiz__progress-field .quiz__progress-line'),
 			$btnQuiz = el.find('.btn_quiz'),
 			$quizSend = el.find('.btn__quiz-sending'),
-			$radio = el.find('input[type="radio"]');
+			$radio = el.find('input[type="radio"]'),
 			$inputOther = el.find('.quiz-form__other');
+
+		this.datePicker = function() {
+
+			if ( $(this).attr('type') == 'text') {
+				$(this).parents('.quiz-step').find('input[type="radio"]').prop('checked', false);
+				j = 0;
+							
+			} else {
+				$(this).parents('.quiz-step').find('input[type="text"]').val('');
+				j = 1;
+
+			}
+		}
 
 
 		this.otherTooltipToggle = function() {
@@ -45,14 +59,18 @@ $(function() {
 		this.otherChange = function() {
 				$(this).parents('.quiz-form__tooltip').removeClass('quiz-form__tooltip_active');
 				$inputOther.find('.rotate').removeClass('rotate');
+				$btnQuiz.removeClass('btn_quiz_tooltip');
 
 		}
 
 		this.activeItem = function() {
 			if( !$(this).hasClass('quiz-form__other') ) {
+				$btnQuiz.removeClass('btn_quiz_tooltip');
 				$quizItems.removeClass('quiz-form__item_active');
 				$(this).addClass('quiz-form__item_active');
 				$otherLabels.removeClass('active');	
+				$inputOther.find('.quiz-form__tooltip').removeClass('quiz-form__tooltip_active');
+
 
 				
 			}
@@ -73,9 +91,18 @@ $(function() {
 			event.preventDefault();
 			if ( i >= 0 && i <= $quizStep.length - 1 && $quizStep.eq(i).find()) {
 				
-				if ( $quizStep.eq(i).find('input[type="radio"]').length  && !$quizStep.eq(i).find('input[type="radio"]').is(':checked') && i != 3 )  {
+				if ( $quizStep.eq(i).find('input[type="radio"]').length  && !$quizStep.eq(i).find('input[type="radio"]').is(':checked') && i != 3)  {
+
+						$btnQuiz.addClass('btn_quiz_tooltip');
 						return false;
+				}
+
+				if ( i == 3 && j == 0 ) {
+
+					$btnQuiz.addClass('btn_quiz_tooltip');
+					return false;
 				} 
+
 
 				i++;
 				$quizStep.removeClass('quiz-step_current')
@@ -113,7 +140,12 @@ $(function() {
 
 		this.prevStep = function(event) {
 			event.preventDefault();
+			if ( i == 0 && el.hasClass('quiz_mob') ) {
+				el.removeClass('quiz_mob_active');
+				return false;
+			}
 			if ( i > 0 && i < $quizStep.length) {
+				$btnQuiz.removeClass('btn_quiz_tooltip');
 				$progressField.eq(i).removeClass('active-field');
 				i--;
 				$quizStep.removeClass('quiz-step_current')
@@ -143,7 +175,7 @@ $(function() {
 			if(el.hasClass('quiz_mob')){
 				el.removeClass('quiz_mob_active');
 			}
-			$('.overlay').addClass('overlay_active')
+			$('.overlay_thank').addClass('overlay_active')
 			$('.modal_thank').addClass('modal_active')
 		}
 
@@ -164,6 +196,7 @@ $(function() {
 	$quizSend.click(this.quizSend);
 	$inputOther.find('.quiz-form__other-toggle').click(this.otherTooltipToggle);
 	$inputOther.find('.quiz-form__tooltip input[type="radio"]').change(this.otherChange);
+	$quizStep.eq(3).find('input').click(this.datePicker);
 }
 
 var quizMob = new Quiz( '.quiz_mob' );
@@ -477,6 +510,7 @@ if ($('.tabs-best-authors').length) {
 		$('.overlay').removeClass('overlay_active');
 		$('.modal').removeClass('modal_active');
 		$('.quiz_mob').removeClass('quiz_mob_active');
+		$('body').removeClass('open-modal');
 	});
 
 
@@ -515,8 +549,9 @@ if ($('.tabs-best-authors').length) {
 		if( !$btn.hasClass('btn_quiz-popup') ) {
 			$(btn).on('click', function(event) {
 				event.preventDefault();
-				$(modal).addClass('modal_active');
-				$('.overlay').addClass('overlay_active');
+				$(modal).addClass('overlay_active');
+				$(modal).find('.modal').addClass('modal_active');
+				$('body').addClass('open-modal');
 
 
 			});
@@ -534,15 +569,32 @@ if ($('.tabs-best-authors').length) {
 
 	}
 
-	var  modalAuthorsActive = new OpenModal ('.btn__authors', '.modal_author'),
-		 modalAuthorsPrice = new OpenModal ('.best-authors__id-link a', '.modal_price'),
-		 modalDeadlines = new OpenModal ('.btn_deadline', '.modal_deadlines'),
-		 modalManager = new OpenModal ('.info-phone__modal', '.modal_form-manager'),
-		 modalFormCalc = new OpenModal ('.btn_order-work', '.modal_form-calc'),
+	var  modalAuthorsActive = new OpenModal ('.btn__authors', '.overlay_author'),
+		 modalAuthorsPrice = new OpenModal ('.best-authors__id-link a', '.overlay_price'),
+		 modalDeadlines = new OpenModal ('.btn_deadline', '.overlay_deadlines'),
+		 modalManager = new OpenModal ('.info-phone__modal', '.overlay_form-manager'),
+		 modalFormCalc = new OpenModal ('.btn_order-work', '.overlay_form-calc'),
 		 modalQuiz = new OpenModal ('.btn_quiz-popup', '.quiz_mob');
 
 
+		 $('.datepicker-here').datepicker({
+		 	autoClose: true,
+		 	onSelect : function() {
+		 		j = 1;
+		 	}
+		 })
 
+
+        $('#modal-time').mask('99:99',{
+                placeholder: "13:00",
+                onComplete: function(){
+                    var val = $('#modal-time').val().split(':');
+                    if ( +val[0] > 23) val[0] = '23';
+                    if ( +val[1] > 59) val[1] = '59';
+                    $('#modal-time').val( val.join(':') );
+                }
+            }
+        );
 
 });
 

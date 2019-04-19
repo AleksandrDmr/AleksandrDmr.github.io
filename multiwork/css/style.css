@@ -322,6 +322,7 @@ body {
 }
 
 .btn_quiz {
+  position: relative;
   margin-left: auto;
   padding: 12.5px 27px;
   -webkit-border-radius: 20px;
@@ -343,6 +344,39 @@ body {
   border: 2px solid transparent;
   border-right-color: #fff;
   border-bottom-color: #fff;
+}
+
+.btn_quiz:before {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: -10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 140px;
+  padding: 10px 15px;
+  content: 'Выберите вариант ответа';
+  -webkit-transition: opacity .3s ease-in;
+  -o-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  text-align: left;
+  opacity: 0;
+  color: #363636;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 2.091px 19.89px 20px 0 rgba(0, 0, 0, .05);
+  box-shadow: 2.091px 19.89px 20px 0 rgba(0, 0, 0, .05);
+}
+
+.btn_quiz_tooltip:before {
+  z-index: 99;
+  opacity: 1;
 }
 
 .btn__quiz-sending {
@@ -861,6 +895,8 @@ body {
 
 .quiz__progress-line:before {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 0;
   height: 100%;
   content: '';
@@ -3630,6 +3666,7 @@ br.br-mob {
 
 .quiz_mob .quiz-form__btn-wrap {
   position: fixed;
+  z-index: 99;
   right: 0;
   bottom: 0;
   left: 0;
@@ -3711,8 +3748,9 @@ br.br-mob {
 }
 
 .quiz_mob .quiz__progress-field span {
-  width: 11%;
+  width: 11.1111111111%;
   margin-right: 0;
+  margin-left: -1px;
 }
 
 .quiz_mob .active-field {
@@ -3790,12 +3828,14 @@ br.br-mob {
 
 .overlay {
   position: fixed;
-  z-index: 99;
   z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
   -webkit-transition: opacity .3s ease-in;
   -o-transition: opacity .3s ease-in;
   transition: opacity .3s ease-in;
@@ -3805,25 +3845,26 @@ br.br-mob {
 }
 
 .overlay_active {
-  z-index: 999;
+  z-index: 99999;
   opacity: 1;
 }
 
 .modal {
-  position: fixed;
+  position: relative;
   z-index: 99;
   z-index: -1;
-  top: 50%;
-  left: 50%;
+  top: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0 auto;
   padding: 40px 60px;
+  padding-top: 80px;
   -webkit-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
-  -webkit-transform: translate(-50%, -1000px);
-  -ms-transform: translate(-50%, -1000px);
-  transform: translate(-50%, -1000px);
+  -webkit-transform: translateY(-1000px);
+  -ms-transform: translateY(-1000px);
+  transform: translateY(-1000px);
   opacity: 0;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -3831,11 +3872,16 @@ br.br-mob {
 }
 
 .modal_active {
-  z-index: 9999;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  z-index: 999;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
+}
+
+.modal_raccon {
+  max-width: 944px;
 }
 
 .modal_raccon:after {
@@ -3856,6 +3902,7 @@ br.br-mob {
 
 .modal_form-calc {
   max-width: 423px;
+  margin-top: 150px;
   padding: 40px 50px;
 }
 
@@ -3876,12 +3923,12 @@ br.br-mob {
 
 .modal_price {
   max-width: 480px;
-  padding: 40px 35px;
+  padding: 80px 35px 20px;
 }
 
 .modal_author {
   max-width: 480px;
-  padding: 60px 40px 40px;
+  padding: 80px 40px 40px;
 }
 
 .modal_deadlines {
@@ -4195,6 +4242,17 @@ br.br-mob {
   margin-right: 0;
 }
 
+.modal-close-wrap {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  height: 60px;
+  background-color: transparent;
+}
+
 .modal-close {
   position: absolute;
   top: 20px;
@@ -4429,6 +4487,10 @@ textarea:focus {
 }
 
 /* disable auto-zoom on iphone input field focus */
+
+.open-modal {
+  overflow: hidden;
+}
 
 @media screen and (max-width: 1200px) {
   .nav-menu {
@@ -4727,6 +4789,15 @@ textarea:focus {
     -webkit-order: -2;
     -ms-flex-order: -2;
     order: -2;
+  }
+
+  .btn_quiz:before {
+    top: -15px;
+    right: 0;
+    left: auto;
+    -webkit-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
   }
 
   .btn-wrap_deadline {
@@ -5092,9 +5163,8 @@ textarea:focus {
     top: 10px;
     right: 10px;
     left: 10px;
-    overflow: auto;
+    overflow: hidden;
     width: auto;
-    height: 100vh;
     padding: 40px 10px 35px;
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
@@ -5577,17 +5647,30 @@ textarea:focus {
   }
 
   .modal {
-    width: -webkit-calc(100% - 20px);
-    width: calc(100% - 20px);
+    /*width:  ~"calc(100% - 20px)" */
+    width: 100%;
     max-width: 100%;
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
 
+  .modal_active {
+    top: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .modal_raccon {
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 80px 10px 35px;
+  }
+
   .modal_form-manager {
-    overflow: auto;
     height: 100vh;
-    padding: 40px  10px;
+    padding: 80px  10px 20px;
   }
 
   .modal_form-manager form {
@@ -5596,14 +5679,13 @@ textarea:focus {
 
   .modal_form-calc {
     overflow: auto;
-    height: 100vh;
-    padding: 50px  10px;
+    margin-top: 0;
+    padding: 80px  10px 20px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
 
   .modal_review {
-    overflow: auto;
     max-width: 300px;
     height: 100vh;
     padding: 40px 10px;
@@ -5614,22 +5696,17 @@ textarea:focus {
   }
 
   .modal_price {
-    overflow: auto;
-    height: 100vh;
+    padding: 80px 10px 20px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
 
   .modal_author {
-    overflow: auto;
-    height: 100vh;
-    padding: 40px 10px 60px;
+    padding: 80px 10px 20px;
   }
 
   .modal_deadlines {
-    overflow: auto;
-    height: 100vh;
-    padding: 40px 10px 60px;
+    padding: 80px 10px 20px;
   }
 
   .modal__text-input_sm {
@@ -5644,9 +5721,20 @@ textarea:focus {
     padding-left: 25px;
   }
 
+  .modal-close-wrap {
+    display: block;
+    background-color: #000;
+  }
+
   .modal-close {
-    top: 10px;
+    display: none;
+  }
+
+  .modal-close_mob {
+    top: 50%;
     right: 10px;
+    display: block;
+    margin-top: -20px;
   }
 }
 
@@ -5657,10 +5745,6 @@ textarea:focus {
 
   .table-deadline__swap-icon {
     display: block;
-  }
-
-  .modal_price {
-    padding: 40px 10px 60px;
   }
 }
 
