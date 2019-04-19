@@ -548,6 +548,7 @@ body {
   line-height: 1.875;
   letter-spacing: normal;
   font-weight: 400;
+  display: block;
 }
 
 .home-form .jq-selectbox,
@@ -1064,6 +1065,8 @@ p.about-home-text__dark {
   font-size: 29px;
   color: #646464;
   text-transform: uppercase;
+  width: 100%;
+  display: block;
 }
 
 .company-title__center {
@@ -1073,6 +1076,8 @@ p.about-home-text__dark {
   line-height: 1.09433962264;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  width: 100%;
+  display: block;
 }
 
 .company-title__bottom {
@@ -1081,6 +1086,8 @@ p.about-home-text__dark {
   letter-spacing: 0.69em;
   margin-top: 10px;
   text-align: right;
+  width: 100%;
+  display: block;
 }
 
 .about-home-statistics {
