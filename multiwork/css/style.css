@@ -3865,9 +3865,6 @@ br.br-mob {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #fff;
-  /*  animation-name: o-fix;
-		animation-fill-mode: forwards;
-		animation-duration: 1ms;  */
 }
 
 .modal_active {
@@ -3875,6 +3872,12 @@ br.br-mob {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-animation-name: o-fix;
+  animation-name: o-fix;
+  -webkit-animation-duration: 1ms;
+  animation-duration: 1ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .modal_raccon {
@@ -4482,7 +4485,7 @@ br.br-mob {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
-  /* -webkit-overflow-scrolling: touch!important; */
+  -webkit-overflow-scrolling: touch!important;
 }
 
 @-webkit-keyframes o-fix {
