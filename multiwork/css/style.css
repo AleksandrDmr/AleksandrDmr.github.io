@@ -3836,13 +3836,12 @@ br.br-mob {
   overflow-y: auto;
   width: 100%;
   height: 100%;
-  min-height: 1000px;
   -webkit-transition: opacity .3s ease-in;
   -o-transition: opacity .3s ease-in;
   transition: opacity .3s ease-in;
-  opacity: .9;
   opacity: 0;
   background-color: #222;
+  -webkit-overflow-scrolling: touch;
 }
 
 .overlay_active {
@@ -3852,7 +3851,6 @@ br.br-mob {
 
 .modal {
   position: relative;
-  z-index: 99;
   z-index: -1;
   top: 0;
   -webkit-box-sizing: border-box;
@@ -3866,8 +3864,8 @@ br.br-mob {
   -webkit-transform: translateY(-1000px);
   -ms-transform: translateY(-1000px);
   transform: translateY(-1000px);
-  -webkit-animation-name: overflow-hack;
-  animation-name: overflow-hack;
+  -webkit-animation-name: o-fix;
+  animation-name: o-fix;
   -webkit-animation-duration: 1ms;
   animation-duration: 1ms;
   opacity: 0;
@@ -4497,9 +4495,10 @@ textarea:focus {
 
 .open-modal {
   overflow: hidden;
+  height: 100%;
 }
 
-@-webkit-keyframes overflow-hack {
+@-webkit-keyframes o-fix {
   0% {
     opacity: .9999%;
   }
@@ -4509,7 +4508,7 @@ textarea:focus {
   }
 }
 
-@keyframes overflow-hack {
+@keyframes o-fix {
   0% {
     opacity: .9999%;
   }
