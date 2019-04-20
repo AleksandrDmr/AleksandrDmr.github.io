@@ -5701,7 +5701,6 @@ textarea:focus {
   }
 
   .modal_form-calc {
-    overflow: auto;
     margin-top: 0;
     padding: 80px  10px 20px;
     -webkit-border-radius: 10px;
