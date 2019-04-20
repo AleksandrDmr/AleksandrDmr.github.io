@@ -3860,14 +3860,17 @@ br.br-mob {
   -webkit-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
+  /* transform: translateY(-1000px); */
+  -webkit-animation-name: o-fix;
+  animation-name: o-fix;
+  -webkit-animation-duration: 1ms;
+  animation-duration: 1ms;
   opacity: 0;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #fff;
-  /* transform: translateY(-1000px); */
-  /* animation-name: o-fix;
-	animation-fill-mode: forwards;
-	animation-duration: 1ms; */
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .modal_active {
@@ -4495,10 +4498,25 @@ textarea:focus {
   -webkit-overflow-scrolling: touch!important;
 }
 
-/* @keyframes o-fix {
-	0% {opacity: .9999%;}
-	100% {opacity: 100%;}
-} */
+@-webkit-keyframes o-fix {
+  0% {
+    opacity: .9999;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes o-fix {
+  0% {
+    opacity: .9999;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .nav-menu {
