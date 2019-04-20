@@ -4495,7 +4495,7 @@ textarea:focus {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
-  -webkit-overflow-scrolling: touch!important;
+  /* -webkit-overflow-scrolling: touch!important; */
 }
 
 @-webkit-keyframes o-fix {
