@@ -4490,8 +4490,8 @@ textarea:focus {
 /* disable auto-zoom on iphone input field focus */
 
 .open-modal {
-  /*  overflow: hidden; 
-	height: 100%; */
+  overflow: hidden;
+  height: 100%;
 }
 
 /* @keyframes o-fix {
