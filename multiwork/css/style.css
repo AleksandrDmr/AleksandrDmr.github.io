@@ -3850,7 +3850,6 @@ br.br-mob {
 
 .modal {
   position: relative;
-  z-index: -1;
   top: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3863,25 +3862,19 @@ br.br-mob {
   -webkit-transform: translateY(-1000px);
   -ms-transform: translateY(-1000px);
   transform: translateY(-1000px);
-  -webkit-animation-name: o-fix;
-  animation-name: o-fix;
-  -webkit-animation-duration: 1ms;
-  animation-duration: 1ms;
-  opacity: 0;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #fff;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  /*  animation-name: o-fix;
+		animation-fill-mode: forwards;
+		animation-duration: 1ms;  */
 }
 
 .modal_active {
-  z-index: 999;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  opacity: 1;
 }
 
 .modal_raccon {
@@ -5698,7 +5691,7 @@ br.br-mob {
 
   .modal_form-calc {
     margin-top: 0;
-    padding: 80px  10px 20px;
+    padding: 80px 10px 20px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
