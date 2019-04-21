@@ -4355,8 +4355,8 @@ br.br-mob {
   background: url(../img/i-clip.png) no-repeat;
 }
 
-.datepicker {
-  z-index: 9999;
+.datepickers-container {
+  z-index: 99999;
 }
 
 .icon {
@@ -4479,12 +4479,7 @@ br.br-mob {
 }
 
 .open-modal {
-  position: fixed;
-  left: 0;
   overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  min-height: 100vh;
   -webkit-overflow-scrolling: touch!important;
 }
 
