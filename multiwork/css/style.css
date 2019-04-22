@@ -161,7 +161,7 @@ body {
 
 .header {
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   top: 0;
   right: 0;
   left: 0;
@@ -3830,8 +3830,7 @@ br.br-mob {
   position: fixed;
   z-index: -1;
   top: 0;
-  right: 0;
-  bottom: 0;
+  /* 	bottom: 0; */
   left: 0;
   overflow-y: auto;
   width: 100%;
@@ -3839,6 +3838,7 @@ br.br-mob {
   -webkit-transition: opacity .3s ease-in;
   -o-transition: opacity .3s ease-in;
   transition: opacity .3s ease-in;
+  /* 	right: 0; */
   opacity: 0;
   background-color: #222;
 }
@@ -3850,7 +3850,7 @@ br.br-mob {
 
 .modal {
   position: relative;
-  top: 0;
+  top: 80px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto;
@@ -3868,10 +3868,9 @@ br.br-mob {
 }
 
 .modal_active {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   -webkit-animation-name: o-fix;
   animation-name: o-fix;
   -webkit-animation-duration: 1ms;
@@ -3902,8 +3901,8 @@ br.br-mob {
 
 .modal_form-calc {
   max-width: 423px;
-  margin-top: 150px;
   padding: 40px 50px;
+  /* margin-top: 150px; */
 }
 
 .modal_review {
@@ -4356,7 +4355,7 @@ br.br-mob {
 }
 
 .datepickers-container {
-  z-index: 99999;
+  z-index: 999;
 }
 
 .icon {
@@ -4479,7 +4478,11 @@ br.br-mob {
 }
 
 .open-modal {
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10000px;
   -webkit-overflow-scrolling: touch!important;
 }
 
@@ -4501,6 +4504,10 @@ br.br-mob {
   100% {
     opacity: 100;
   }
+}
+
+.overlay .datepicker {
+  top: 540px !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -5756,6 +5763,10 @@ br.br-mob {
   input[type='email'],
   textarea {
     font-size: 16px;
+  }
+
+  .overlay .datepicker {
+    top: 515px !important;
   }
 }
 

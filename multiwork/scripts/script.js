@@ -577,12 +577,12 @@ if ($('.tabs-best-authors').length) {
 		 modalQuiz = new OpenModal ('.btn_quiz-popup', '.quiz_mob');
 
 
-		 $('.datepicker-here').datepicker({
+		/* $('.datepicker-here').datepicker({
 		 	autoClose: true,
 		 	onSelect : function() {
 		 		j = 1;
 		 	}
-		 })
+		 })*/
 
 
         $('#modal-time').mask('99:99',{
@@ -595,6 +595,29 @@ if ($('.tabs-best-authors').length) {
                 }
             }
         );
+
+     $(".datepicker-here").datepicker({
+     	autoClose: true,
+     	onSelect : function() {
+     		j = 1;
+     	}
+
+	}).click( function () {
+			var	 body = $('body');
+			if ( $(this).parents(".overlay_form-calc").length && !$(this).parents(".overlay_form-calc").children("#datepickers-container").length ) {
+
+				var	container = $(this).parents(".overlay_form-calc");
+					
+		  		$("#datepickers-container").appendTo(container);
+		  		
+		  	} else if ( !body.children("#datepickers-container").length ) {
+		  		
+		  		$("#datepickers-container").appendTo(body);
+
+		  	}
+		  	
+		});
+
 
 });
 
