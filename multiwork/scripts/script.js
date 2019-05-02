@@ -1,6 +1,6 @@
 $(function() {
 
-	// mobile menu toggle
+	// Адаптивное меню
 	$('.nav-open').click(function(event) {
 		$('.nav-mobile').addClass('nav-mobile_open');
 	});
@@ -9,19 +9,22 @@ $(function() {
 		$('.nav-mobile').removeClass('nav-mobile_open');
 	});
 
-	// dynamic text 
-	var typed = new Typed('#dynamic', {
-	    strings: ["диплом?", "курсовую?", "контрольную?", "реферат?"],
-  		typeSpeed: 120,
-  		backSpeed: 80,
-  		backDelay: 2000, 
-  		loop: true
+	// Печатающийся текст
+	if ( $('#dynamic').length ) {
+		var typed = new Typed('#dynamic', {
+		    strings: ["диплом?", "курсовую?", "контрольную?", "реферат?"],
+	  		typeSpeed: 120,
+	  		backSpeed: 80,
+	  		backDelay: 2000, 
+	  		loop: true
 
-	 });
+		 });
+	}
+	
 
 	var j = 0;
 
-	// quiz steps
+	// QUIZ шаги
 	function Quiz( elem ) {
 
 		var el = $(elem),
@@ -204,8 +207,7 @@ var quizPc = new Quiz( '.quiz_pc' );
 
 
 	
-	// Advantages slider
-
+	// Инициализация слайдера
 	$('.advan-slider').slick({
 		slidesToShow: 5,
 		 arrows: false,
@@ -237,9 +239,34 @@ var quizPc = new Quiz( '.quiz_pc' );
 	  ]
 	});
 
+	if ( $('.best-authors').length ) {
+
+		// Инициализация слайдера
+		$('.best-authors').slick({
+			slidesToShow: 3,
+			arrows: false,
+			infinite: false,
+			responsive: [
+			    {
+			      breakpoint: 1200,
+			      settings: {
+			        slidesToShow: 2,
+			       
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 1,
+			      }
+			    },
+
+		  ]
+		}); 
+	}
 
 
-	//Best authors navigation slider
+	// Инициализация слайдера
 if ($('.tabs-best-authors').length) {
 
 	$('.tabs-nav-best-authors').slick({
@@ -275,29 +302,8 @@ if ($('.tabs-best-authors').length) {
 
 	  ]
 	});
-
-	$('.best-authors').slick({
-		slidesToShow: 3,
-		arrows: false,
-		infinite: false,
-		responsive: [
-		    {
-		      breakpoint: 1200,
-		      settings: {
-		        slidesToShow: 2,
-		       
-		      }
-		    },
-		    {
-		      breakpoint: 768,
-		      settings: {
-		        slidesToShow: 1,
-		      }
-		    },
-
-	  ]
-	}); 
-
+	
+	// Инициализация слайдера
 	$('.best-authors__slider').slick({
 		slidesToShow: 1,
 		arrows: false,
@@ -309,7 +315,7 @@ if ($('.tabs-best-authors').length) {
 
 	}
 
-	// chat inamation
+	// Анимация чата
 	var $chat = $('.manager-chat__message-wrap'),
 		$message = $chat.find('.manager-chat__message')
 		i = 0,
@@ -349,7 +355,7 @@ if ($('.tabs-best-authors').length) {
 
 
 
-	//custom scroll
+	//Скроллбар
 	var Scrollbar = window.Scrollbar,
 		scrollBlock = document.querySelectorAll('.best-authors__reviews');
 		
@@ -362,11 +368,11 @@ if ($('.tabs-best-authors').length) {
 
 
 
-	 
+	 // Кастомизация input
 	 $('select').styler();
 	 $('form input[type="checkbox"]').styler();
 
-	 // Price hover
+	 // эффект наведения на поля цен
 	 var $priceNav = $('.price-nav li'),
 	 	 $priceList = $('.price-block__list'),
 	 	 $priceListItem = $priceList.find('li');
@@ -399,7 +405,7 @@ if ($('.tabs-best-authors').length) {
 	});
 
 
-
+	// Инициализация слайдера
 	$('.price-slider').slick({
 		slidesToShow: 5,
 		arrows: false,
@@ -424,7 +430,8 @@ if ($('.tabs-best-authors').length) {
 
 	  ]
 	});
-
+	
+	// Инициализация слайдера
 	$('.tabs-nav-reviews').slick({
 		slidesToShow: 10,
 		 nextArrow: '<button class="nav-tab-btn nav-tab-btn__next"</button>',
@@ -458,7 +465,7 @@ if ($('.tabs-best-authors').length) {
 
 	  ]
 	});
-
+	// Инициализация слайдера
 	$('.reviews-tabs').slick({
 		slidesToShow: 1,
 		arrows: false,
@@ -467,7 +474,7 @@ if ($('.tabs-best-authors').length) {
 	
 	}); 
 
-
+	// Инициализация слайдера
 	$('.rewiews-tab-wrap').each(function (idx, item) {
 	 var $context =  $(this);
 
@@ -500,12 +507,11 @@ if ($('.tabs-best-authors').length) {
 			  ]
 			});
 
-
 	});
 
 
 
-	// modal forms
+	//  Событие для кнопки "Закрыть" 
 	$('.modal-close').click(function(event) {
 		$('.overlay').removeClass('overlay_active');
 		$('.modal').removeClass('modal_active');
@@ -513,7 +519,7 @@ if ($('.tabs-best-authors').length) {
 		$('body').removeClass('open-modal');
 	});
 
-
+	// переключение выбора времени (кнопка позвоните мне)
 	$('.modal__radio-btn input').change(function(event) {
 			if( $(this).attr('id') == 'choose') {
 				$('.modal__time input').removeAttr('disabled');
@@ -530,18 +536,13 @@ if ($('.tabs-best-authors').length) {
 
 
 
-
+	// Кастомизация input[type="file"]
 	$('input[type="file"]').styler({
 		filePlaceholder: 'Прикрепить файл',
 		fileBrowse: ""
 	});
 		
-	new WOW().init();
-
-
-
-
-
+	// Открытие модальных окон
 	function OpenModal (btn, modal) {
 
 		var $btn = $(btn);
@@ -576,15 +577,7 @@ if ($('.tabs-best-authors').length) {
 		 modalFormCalc = new OpenModal ('.btn_order-work', '.overlay_form-calc'),
 		 modalQuiz = new OpenModal ('.btn_quiz-popup', '.quiz_mob');
 
-
-		/* $('.datepicker-here').datepicker({
-		 	autoClose: true,
-		 	onSelect : function() {
-		 		j = 1;
-		 	}
-		 })*/
-
-
+		 // маска ввода времени (кнопка позвоните мне)
         $('#modal-time').mask('99:99',{
                 placeholder: "13:00",
                 onComplete: function(){
@@ -595,6 +588,7 @@ if ($('.tabs-best-authors').length) {
                 }
             }
         );
+
 
      $(".datepicker-here").datepicker({
      	autoClose: true,
@@ -617,6 +611,158 @@ if ($('.tabs-best-authors').length) {
 		  	}
 		  	
 		});
+
+	// Инициализация слайдера
+	$('.diplom-slider').slick({
+		slidesToShow: 4,
+		/*slidesPerRow: 4,*/
+		arrows: false,
+		centerPadding: '0',
+		rows: 2,
+		 responsive: [
+	    {
+	      breakpoint: 968,
+	      settings: {
+		 	autoplaySpeed: 3000,
+	        slidesToShow: 2,
+	        slidesToScroll: 1,
+	        infinite: true,
+	         
+	       
+	      }
+	    },
+	    {
+	      breakpoint: 568,
+	      settings: { 
+	      	centerMode: true,
+	      	rows: 1,
+	      	centerPadding: '40px',
+	        slidesToShow: 1,
+	       
+	      }
+	    },
+	  ]
+	});
+
+	// Инициализация слайдера
+	$('.deadlines-nav').slick({
+		slidesToShow: 3,
+		arrows: false,
+		asNavFor: '.deadlines-slider-container',
+		focusOnSelect: true,
+		 responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	      	arrows: true,
+	      	nextArrow: '<button class="nav-tab-btn nav-tab-btn__next"</button>',
+	      	prevArrow: '<button class="nav-tab-btn nav-tab-btn__prev"></button>',
+	        slidesToScroll: 1, 	   
+	        slidesToShow: 1   
+	      }
+	    }
+
+
+	  ]
+	});
+
+	// Инициализация слайдера
+	$('.deadlines-slider-container').slick({
+		slidesToShow: 1,
+		arrows: false,
+		asNavFor: '.deadlines-nav'
+	});
+
+	// Инициализация слайдера
+	$('.deadlines-slider').slick({
+		slidesToShow: 4,
+		arrows: false,
+		 responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToScroll: 1, 	   
+	        slidesToShow: 1,
+	        rows: 4    
+	      }
+	    }
+
+	  ]
+	});
+
+	// Инициализация слайдера
+	$('.graph-slider').slick({
+		slidesToShow: 5,
+		arrows: false,
+
+		 responsive: [
+	    {
+	      breakpoint: 968,
+	      settings: {
+	        slidesToScroll: 1, 	   
+	        slidesToShow: 3, 
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToScroll: 1, 	   
+	        slidesToShow: 2, 
+	      }
+	    },
+	    {
+	      breakpoint: 568,
+	      settings: {
+	        slidesToScroll: 1, 	   
+	        slidesToShow: 1, 
+	        centerMode: true,
+	        centerPadding: '20px',
+	      }
+	    },
+
+
+	  ]
+	});
+
+	if ( $('.range').length ) {
+
+		var parent = $('.range'),
+			emoji = parent.find('.range__emoji-icon'),
+			rangeDesc = parent.find('.range__text'),
+			rangeInput = parent.find('.range__input'),
+			rangeTooltipTitle = parent.find('.range__tooltip-title'),
+			rangeTooltipText = parent.find('.range__tooltip-desc'),
+			rangeVal;
+
+		$(".range__input").ionRangeSlider({
+				skin: "round",
+				from: 2,
+		        min: 1,
+		        max: 3,
+		      	onChange: function (data) {
+		      		rangeVal = rangeInput.val();
+
+		      	    emoji.removeClass('range__emoji-icon_current');
+		      	    emoji.eq(rangeVal - 1).addClass('range__emoji-icon_current');
+		      	    rangeDesc.removeClass('range__text_current');
+		      	    rangeDesc.eq(rangeVal - 1).addClass('range__text_current');
+		      	    rangeTooltipTitle.removeClass('range__tooltip-title_visible');
+		      	    rangeTooltipTitle.eq(rangeVal - 1).addClass('range__tooltip-title_visible');
+		      	    rangeTooltipText.removeClass('range__tooltip-desc_visible');
+		      	    rangeTooltipText.eq(rangeVal - 1).addClass('range__tooltip-desc_visible');
+
+		      	 
+		      	 }
+		    });
+	}
+
+	
+	   // Инициализация слайдера
+	   $('.present-slider').slick({
+	   	nextArrow: '<button class="nav-tab-btn nav-tab-btn__next"</button>',
+	   	prevArrow: '<button class="nav-tab-btn nav-tab-btn__prev"></button>'
+	   });
+
 
 
 });
