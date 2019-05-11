@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
   $(function () {
     $('.news_carousel').lightSlider({
       item: 3,
@@ -43,3 +43,4 @@ $(document).ready(function () {
     });
   });
 });
+*/
