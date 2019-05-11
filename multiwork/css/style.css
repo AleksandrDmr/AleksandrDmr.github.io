@@ -1685,6 +1685,7 @@ body {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   outline: none;
+  background-color: #fff;
   -webkit-box-shadow: 2.091px 19.89px 20px 0 rgba(0, 0, 0, .05);
   box-shadow: 2.091px 19.89px 20px 0 rgba(0, 0, 0, .05);
   -webkit-box-orient: vertical;
@@ -3150,6 +3151,10 @@ label {
   padding: 80px 0 90px;
 }
 
+.sect-reviews_bg {
+  background-color: #f2f7f7;
+}
+
 .wrapper-reviews {
   position: relative;
   max-width: 1140px;
@@ -4421,6 +4426,22 @@ label {
   width: 169px;
 }
 
+.modal__title-text {
+  display: none;
+}
+
+.modal__title-text_visible {
+  display: block;
+}
+
+.modal__subtitle-text {
+  display: none;
+}
+
+.modal__subtitle-text_visible {
+  display: block;
+}
+
 .modal .form__checkbox-wrap_modal {
   max-width: 317.5px;
   margin: 15px auto 0;
@@ -5168,6 +5189,7 @@ label {
   left: 50%;
   width: 39px;
   margin-top: -19.5px;
+  cursor: pointer;
   -webkit-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
@@ -6699,6 +6721,10 @@ br.br-mob {
     display: block;
   }
 
+  .info-phone_footer {
+    display: block;
+  }
+
   .account-login {
     display: none;
   }
@@ -6835,7 +6861,7 @@ br.br-mob {
   }
 
   .best-authors__item-wrap_subject {
-    padding: 0 0 90px;
+    padding: 0 15px 90px;
   }
 
   .best-authors__content {

@@ -258,6 +258,8 @@ var quizPc = new Quiz( '.quiz_pc' );
 			      breakpoint: 768,
 			      settings: {
 			        slidesToShow: 1,
+			        centerMode: true,
+			        centerPadding: '20px'
 			      }
 			    },
 
@@ -732,6 +734,8 @@ if ($('.tabs-best-authors').length) {
 			rangeInput = parent.find('.range__input'),
 			rangeTooltipTitle = parent.find('.range__tooltip-title'),
 			rangeTooltipText = parent.find('.range__tooltip-desc'),
+			titleForm = $('.form_assessment .modal__title-text'),
+			subtitleForm = $('.form_assessment .modal__subtitle-text'),
 			rangeVal;
 
 		$(".range__input").ionRangeSlider({
@@ -750,10 +754,41 @@ if ($('.tabs-best-authors').length) {
 		      	    rangeTooltipTitle.eq(rangeVal - 1).addClass('range__tooltip-title_visible');
 		      	    rangeTooltipText.removeClass('range__tooltip-desc_visible');
 		      	    rangeTooltipText.eq(rangeVal - 1).addClass('range__tooltip-desc_visible');
+		      	    titleForm.removeClass('modal__title-text_visible');
+		      	    titleForm.eq(rangeVal - 1).addClass('modal__title-text_visible')
+					subtitleForm.removeClass('modal__subtitle-text_visible');
+					subtitleForm.eq(rangeVal - 1).addClass('modal__subtitle-text_visible')
+
 
 		      	 
 		      	 }
+
+
 		    });
+
+			var rangeObject = $(".range__input").data("ionRangeSlider");
+
+			 $(emoji).on('click', function(event) {
+			 	var numEmoji = $(this).index();
+			 	emoji.removeClass('range__emoji-icon_current');
+			 	$(this).addClass('range__emoji-icon_current');
+			 	rangeDesc.removeClass('range__text_current');
+			 	rangeDesc.eq(numEmoji).addClass('range__text_current');
+			 	rangeTooltipTitle.removeClass('range__tooltip-title_visible');
+			 	rangeTooltipTitle.eq(numEmoji).addClass('range__tooltip-title_visible');
+			 	rangeTooltipText.removeClass('range__tooltip-desc_visible');
+			 	rangeTooltipText.eq(numEmoji).addClass('range__tooltip-desc_visible');
+			 	rangeVal = rangeInput.val(numEmoji + 1);
+ 	      	    titleForm.removeClass('modal__title-text_visible');
+ 	      	    titleForm.eq(numEmoji).addClass('modal__title-text_visible')
+ 				subtitleForm.removeClass('modal__subtitle-text_visible');
+ 				subtitleForm.eq(numEmoji).addClass('modal__subtitle-text_visible')
+
+			 	rangeObject.update({
+			 	       from: numEmoji + 1, 
+			 	   });
+
+			 });
 	}
 
 	
