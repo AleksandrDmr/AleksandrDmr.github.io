@@ -5265,7 +5265,8 @@ label {
 
 .range__tooltip {
   position: relative;
-  margin-top: 35px;
+  max-width: 457.5px;
+  margin: 35px auto 0;
   padding: 20px;
   text-align: center;
   -webkit-border-radius: 10px;
@@ -5803,6 +5804,19 @@ br.br-mob {
   .contacts-block_messengers {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
+  }
+
+  .box-desc {
+    padding-right: 130px;
+  }
+
+  .row-originality {
+    max-width: 100%;
+  }
+
+  .originality-info {
+    font-size: 18px;
+    max-width: 410px;
   }
 
   .present-slider {
@@ -6516,7 +6530,6 @@ br.br-mob {
   }
 
   .originality-info {
-    font-size: 18px;
     width: 100%;
     max-width: 100%;
     text-align: center;
