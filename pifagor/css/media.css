@@ -806,7 +806,13 @@ padding-left: 30px !important; */
 }
 
 @media all and (max-width: 576px) {
+section.privacy_policy ul li.main_description {
+  font-size: 14px;
+}
 
+section.privacy_policy ul li {
+  font-size: 14px;
+}
   .menu_container_others .logo  {
     width: 110px;
   }

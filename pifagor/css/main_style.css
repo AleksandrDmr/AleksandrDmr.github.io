@@ -1491,8 +1491,9 @@ footer .flex_container_footer ul.social_container li a:hover {
  /*  margin-right: 30px; */
   position: relative;
  filter: drop-shadow(0px 23px 27px 0px rgba(0,0,0,0.21)); 
-  height: 620px; 
- padding-top: 24px;
+ height: 620px; 
+ padding: 0 15px;
+ transition: all .15s linear .5s;
   
 }
 
@@ -1500,14 +1501,17 @@ footer .flex_container_footer ul.social_container li a:hover {
   height: auto; 
 }
 
-
-
+.slider_expertise .slick-current .slider-single {
+ transform: scale(1,1);
+}
 .slider_expertise .slick-current .slider-single,
 .slider_price .slick-current .slider-single  {
-  padding-top: 0;
+  margin-top: 0;
 }
 
-
+.slider_expertise .slider-single  {
+   transform: scale(.96, .9);
+}
 .slider_expertise .slider-single .slider_single_container,
 .slider_price .slider-single .slider_single_container {
   width: 100%;
@@ -1516,21 +1520,24 @@ footer .flex_container_footer ul.social_container li a:hover {
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 37px 33px;
+  z-index: 10;
+  
+}
+.slider_price .slider-single .slider_single_container {
    -webkit-clip-path: polygon(100% 0, 100% 80%, 73% 100%, 0 100%, 0 0);
  clip-path: polygon(100% 0, 100% 80%, 73% 100%, 0 100%, 0 0); 
-  z-index: 10;
-/*   transition: height .15s linear; */
 }
 
 .slider_price .slider-single .slider_single_container {
   height: auto;
 }
 .slick-current .slider_single_container {
-  clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 68%, 70% 100%, 20% 100%, 0 100%, 0 0);
+   -webkit-clip-path: polygon(100% 0, 100% 80%, 73% 100%, 0 100%, 0 0);
+ clip-path: polygon(100% 0, 100% 80%, 73% 100%, 0 100%, 0 0); 
 }
 
-.slider_expertise .slick-current .slider-single  .slider_single_container, {
-  height: 534px;
+.slider_expertise .slick-current .slider-single .slider_single_container {
+  /* height: 534px; */
 }
 
 
