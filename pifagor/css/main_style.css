@@ -1524,6 +1524,9 @@ footer .flex_container_footer ul.social_container li a:hover {
   
 }
 .slider_price .slider-single .slider_single_container {
+   padding: 20px 37px 33px;
+}
+.slider_price .slider-single .slider_single_container {
    -webkit-clip-path: polygon(100% 0, 100% 80%, 73% 100%, 0 100%, 0 0);
  clip-path: polygon(100% 0, 100% 80%, 73% 100%, 0 100%, 0 0); 
 }

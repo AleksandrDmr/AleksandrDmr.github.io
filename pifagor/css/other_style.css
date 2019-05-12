@@ -879,7 +879,7 @@ section.service_default {
 
 .price_item {
   justify-content: flex-start !important;
-  padding: 30px !important;
+  padding: 30px ;
    filter: drop-shadow(6.891px 24.032px 27px rgba(0, 0, 0, 0.21)); 
 
    /* background-image: linear-gradient(180deg, #ffb95f 0%, #393838 100%); */
