@@ -43,6 +43,7 @@ if ( $('.question_item').length ) {
 if ( $('.price_carousel').length ) {
 
   $('.price_carousel').slick({
+    infinite: false,
    nextArrow: '<button class="slider-btn slider-btn_next" type="button"><span></span></button>',
     prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><span></span></button>',
   });
@@ -54,6 +55,7 @@ if ( $('.carousel-home').length ) {
    nextArrow: '<button class="slider-btn slider-btn_next" type="button"><span></span></button>',
   prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><span></span></button>',
     centerMode: true,
+    
     centerPadding: '17.96875%',
     responsive: [
       {
