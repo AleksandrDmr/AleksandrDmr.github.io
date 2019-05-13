@@ -321,7 +321,6 @@ header .header_title_container .navigator_container a {
 
 .contact_main .map_bg_container .info_container_others {
   margin-top: -65px;
-  box-shadow: 0px 2px 18px rgba(12, 44, 66, 0.6);
   border-right: 9px solid #383434;
   max-width: 777px;
  /*  height: 485px; */
@@ -957,12 +956,13 @@ section.service_default {
   color: #222222;
   font-family: "Century Gothic";
   text-align: left;
-  width: 199px;
+  width: 196px;
   height: 47px;
   border-radius: 24px;
   box-shadow: 0.968px 3.881px 10px rgba(34, 34, 34, 0.35);
   padding: 10px 10px 10px 25px !important;
   vertical-align: middle;
+  position: relative;
 }
 
 .price_item .price_container .request_price::after {
@@ -971,14 +971,19 @@ section.service_default {
   font-weight: 900;
   display: block;
   width: 56px;
-  height: 47px;
+   height: 47px; 
   font-size: 14px;
   text-align: center;
-  padding-top: 10px;
+ /*  padding-top: 10px; */
   color: #fff;
   background: #222222;
-  margin-left: 130px;
-  margin-top: -36px;
+ /*  margin-left: 130px;
+ margin-top: -36px; */
+  position: absolute;
+  right: -3px;
+  top: 0;
+  line-height: 47px;
+  text-align: center;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
 }
