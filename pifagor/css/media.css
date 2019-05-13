@@ -135,7 +135,8 @@
       padding: 20px 10px;
     }
     .slider_price .slider-single .slider_single_container {
-      clip-path: none;
+      clip-path: none; 
+      -webkit-clip-path: none;
     }
     .slider_price .slider-single::after {
       top: 0;
@@ -407,6 +408,7 @@ padding-left: 30px !important; */
   .slider_expertise  .slider-single .slider_single_container, .slider_price .slider-single .slider_single_container {
     height: 251px;
     clip-path: none;
+    -webkit-clip-path: none;
     padding: 20px;
   }
   .slider_price .slick-current .slider-single .slider_single_container  {
@@ -751,6 +753,7 @@ padding-left: 30px !important; */
   }
   .contact_main .map_bg_container .info_container_others {
     clip-path: none;
+    -webkit-clip-path: none;
   }
   .contact_main .info_pifagor .text_info_others {
         padding: 15px 20px 5px;
