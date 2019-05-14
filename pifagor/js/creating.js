@@ -46,7 +46,8 @@ if ( $('.price_carousel').length ) {
     infinite: false,
    nextArrow: '<button class="slider-btn slider-btn_next" type="button"><span></span></button>',
     prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><span></span></button>',
-  });
+    useTransform: false
+  }); 
 
 }
 
@@ -101,7 +102,6 @@ if ( $('.sertificate_slider').length ) {
     nextArrow: '<button class="slider-btn slider-btn_next" type="button"><span></span></button>',
     prevArrow: '<button class="slider-btn slider-btn_prev" type="button"><span></span></button>',
     initialSlide: 2,
-    infinite: false
   });
 }
 
