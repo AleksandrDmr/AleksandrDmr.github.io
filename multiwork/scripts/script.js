@@ -617,7 +617,6 @@ if ($('.tabs-best-authors').length) {
 	// Инициализация слайдера
 	$('.diplom-slider').slick({
 		slidesToShow: 4,
-		/*slidesPerRow: 4,*/
 		arrows: false,
 		centerPadding: '0',
 		rows: 2,
@@ -726,6 +725,7 @@ if ($('.tabs-best-authors').length) {
 	  ]
 	});
 
+	// Кастомный ползунок формы
 	if ( $('.range').length ) {
 
 		var parent = $('.range'),
@@ -755,9 +755,9 @@ if ($('.tabs-best-authors').length) {
 		      	    rangeTooltipText.removeClass('range__tooltip-desc_visible');
 		      	    rangeTooltipText.eq(rangeVal - 1).addClass('range__tooltip-desc_visible');
 		      	    titleForm.removeClass('modal__title-text_visible');
-		      	    titleForm.eq(rangeVal - 1).addClass('modal__title-text_visible')
+		      	    titleForm.eq(rangeVal - 1).addClass('modal__title-text_visible');
 					subtitleForm.removeClass('modal__subtitle-text_visible');
-					subtitleForm.eq(rangeVal - 1).addClass('modal__subtitle-text_visible')
+					subtitleForm.eq(rangeVal - 1).addClass('modal__subtitle-text_visible');
 
 
 		      	 
@@ -765,30 +765,30 @@ if ($('.tabs-best-authors').length) {
 
 
 		    });
-
+		    // Выбор положения ползунка при клике на смайл
 			var rangeObject = $(".range__input").data("ionRangeSlider");
 
-			 $(emoji).on('click', function(event) {
-			 	var numEmoji = $(this).index();
-			 	emoji.removeClass('range__emoji-icon_current');
-			 	$(this).addClass('range__emoji-icon_current');
-			 	rangeDesc.removeClass('range__text_current');
-			 	rangeDesc.eq(numEmoji).addClass('range__text_current');
-			 	rangeTooltipTitle.removeClass('range__tooltip-title_visible');
-			 	rangeTooltipTitle.eq(numEmoji).addClass('range__tooltip-title_visible');
-			 	rangeTooltipText.removeClass('range__tooltip-desc_visible');
-			 	rangeTooltipText.eq(numEmoji).addClass('range__tooltip-desc_visible');
-			 	rangeVal = rangeInput.val(numEmoji + 1);
- 	      	    titleForm.removeClass('modal__title-text_visible');
- 	      	    titleForm.eq(numEmoji).addClass('modal__title-text_visible')
- 				subtitleForm.removeClass('modal__subtitle-text_visible');
- 				subtitleForm.eq(numEmoji).addClass('modal__subtitle-text_visible')
+			$(emoji).on('click', function(event) {
+				var numEmoji = $(this).index();
+				emoji.removeClass('range__emoji-icon_current');
+				$(this).addClass('range__emoji-icon_current');
+				rangeDesc.removeClass('range__text_current');
+				rangeDesc.eq(numEmoji).addClass('range__text_current');
+				rangeTooltipTitle.removeClass('range__tooltip-title_visible');
+				rangeTooltipTitle.eq(numEmoji).addClass('range__tooltip-title_visible');
+				rangeTooltipText.removeClass('range__tooltip-desc_visible');
+				rangeTooltipText.eq(numEmoji).addClass('range__tooltip-desc_visible');
+				rangeVal = rangeInput.val(numEmoji + 1);
+			    titleForm.removeClass('modal__title-text_visible');
+			    titleForm.eq(numEmoji).addClass('modal__title-text_visible');
+				subtitleForm.removeClass('modal__subtitle-text_visible');
+				subtitleForm.eq(numEmoji).addClass('modal__subtitle-text_visible');
 
-			 	rangeObject.update({
-			 	       from: numEmoji + 1, 
-			 	   });
+				rangeObject.update({
+				       from: numEmoji + 1, 
+				   });
 
-			 });
+			});
 	}
 
 	
@@ -797,7 +797,6 @@ if ($('.tabs-best-authors').length) {
 	   	nextArrow: '<button class="nav-tab-btn nav-tab-btn__next"</button>',
 	   	prevArrow: '<button class="nav-tab-btn nav-tab-btn__prev"></button>'
 	   });
-
 
 
 });
