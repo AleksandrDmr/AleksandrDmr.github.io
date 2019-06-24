@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.formstfyler.theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>One product</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-top">
+				<a href="#" class="city-select">
+					<i class="fas fa-map-marker-alt"></i> Ваш город
+				</a>
+				<nav class="nav-service">
+					<ul>
+						<li class="current"><a href="#">Магазин</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">О проекте</a></li>
+					</ul>
+				</nav>
+				<!-- /.nav-service -->
+				<div class="personal-box">
+					<a href="#" class="personal-box__fav">
+						<span class="personal-box__fav-count personal-box__fav-count_visible">3</span>
+						<i class="fas fa-heart"></i>
+					</a>
+					<a href="#" class="personal-box__cart">
+						<i class="fas fa-shopping-cart"></i> Корзина <span class="personal-box__cart-count personal-box__cart-count_visible">(2)</span>
+					</a>
+					<a href="#" class="personal-box__user-accaunt">
+						<i class="fas fa-user"></i> <span class="personal-box__user-text">Войти в кабинет</span> 
+					</a>
+				</div>
+				<!-- /.personal-box -->
+				<button class="menu-toggle">
+					<span></span>
+				</button>
+				<div class="mob-menu">
+					<a href="#" class="city-select city-select_mob">
+						<i class="fas fa-map-marker-alt"></i> Ваш город
+					</a>
+					<nav class="nav-service nav-service_mob">
+						<ul>
+							<li class="current"><a href="#">Магазин</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+				</div>
+				<!-- /.mob-nav -->
+			</div>
+			<!-- /.header-top -->
+			<div class="header-bottom">
+				<a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+				<form action="#" class="search">
+					<input type="text" placeholder="Поиск">
+					<button><i class="fas fa-search"></i></button>
+				</form>
+				<!-- /.search -->
+				<div class="add-product">
+					<a href="#" class="add-product__btn add-product__btn_left">Добавить рецепт</a>
+					<a href="#" class="add-product__btn add-product__btn_right">Добавить товар</a>
+				</div>
+				<!-- /.add-product -->
+			</div>
+			<!-- /.header-bottom -->
+			<div class="nav-cat">
+				<div class="products-cat">
+					<button class="p-nav-btn"><i class="fas fa-bars"></i></i> Все категории</button>
+					<ul class="products-cat__list">
+						<li class="products-cat__item current"><a href="#">Фрукты</a></li>
+						<li class="products-cat__item"><a href="#">Овощи</a></li>
+						<li class="products-cat__item"><a href="#">Мясо</a></li>
+						<li class="products-cat__item"><a href="#">Птица</a></li>
+						<li class="products-cat__item"><a href="#">Рыба</a></li>
+						<li class="products-cat__item"><a href="#">Морепродукты</a></li>
+						<li class="products-cat__item"><a href="#">Бады</a></li>
+						<li class="products-cat__item"><a href="#">Минералы и витамины</a></li>
+						<li class="products-cat__item"><a href="#">Косметика</a></li>
+						<li class="products-cat__item"><a href="#">Масла</a></li>
+					</ul>
+				</div>
+				<!-- /.products-cat -->
+				<div class="products-nav">
+					<div class="products-nav__wrapper">
+						<ul class="products-nav__cat-list">
+							<li class="products-nav__cat-item current"><a href="#">Фрукты <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Овощи <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Мясо <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Птица <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Рыба <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Морепродукты <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Бады <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Минералы и витамины <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Косметика <i class="fas fa-angle-right"></i></a></li>
+							<li class="products-nav__cat-item"><a href="#">Масла <i class="fas fa-angle-right"></i></a></li>
+						</ul>
+						<div class="products-nav__box  products-nav__box_visible">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Фрукты</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Овощи</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Мясо</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Птица</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Рыба</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Морепродукты</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Бады</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Минералы и витамины</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Косметика</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+						<div class="products-nav__box">
+							<div class="products-nav__inner">
+								<div class="products-nav__return"><i class="fas fa-angle-left"></i> Назад</div>
+								<div class="products-nav__title">Масла</div>
+								<ul class="products-nav__subcat-list">
+									<li class="products-nav__subcat-item"><a href="#">Экзотика</a></li>
+									<li class="products-nav__subcat-item current"><a href="#">Экзотика штучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Абрикосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Авокадо</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Ананас</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Апельсины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Арбузы и дыни</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Яблоки</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Бананы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Виноград</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Гранат</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Грейпфрут</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Груша</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Киви</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Кокосы</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Лимоны</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Манго</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Мандарины</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Нектарин</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Персики</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Помело</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Хурма</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Фрукты поштучно</a></li>
+									<li class="products-nav__subcat-item"><a href="#">Сухофрукты</a></li>
+								</ul>
+							</div>
+							<div class="products-nav__img">
+								<img src="img/shop/cat-img.jpg" alt="">
+							</div>
+							<!-- /.products-nav__img -->
+						</div>
+						<!-- /.products-nav__box -->
+					</div>
+					<!-- /.wrapper -->
+				</div>
+				<!-- /.products-nav -->
+			</div>
+			<!-- /.nav-cat -->
+		</div>
+	</header>
+	<!-- /.header -->
+	<div class="wrapper">
+		<div class="breadcrumbs">
+	          <a href="#">Главная</a> 
+	          <span class="breadcrumbs__sep">|</span> 
+	          <a href="#">Магазин </a> 
+	          <span class="breadcrumbs__sep">|</span> 
+	          <span>Мясо</span> 
+		</div>
+		<div class="product-name">
+			<img src="img/one-product/product-title.png" alt="">
+			<h1 class="product-name__title">Злаковый батончик Corny Big Choco-Banana с бананом и шоколадом, 50 г</h1>
+		</div>
+		<div class="top-f">
+			<div class="top-f__item top-f__item_check top-f__item_tab">
+				<div class="top-f__circle"></div>
+				<i class="fas fa-tags"></i>
+				<span class="top-f__text">Цены</span>
+			</div>
+			<!-- /.top-f__item -->
+			<div class="top-f__item top-f__item_tab">
+				<div class="top-f__circle"></div>
+				<i class="fas fa-cogs"></i>
+				<span class="top-f__text">Характеристики</span>
+			</div>
+			<!-- /.top-f__item -->
+			<div class="top-f__item top-f__item_tab">
+				<div class="top-f__circle"></div>
+				<i class="fas fa-pencil-alt"></i>
+				<span class="top-f__text">Описание</span>
+			</div>
+			<!-- /.top-f__item -->
+			<div class="top-f__item top-f__item_tab">
+				<div class="top-f__circle"></div>
+				<i class="fas fa-comments"></i>
+				<span class="top-f__text">Отзывы</span>
+			</div>
+			<!-- /.top-f__item -->
+			<div class="top-f__item top-f__item_tab">
+				<div class="top-f__circle"></div>
+				<i class="far fa-eye"></i>
+				<span class="top-f__text">Обзоры</span>
+			</div>
+			<!-- /.top-f__item -->
+		</div>
+		<!-- /.top-f -->		
+	</div>
+	<!-- /.wrapper -->
+	<div class="page-content">
+		<div class="wrapper">
+			<div class="wrap-inner wrap-inner_product page-content__wrap-inner">
+				<aside class="sidebar">
+					<div class="sidebar__title">
+						<i class="fas fa-sliders-h"></i>
+						Фильтр
+					</div>
+					<!-- /.sidebar__title -->
+					<div class="filter-box">
+						<div class="filter-box__title">Цена (₽)</div>
+						<div class="filter-box__inputs-inner">
+							<input type="text" placeholder="От">
+							<input type="text" placeholder="До">
+						</div>
+						<ul class="filter-box__ch-list">
+							<li class="filter-box__ch-item">
+								<label class="filter-box__label filter-box__label_chb"> <input type="checkbox"> Цена с учетом доставки</label>
+							</li>
+						</ul>
+					</div>
+					<!-- /.filter-box -->
+					<div class="filter-box">
+						<div class="filter-box__title">Скидки и акции</div>
+						<ul class="filter-box__ch-list">
+							<li class="filter-box__ch-item">
+								<label class="filter-box__label filter-box__label_chb"> <input type="checkbox"> Скидки</label>
+							</li>
+							<li class="filter-box__ch-item">
+								<label class="filter-box__label filter-box__label_chb"> <input type="checkbox"> Промокоды</label>
+							</li>
+						</ul>
+					</div>
+					<!-- /.filter-box -->
+						<div class="filter-box">
+							<div class="filter-box__title">Рейтинг магазина</div>
+							<ul class="filter-box__ch-list">
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_rad"> <input type="radio" name="rating"> От </label>
+										<div class="stars">
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item"></span>
+											<span class="stars__item"></span>
+										</div>
+										<!-- /.stars -->
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_rad"> <input type="radio" name="rating"> От </label>
+										<div class="stars">
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item"></span>
+									</div>
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_checked filter-box__label_rad"> <input type="radio" name="rating" checked> Любой</label>
+								</li>
+							</ul>
+					</div>
+					<!-- /.filter-box -->
+						<div class="filter-box">
+							<div class="filter-box__title">Способ доставки</div>
+							<ul class="filter-box__ch-list">
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_rad"> <input type="radio" name="delivery"> С доставкой</label>
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_checked filter-box__label_rad"> <input type="radio" name="delivery" checked> Любой</label>
+								</li>
+							</ul>
+						</div>
+						<!-- /.filter-box -->
+						<div class="filter-box">
+							<div class="filter-box__title">Срок доставки курьером</div>
+							<ul class="filter-box__ch-list">
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_rad"> <input type="radio" name="term"> До 5 дней</label>
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_checked filter-box__label_rad"> <input type="radio" name="term" checked> Любой</label>
+								</li>
+							</ul>
+						</div>
+						<!-- /.filter-box -->
+						<div class="filter-box">
+							<div class="filter-box__title">Магазины</div>
+							<ul class="filter-box__ch-list">
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_chb"> <input type="checkbox"> Едарядом</label>
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_chb"> <input type="checkbox"> Мир верблюжьего молока</label>
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_chb"> <input type="checkbox"> Сельский бутик</label>
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_chb"> <input type="checkbox"> Ферма Кошкиных</label>
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_chb"> <input type="checkbox">  Золотые угодья</label>
+								</li>
+								<li class="filter-box__ch-item">
+									<label class="filter-box__label filter-box__label_chb"> <input type="checkbox"> Деликатесная лавка DICH</label>
+								</li>
+							</ul>
+						</div>
+						<!-- /.filter-box -->
+						<div class="filter-box">
+							<div class="filter-box__title">Магазины на карте</div>
+							<a href="#" class="filter-box__link">
+								<img src="img/shopping-map.jpg" alt="">
+							</a>
+						</div>
+						<!-- /.filter-box -->
+				</aside>
+				<!-- /.sidebar -->
+				<div class="content-inner">
+					<div class="sorting">
+						<div class="btn-cat-inner">
+							<button class="btn-cat"><i class="fas fa-bars"></i></button>
+						</div>
+						<form action="#">
+							<div class="sorting__inner">
+								Сортировать по: 
+								<select  class="sorting__select">
+									<option value="">по популярности</option>
+									<option value="">по цене</option>
+									<option value="">по рейтингу и цене</option>
+									<option value="">по размеру скидки</option>
+								</select>
+							</div>
+							<!-- /.sorting__inner -->
+							<div class="sorting__inner">
+								Выбрать город:
+								<select  class="sorting__select">
+									<option value="">выбрать город <i class="fas fa-map-marker-alt"></i></option>
+									<option value="">любой город</option>
+									<option value="">любой</option>
+								</select>
+							</div>
+							<!-- /.sorting__inner -->
+						</form>
+						<div class="t-grid">
+							<span class="t-grid__item t-grid__item_current t-grid__item_col"><i class="fas fa-th-large"></i></span>
+							<span class="t-grid__item t-grid__item_fluid"><i class="fas fa-th-list"></i></span>
+						</div>
+						<!-- /.triggers-grid -->
+					</div>
+					<!-- /.sorting -->
+					<div class="product-tab">
+						<div class="tab-title">Предложения магазинов:</div>
+						<div class="p-wrap">
+							<div class="p-card p-card-js">
+								<div class="favorites p-card__favorites"></div>
+								<div class="p-card__img">
+									<img src="img/one-product/product.png" alt="">
+								</div>
+								<div class="p-card__content">
+									<div class="p-card__title">
+										<div class="p-card__price-inner">
+											<div class="p-card__price">83 <span class="currency">₽</span></div>
+										</div>
+										<!-- /.p-card__price-inner -->
+										<div class="p-card__name">Корни Big злаковая полоска банан+молочный шоколад 50,0</div>
+									</div>
+									<a href="#" class="p-card__shop-link p-card__shop-link_mb">В магазин</a>
+									<div class="p-card__inner">
+										<div class="p-card__delivery">Есть доставка</div>
+										<div class="p-card__shop">
+											<div class="p-card__shop-inner">
+												<div class="p-card__shop-name">Сельский бутик</div>
+												<div class="stars">
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_half"></span>
+													<span class="stars__item"></span>
+												</div>
+												<!-- /.stars -->
+											</div>
+											<!-- /.p-card__shop-inner -->
+											<a href="#" class="p-card__reviews">Отзывы</a>
+										</div>
+										<!-- /.p-card__shop -->
+									</div>
+									<!-- /.p-card__inner -->
+								</div>
+								<!-- /.p-card__content -->
+							</div>
+							<!-- /.p-card -->
+							<div class="p-card p-card-js">
+								<div class="favorites p-card__favorites"></div>
+								<div class="p-card__img">
+									<img src="img/one-product/product.png" alt="">
+								</div>
+								<div class="p-card__content">
+									<div class="p-card__title">
+										<div class="p-card__price-inner">
+											<div class="p-card__price">83 <span class="currency">₽</span></div>
+										</div>
+										<!-- /.p-card__price-inner -->
+										<a href="#" class="p-card__name">Корни Big злаковая полоска банан+молочный шоколад 50,0</a>
+									</div>
+									<a href="#" class="p-card__shop-link p-card__shop-link_mb">В магазин</a>
+									<div class="p-card__inner">
+										<div class="p-card__delivery">Есть доставка</div>
+										<div class="p-card__shop">
+											<div class="p-card__shop-inner">
+												<div class="p-card__shop-name">Сельский бутик</div>
+												<div class="stars">
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_half"></span>
+													<span class="stars__item"></span>
+												</div>
+												<!-- /.stars -->
+											</div>
+											<!-- /.p-card__shop-inner -->
+											<a href="#" class="p-card__reviews">Отзывы</a>
+										</div>
+										<!-- /.p-card__shop -->
+									</div>
+									<!-- /.p-card__inner -->
+								</div>
+								<!-- /.p-card__content -->
+							</div>
+							<!-- /.p-card -->
+							<div class="p-card p-card-js">
+								<div class="favorites p-card__favorites"></div>
+								<div class="p-card__img">
+									<img src="img/one-product/product.png" alt="">
+								</div>
+								<div class="p-card__content">
+									<div class="p-card__title">
+										<div class="p-card__price-inner">
+											<div class="p-card__price">83 <span class="currency">₽</span></div>
+										</div>
+										<!-- /.p-card__price-inner -->
+										<a href="#" class="p-card__name">Корни Big злаковая полоска банан+молочный шоколад 50,0</a>
+									</div>
+									<a href="#" class="p-card__shop-link p-card__shop-link_mb">В магазин</a>
+									<div class="p-card__inner">
+										<div class="p-card__delivery">Есть доставка</div>
+										<div class="p-card__shop">
+											<div class="p-card__shop-inner">
+												<div class="p-card__shop-name">Сельский бутик</div>
+												<div class="stars">
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_half"></span>
+													<span class="stars__item"></span>
+												</div>
+												<!-- /.stars -->
+											</div>
+											<!-- /.p-card__shop-inner -->
+											<a href="#" class="p-card__reviews">Отзывы</a>
+										</div>
+										<!-- /.p-card__shop -->
+									</div>
+									<!-- /.p-card__inner -->
+								</div>
+								<!-- /.p-card__content -->
+							</div>
+							<!-- /.p-card -->
+						</div>
+						<!-- /.p-wrap -->
+					</div>
+					<!-- /.product-tab -->
+					<div class="product-tab">
+						<div class="tab-title">Подробные характеристики</div>
+						<div class="characteristic">
+							<div class="characteristic__box">
+								<div class="characteristic__title">Общие характеристики</div>
+								<ul class="characteristic__list">
+									<li class="characteristic__item">
+										<span class="characteristic__name">Тип</span>
+										<span class="characteristic__desc">злаковый батончик</span>
+									</li>
+									<li class="characteristic__item">
+										<span class="characteristic__name">Добавки</span>
+										<span class="characteristic__desc">фрукты, шоколад</span>
+									</li>
+									<li class="characteristic__item">
+										<span class="characteristic__name">Количество в упаковке</span>
+										<span class="characteristic__desc">1 шт.</span>
+									</li>
+									<li class="characteristic__item">
+										<span class="characteristic__name">Вес батончика</span>
+										<span class="characteristic__desc">50 г</span>
+									</li>
+									<li class="characteristic__item">
+										<span class="characteristic__name">Упаковка	</span>
+										<span class="characteristic__desc">флоу-пак</span>
+									</li>
+								</ul>
+							</div>
+							<!-- /.characteristic__box -->
+							<div class="characteristic__box">
+								<div class="characteristic__title">Питательная и энергетическая ценность</div>
+								<ul class="characteristic__list">
+									<li class="characteristic__item">
+										<span class="characteristic__name">Энергетическая ценность в 100 г	</span>
+										<span class="characteristic__desc">438 ккал</span>
+									</li>
+									<li class="characteristic__item">
+										<span class="characteristic__name">Белки в 100 г</span>
+										<span class="characteristic__desc">5.1 г</span>
+									</li>
+									<li class="characteristic__item">
+										<span class="characteristic__name">Жиры в 100 г	</span>
+										<span class="characteristic__desc">15.1 г</span>
+									</li>
+									<li class="characteristic__item">
+										<span class="characteristic__name">Углеводы в 100 г</span>
+										<span class="characteristic__desc">68.7 г</span>
+									</li>
+									<li class="characteristic__item">
+										<span class="characteristic__name">Состав</span>
+										<span class="characteristic__desc">молочный шоколад 20% (сахар, какао тертое, масло какао, обезжиренное сухое молоко, масло сливочное, эмульгатор подсолнечный лецитин), мука (пшеничная, рисовая, кукурузная), обжаренные злаковые хлопья 16% (овсяные, пшеничные, ячменные), сироп глюкозы с фруктозой, сироп глюкозы, коричневый сахар, кусочки сушеного банана 5%, кокосовое масло, сахар, сгущенное цельное молоко, кукурузные хлопья (кукуруза, сахар, соль, ячменный солод), измельченный жареный миндаль, мед, ячменный солод, соль, сироп карамелизированного сахара, эмульгатор, подсолнечный лецитин, идентичный натуральному ароматизатор "банан"; может содержать следы фундука и арахиса</span>
+									</li>
+								</ul>
+							</div>
+							<!-- /.characteristic__box -->
+							<div class="characteristic__info">Перед покупкой уточняйте характеристики и комплектацию у продавца.</div>
+						</div>
+
+					</div>
+					<!-- /.product-tab -->
+					<div class="product-tab is-visible">
+						<div class="tab-title">Описание:</div>
+						<div class="p-about">
+							<div class="p-about__inner">
+								<div class="p-about__top">
+									<div class="p-about__show">
+										<img src="img/one-product/product_lg.png" alt="">
+										<img src="img/one-product/product_lg.png" alt="">
+										<img src="img/one-product/product_lg.png" alt="">
+										<img src="img/one-product/product_lg.png" alt="">
+									</div>
+									<div class="p-about__desc">
+										<div class="p-about__desc-title">О товаре:</div>
+										<ul class="p-about__list">
+											<li class="p-about__item">добавки: фрукты, шоколад</li>	
+											<li class="p-about__item">вес батончика: 50 г</li>	
+											<li class="p-about__item">упаковка: флоу-пак</li>	
+										</ul>
+										<div class="p-about__link-inner">
+											<a href="#">Все характеристики</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-about__nav">
+									<div class="p-about__nav-img">
+										<img src="img/one-product/product_sm_1.png" alt="">
+									</div>
+									<div class="p-about__nav-img">
+										<img src="img/one-product/product_sm_2.png" alt="">
+									</div>
+									<div class="p-about__nav-img">
+										<img src="img/one-product/product_sm_3.png" alt="">
+									</div>
+									<div class="p-about__nav-img">
+										<img src="img/one-product/product_sm_2.png" alt="">
+									</div>
+								</div>
+							</div>
+							<!-- /.p-about__inner -->
+							<div class="p-card p-card_v p-about__p-card">
+								<div class="favorites p-card__favorites"></div>
+								<div class="p-card__content">
+									<div class="p-card__title">
+										<div class="p-card__price-inner">
+											<div class="p-card__price">83 <span class="currency">₽</span></div>
+										</div>
+										<!-- /.p-card__price-inner -->
+										<a href="#" class="p-card__name">Корни Big злаковая полоска банан+молочный шоколад 50,0</a>
+									</div>
+									<div class="p-card__inner">
+										<div class="p-card__delivery">Есть доставка</div>
+										<a href="#" class="p-card__reviews">Отзывы</a>
+										<div class="p-card__bottom">
+											<a href="#" class="p-card__shop-link">В магазин</a>
+											<div class="p-card__shop-inner">
+												<div class="p-card__shop-name">Сельский бутик</div>
+												<div class="stars">
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_half"></span>
+													<span class="stars__item"></span>
+												</div>
+												<!-- /.stars -->
+											</div>
+											<!-- /.p-card__shop-inner -->
+										</div>
+										<!-- /.p-card__shop -->
+									</div>
+									<!-- /.p-card__inner -->
+								</div>
+								<!-- /.p-card__content -->
+							</div>
+							<!-- /.p-card -->
+						</div>
+						<!-- /.p-about -->
+					</div>
+					<!-- /.product-tab -->
+					<div class="product-tab">
+						<div class="comments">
+							<div class="comments__title">
+								<div class="comments__title-inner">Отзывы (2): </div>
+								<ul class="comments__sort">
+									<li class="comments__item comments__item_current"><a href="#">по дате <i class="fas fa-sort-amount-down"></i></a></li>
+									<li class="comments__item"><a href="#">по оценке</a></li>
+								</ul> 
+							</div>
+							<div class="comment-box comments__comment-box">
+								<div class="comment-box__av">
+									<img src="img/one-news/avatar_1.png" alt="">
+									<div class="comment-box__info">
+										<div class="comment-box__info-title">Новичок</div>
+										<div class="comment-box__info-block">
+											<div class="comment-box__info-name">Постов:</div>
+											<div class="comment-box__info-count">5</div>
+										</div>
+										<div class="comment-box__info-block">
+											<div class="comment-box__info-name">Отзывов:</div>
+											<div class="comment-box__info-count">5</div>
+										</div>
+									</div>
+								</div>
+								<!-- /.comment-box__info -->
+								<div class="comment-box__text">
+									<div class="comment-box__text-header">
+										<div class="comment-box__header-inner">
+											<span class="comment-box__a-name">Татьяна Головинова</span>
+											<span class="comment-box__date"> Май 10, 2019 в 11:00</span>
+										</div>
+										<div class="stars">
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item stars__item_full"></span>
+											<span class="stars__item"></span>
+											<span class="stars__item"></span>
+										</div>
+										<!-- /.stars -->
+										<button class="comment-box__btn">Ответить</button>
+									</div>
+									<!-- /.comment-box__text-inner -->
+									<p class="comment-box__comment">Первый раз в жизни назначили лечебный массаж спины при остеохондрозе. Я не думала что первая процедура будет такой невыносимо болезненной!</p>
+								</div>
+								<!-- /.comment-box__text -->
+								<div class="comment-box  comment-box_inner">
+									<div class="comment-box__av">
+										<img src="img/one-news/avatar_2.png" alt="">
+										<div class="comment-box__info">
+											<div class="comment-box__info-title">Старожил</div>
+											<div class="comment-box__info-block">
+												<div class="comment-box__info-name">Постов:</div>
+												<div class="comment-box__info-count">15</div>
+											</div>
+											<div class="comment-box__info-block">
+												<div class="comment-box__info-name">Отзывов:</div>
+												<div class="comment-box__info-count">20</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.comment-box__info -->
+									<div class="comment-box__text">
+										<div class="comment-box__text-header">
+											<div  class="comment-box__header-inner">
+												<span class="comment-box__a-name">Ирина Домнина</span>
+												<span class="comment-box__date">Май 10, 2019 в 12:00</span>
+												<div class="stars">
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item stars__item_full"></span>
+													<span class="stars__item"></span>
+													<span class="stars__item"></span>
+												</div>
+												<!-- /.stars -->
+											</div>
+											<button class="comment-box__btn">Ответить</button>
+										</div>
+										<!-- /.comment-box__text-inner -->
+										<p class="comment-box__comment">А мне наоборот все понравилось. Не испытавала каких либо неприятных ощущений. Может быть это зависит от физической формы? Ну или от самих проблем организма...</p>
+									</div>
+									<!-- /.comment-box__text -->
+								</div>
+								<!-- /.comment-box -->
+							</div>
+							<!-- /.comment-box -->
+							<div class="comment-box comments__comment-box">
+								<div class="comment-box__av">
+									<img src="img/one-news/avatar_3.png" alt="">
+									<div class="comment-box__info">
+										<div class="comment-box__info-title">Новичок</div>
+										<div class="comment-box__info-block">
+											<div class="comment-box__info-name">Постов:</div>
+											<div class="comment-box__info-count">3</div>
+										</div>
+										<div class="comment-box__info-block">
+											<div class="comment-box__info-name">Отзывов:</div>
+											<div class="comment-box__info-count">2</div>
+										</div>
+									</div>
+								</div>
+								<!-- /.comment-box__info -->
+								<div class="comment-box__text">
+									<div class="comment-box__text-header">
+										<div  class="comment-box__header-inner">
+											<span class="comment-box__a-name">Андрей Соколов</span>
+											<span class="comment-box__date"> Май 15, 2019 в 16:15</span>
+											<div class="stars">
+												<span class="stars__item stars__item_full"></span>
+												<span class="stars__item stars__item_full"></span>
+												<span class="stars__item stars__item_full"></span>
+												<span class="stars__item"></span>
+												<span class="stars__item"></span>
+											</div>
+											<!-- /.stars -->
+										</div>
+										<button class="comment-box__btn">Ответить</button>
+									</div>
+									<!-- /.comment-box__text-inner -->
+									<p class="comment-box__comment">Классический массаж тела - отличный способ поддерживать тело и душу в работоспособном состоянии) С возрастом необходимость делать массаж - не прихоть, а именно необходимость. Специалисты рекомендуют делать массаж минимум два раза в год.</p>
+									<div class="comment-box_img">
+										<img src="img/one-product/review-photo.jpg" alt="">
+									</div>
+								</div>
+								<!-- /.comment-box__text -->
+							</div>
+							<!-- /.comment-box -->
+							<div class="form">
+								<form action="#">
+								<div class="form__title">
+									<div class="form__title-inner">Написать отзыв</div>
+									<div class="star-rating form__star-rating">
+									      <div class="star-rating__wrap">
+									        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									        <label class="star-rating__ico fa far fa-star" for="star-rating-5"></label>
+									        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									        <label class="star-rating__ico fa far fa-star" for="star-rating-4"></label>
+									        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									        <label class="star-rating__ico fa far fa-star" for="star-rating-3"></label>
+									        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									        <label class="star-rating__ico fa far fa-star" for="star-rating-2"></label>
+									        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									        <label class="star-rating__ico fa far fa-star" for="star-rating-1"></label>
+									      </div>
+									</div>
+								</div>
+								<div class="form__desc">Ваш электронный адрес не будет опубликован *</div>
+							
+									<textarea class="form__message" placeholder="Комментарий" required></textarea>
+									<input type="text" class="form__input" placeholder="Имя*" required>
+									<input type="text" class="form__input" placeholder="Email*" required>
+									<input type="file" class="file">
+									<div class="form__btn-wrap btn-wrap btn-wrap_left">
+										<button class="form__btn">Отправить</button>
+									</div>
+								</form>
+							</div>
+							<!-- /.form -->
+						</div>
+						<!-- /.comments -->
+					</div>
+					<!-- /.product-tab -->
+					<div class="product-tab">
+						<div class="tab-title">Обзоры:</div>
+						<div class="video-review">
+							<div class="video-review__inner">
+								<iframe  src="https://www.youtube.com/embed/iT_PjxJlOrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<!-- /.video-review__inner -->
+						</div>
+						<!-- /.video-review -->
+					</div>
+					<!-- /.product-tab -->
+				</div>
+				<!-- /.content-inner -->
+			</div>
+			<!-- /.wrap-inner -->
+			<section class="products page-content__products">
+				<div class="wrapper">
+					<div class="sect-heading  products__sect-heading">
+						<h2 class="sect-heading__title sect-heading__title_fs_30">Просмотренные товары</h2>
+					</div>
+					<!-- /.sect-head -->
+					<div class="products-carusel">
+						<div class="products-card-inner">
+							<div class="product-card">
+								<div class="product-card__img"><img src="img/shop/viewed_1.png" alt=""></div>
+								<div class="product-card__price">320 <span class="currency">₽</span></div>
+								<div class="product-card__name">Помидоры “Черри” на ветке<br> 1 уп. 200 гр.</div>
+							</div>
+							<!-- /.product-card -->
+						</div>
+						<!-- /.products-card-inner -->
+						<div class="products-card-inner">
+							<div class="product-card">
+								<div class="product-card__img"><img src="img/shop/viewed_2.png" alt=""></div>
+								<div class="product-card__price">156 <span class="currency">₽</span></div>
+								<div class="product-card__name">Помидоры “Черри”<br> 1 кг.</div>
+							</div>
+							<!-- /.product-card -->
+						</div>
+						<!-- /.products-card-inner -->
+						<div class="products-card-inner">
+							<div class="product-card">
+								<div class="product-card__img"><img src="img/shop/viewed_3.png" alt=""></div>
+								<div class="product-card__price">230 <span class="currency">₽</span></div>
+								<div class="product-card__name">Помидоры “Черри” 1 уп.<br> 300 гр.</div>
+							</div>
+							<!-- /.product-card -->
+						</div>
+						<!-- /.products-card-inner -->
+						<div class="products-card-inner">
+							<div class="product-card">
+								<div class="product-card__img"><img src="img/shop/viewed_4.png" alt=""></div>
+								<div class="product-card__price">120 <span class="currency">₽</span></div>
+								<div class="product-card__name">Томат Черри "Санрайз"<br> 1 кг.</div>
+							</div>
+							<!-- /.product-card -->
+						</div>
+						<!-- /.products-card-inner -->
+						<div class="products-card-inner">
+							<div class="product-card">
+								<div class="product-card__img"><img src="img/shop/viewed_2.png" alt=""></div>
+								<div class="product-card__price">320 <span class="currency">₽</span></div>
+								<div class="product-card__name">Помидоры “Черри” на ветке<br> 1 уп. 200 гр.</div>
+							</div>
+							<!-- /.product-card -->
+						</div>
+						<!-- /.products-card-inner -->
+					</div>
+					<!-- /.product-carusel -->
+				</div>
+				<!-- /.wrapper -->
+			</section>
+			<!-- /.products -->
+		</div>
+		<!-- /.wrapper -->
+	</div>
+	<!-- /.page-content -->
+	<footer class="footer">
+		<button class="arrow arrow_up"><img src="img/angle-top.png" alt=""></button>
+		<div class="wrapper">
+			<div class="row-footer">
+				<div class="logo-box">
+					<a href="#" class="footer-logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="add-product">
+						<a href="#" class="add-product__btn add-product__btn_left">Добавить рецепт</a>
+						<a href="#" class="add-product__btn add-product__btn_right">Добавить товар</a>
+					</div>
+					<!-- /.add-product -->
+				</div>
+				<!-- /.footer-col -->
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Здоровье</a></li>
+						<li class="current"><a href="#">Рецепты</a></li>
+						<li><a href="#">Астрология</a></li>
+						<li><a href="#">Движение</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Люди и история</a></li>
+						<li><a href="#">Обзоры</a></li>
+						<li><a href="#">Для детей</a></li>
+						<li><a href="#">Магазины</a></li>
+					</ul>
+				</nav>
+				<!-- /.footer-nav -->
+				<div class="nav-box">
+					<nav class="nav-service nav-service_footer">
+						<ul>
+							<li class="current"><a href="#">Магазин</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+					<p class="service-desc">
+						Широким предложением товаров и услуг. Одежда и обувь, электроника и бытовая техника, недвижимость, автомобили, работа, предметы коллекционирования – здесь вы найдёте все необходимое.
+					</p>
+					<!-- /.service-desc -->
+				</div>
+				<!-- /.footer-col -->
+			</div>
+			<!-- /.row-footer -->
+			<div class="footer-bootom">
+				<div class="copyright">© 2019 / ООО “Название компании” / <a class="privacy-policy" href="#">Политика конфиденциальности</a></div>
+			</div>
+			<!-- /.footer-bootom -->
+		</div>
+		<!-- /.wrapper -->
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="scripts/jquery.formstyler.min.js"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

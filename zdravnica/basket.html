@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Basket</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-top header-top_wrap">
+				<a href="#" class="top-logo"><img src="img/logo.svg" alt=""></a>
+				<div class="header-top__inner">
+					<div class="personal-box">
+						<form class="shop-search" action="">
+							<input type="text" class="shop-search__input" placeholder="Поиск">
+							<button class="shop-search__btn"><i class="fas fa-search"></i></button>
+						</form>
+						<a href="#" class="personal-box__fav">
+							<span class="personal-box__fav-count personal-box__fav-count_visible">3</span>
+							<i class="fas fa-heart"></i>
+						</a>
+						<a href="#" class="personal-box__cart">
+							<i class="fas fa-shopping-cart"></i> Корзина <span class="personal-box__cart-count personal-box__cart-count_visible">(2)</span>
+						</a>
+						<a href="#" class="personal-box__user-accaunt">
+							<i class="fas fa-user"></i> <span class="personal-box__user-text">Войти в кабинет</span> 
+						</a>
+					</div>
+					<!-- /.personal-box -->
+					<button class="menu-toggle">
+						<span></span>
+					</button>
+				</div>
+				
+				
+				<div class="mob-menu">
+					<a href="#" class="city-select city-select_mob">
+						<i class="fas fa-map-marker-alt"></i> Ваш город
+					</a>
+					<nav class="nav-service nav-service_mob">
+						<ul>
+							<li class="current"><a href="#">О хозяйстве</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+					<form class="shop-search shop-search_mob" action="">
+						<input type="text" class="shop-search__input" placeholder="Поиск">
+						<button class="shop-search__btn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<!-- /.mob-nav -->
+			</div>
+			<!-- /.header-top -->
+			<div class="header-bottom">
+				<a href="#" class="shop-logo"><img src="img/user-shop/shop-logo.png" alt=""></a>
+				<nav class="u-shop-nav">
+					<ul>
+						<li class="current"><a href="#">О хозяйстве</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- /.nav-service -->
+				<a href="#" class="btn-reviews">Оставить отзыв о магазине</a>
+			</div>
+			<!-- /.header-bottom -->
+		</div>
+	</header>
+	<!-- /.header -->
+	<div class="wrapper">
+		<div class="breadcrumbs">
+          <a href="#">Главная</a> 
+          <span class="breadcrumbs__sep">|</span> 
+          <span>Корзина</span> 
+		</div>
+	</div>
+	<!-- /.wrapper -->
+	<section class="sect-basket">
+		<form action="#">
+			<div class="step step_one is-visible">
+				<div class="wrapper">
+					<div class="product-name">
+						<h1 class="product-name__title">Корзина</h1>
+					</div>	
+				</div>
+				<!-- /.wrapper -->
+				<div class="basket">
+					<div class="basket__wrap">
+						<div class="basket-box">
+							<button class="basket-box__remove"><i class="fas fa-times"></i></button>
+							<div class="basket-box__img">
+								<div class="stars basket-box__stars">
+									<span class="stars__item stars__item_full"></span>
+									<span class="stars__item stars__item_full"></span>
+									<span class="stars__item stars__item_full"></span>
+									<span class="stars__item"></span>
+									<span class="stars__item"></span>
+								</div>
+								<!-- /.stars -->
+								<div class="favorites basket-box__favorites"></div>
+								<img src="img/basket/basket_1.png" alt="">
+							</div>
+							<!-- /.basket-box__img -->
+							<div class="basket-box__inner">
+								<h3 class="basket-box__title">Картофель кремовый (красный), 1кг</h3>
+								<div class="basket-box__price-inner">
+									<div class="basket-box__price">58 <span class="basket-box__currency">₽</span></div>
+									<div class="basket-box__price-promo">50 ₽ по промокоду</div>
+								</div>
+								<div class="basket-box__bottom">
+									<div class="promo-code basket-box__promo-code promo-code_green">
+										Промокод - 5%
+										<div class="promo-code__inner">
+											<div class="promo-code__tooltip">
+												<div class="promo-code__date"><i class="far fa-clock"></i> Акция до 6 июня</div>
+												<div class="promo-code__title">Скидка 5% на это предложение<br> магазина Сельский бутик</div>
+												<div class="promo-code__desc">Введите промокод <span class="promo-code__word">zdravnitsa</span><br> при оформлении заказа</div>
+												<button class="promo-code__btn">Копировать код</button>
+											</div>
+										</div>
+									</div>
+									<ul class="info-tooltips basket-box__info-tooltips">
+										<li class="info-tooltips__item info-tooltips__item_basket info-tooltips__item_gmo"></li>
+										<li class="info-tooltips__item info-tooltips__item_basket info-tooltips__item_supplements"></li>
+									</ul>
+									<div class="basket-box__bottom-inner">
+										<div class="count basket-box__count">
+											<button class="count__control count__control_minus">-</button>
+											<input type="text" class="count__input" value="1">
+											<button class="count__control count__control_plus">+</button>
+										</div>
+										<a href="#" class="basket-box__delivery">Подробнее об условиях доставки</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.basket-box -->
+						<div class="basket-box">
+							<button class="basket-box__remove"><i class="fas fa-times"></i></button>
+							<div class="basket-box__img">
+								<div class="stars basket-box__stars">
+									<span class="stars__item stars__item_full"></span>
+									<span class="stars__item stars__item_full"></span>
+									<span class="stars__item stars__item_full"></span>
+									<span class="stars__item"></span>
+									<span class="stars__item"></span>
+								</div>
+								<!-- /.stars -->
+								<div class="favorites basket-box__favorites"></div>
+								<img src="img/basket/basket_2.png" alt="">
+							</div>
+							<!-- /.basket-box__img -->
+							<div class="basket-box__inner">
+								<h3 class="basket-box__title">Огурцы среднеплодные, 1кг</h3>
+								<div class="basket-box__price-inner">
+									<div class="basket-box__price">58 <span class="basket-box__currency">₽</span></div>
+								</div>
+								<div class="basket-box__bottom">
+									<div class="basket-box__bottom-inner">
+										<div class="count basket-box__count">
+											<button class="count__control count__control_minus">-</button>
+											<input type="text" class="count__input" value="1">
+											<button class="count__control count__control_plus">+</button>
+										</div>
+										<a href="#" class="basket-box__delivery">Подробнее об условиях доставки</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.basket-box -->
+					</div>
+					<!-- /.basket__wrap -->
+					<div class="basket__bottom">
+						<button class="btn-clear"><i class="fas fa-trash-alt"></i></button>
+						<button class="btn-order">Оформить заказ</button>
+						<div class="promo-filed">
+							<label for="promo-code">Введите промокод:</label>
+							<input type="text" id="promo-code">
+						</div>
+						<!-- /.promo-filed -->
+						<div class="basket__total">
+							<span class="basket__total-title">Итого:</span> 2 шт. на сумму:
+							<span class="basket__total-price">448</span> <span class="basket__total-currency">₽</span>
+						</div>
+					</div>
+					<!-- /.basket__bottom -->
+				</div>
+				<!-- /.basket -->
+			</div>
+			<!-- /.sect-basket__step-one -->
+			<div class="step step_two">
+				<div class="wrapper">
+					<div class="product-name">
+						<h1 class="product-name__title">Оформление заказа</h1>
+					</div>	
+					<div class="order-form">
+						<div class="order-form__col">
+							<div class="order-form__title">Заполните необходимую информацию:</div>
+							<input type="text" class="order-form__input" placeholder="Имя*">
+							<input type="text" class="order-form__input" placeholder="Email*">
+							<input type="text" class="order-form__input" placeholder="Телефон*">
+							<input type="text" class="order-form__input" placeholder="Улица*">
+							<input type="text" class="order-form__input" placeholder="Дом*">
+							<input type="text" class="order-form__input" placeholder="Квартира*">
+							<textarea class="order-form__input order-form__input_message" placeholder="Комментарий*"></textarea>
+							<div class="btn-wrap btn-wrap_left order-form__btn-wrap">
+								<button class="order-form__prev"><i class="fas fa-long-arrow-alt-left"></i></button>
+								<button class="order-form__send">Заказать</button>
+							</div>
+						</div>
+						<!-- /.order-form__col -->
+						<div class="order-form__col">
+							<div class="order-form__box">
+								<div class="order-form__title">Выберите вариант доставки:</div>
+								<ul class="order-form__list">
+									<li class="order-form__item">
+										<label class="circle order-form__circle">
+											<input type="radio" name="delivery">
+										</label>
+										<div class="order-form__item-name">Самовывоз</div>
+										<div class="order-form__item-desc">188820, Ленинградская область, Выборгский район гп. Рощино, ул. Советская, д. 39</div>
+									</li>
+									<li class="order-form__item">
+										<label class="circle order-form__circle">
+											<input type="radio" name="delivery">
+										</label>
+										<div class="order-form__item-name">Доставка курьером</div>
+										<div class="order-form__item-desc">Минимальный заказ для бесплатной доставки 500 руб.</div>
+									</li>
+									<li class="order-form__item">
+										<label class="circle order-form__circle">
+											<input type="radio" name="delivery">
+										</label>
+										<div class="order-form__item-name">Доставка транспортной компанией</div>
+										<div class="order-form__item-desc">Стоимость доставки транспортной компанией 1500 руб.</div>
+									</li>
+									<li class="order-form__item">
+										<label class="circle order-form__circle">
+											<input type="radio" name="delivery">
+										</label>
+										<div class="order-form__item-name">Доставка Почтой России</div>
+										<div class="order-form__item-desc">Стоимость доставки Почтой России 250 руб.</div>
+									</li>
+								</ul>
+							</div>	
+							<!-- /.order-form__box -->
+							<div class="order-form__box">
+								<div class="order-form__title">Способы оплаты:</div>
+								<ul class="order-form__list">
+									<li class="order-form__item">
+										<label class="circle order-form__circle">
+											<input type="radio" name="delivery">
+										</label>
+										<div class="order-form__item-name">Оплата наличными</div>
+									</li>
+									<li class="order-form__item">
+										<label class="circle order-form__circle">
+											<input type="radio" name="delivery">
+										</label>
+										<div class="order-form__item-name">Оплата банковской картой</div>
+									</li>
+								</ul>
+							</div>
+							<!-- /.order-form__box -->
+							<div class="order-form__total">
+								<span class="order-form__t-medium">Итого:</span> 2 шт. на сумму:
+								<span class="order-form__price">448</span> 
+								<span class="order-form__t-medium">₽</span>
+							</div>
+						</div>
+						<!-- /.order-form__col -->
+						<div class="order-form__col">
+							<a href="#" class="order-form__link">Подробнее об условиях доставки</a>
+						</div>
+						<!-- /.order-form__col -->
+					</div>
+					<!-- /.order-form -->
+				</div>
+				<!-- /.wrapper -->
+			</div>
+			<!-- /.sect-basket__step-two -->
+		</form>
+	</section>
+	<!-- /.sect-basket -->
+	<div class="recommended-wrap">
+		<section class="products">
+			<div class="wrapper">
+				<div class="sect-heading  products__sect-heading">
+					<h2 class="sect-heading__title sect-heading__title_fs_30">Просмотренные товары</h2>
+				</div>
+				<!-- /.sect-head -->
+				<div class="products-carusel products__products-carusel">
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_1.png" alt=""></div>
+							<div class="product-card__price">320 <span class="currency">₽</span></div>
+							<div class="product-card__name">Помидоры “Черри” на ветке<br> 1 уп. 200 гр.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_2.png" alt=""></div>
+							<div class="product-card__price">156 <span class="currency">₽</span></div>
+							<div class="product-card__name">Помидоры “Черри”<br> 1 кг.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_3.png" alt=""></div>
+							<div class="product-card__price">230 <span class="currency">₽</span></div>
+							<div class="product-card__name">Помидоры “Черри” 1 уп.<br> 300 гр.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_4.png" alt=""></div>
+							<div class="product-card__price">120 <span class="currency">₽</span></div>
+							<div class="product-card__name">Томат Черри "Санрайз"<br> 1 кг.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_2.png" alt=""></div>
+							<div class="product-card__price">320 <span class="currency">₽</span></div>
+							<div class="product-card__name">Помидоры “Черри” на ветке<br> 1 уп. 200 гр.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+				</div>
+				<!-- /.product-carusel -->
+			</div>
+			<!-- /.wrapper -->
+		</section>
+		<!-- /.products -->
+	</div>
+	<!-- /.recommended-wrap -->
+	<footer class="footer">
+		<button class="arrow arrow_up"><img src="img/angle-top.png" alt=""></button>
+		<div class="wrapper">
+			<div class="row-footer">
+				<a href="#" class="shop-logo">
+					<img src="img/user-shop/shop-logo.png" alt="">
+				</a>
+				<nav class="footer-nav footer-nav_row ">
+					<ul>
+						<li><a href="#">О хозяйстве</a></li>
+						<li class="current"><a href="#">Доставка</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- /.footer-nav -->
+			</div>
+			<!-- /.row-footer -->
+			<div class="footer-bootom footer-bootom_flex">
+				<a href="#" class="service-logo"><img src="img/logo.svg" alt=""></a>
+				<div class="copyright">© 2019 / ООО “Название компании” / <a class="privacy-policy" href="#">Политика конфиденциальности</a></div>
+			</div>
+			<!-- /.footer-bootom -->
+		</div>
+		<!-- /.wrapper -->
+	</footer>
+	<div class="overlay"></div>
+	<div class="modal-thank modal">
+		<button class="btn-close"></button>
+		<div class="modal-thank__title">Спасибо за заказ!</div>
+		<div class="modal-thank__text">Наш менеджер свяжется с Вами<br> в ближайшее время<br> для подтверждения заказа</div>
+	</div>
+	<!-- /.modal-thank -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

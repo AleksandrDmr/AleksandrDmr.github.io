@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>One news</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-top">
+				<a href="#" class="city-select">
+					<i class="fas fa-map-marker-alt"></i> Ваш город
+				</a>
+				<nav class="nav-service">
+					<ul>
+						<li class="current"><a href="#">Магазин</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">О проекте</a></li>
+					</ul>
+				</nav>
+				<!-- /.nav-service -->
+				<div class="personal-box">
+					<a href="#" class="personal-box__fav">
+						<span class="personal-box__fav-count personal-box__fav-count_visible">3</span>
+						<i class="fas fa-heart"></i>
+					</a>
+					<a href="#" class="personal-box__cart">
+						<i class="fas fa-shopping-cart"></i> Корзина <span class="personal-box__cart-count personal-box__cart-count_visible">(2)</span>
+					</a>
+					<a href="#" class="personal-box__user-accaunt">
+						<i class="fas fa-user"></i> <span class="personal-box__user-text">Войти в кабинет</span> 
+					</a>
+				</div>
+				<!-- /.personal-box -->
+				<button class="menu-toggle">
+					<span></span>
+				</button>
+				<div class="mob-menu">
+					<a href="#" class="city-select city-select_mob">
+						<i class="fas fa-map-marker-alt"></i> Ваш город
+					</a>
+					<nav class="nav-service nav-service_mob">
+						<ul>
+							<li class="current"><a href="#">Магазин</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+				</div>
+				<!-- /.mob-nav -->
+			</div>
+			<!-- /.header-top -->
+			<div class="header-bottom">
+				<a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+				<form action="#" class="search">
+					<input type="text" placeholder="Поиск">
+					<button><i class="fas fa-search"></i></button>
+				</form>
+				<!-- /.search -->
+				<div class="add-product">
+					<a href="#" class="add-product__btn add-product__btn_left">Добавить рецепт</a>
+					<a href="#" class="add-product__btn add-product__btn_right">Добавить товар</a>
+				</div>
+				<!-- /.add-product -->
+			</div>
+			<!-- /.header-bottom -->
+		</div>
+	</header>
+	<!-- /.header -->
+	<div class="cover" style="background-image: url(img/default-cover.jpg);">
+		<div class="wrapper">
+			<div class="page-title">Каталог</div>
+		</div>
+	</div>
+	<!-- /.cover -->
+	<div class="wrapper">
+		<div class="breadcrumbs">
+	          <a href="#">Главная</a> 
+	          <span class="breadcrumbs__sep">|</span> 
+	          <span>каталог</span> 
+	          <span class="breadcrumbs__sep">|</span> 
+	          <span>Здоровье </span> 
+	          <span class="breadcrumbs__sep">|</span> 
+	          <span>Виды массажа</span> 
+	          <span class="breadcrumbs__sep">|</span> 
+	          <span>Классический</span> 
+	          <span class="breadcrumbs__sep">|</span> 
+	          <span>Какие бывают виды классического массажа: описание и полезное воздействие</span> 
+		</div>		
+	</div>
+	<!-- /.wrapper -->
+	<div class="page-content">
+		<div class="wrapper">
+			<div class="wrap-inner">
+				<aside class="sidebar">
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_green">
+							<div class="cat-box__icon cat-box__icon_green"><img src="img/001-heart.svg" alt=""></div>
+							Здоровье 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+							<li>
+								<a href="#">Массаж камнями <span class="cat-box__count">6</span></a>
+							</li>
+							<li>
+								<a href="#">Украшения из камней <span class="cat-box__count">10</span></a>
+							</li>
+							<li>
+								<a href="#">Массажи <span class="cat-box__count">2</span></a>
+							</li>
+							<li>
+								<a href="#">Йога <span class="cat-box__count">8</span></a>
+							</li>
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Терапия <span class="cat-box__count">2</span></a>
+							</li>
+							<li>
+								<a href="#">Рецепты для оздоровления и  обновления организма <span class="cat-box__count">25</span></a>
+							</li>
+							<li>
+								<a href="#">Аюрведа <span class="cat-box__count">3</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_orange">
+							<div class="cat-box__icon cat-box__icon_orange"><img src="img/002-recipe-book.svg" alt=""></div>
+							Рецепты 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Смузи и соки <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Смеси <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Добавки <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Рецепты за 5 минут <span class="cat-box__count">8</span></a>
+							</li>
+							<li>
+								<a href="#">Салаты и гарниры <span class="cat-box__count">4</span></a>
+							</li>
+							<li>
+								<a href="#">Мясо <span class="cat-box__count">0</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_d-blue">
+							<div class="cat-box__icon cat-box__icon_d-blue"><img src="img/003-magic-ball.svg" alt=""></div>
+							Астрология 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Астрология <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_cyan">
+							<div class="cat-box__icon cat-box__icon_cyan"><img src="img/004-pendulum.svg" alt=""></div>
+							Движение 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_red">
+							<div class="cat-box__icon cat-box__icon_red"><img src="img/005-multiple-users-silhouette.svg" alt=""></div>
+							Люди и история 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_blue">
+							<div class="cat-box__icon cat-box__icon_blue"><img src="img/006-eye.svg" alt=""></div>
+							Обзоры 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_pink">
+							<div class="cat-box__icon cat-box__icon_pink"><img src="img/007-shopping-basket.svg" alt=""></div>
+							Для детей 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_purple">
+							<div class="cat-box__icon cat-box__icon_purple"><img src="img/008-bib.svg" alt=""></div>
+							магазины 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+				</aside>
+				<!-- /.sidebar -->
+				<div class="content-inner">
+					<div class="top-box">
+						<button class="btn-cat"><i class="fas fa-bars"></i></button>
+						<div class="sub-cat">
+							<div class="sub-cat__inner">
+								<ul class="sub-cat__list">
+									<li class="sub-cat__item sub-cat__item_current"><a href="#" class="sub-cat__link">Оздоровительный <span class="sub-cat__count"></span>3</a></li>
+									<li class="sub-cat__item"><a href="#" class="sub-cat__link">Лечебный <span class="sub-cat__count"></span>3</a></li>
+								</ul>
+								<ul class="sub-cat__list">
+									<li class="sub-cat__item"><a href="#" class="sub-cat__link">Классический <span class="sub-cat__count"></span>1</a></li>
+									<li class="sub-cat__item"><a href="#" class="sub-cat__link">Аппаратный <span class="sub-cat__count"></span>3</a></li>
+								</ul>
+								<ul class="sub-cat__list">
+									<li class="sub-cat__item"><a href="#" class="sub-cat__link">Массаж камнями <span class="sub-cat__count"></span>3</a></li>
+								</ul>	
+							</div>
+							<!-- /.sub-cat__inner -->			
+						</div>
+						<!-- /.sub-cat -->
+					</div>
+					<!-- /.top-box -->
+					<div class="article">
+						<h1 class="content-title article__content-title">Какие бывают виды классического массажа:<br> описание и полезное воздействие</h1>
+						<div class="author-info">
+							<div class="news-card__info author-info__news-card__info">
+								<div class="news-card__author author-info__news-card__author">
+									<div class="news-card__av"><img src="img/ava_1.png" alt=""></div>
+									<div class="news-card__name">Мария Иванова</div>	
+								</div>
+								<div class="news-card__widjets author-info__news-card__widjet">
+									<div class="news-card__widjet"><i class="far fa-calendar-alt"></i> 28.03.2019</div>
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.author -->
+						<p class="article__p">Массаж тела — весьма эффективная и полезная процедура, способов выполнения которой существует очень много. В зависимости от методики, используемого оборудования и приемов воздействия можно классифицировать основные виды массажа.</p>
+						<!-- /.article__p -->
+						<div class="article__p-title">Техника классического массажа</div>
+						<p class="article__p">Основная разновидность включает в себя, так называемый общий классический массаж тела. Это последовательная проработка всех групп мышц по телу, как и в общем массаже.</p>
+						<!-- /.article__p -->
+						<div class="block-title">Пимерный алгоритм выполнения:</div>
+						<div class="article__list-inner">
+							<ul class="article__list">
+								<li class="article__list-item">
+									<span class="article__list-count">1</span>
+									Массаж спины занимает примерно 20 – 25 минут. 
+								</li>
+								<li class="article__list-item">
+									<span class="article__list-count">2</span>
+									Далее необходимо уделить внимание рукам (5 – 8 минут). 
+								</li>
+								<li class="article__list-item">
+									<span class="article__list-count">3</span>
+									Ноги обрабатываются примерно по 10 минут.  
+								</li>
+								<li class="article__list-item">
+									<span class="article__list-count">4</span>
+									На живот и грудь отводится также до 10 минут. 
+								</li>
+								<li class="article__list-item">
+									<span class="article__list-count">5</span>
+									В последнюю очередь выполняется массаж головы (5 минут). 
+								</li>
+							</ul>
+							<div class="article__list-img">
+								<img src="img/one-news/article_1.jpg" alt="">
+							</div>
+							<!-- /.article__list-img -->
+						</div>
+						<!-- /.article__list-inner -->
+						<div class="hint">
+							<img src="img/one-news/manual.svg"  class="hint__icon" alt="">
+							<p class="hint__text">Время проведения манипуляций представлено приблизительно, ведь главное здесь достаточно проработать все группы мышц.</p>
+						</div>
+						<!-- /.hint -->
+						<div class="block-title">На видео: классический массаж</div>
+						<div class="video">
+							<iframe src="https://www.youtube.com/embed/UxGnQYVpkdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<!-- /.video -->
+						<p class="article__p">В классическом массаже применяются основные приёмы — поглаживание, растирание, выжимание, разминание, вибрация, вариантов исполнения существует огромное количество, около 3 тысяч. Выполняя общий классический массаж, одна из основных целей — максимально расслабить человека.</p>
+						<!-- /.article__p -->
+						<div class="article__p-title">Аппаратный массаж</div>
+						<p class="article__p">Как уже можно понять из названия, такой вид массажа проводится с участием особых приспособлений. При этом он может быть полностью аппаратный, а также включать в себя элементы ручного воздействия. Такая разновидность процедур будет иметь название комбинированного.</p>
+						<!-- /.article__p -->
+						<div class="block-title">Основные виды:</div>
+						<div class="desc-box-inner">
+							<div class="desc-box">
+								<div class="desc-box__item">
+									<div class="desc-box__icon">
+										<i class="fas fa-check-circle"></i>
+									</div>
+									<div class="desc-box__text">
+										<span class="desc-box__title">Гидромассаж.</span> Для него используются специальные ванны, в которых манипуляции осуществляются направленными струями воды разной интенсивности и диаметра, выполняя массаж всего тела.
+									</div>
+								</div>
+								<!-- /.desc-box__item -->
+								<div class="desc-box__item">
+									<div class="desc-box__icon">
+										<i class="fas fa-check-circle"></i>
+									</div>
+									<div class="desc-box__text">
+										<span class="desc-box__title">Вакуумное воздействие.</span>Такие аппараты работают по пневмо принципу, создавая перепад давления в обрабатываемой области.
+									</div>
+								</div>
+								<!-- /.desc-box__item -->
+							</div>
+							<!-- /.desc-box -->
+							<div class="desc-box">
+								<div class="desc-box__item">
+									<div class="desc-box__icon">
+										<i class="fas fa-check-circle"></i>
+									</div>
+									<div class="desc-box__text">
+										<span class="desc-box__title">Вибрационные воздействия.</span> Подходят для общего воздействия и локального. 
+									</div>
+								</div>
+								<!-- /.desc-box__item -->
+								<div class="desc-box__item">
+									<div class="desc-box__icon">
+										<i class="fas fa-check-circle"></i>
+									</div>
+									<div class="desc-box__text">
+										<span class="desc-box__title">Лимфодренаж.</span>Такая процедура чрезвычайно популярная услуга многих косметических салонов. Есть ручной и аппаратный способ выполнения. Во время процедуры происходит высвобождение вредных веществ из подкожных слоев, улучшается кровообращение и отток лимфы.
+									</div>
+								</div>
+								<!-- /.desc-box__item -->
+							</div>
+							<!-- /.desc-box -->
+						</div>
+						<!-- /.desc-box-inner -->
+						<p class="article__p">Кроме вышеописанных аппаратов, существует множество разновидностей ручных массажеров, а также вакуумные банки. Они предназначены для более серьезной проработки мышц, а также для усиления воздействия определенной направленности.</p>
+						<!-- /.article__p -->
+						<div class="article__img">
+							<img src="img/one-news/article_2.jpg" alt="">
+						</div>
+						<!-- /.article__img -->
+						<div class="article__p-title">Антицеллюлитный массаж</div>
+						<p class="article__p">Можно использовать банки, массажеры и специальные антицеллюлитные крема для массажа, которые усиливают и направляют воздействие. Не менее эффективен и медовый массаж от целлюлита. Желательно, чтобы лечение назначил косметолог с медицинским образованием, основываясь на степени поражения тканей и возможным методикам исцеления, поскольку имеются противопоказания к антицеллюлитному массажу..</p>
+						<!-- /.article__p -->
+						<div class="hint">
+							<img src="img/one-news/manual.svg"  class="hint__icon" alt="">
+							<p class="hint__text">Этот вид можно с равным успехом отнести к категориям<br> косметических и лечебных процедур.</p>
+						</div>
+						<!-- /.hint -->
+						<div class="article__p-title">Лечебный массаж</div>
+						<p class="article__p">Особая категория таких процедур — лечебный массаж. Он обязательно должен проводиться по направлению врача. Главная его задача — устранение существующих проблем со здоровьем у мужчин, женщин и детей.</p>
+						<!-- /.article__p -->
+						<div class="block-title">Виды лечебного массажа:</div>
+						<ul class="check-list">
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Локальный (определенный участок тела). </li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Сегментарно – рефлекторный (воздействие на сегменты позвоночника). </li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Гинекологический (лечение бесплодия, поле родов или операций).  </li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Урологический (стимуляция простаты и мочеиспускательного канала). </li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Дерматологический (улучшение кровообращения и стимуляция заживления ран).  </li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Офтальмологический (тонизирование глазных мышц). </li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Стоматологический (разработка челюстно – лицевой группы мышц). </li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Логопедический (стимуляция лицевых мышц). </li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Оториноларингологический (лицо и шея).</li>
+							<li class="check-list__item"><span class="check-list__icon"><i class="fas fa-check"></i> </span> Висцеральный (мануальная техника воздействия на внутренние органы).</li>
+						</ul>
+						<p class="article__p">Нельзя проводить лечебные манипуляции при обострении хронических болезней, а также простудных заболеваниях, повышенной температуре и онкологии. Злоупотреблять такими процедурами также не стоит, ведь их эффективность весьма высока.</p>
+						<!-- /.article__p -->
+					</div>
+					<!-- /.article -->
+					<div class="post-info">
+						<div class="post-info__inner">
+							<ul class="post-voting">
+								<li class="post-voting__item" data-rating="Нравится">
+									<div class="post-voting__emoji">
+										<img src="img/one-news/voting_1.png" alt="">
+										<img src="img/one-news/voting_1_empty.png" alt="">
+									</div>
+									<div class="post-voting__count">5</div>
+								</li>
+								<li class="post-voting__item" data-rating="Нравится">
+									<div class="post-voting__emoji">
+										<img src="img/one-news/voting_2.png" alt="">
+										<img src="img/one-news/voting_2_empty.png" alt="">
+									</div>
+									<div class="post-voting__count">3</div>
+								</li>
+								<li class="post-voting__item" data-rating="Нравится">
+									<div class="post-voting__emoji">
+										<img src="img/one-news/voting_3.png" alt="">
+										<img src="img/one-news/voting_3_empty.png" alt="">
+									</div>
+									<div class="post-voting__count">1</div>
+								</li>
+								<li class="post-voting__item" data-rating="Нравится">
+									<div class="post-voting__emoji post-voting__emoji_empty">
+										<img src="img/one-news/voting_4.png" alt="">
+										<img src="img/one-news/voting_4_empty.png" alt="">
+									</div>
+									<div class="post-voting__count">0</div>
+								</li>
+								<li class="post-voting__item" data-rating="Нравится">
+									<div class="post-voting__emoji post-voting__emoji_empty">
+										<img src="img/one-news/voting_5.png" alt="">
+										<img src="img/one-news/voting_5_empty.png" alt="">
+									</div>
+									<div class="post-voting__count">0</div>
+								</li>
+								<li class="post-voting__item" data-rating="Нравится">
+									<div class="post-voting__emoji post-voting__emoji_empty">
+										<img src="img/one-news/voting_6.png" alt="">
+										<img src="img/one-news/voting_6_empty.png" alt="">
+									</div>
+									<div class="post-voting__count">0</div>
+								</li>
+							</ul>
+							<!-- /.post-voting -->
+							<div class="post-tags">
+								<div class="post-tags__title">Теги:</div>	
+								<a href="#" class="post-tags__item">Медицина</a>
+								<a href="#" class="post-tags__item">Люди</a>
+								<a href="#" class="post-tags__item">Новость</a>
+								<a href="#" class="post-tags__item">Эксперт</a>
+							</div>
+							<!-- /.post-tags -->
+						</div>
+						<!-- /.post-info__inner -->
+						<ul class="post-share">
+							<li class="post-share__item"><a href="#" class="post-share__link post-share__link_fb"><span class="post-share__icon post-share__icon_fb"><i class="fab fa-facebook-f"></i></span></a></li>
+							<li class="post-share__item"><a href="#" class="post-share__link post-share__link_vk"><span class="post-share__icon post-share__icon_vk"><i class="fab fa-vk"></i></span></a></li>
+							<li class="post-share__item"><a href="#" class="post-share__link post-share__link_inst"><span class="post-share__icon post-share__icon_inst"><i class="fab fa-instagram"></i></span></a></li>
+						</ul>
+					</div>
+					<!-- /.post-info -->
+					<div class="posts-nav">
+						<a href="#">« Предыдущая статья</a>
+						<a href="#">Следующая статья »</a>
+					</div>
+					<!-- /.post-nav -->
+					<div class="comments comments_bg">
+						<div class="comments__title">Комментарии (4):</div>
+						<div class="comment-box comments__comment-box">
+							<div class="comment-box__av">
+								<img src="img/one-news/avatar_1.png" alt="">
+								<div class="comment-box__info">
+									<div class="comment-box__info-title">Новичок</div>
+									<div class="comment-box__info-block">
+										<div class="comment-box__info-name">Постов:</div>
+										<div class="comment-box__info-count">5</div>
+									</div>
+									<div class="comment-box__info-block">
+										<div class="comment-box__info-name">Отзывов:</div>
+										<div class="comment-box__info-count">5</div>
+									</div>
+								</div>
+							</div>
+							<!-- /.comment-box__info -->
+							<div class="comment-box__text">
+								<div class="comment-box__text-header">
+									<div class="comment-box__header-inner">
+										<span class="comment-box__a-name">Татьяна Головинова</span>
+										<span class="comment-box__date"> Май 10, 2019 в 11:00</span>
+									</div>
+									<button class="comment-box__btn">Ответить</button>
+								</div>
+								<!-- /.comment-box__text-inner -->
+								<p class="comment-box__comment">Первый раз в жизни назначили лечебный массаж спины при остеохондрозе. Я не думала что первая процедура будет такой невыносимо болезненной!</p>
+							</div>
+							<!-- /.comment-box__text -->
+							<div class="comment-box  comment-box_inner">
+								<div class="comment-box__av">
+									<img src="img/one-news/avatar_2.png" alt="">
+									<div class="comment-box__info">
+										<div class="comment-box__info-title">Старожил</div>
+										<div class="comment-box__info-block">
+											<div class="comment-box__info-name">Постов:</div>
+											<div class="comment-box__info-count">15</div>
+										</div>
+										<div class="comment-box__info-block">
+											<div class="comment-box__info-name">Отзывов:</div>
+											<div class="comment-box__info-count">20</div>
+										</div>
+									</div>
+								</div>
+								<!-- /.comment-box__info -->
+								<div class="comment-box__text">
+									<div class="comment-box__text-header">
+										<div  class="comment-box__header-inner">
+											<span class="comment-box__a-name">Ирина Домнина</span>
+											<span class="comment-box__date">Май 10, 2019 в 12:00</span>
+										</div>
+										<button class="comment-box__btn">Ответить</button>
+									</div>
+									<!-- /.comment-box__text-inner -->
+									<p class="comment-box__comment">А мне наоборот все понравилось. Не испытавала каких либо неприятных ощущений. Может быть это зависит от физической формы? Ну или от самих проблем организма...</p>
+								</div>
+								<!-- /.comment-box__text -->
+							</div>
+							<!-- /.comment-box -->
+						</div>
+						<!-- /.comment-box -->
+						<div class="comment-box comments__comment-box">
+							<div class="comment-box__av">
+								<img src="img/one-news/avatar_3.png" alt="">
+								<div class="comment-box__info">
+									<div class="comment-box__info-title">Новичок</div>
+									<div class="comment-box__info-block">
+										<div class="comment-box__info-name">Постов:</div>
+										<div class="comment-box__info-count">3</div>
+									</div>
+									<div class="comment-box__info-block">
+										<div class="comment-box__info-name">Отзывов:</div>
+										<div class="comment-box__info-count">2</div>
+									</div>
+								</div>
+							</div>
+							<!-- /.comment-box__info -->
+							<div class="comment-box__text">
+								<div class="comment-box__text-header">
+									<div  class="comment-box__header-inner">
+										<span class="comment-box__a-name">Андрей Соколов</span>
+										<span class="comment-box__date"> Май 15, 2019 в 16:15</span>
+									</div>
+									<button class="comment-box__btn">Ответить</button>
+								</div>
+								<!-- /.comment-box__text-inner -->
+								<p class="comment-box__comment">Классический массаж тела - отличный способ поддерживать тело и душу в работоспособном состоянии) С возрастом необходимость делать массаж - не прихоть, а именно необходимость. Специалисты рекомендуют делать массаж минимум два раза в год.</p>
+							</div>
+							<!-- /.comment-box__text -->
+						</div>
+						<!-- /.comment-box -->
+						<div class="form">
+							<div class="form__title">Написать отзыв</div>
+							<div class="form__desc">Ваш электронный адрес не будет опубликован *</div>
+							<form action="#">
+								<textarea class="form__message" placeholder="Комментарий" required></textarea>
+								<input type="text" class="form__input" placeholder="Имя*" required>
+								<input type="text" class="form__input" placeholder="Email*" required>
+								<div class="form__btn-wrap btn-wrap btn-wrap_left">
+									<button class="form__btn">Отправить</button>
+								</div>
+							</form>
+						</div>
+						<!-- /.form -->
+					</div>
+					<!-- /.comments -->
+				</div>
+				<!-- /.content-inner -->
+			</div>
+			<!-- /.wrap-inner -->
+			<div class="sect-heading page-content__sect-heading">
+				<h2 class="sect-heading__title">Похожие статьи</h2>
+			</div>
+			<!-- /.sect-head -->
+			<div class="posts-carusel">
+				<div class="news-card-inner">
+					<div class="news-card" style="background-image: url(img/one-news/news-card_1.jpg);">
+						<a href="#" class="news-card__link">
+							<div class="news-card__text">
+								<h3 class="news-card__title">7 вкусных и полезных мест<br> в Барселоне</h3>
+								<p class="news-card__excerpt">Каждая наша поездка в Европу превращается в маленькую командировку и поиски вдохновения в местных ЗОЖ-кафе и эко-магазинах</p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_1.png" alt=""></div>
+									<div class="news-card__name">Мария Иванова</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- /.news-card -->
+				</div>
+				<!-- /.news-card-inner -->
+				<div class="news-card-inner">
+					<div class="news-card" style="background-image: url(img/one-news/news-card_2.jpg);">
+						<a href="#" class="news-card__link">
+							<div class="news-card__text">
+								<h3 class="news-card__title">Книга месяца: «Французские правила здорового питания»</h3>
+								<p class="news-card__excerpt">Как наше желание съесть булочку связано со стрессом? Как ягоды и фрукты защищают наш организм от развития опухолей? Почему сладости с красителями стоит исключить</p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_2.png" alt=""></div>
+									<div class="news-card__name">Мария Иванова</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- /.news-card -->
+				</div>
+				<!-- /.news-card-inner -->
+				<div class="news-card-inner">
+					<div class="news-card" style="background-image: url(img/one-news/news-card_3.jpg);">
+						<a href="#" class="news-card__link">
+							<div class="news-card__text">
+								<h3 class="news-card__title">8 идей для полезных подарков на Новый год и ещё 8 подарков до 2018 р.</h3>
+								<p class="news-card__excerpt">Подарки, которые вдохновят на эксперименты на кухне и перемены в пользу здорового питания, добавят смелости и порядка в доме, помогут развить чувство прекрасного и избавят</p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_3.png" alt=""></div>
+									<div class="news-card__name">Мария Иванова</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- /.news-card -->
+				</div>
+				<!-- /.news-card-inner -->
+				<div class="news-card-inner">
+					<div class="news-card" style="background-image: url(img/one-news/news-card_1.jpg);">
+						<a href="#" class="news-card__link">
+							<div class="news-card__text">
+								<h3 class="news-card__title">7 вкусных и полезных мест<br> в Барселоне</h3>
+								<p class="news-card__excerpt">Каждая наша поездка в Европу превращается в маленькую командировку и поиски вдохновения в местных ЗОЖ-кафе и эко-магазинах</p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_1.png" alt=""></div>
+									<div class="news-card__name">Мария Иванова</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- /.news-card -->
+				</div>
+				<!-- /.news-card-inner -->
+			</div>
+			<!-- /.posts-carusel -->
+		</div>
+		<!-- /.wrapper -->
+	</div>
+	<!-- /.page-content -->
+	<footer class="footer">
+		<button class="arrow arrow_up"><img src="img/angle-top.png" alt=""></button>
+		<div class="wrapper">
+			<div class="row-footer">
+				<div class="logo-box">
+					<a href="#" class="footer-logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="add-product">
+						<a href="#" class="add-product__btn add-product__btn_left">Добавить рецепт</a>
+						<a href="#" class="add-product__btn add-product__btn_right">Добавить товар</a>
+					</div>
+					<!-- /.add-product -->
+				</div>
+				<!-- /.footer-col -->
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Здоровье</a></li>
+						<li class="current"><a href="#">Рецепты</a></li>
+						<li><a href="#">Астрология</a></li>
+						<li><a href="#">Движение</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Люди и история</a></li>
+						<li><a href="#">Обзоры</a></li>
+						<li><a href="#">Для детей</a></li>
+						<li><a href="#">Магазины</a></li>
+					</ul>
+				</nav>
+				<!-- /.footer-nav -->
+				<div class="nav-box">
+					<nav class="nav-service nav-service_footer">
+						<ul>
+							<li class="current"><a href="#">Магазин</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+					<p class="service-desc">
+						Широким предложением товаров и услуг. Одежда и обувь, электроника и бытовая техника, недвижимость, автомобили, работа, предметы коллекционирования – здесь вы найдёте все необходимое.
+					</p>
+					<!-- /.service-desc -->
+				</div>
+				<!-- /.footer-col -->
+			</div>
+			<!-- /.row-footer -->
+			<div class="footer-bootom">
+				<div class="copyright">© 2019 / ООО “Название компании” / <a class="privacy-policy" href="#">Политика конфиденциальности</a></div>
+			</div>
+			<!-- /.footer-bootom -->
+		</div>
+		<!-- /.wrapper -->
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

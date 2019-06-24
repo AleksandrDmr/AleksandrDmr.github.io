@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>User shop</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-top header-top_wrap">
+				<a href="#" class="top-logo"><img src="img/logo.svg" alt=""></a>
+				<div class="header-top__inner">
+					<div class="personal-box">
+						<form class="shop-search" action="">
+							<input type="text" class="shop-search__input" placeholder="Поиск">
+							<button class="shop-search__btn"><i class="fas fa-search"></i></button>
+						</form>
+						<a href="#" class="personal-box__fav">
+							<span class="personal-box__fav-count personal-box__fav-count_visible">3</span>
+							<i class="fas fa-heart"></i>
+						</a>
+						<a href="#" class="personal-box__cart">
+							<i class="fas fa-shopping-cart"></i> Корзина <span class="personal-box__cart-count personal-box__cart-count_visible">(2)</span>
+						</a>
+						<a href="#" class="personal-box__user-accaunt">
+							<i class="fas fa-user"></i> <span class="personal-box__user-text">Войти в кабинет</span> 
+						</a>
+					</div>
+					<!-- /.personal-box -->
+					<button class="menu-toggle">
+						<span></span>
+					</button>
+				</div>
+				
+				
+				<div class="mob-menu">
+					<a href="#" class="city-select city-select_mob">
+						<i class="fas fa-map-marker-alt"></i> Ваш город
+					</a>
+					<nav class="nav-service nav-service_mob">
+						<ul>
+							<li class="current"><a href="#">О хозяйстве</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+					<form class="shop-search shop-search_mob" action="">
+						<input type="text" class="shop-search__input" placeholder="Поиск">
+						<button class="shop-search__btn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<!-- /.mob-nav -->
+			</div>
+			<!-- /.header-top -->
+			<div class="header-bottom">
+				<a href="#" class="shop-logo"><img src="img/user-shop/shop-logo.png" alt=""></a>
+				<nav class="u-shop-nav">
+					<ul>
+						<li class="current"><a href="#">О хозяйстве</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- /.nav-service -->
+				<a href="#" class="btn-reviews">Оставить отзыв о магазине</a>
+			</div>
+			<!-- /.header-bottom -->
+		</div>
+	</header>
+	<!-- /.header -->
+	<section class="u-shop-main">
+		<div class="wrapper">
+			<h1 class="u-shop-title">Экологически чистые овощи <span class="u-shop-title__sm-text">собственного производства</span></h1>
+			<div class="btn-wrap u-shop-main__btn-wrap">
+				<a href="#" class="btn-view-reviews">Смотреть отзывы о магазине</a>
+			</div>
+		</div>
+	</section>
+	<!-- /.u-shop-main -->
+	<div class="u-shop-info">
+		<div class="u-shop-info__inner">
+			<div class="u-shop-info__adress"><span>Наш адрес:</span> 188820, Ленинградская область, Выборгский район гп. Рощино, ул. Советская, д. 39</div>
+			<a href="tel:+78137864497" class="u-shop-info__link">
+				<i class="fas fa-phone-square-alt"></i>
+				+7 (813) 786 44 97
+			</a>
+			<!-- /.u-shop-info__link -->
+			<a href="mailto:info@edaryadom.ru" class="u-shop-info__link">
+				<i class="fas fa-envelope"></i>
+				info@edaryadom.ru
+			</a>
+			<!-- /.u-shop-info__link -->
+			<div class="u-shop-info__social-box">
+				<ul class="u-shop-info__social">
+					<li class="u-shop-info__social-i"><a href="#"><i class="fab fa-vk"></i></a></li>
+					<li class="u-shop-info__social-i"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li class="u-shop-info__social-i"><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.u-shop-info__inner -->
+	</div>
+	<!-- /.u-shop-info -->
+	<div class="u-shop-cat">
+		<ul class="u-shop-cat__list">
+			<li class="u-shop-cat__item u-shop-cat__item_current"><a href="#">Все</a></li>
+			<li class="u-shop-cat__item"><a href="#">Капуста</a></li>
+			<li class="u-shop-cat__item"><a href="#">Картошка</a></li>
+			<li class="u-shop-cat__item"><a href="#">Помидоры</a></li>
+			<li class="u-shop-cat__item"><a href="#">Огурцы</a></li>
+			<li class="u-shop-cat__item"><a href="#">Лук</a></li>
+			<li class="u-shop-cat__item"><a href="#">Корнеплоды</a></li>
+			<li class="u-shop-cat__item"><a href="#">Бахчевые</a></li>
+			<li class="u-shop-cat__item"><a href="#">Зелень</a></li>
+			<li class="u-shop-cat__item"><a href="#">Чеснок</a></li>
+		</ul>
+	</div>
+	<!-- /.u-shop-cat -->
+	<div class="wrapper">
+		<div class="u-shop-prod">
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>
+				<ul class="info-tooltips u-shop-prod__info-tooltips">
+					<li class="info-tooltips__item info-tooltips__item_u-shop info-tooltips__item_gmo"></li>
+					<li class="info-tooltips__item info-tooltips__item_u-shop info-tooltips__item_supplements"></li>
+				</ul>
+				<!-- /.info-tooltips -->		
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_1.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">75 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Морковь не мытая сорта “Амалия”, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_2.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">520 <span class="currency">₽</span></div>
+							<div class="p-card__price-p-code">492 ₽ по промокоду</div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Помидор бакинский парниковый, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__promo-inner p-card__promo-inner_mt">
+							<div class="promo-code promo-code_green">
+								Промокод - 5%
+								<div class="promo-code__inner">
+									<div class="promo-code__tooltip">
+										<div class="promo-code__date"><i class="far fa-clock"></i> Акция до 6 июня</div>
+										<div class="promo-code__title">Скидка 5% на это предложение<br> магазина Сельский бутик</div>
+										<div class="promo-code__desc">Введите промокод <span class="promo-code__word">zdravnitsa</span><br> при оформлении заказа</div>
+										<button class="promo-code__btn">Копировать код</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_3.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">58 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Картофель красный мытый, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_4.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">58 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Картофель белый не мытый, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_5.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">390 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Огурцы среднеплодные, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_6.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">210 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Чеснок, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_7.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">82 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Лук красный 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_8.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">310 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Перец болгарский оранжевый, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_9.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">420 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Перец острый Чили, 300 г</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_10.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">55 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Свекла, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_11.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">390 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Кабачки Цукини, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+			<div class="p-card p-card_u-shop">
+				<div class="stars u-shop-prod__stars">
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_full"></span>
+					<span class="stars__item stars__item_half"></span>
+					<span class="stars__item"></span>
+				</div>
+				<!-- /.stars -->
+				<div class="favorites favorites_active u-shop-prod__favorites"></div>	
+				<div class="p-card__img">
+					<img src="img/user-shop/u-product_12.jpg" alt="">
+				</div>
+				<div class="p-card__content">
+					<div class="p-card__title">
+						<div class="p-card__price-inner">
+							<div class="p-card__price">210 <span class="currency">₽</span></div>
+						</div>
+						<!-- /.p-card__price-inner -->
+						<a href="#" class="p-card__name">Тыква “Баттернат”, 1 кг</a>
+					</div>
+					<div class="p-card__inner">
+						<div class="p-card__shop">
+							<a href="#" class="btn-in-cart">В корзину</a>
+						</div>
+						<!-- /.p-card__shop -->
+					</div>
+					<!-- /.p-card__inner -->
+				</div>
+				<!-- /.p-card__content -->
+			</div>
+			<!-- /.p-card -->
+		</div>
+		<!-- /.u-shop-prod -->
+		<div class="btn-wrap">
+			<button class="btn btn_products">Показать еще</button>
+		</div>
+		<!-- /.btn-wrap -->
+	</div>
+	<!-- /.wrapper -->
+	<div class="recommended-wrap">
+		<section class="products">
+			<div class="wrapper">
+				<div class="sect-heading  products__sect-heading">
+					<h2 class="sect-heading__title sect-heading__title_fs_30">Популярные товары</h2>
+				</div>
+				<!-- /.sect-head -->
+				<div class="products-carusel products__products-carusel">
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/popular_1.png" alt=""></div>
+							<div class="product-card__price">65 <span class="currency">₽</span></div>
+							<div class="product-card__name">Картофель фермерский<br> весовой 1 кг.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/popular_2.png" alt=""></div>
+							<div class="product-card__price">320 <span class="currency">₽</span></div>
+							<div class="product-card__name">Мочалка из Люфы<br> натуральная</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/popular_3.png" alt=""></div>
+							<div class="product-card__price">115  <span class="currency">₽</span></div>
+							<div class="product-card__name">Мыло ручной работы<br> 1 уп. 65 гр.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/popular_4.png" alt=""></div>
+							<div class="product-card__price">1 800 <span class="currency">₽</span></div>
+							<div class="product-card__name">Креветка Североатлантическая<br> 1 уп. 1 кг.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/recommended_.png" alt=""></div>
+							<div class="product-card__price">4 400 <span class="currency">₽</span></div>
+							<div class="product-card__name">Восстанавливающий ночной гель<br> «Гиалуроновая кислота + сача инчи»</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+				</div>
+				<!-- /.product-carusel -->
+			</div>
+			<!-- /.wrapper -->
+		</section>
+		<!-- /.products -->
+		<section class="news-articles">
+			<div class="wrapper">
+				<div class="sect-heading news-articles__sect-heading">
+					<h2 class="sect-heading__title sect-heading__title_fs_30">Новости блога</h2>
+				</div>
+				<div class="row">
+					<!-- /.sect-head -->
+					<div class="news-card news-articles__news-card col col_4 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/news-card_1.jpg);">
+						<a href="#" class="news-card__link">
+							<div class="news-card__text">
+								<h3 class="news-card__title">7 вкусных и полезных мест<br> в Барселоне</h3>
+								<p class="news-card__excerpt">Каждая наша поездка в Европу превращается в маленькую командировку и поиски вдохновения в местных ЗОЖ-кафе и эко-магазинах</p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_1.png" alt=""></div>
+									<div class="news-card__name">Мария Иванова</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- /.news-card -->
+					<div class="news-card news-articles__news-card col col_4 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/news-card_2.jpg);">
+						<a href="#" class="news-card__link">
+							<div class="news-card__text">
+								<h3 class="news-card__title">Книга месяца: «Французские правила здорового питания»</h3>
+								<p class="news-card__excerpt">Как наше желание съесть булочку связано со стрессом? Как ягоды и фрукты защищают наш организм от развития опухолей? Почему сладости с красителями стоит исключить</p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_2.png" alt=""></div>
+									<div class="news-card__name">Иван Столяров</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</div>
+					<!-- /.news-card -->
+					<div class="news-card news-articles__news-card col col_4 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/news-card_3.jpg);">
+						<a href="#" class="news-card__link">
+							<div class="news-card__text">
+								<h3 class="news-card__title">8 идей для полезных подарков на Новый год и ещё 8 подарков до 2018 р.</h3>
+								<p class="news-card__excerpt">Подарки, которые вдохновят на эксперименты на кухне и перемены в пользу здорового питания, добавят смелости и порядка в доме, помогут развить чувство</p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_3.png" alt=""></div>
+									<div class="news-card__name">Катя Мозес</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- /.news-card -->
+					<div class="news-card news-articles__news-card col col_8 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/news-card_4.jpg);">
+						<a href="#" class="news-card__link">					
+							<div class="news-card__text">
+								<h3 class="news-card__title">Вкусное и полезное в Копенгагене</h3>
+								<p class="news-card__excerpt">Идеальный веганский бургер и вкусная выпечка без глютена, имбирные шоты и зелёные соки, блины из кокосовой муки и самое вкусное веганское мороженое — за </p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_4.png" alt=""></div>
+									<div class="news-card__name">Иван Чурсин</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- /.news-card -->
+					<div class="news-card news-articles__news-card col col_4 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/news-card_5.jpg);">
+						<a href="#" class="news-card__link">
+							<div class="news-card__text">
+								<h3 class="news-card__title">Книга месяца: «Мой продуктивный год» Криса Бэйли</h3>
+								<p class="news-card__excerpt">Как заканчивать каждый день с чувством удовлетворённости, а не с ощущением, что опять не удалось всё успеть? Как в течение дня не отвлекаться на инстаграм и фейсбук?</p>
+							</div>
+							<!-- /.news-card__text -->
+							<div class="news-card__info">
+								<div class="news-card__author">
+									<div class="news-card__av"><img src="img/ava_5.png" alt=""></div>
+									<div class="news-card__name">Вилли Майерс</div>	
+								</div>
+								<div class="news-card__widjets">
+									<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+									<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+									<div class="news-card__widjet">
+										<span><i class="far fa-thumbs-down"></i></span>
+										<span><i class="far fa-thumbs-up"></i></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- /.news-card -->
+				</div>
+				<div class="btn-wrap news-articles__btn-wrap">
+					<a href="#" class="btn btn_all-news btn_all-news_brown">Смотреть все</a>
+				</div>
+				<!-- /.btn-wrap -->
+			</div>
+			<!-- /.wrapper -->
+		</section>
+		<!-- /.news-articles -->
+		<section class="products">
+			<div class="wrapper">
+				<div class="sect-heading  products__sect-heading">
+					<h2 class="sect-heading__title sect-heading__title_fs_30">Просмотренные товары</h2>
+				</div>
+				<!-- /.sect-head -->
+				<div class="products-carusel products__products-carusel">
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_1.png" alt=""></div>
+							<div class="product-card__price">320 <span class="currency">₽</span></div>
+							<div class="product-card__name">Помидоры “Черри” на ветке<br> 1 уп. 200 гр.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_2.png" alt=""></div>
+							<div class="product-card__price">156 <span class="currency">₽</span></div>
+							<div class="product-card__name">Помидоры “Черри”<br> 1 кг.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_3.png" alt=""></div>
+							<div class="product-card__price">230 <span class="currency">₽</span></div>
+							<div class="product-card__name">Помидоры “Черри” 1 уп.<br> 300 гр.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_4.png" alt=""></div>
+							<div class="product-card__price">120 <span class="currency">₽</span></div>
+							<div class="product-card__name">Томат Черри "Санрайз"<br> 1 кг.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+					<div class="products-card-inner">
+						<div class="product-card">
+							<div class="product-card__img"><img src="img/shop/viewed_2.png" alt=""></div>
+							<div class="product-card__price">320 <span class="currency">₽</span></div>
+							<div class="product-card__name">Помидоры “Черри” на ветке<br> 1 уп. 200 гр.</div>
+						</div>
+						<!-- /.product-card -->
+					</div>
+					<!-- /.products-card-inner -->
+				</div>
+				<!-- /.product-carusel -->
+			</div>
+			<!-- /.wrapper -->
+		</section>
+		<!-- /.products -->
+	</div>
+	<!-- /.recommended-wrap -->
+	<section class="about">
+		<div class="wrapper">`
+			<div class="sect-heading">
+				<h2 class="sect-heading__title">О магазине “ЕДАРЯДОМ”</h2>
+			</div>
+			<div class="tabs-nav about__tabs-nav">
+				<ul class="tabs-nav__list">
+					<li class="tabs-nav__item tabs-nav__item_current">О хозяйстве</li>
+					<li class="tabs-nav__item">Доставка</li>
+					<li class="tabs-nav__item">Контакты</li>
+				</ul>
+			</div>
+			<!-- /.tabs-nav-wrap -->
+			<div class="tabs-wrap">
+				<div class="tab tab_visible">
+					<p>Мы небольшое крестьянское хозяйство в Выборгском районе Ленинградской области, которое занимается выращиванием экологически чистых овощей. Качественные натуральные продукты ограниченным объемом и небольшими партиями. У нас нет коммерческой составляющей продавать больше в ущерб качеству. Мы выращиваем и производим натуральные продукты исключительно для собственного употребления, а излишки реализуем.</p>
+					<p>Мы небольшое крестьянское хозяйство в Выборгском районе Ленинградской области, которое занимается выращиванием экологически чистых овощей. Качественные натуральные продукты ограниченным объемом и небольшими партиями. У нас нет коммерческой составляющей продавать больше в ущерб качеству. Мы выращиваем и производим натуральные продукты исключительно для собственного употребления, а излишки реализуем.</p>
+					<p>Большинство потребителей наших продуктов это частные лица которым не все равно что есть самим и чем кормить своих детей. Свежие продукты отменного качества их осознанный выбор.</p>
+				</div>
+				<!-- /.tab -->
+				<div class="tab">
+					<p>Вы хотите продать или купить что-либо быстро и выгодно?</p>
+					<p>К вашим услугам доска бесплатных объявлений здравница.рус. На нашем портале вы найдёте всё, начиная от мелких бытовых приборов и заканчивая недвижимостью и автомобилями. А если вы продаёте товар, услугу, сдаёте или снимаете жилье, мы поможем решить вашу задачу быстро и эффективно, для этого просто добавьте объявление бесплатно!</p>
+					<p>Широким предложением товаров и услуг. Одежда и обувь, электроника и бытовая техника, недвижимость, автомобили, работа, предметы коллекционирования – здесь вы найдёте объявления на любой вкус! Огромной аудиторией. Тысячи ваших потенциальных клиентов посещают наш сайт ежедневно. Не упускайте их, подайте объявление прямо сейчас! Удобством пользования. Продуманная структура разделов и поиск объявлений помогут вам быстро найти нужные предложения. А разместить объявление вы сможете всего в несколько кликов.</p>
+				</div>
+				<!-- /.tab -->
+				<div class="tab">
+					<p>Вы хотите продать или купить что-либо быстро и выгодно?</p>
+					<p>К вашим услугам доска бесплатных объявлений здравница.рус. На нашем портале вы найдёте всё, начиная от мелких бытовых приборов и заканчивая недвижимостью и автомобилями. А если вы продаёте товар, услугу, сдаёте или снимаете жилье, мы поможем решить вашу задачу быстро и эффективно, для этого просто добавьте объявление бесплатно!</p>
+					<p>Широким предложением товаров и услуг. Одежда и обувь, электроника и бытовая техника, недвижимость, автомобили, работа, предметы коллекционирования – здесь вы найдёте объявления на любой вкус! Огромной аудиторией. Тысячи ваших потенциальных клиентов посещают наш сайт ежедневно. Не упускайте их, подайте объявление прямо сейчас! Удобством пользования. Продуманная структура разделов и поиск объявлений помогут вам быстро найти нужные предложения. А разместить объявление вы сможете всего в несколько кликов.</p>
+				</div>
+				<!-- /.tab -->
+			</div>
+			<!-- /.tabs-wrap -->
+		</div>
+		<!-- /.wrapper -->
+	</section>
+	<!-- /.about -->
+	<footer class="footer">
+		<button class="arrow arrow_up"><img src="img/angle-top.png" alt=""></button>
+		<div class="wrapper">
+			<div class="row-footer">
+				<div class="logo-box">
+					<a href="#" class="footer-logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="add-product">
+						<a href="#" class="add-product__btn add-product__btn_left">Добавить рецепт</a>
+						<a href="#" class="add-product__btn add-product__btn_right">Добавить товар</a>
+					</div>
+					<!-- /.add-product -->
+				</div>
+				<!-- /.footer-col -->
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Здоровье</a></li>
+						<li class="current"><a href="#">Рецепты</a></li>
+						<li><a href="#">Астрология</a></li>
+						<li><a href="#">Движение</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Люди и история</a></li>
+						<li><a href="#">Обзоры</a></li>
+						<li><a href="#">Для детей</a></li>
+						<li><a href="#">Магазины</a></li>
+					</ul>
+				</nav>
+				<!-- /.footer-nav -->
+				<div class="nav-box">
+					<nav class="nav-service nav-service_footer">
+						<ul>
+							<li class="current"><a href="#">Магазин</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+					<p class="service-desc">
+						Широким предложением товаров и услуг. Одежда и обувь, электроника и бытовая техника, недвижимость, автомобили, работа, предметы коллекционирования – здесь вы найдёте все необходимое.
+					</p>
+					<!-- /.service-desc -->
+				</div>
+				<!-- /.footer-col -->
+			</div>
+			<!-- /.row-footer -->
+			<div class="footer-bootom">
+				<div class="copyright">© 2019 / ООО “Название компании” / <a class="privacy-policy" href="#">Политика конфиденциальности</a></div>
+			</div>
+			<!-- /.footer-bootom -->
+		</div>
+		<!-- /.wrapper -->
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

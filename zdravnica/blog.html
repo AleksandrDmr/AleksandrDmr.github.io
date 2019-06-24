@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Blog</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-top">
+				<a href="#" class="city-select">
+					<i class="fas fa-map-marker-alt"></i> Ваш город
+				</a>
+				<nav class="nav-service">
+					<ul>
+						<li class="current"><a href="#">Магазин</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">О проекте</a></li>
+					</ul>
+				</nav>
+				<!-- /.nav-service -->
+				<div class="personal-box">
+					<a href="#" class="personal-box__fav">
+						<span class="personal-box__fav-count personal-box__fav-count_visible">3</span>
+						<i class="fas fa-heart"></i>
+					</a>
+					<a href="#" class="personal-box__cart">
+						<i class="fas fa-shopping-cart"></i> Корзина <span class="personal-box__cart-count personal-box__cart-count_visible">(2)</span>
+					</a>
+					<a href="#" class="personal-box__user-accaunt">
+						<i class="fas fa-user"></i> <span class="personal-box__user-text">Войти в кабинет</span> 
+					</a>
+				</div>
+				<!-- /.personal-box -->
+				<button class="menu-toggle">
+					<span></span>
+				</button>
+				<div class="mob-menu">
+					<a href="#" class="city-select city-select_mob">
+						<i class="fas fa-map-marker-alt"></i> Ваш город
+					</a>
+					<nav class="nav-service nav-service_mob">
+						<ul>
+							<li class="current"><a href="#">Магазин</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+				</div>
+				<!-- /.mob-nav -->
+			</div>
+			<!-- /.header-top -->
+			<div class="header-bottom">
+				<a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+				<form action="#" class="search">
+					<input type="text" placeholder="Поиск">
+					<button><i class="fas fa-search"></i></button>
+				</form>
+				<!-- /.search -->
+				<div class="add-product">
+					<a href="#" class="add-product__btn add-product__btn_left">Добавить рецепт</a>
+					<a href="#" class="add-product__btn add-product__btn_right">Добавить товар</a>
+				</div>
+				<!-- /.add-product -->
+			</div>
+			<!-- /.header-bottom -->
+		</div>
+	</header>
+	<!-- /.header -->
+	<div class="cover" style="background-image: url(img/default-cover.jpg);">
+		<div class="wrapper">
+			<div class="page-title">Каталог</div>
+		</div>
+	</div>
+	<!-- /.cover -->
+	<div class="wrapper">
+		<div class="breadcrumbs">
+	          <a href="#">Главная</a> 
+	          <span class="breadcrumbs__sep">|</span> 
+	          <span>каталог</span> 
+		</div>		
+	</div>
+	<!-- /.wrapper -->
+	<div class="page-content">
+		<div class="wrapper">
+			<div class="wrap-inner">
+				<aside class="sidebar">
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_green">
+							<div class="cat-box__icon cat-box__icon_green"><img src="img/001-heart.svg" alt=""></div>
+							Здоровье 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+							<li>
+								<a href="#">Массаж камнями <span class="cat-box__count">6</span></a>
+							</li>
+							<li>
+								<a href="#">Украшения из камней <span class="cat-box__count">10</span></a>
+							</li>
+							<li>
+								<a href="#">Массажи <span class="cat-box__count">2</span></a>
+							</li>
+							<li>
+								<a href="#">Йога <span class="cat-box__count">8</span></a>
+							</li>
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Терапия <span class="cat-box__count">2</span></a>
+							</li>
+							<li>
+								<a href="#">Рецепты для оздоровления и  обновления организма <span class="cat-box__count">25</span></a>
+							</li>
+							<li>
+								<a href="#">Аюрведа <span class="cat-box__count">3</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_orange">
+							<div class="cat-box__icon cat-box__icon_orange"><img src="img/002-recipe-book.svg" alt=""></div>
+							Рецепты 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Смузи и соки <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Смеси <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Добавки <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Рецепты за 5 минут <span class="cat-box__count">8</span></a>
+							</li>
+							<li>
+								<a href="#">Салаты и гарниры <span class="cat-box__count">4</span></a>
+							</li>
+							<li>
+								<a href="#">Мясо <span class="cat-box__count">0</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_d-blue">
+							<div class="cat-box__icon cat-box__icon_d-blue"><img src="img/003-magic-ball.svg" alt=""></div>
+							Астрология 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Астрология <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_cyan">
+							<div class="cat-box__icon cat-box__icon_cyan"><img src="img/004-pendulum.svg" alt=""></div>
+							Движение 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_red">
+							<div class="cat-box__icon cat-box__icon_red"><img src="img/005-multiple-users-silhouette.svg" alt=""></div>
+							Люди и история 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_blue">
+							<div class="cat-box__icon cat-box__icon_blue"><img src="img/006-eye.svg" alt=""></div>
+							Обзоры 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_pink">
+							<div class="cat-box__icon cat-box__icon_pink"><img src="img/007-shopping-basket.svg" alt=""></div>
+							Для детей 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+					<div class="cat-box">
+						<div class="cat-box__title cat-box__title_line_purple">
+							<div class="cat-box__icon cat-box__icon_purple"><img src="img/008-bib.svg" alt=""></div>
+							магазины 
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<ul class="cat-box__list">
+							<li>
+								<a href="#">Камни <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Секреты долголетия <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Литотерапия <span class="cat-box__count">3</span></a>
+							</li>
+							<li>
+								<a href="#">Виды массажа <span class="cat-box__count">5</span></a>
+							</li>
+							<li>
+								<a href="#">Стоун камни <span class="cat-box__count">1</span></a>
+							</li>
+						</ul>										
+					</div>
+					<!-- /.cat-box -->
+				</aside>
+				<!-- /.sidebar -->
+				<div class="content-inner">
+					<div class="top-box content-inner__top-box">
+						<button class="btn-cat"><i class="fas fa-bars"></i></button>
+						<div class="top-f content-inner__top-f">
+							<div class="top-f__item top-f__item_ch">
+								<div class="top-f__circle"></div>
+								<i class="far fa-clock"></i>
+								<span class="top-f__text">Новые</span>
+							</div>
+							<!-- /.top-f__item -->
+							<div class="top-f__item top-f__item_ch">
+								<div class="top-f__circle"></div>
+								<i class="far fa-thumbs-up"></i>
+								<span class="top-f__text">С высшими оценками</span>
+							</div>
+							<!-- /.top-f__item -->
+							<div class="top-f__item top-f__item_ch">
+								<div class="top-f__circle"></div>
+								<i class="far fa-eye"></i>
+								<span class="top-f__text">Самые популярные</span>
+							</div>
+							<!-- /.top-f__item -->
+							<div class="top-f__item top-f__item_ch">
+								<div class="top-f__circle"></div>
+								<i class="fas fa-comments"></i>
+								<span class="top-f__text">Самые обсуждаемые</span>
+							</div>
+							<!-- /.top-f__item -->
+						</div>
+						<!-- /.top-f -->
+						<div class="sub-cat">
+							<div class="sub-cat__inner">
+								<ul class="sub-cat__list">
+									<li class="sub-cat__item sub-cat__item_current"><a href="#" class="sub-cat__link">Оздоровительный <span class="sub-cat__count"></span>3</a></li>
+									<li class="sub-cat__item"><a href="#" class="sub-cat__link">Лечебный <span class="sub-cat__count"></span>3</a></li>
+								</ul>
+								<ul class="sub-cat__list">
+									<li class="sub-cat__item"><a href="#" class="sub-cat__link">Классический <span class="sub-cat__count"></span>1</a></li>
+									<li class="sub-cat__item"><a href="#" class="sub-cat__link">Аппаратный <span class="sub-cat__count"></span>3</a></li>
+								</ul>
+								<ul class="sub-cat__list">
+									<li class="sub-cat__item"><a href="#" class="sub-cat__link">Массаж камнями <span class="sub-cat__count"></span>3</a></li>
+								</ul>	
+							</div>
+							<!-- /.sub-cat__inner -->			
+						</div>
+						<!-- /.sub-cat -->
+						<div class="authors-f">
+							<a href="#" class="authors-f__link authors-f__link_current">Отслеживаемые авторы</a>
+							<a href="#" class="authors-f__link">Все авторы</a>
+						</div>
+						<!-- /.authors-f -->
+					</div>
+					<!-- /.top-box -->
+					<div class="row">
+						<div class="news-card content-inner__news-card col col_7 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_1.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">7 вкусных и полезных мест<br> в Барселоне</h3>
+									<p class="news-card__excerpt">Каждая наша поездка в Европу превращается в маленькую командировку и поиски вдохновения в местных ЗОЖ-кафе и эко-магазинах</p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_1.png" alt=""></div>
+										<div class="news-card__name">Мария Иванова</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_5 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_2.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">Книга месяца: «Французские правила здорового питания»</h3>
+									<p class="news-card__excerpt">Как наше желание съесть булочку связано со стрессом? Как ягоды и фрукты защищают наш организм от развития опухолей? Почему сладости с красителями стоит исключить</p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_2.png" alt=""></div>
+										<div class="news-card__name">Иван Столяров</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>	
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_5 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_3.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">8 идей для полезных подарков на Новый год и ещё 8 подарков до 2018 р.</h3>
+									<p class="news-card__excerpt">Подарки, которые вдохновят на эксперименты на кухне и перемены в пользу здорового питания, добавят смелости и порядка в доме, помогут развить чувство</p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_3.png" alt=""></div>
+										<div class="news-card__name">Катя Мозес</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_7 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_4.jpg);">
+							<a href="#" class="news-card__link">					
+								<div class="news-card__text">
+									<h3 class="news-card__title">Вкусное и полезное в Копенгагене</h3>
+									<p class="news-card__excerpt">Идеальный веганский бургер и вкусная выпечка без глютена, имбирные шоты и зелёные соки, блины из кокосовой муки и самое вкусное веганское мороженое — за </p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_4.png" alt=""></div>
+										<div class="news-card__name">Иван Чурсин</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_12 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_5.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">Книга месяца: «Мой продуктивный год» Криса Бэйли</h3>
+									<p class="news-card__excerpt">Как заканчивать каждый день с чувством удовлетворённости, а не с ощущением, что опять не удалось всё успеть? Как в течение дня не отвлекаться на инстаграм и фейсбук?</p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_5.png" alt=""></div>
+										<div class="news-card__name">Вилли Майерс</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_5 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_6.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">Отказаться от перфекционизма и начать жить: книга Тала Бен-Шахара «Парадокс перфекциониста»</h3>
+									<p class="news-card__excerpt">Когда наше стремление к совершенству приносит больше проблем, чем выгод? Зачем разрешать себе негативные эмоции? Чем так вреден перфекционизм в отношениях?</p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_6.png" alt=""></div>
+										<div class="news-card__name">Валентина Попова</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_7 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_7.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">Маски, кремы и масла: мои любимые средства для ухода за лицом</h3>
+									<p class="news-card__excerpt">Больше всего моей коже нравится, когда я рано ложусь спать, высыпаюсь, пью много воды, занимаюсь йогой, дышу свежим воздухом, хожу на массаж и наслаждаюсь </p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_7.png" alt=""></div>
+										<div class="news-card__name">Полина Белоусова</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_7 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_8.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">Жить, любить, учиться и оставить наследие — книга Стивена Кови «Главное внимание главным вещам»</h3>
+									<p class="news-card__excerpt">Как, ложась спать, быть уверенным, что сделал самое важное сегодня? В чём смысл жизни? И есть ли один ответ на этот вопрос? Как выбрать истинные цели и отказаться от ложных?</p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_8.png" alt=""></div>
+										<div class="news-card__name">Тоня Зорина</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_5 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_9.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">Центрифужная или шнековая — какую соковыжималку выбрать?</h3>
+									<p class="news-card__excerpt">За последние 5–6 лет мы с мужем почти каждое наше утро начинаем со стакана свежевыжатого овощного сока. Выпито много-много литров зелёных соков и перепробованы самые</p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_9.png" alt=""></div>
+										<div class="news-card__name">Ирина Зайцева</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+						<div class="news-card content-inner__news-card col col_12 col_lg_6 col_sm_10 col_xs_12" style="background-image: url(img/blog/news-card_10.jpg);">
+							<a href="#" class="news-card__link">
+								<div class="news-card__text">
+									<h3 class="news-card__title">Горы, море, оливки и много детей — наше первое путешествие с дочкой</h3>
+									<p class="news-card__excerpt">Для нашего первого путешествия с шестимесячной дочкой мы выбрали май, Крит и семейный отель Candia Park. О нашем отдыхе в отеле, первом перелёте с малышкой</p>
+								</div>
+								<!-- /.news-card__text -->
+								<div class="news-card__info">
+									<div class="news-card__author">
+										<div class="news-card__av"><img src="img/ava_10.png" alt=""></div>
+										<div class="news-card__name">Глеб Андрейченко</div>	
+									</div>
+									<div class="news-card__widjets">
+										<div class="news-card__widjet"><i class="far fa-eye"></i> 928</div>
+										<div class="news-card__widjet"><i class="fas fa-comments"></i> 10</div>
+										<div class="news-card__widjet">
+											<span><i class="far fa-thumbs-down"></i></span>
+											<span><i class="far fa-thumbs-up"></i></span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- /.news-card -->
+					</div>
+					<!-- /.row -->
+					<nav class="pagination content-inner__pagination">
+						<div class="nav-links">
+							<span class="page-numbers current">1</span>
+							<a class="page-numbers" href="#">2</a>
+							<a class="page-numbers" href="#">3</a>
+							<span class="dots">…</span>
+							<a class="page-numbers" href="#">8</a>
+							<a class="last" href="#">»</a>
+						</div>
+					</nav>
+				</div>
+				<!-- /.content-inner -->
+			</div>
+			<!-- /.wrap-inner -->
+		</div>
+		<!-- /.wrapper -->
+	</div>
+	<!-- /.page-content -->
+	<footer class="footer">
+		<button class="arrow arrow_up"><img src="img/angle-top.png" alt=""></button>
+		<div class="wrapper">
+			<div class="row-footer">
+				<div class="logo-box">
+					<a href="#" class="footer-logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="add-product">
+						<a href="#" class="add-product__btn add-product__btn_left">Добавить рецепт</a>
+						<a href="#" class="add-product__btn add-product__btn_right">Добавить товар</a>
+					</div>
+					<!-- /.add-product -->
+				</div>
+				<!-- /.footer-col -->
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Здоровье</a></li>
+						<li class="current"><a href="#">Рецепты</a></li>
+						<li><a href="#">Астрология</a></li>
+						<li><a href="#">Движение</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Люди и история</a></li>
+						<li><a href="#">Обзоры</a></li>
+						<li><a href="#">Для детей</a></li>
+						<li><a href="#">Магазины</a></li>
+					</ul>
+				</nav>
+				<!-- /.footer-nav -->
+				<div class="nav-box">
+					<nav class="nav-service nav-service_footer">
+						<ul>
+							<li class="current"><a href="#">Магазин</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+					</nav>
+					<!-- /.nav-service -->
+					<p class="service-desc">
+						Широким предложением товаров и услуг. Одежда и обувь, электроника и бытовая техника, недвижимость, автомобили, работа, предметы коллекционирования – здесь вы найдёте все необходимое.
+					</p>
+					<!-- /.service-desc -->
+				</div>
+				<!-- /.footer-col -->
+			</div>
+			<!-- /.row-footer -->
+			<div class="footer-bootom">
+				<div class="copyright">© 2019 / ООО “Название компании” / <a class="privacy-policy" href="#">Политика конфиденциальности</a></div>
+			</div>
+			<!-- /.footer-bootom -->
+		</div>
+		<!-- /.wrapper -->
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
