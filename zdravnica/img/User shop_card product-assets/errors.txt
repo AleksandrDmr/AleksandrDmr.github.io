@@ -1,0 +1,2 @@
+[2019-06-24 02:56:30] layer "Картофель кремовый (красный), 2,8-3кг – ранний сорт картофеля, ": Expected end of input but "," found.
+[2019-06-24 01:53:37] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
