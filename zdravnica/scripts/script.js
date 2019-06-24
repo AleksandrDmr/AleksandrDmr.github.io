@@ -347,8 +347,8 @@ $(document).ready(function() {
 	if ( $('.sect-basket').length ) {
 
 		$('.order-form__send').on('click',  function(event) {
-			$('.modal-thank').addClass('modal_visible');
-			$('.overlay').addClass('overlay_visible');
+			$('.js-modal').addClass('js-modal_visible');
+			$('.overlay').addClass('overlay_visible')
 		});
 
 	}
@@ -356,14 +356,14 @@ $(document).ready(function() {
 	if ( $('.btn-close').length ) {
 		$('.btn-close').on('click',  function(event) {
 			event.preventDefault();
-			$('.modal').removeClass('modal_visible');
+			$('.js-modal').removeClass('js-modal_visible');
 			$('.overlay').removeClass('overlay_visible')
 		});
 	}
 
 	if  ( $('.overlay').length ) {
 			$('.overlay').on('click', function(event) {
-				$('.modal').removeClass('modal_visible');
+				$('.js-modal').removeClass('js-modal_visible');
 				$(this).removeClass('overlay_visible')
 			});
 	}
@@ -383,48 +383,4 @@ $(document).ready(function() {
 		$('.step_two').removeClass('is-visible');
 		$('.step_one').addClass('is-visible');
 	});
-
-
-
-
-	/************************************* Модальное окно выбор города **********************************/
-
-	if ( $('.city-select').length ) {
-		$('.city-select').on('click', function(event) {
-			event.preventDefault();
-			$('.modal-city').addClass('modal_visible');
-			$('.overlay').addClass('overlay_visible')
-			
-		});
-	}
-
-
-
-
-	/************************************* Модальное окно авторизации **********************************/
-
-	$('.personal-box__user-accaunt').on('click', function(event) {
-		event.preventDefault();
-		/* Act on the event */
-		$('.modal-cabinet').addClass('modal_visible');
-		$('.overlay').addClass('overlay_visible');
-	});
-
-	$('.modal-cabinet__item').on('click', function(event) {
-		event.preventDefault();
-		/* Act on the event */
-		var context = $(this),
-			index = context.index(),
-			tabIndex = $('.modal-cabinet__form').eq(index);
-		$('.modal-cabinet__item').removeClass('modal-cabinet__item_current');	
-		$(this).addClass('modal-cabinet__item_current');
-		$('.modal-cabinet__form').removeClass('is-visible');
-		tabIndex.addClass('is-visible');
-
-	});
-
-
-
-
-	
 });	
