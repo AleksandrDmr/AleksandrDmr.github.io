@@ -347,8 +347,8 @@ $(document).ready(function() {
 	if ( $('.sect-basket').length ) {
 
 		$('.order-form__send').on('click',  function(event) {
-			$('.js-modal').addClass('js-modal_visible');
-			$('.overlay').addClass('overlay_visible')
+			$('.modal-thank').addClass('modal_visible');
+			$('.overlay').addClass('overlay_visible');
 		});
 
 	}
@@ -356,14 +356,14 @@ $(document).ready(function() {
 	if ( $('.btn-close').length ) {
 		$('.btn-close').on('click',  function(event) {
 			event.preventDefault();
-			$('.js-modal').removeClass('js-modal_visible');
+			$('.modal').removeClass('modal_visible');
 			$('.overlay').removeClass('overlay_visible')
 		});
 	}
 
 	if  ( $('.overlay').length ) {
 			$('.overlay').on('click', function(event) {
-				$('.js-modal').removeClass('js-modal_visible');
+				$('.modal').removeClass('modal_visible');
 				$(this).removeClass('overlay_visible')
 			});
 	}
@@ -383,4 +383,78 @@ $(document).ready(function() {
 		$('.step_two').removeClass('is-visible');
 		$('.step_one').addClass('is-visible');
 	});
+
+
+
+
+	/************************************* Модальное окно выбор города **********************************/
+
+	if ( $('.city-select').length ) {
+		$('.city-select').on('click', function(event) {
+			event.preventDefault();
+			$('.modal-city').addClass('modal_visible');
+			$('.overlay').addClass('overlay_visible')
+			
+		});
+	}
+
+
+
+
+	/************************************* Модальное окно авторизации **********************************/
+
+	$('.personal-box__user-accaunt').on('click', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		$('.modal-cabinet').addClass('modal_visible');
+		$('.overlay').addClass('overlay_visible');
+	});
+
+	$('.modal-cabinet__item').on('click', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		var context = $(this),
+			index = context.index(),
+			tabIndex = $('.modal-cabinet__form').eq(index);
+		$('.modal-cabinet__item').removeClass('modal-cabinet__item_current');	
+		$(this).addClass('modal-cabinet__item_current');
+		$('.modal-cabinet__form').removeClass('is-visible');
+		tabIndex.addClass('is-visible');
+
+	});
+
+
+
+
+
+	/************************************* Счетчик количества товара в корзине **********************************/
+
+	$('.count__input').bind("change keyup input click", function() {
+		if ( this.value.match(/[^0-9]/g) ) {
+			 this.value = this.value.replace(/[^0-9]/g, '');
+		}
+	});
+
+	$('.count__control').on('click', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		var count = $(this).parent('.count').find('.count__input'),
+			countNum = count.val();
+
+		if ( $(this).hasClass('count__control_minus') && countNum > 1) {
+	
+			countNum--;
+
+		} else if( $(this).hasClass('count__control_plus')  && countNum < 9999) {
+	
+			countNum++;
+
+		}
+		count.val(countNum);
+
+	});
+
+
+
+	
 });	
