@@ -1637,17 +1637,20 @@ body {
 .cover__load-icon {
   font-size: 30px;
   margin-bottom: 5px;
+  display: block;
 }
 
 .cover__load-title {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
+  display: block;
 }
 
 .cover__load-desc {
   font-size: 15px;
   font-weight: 300;
+  display: block;
 }
 
 .cover input[type="file"] {
