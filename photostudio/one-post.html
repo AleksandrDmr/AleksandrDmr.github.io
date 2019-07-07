@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>One post</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="header__wrap">
+				<div class="header__inner">
+					<a href="#" class="header__info"><i class="fas fa-map-marker-alt"></i> Ваш город</a>
+					<a href="#" class="header__info">Балланс  
+						<span class="header__balance">0 <i class="fas fa-ruble-sign"></i></span>
+					</a>
+				</div>
+				<div class="header__inner">
+					<form action="#" class="search">
+						<input type="text" placeholder="Поиск">
+						<button></button>
+					</form>
+					<a href="#" class="header__favorites"><i class="far fa-heart"></i></a>
+					<a href="#" class="user-cabinet">
+						<img src="img/user.svg" alt="" class="user-cabinet__img">
+						<span class="user-cabinet__text">Личный кабинет</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.header__top -->
+		<div class="header__bottom">
+			<div class="header__wrap">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item dropdown current">
+							<a href="#">Каталог </a>
+							<ul>
+								<li>
+									<a href="#">Детские</a>
+								</li>
+								<li>
+									<a href="#">Романтичные</a>
+								</li>
+								<li class="current">
+									<a href="#">Имитация квартиры</a>
+								</li>
+								<li>
+									<a href="#">Спальня\будуар</a>
+								</li>
+								<li>
+									<a href="#">Имитация кухни</a>
+								</li>
+								<li>
+									<a href="#">Имитация улицы</a>
+								</li>
+								<li>
+									<a href="#">Мрачные</a>
+								</li>
+								<li>
+									<a href="#">Классические \ дворцовые</a>
+								</li>
+								<li>
+									<a href="#">Дизайнерские</a>
+								</li>
+								<li>
+									<a href="#">Хайтек</a>
+								</li>
+								<li>
+									<a href="#">Абстрактные</a>
+								</li>
+								<li>
+									<a href="#">Лофт</a>
+								</li>
+								<li>
+									<a href="#">Ретро</a>
+								</li>
+								<li>
+									<a href="#">Треш</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav__item dropdown">
+							<a href="#">Фотостудии </a>
+							<ul>
+								<li>
+									<a href="#">Детские</a>
+								</li>
+								<li>
+									<a href="#">Романтичные</a>
+								</li>
+								<li>
+									<a href="#">Имитация квартиры</a>
+								</li>
+								<li>
+									<a href="#">Спальня\будуар</a>
+								</li>
+								<li>
+									<a href="#">Имитация кухни</a>
+								</li>
+								<li>
+									<a href="#">Имитация улицы</a>
+								</li>
+								<li>
+									<a href="#">Мрачные</a>
+								</li>
+								<li>
+									<a href="#">Классические \ дворцовые</a>
+								</li>
+								<li>
+									<a href="#">Дизайнерские</a>
+								</li>
+								<li>
+									<a href="#">Хайтек</a>
+								</li>
+								<li>
+									<a href="#">Абстрактные</a>
+								</li>
+								<li>
+									<a href="#">Лофт</a>
+								</li>
+								<li>
+									<a href="#">Ретро</a>
+								</li>
+								<li>
+									<a href="#">Треш</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav__item">
+							<a href="#">Блог </a>
+						</li>
+						<li class="nav__item">
+							<a href="#">О нас </a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Реклама на сайте </a>
+						</li>
+					</ul>
+				</nav>
+				<!-- /.nav -->
+				<a href="#" class="btn btn_add-studio btn_add-studio_media">Добавить фотостудию</a>
+				<button class="menu-toggle menu-toggle_open">
+					<span></span>
+				</button>
+				<nav class="nav-mob">
+					<button class="menu-toggle menu-toggle_close">
+						<span></span>
+					</button>
+					<ul class="nav-mob__list">
+						<li class="nav-mob__item dropdown current">
+							<a href="#">Каталог </a>
+							<ul>
+								<li>
+									<a href="#">Детские</a>
+								</li>
+								<li>
+									<a href="#">Романтичные</a>
+								</li>
+								<li>
+									<a href="#" class="current">Имитация квартиры</a>
+								</li>
+								<li>
+									<a href="#">Спальня\будуар</a>
+								</li>
+								<li>
+									<a href="#">Имитация кухни</a>
+								</li>
+								<li>
+									<a href="#">Имитация улицы</a>
+								</li>
+								<li>
+									<a href="#">Мрачные</a>
+								</li>
+								<li>
+									<a href="#">Классические \ дворцовые</a>
+								</li>
+								<li>
+									<a href="#">Дизайнерские</a>
+								</li>
+								<li>
+									<a href="#">Хайтек</a>
+								</li>
+								<li>
+									<a href="#">Абстрактные</a>
+								</li>
+								<li>
+									<a href="#">Лофт</a>
+								</li>
+								<li>
+									<a href="#">Ретро</a>
+								</li>
+								<li>
+									<a href="#">Треш</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-mob__item dropdown">
+							<a href="#">Фотостудии </a>
+							<ul>
+								<li>
+									<a href="#">Детские</a>
+								</li>
+								<li>
+									<a href="#">Романтичные</a>
+								</li>
+								<li>
+									<a href="#">Имитация квартиры</a>
+								</li>
+								<li>
+									<a href="#">Спальня\будуар</a>
+								</li>
+								<li>
+									<a href="#">Имитация кухни</a>
+								</li>
+								<li>
+									<a href="#">Имитация улицы</a>
+								</li>
+								<li>
+									<a href="#">Мрачные</a>
+								</li>
+								<li>
+									<a href="#">Классические \ дворцовые</a>
+								</li>
+								<li>
+									<a href="#">Дизайнерские</a>
+								</li>
+								<li>
+									<a href="#">Хайтек</a>
+								</li>
+								<li>
+									<a href="#">Абстрактные</a>
+								</li>
+								<li>
+									<a href="#">Лофт</a>
+								</li>
+								<li>
+									<a href="#">Ретро</a>
+								</li>
+								<li>
+									<a href="#">Треш</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-mob__item">
+							<a href="#">Блог </a>
+						</li>
+						<li class="nav-mob__item">
+							<a href="#">О нас </a>
+						</li>
+						<li class="nav-mob__item">
+							<a href="#">Реклама на сайте </a>
+						</li>
+					</ul>
+					<a href="#" class="btn btn_add-studio btn_add-studio_mob">Добавить фотостудию</a>
+				</nav>
+			</div>
+			<!-- /.header__wrap -->
+		</div>
+		<div class="page-title">
+			<div class="wrapper">
+				<h2 class="page-title__text">Блог</h2>
+			</div>
+		</div>
+			<div class="breadcrumbs">
+		          <a href="#">Главная</a> 
+		          <span>|</span> 
+		           <a href="#">Блог </a> 
+		          <span>|</span> 
+		          <span>Дом для фотосессий: как открыть фотостудию?</span> 
+			</div>		
+	</header>
+	<!-- /.header -->
+	<div class="post">
+		<div class="wrapper">
+			<div class="content-wrap">
+				<aside class="sidebar post__sidebar sidebar_post ">
+					<div class="aside-slider">
+						<div class="aside-slider__title">Рекомендуем:</div>
+						<div class="aside-slider__wrap">
+							<div class="aside-slider__inner">
+								<div class="sm-card">
+									<div class="sm-card__img">
+										<img src="img/aside-slider_1.jpg" alt="">
+										<div class="p-logo p-logo_sm sm-card__p-logo">
+											<img src="img/s-logo_1_sm.png" alt="">
+										</div>
+									</div>
+									<div class="sm-card__content">
+										<div class="sm-card__header">
+											<a href="#" class="sm-card__title">Фотостудия “Абажур”</a>
+											<span class="i-favorites i-favorites_sm sm-card__i-favorites"></span>	
+										</div>
+										<div class="sm-card__info-wrap">
+											<span class="sm-card__info">от 800 руб/час</span>
+											<span class="sm-card__info">г. Саратов</span>
+										</div>
+									</div>
+								</div>
+								<!-- /.sm-card -->
+							</div>
+							<!-- /.aside-slider__inner -->
+							<div class="aside-slider__inner">
+								<div class="sm-card">
+									<div class="sm-card__img">
+										<img src="img/aside-slider_2.jpg" alt="">
+										<div class="p-logo p-logo_sm sm-card__p-logo">
+											<img src="img/s-logo_2_sm.png" alt="">
+										</div>
+									</div>
+									<div class="sm-card__content">
+										<div class="sm-card__header">
+											<a href="#" class="sm-card__title">Фотостудия “Barbara”</a>
+											<span class="i-favorites i-favorites_sm sm-card__i-favorites"></span>	
+										</div>
+										<div class="sm-card__info-wrap">
+											<span class="sm-card__info">от 1000 руб/час</span>
+											<span class="sm-card__info">г. Челябинск</span>
+										</div>
+									</div>
+								</div>
+								<!-- /.sm-card -->
+							</div>
+							<!-- /.aside-slider__inner -->
+							<div class="aside-slider__inner">
+								<div class="sm-card">
+									<div class="sm-card__img">
+										<img src="img/aside-slider_3.jpg" alt="">
+										<div class="p-logo p-logo_sm sm-card__p-logo">
+											<img src="img/s-logo_3_sm.png" alt="">
+										</div>
+									</div>
+									<div class="sm-card__content">
+										<div class="sm-card__header">
+											<a href="#" class="sm-card__title">Фотостудия “SOVA”</a>
+											<span class="i-favorites i-favorites_sm sm-card__i-favorites"></span>	
+										</div>
+										<div class="sm-card__info-wrap">
+											<span class="sm-card__info">от 600 руб/час</span>
+											<span class="sm-card__info">г. Хабаровск</span>
+										</div>
+									</div>
+								</div>
+								<!-- /.sm-card -->
+							</div>
+							<!-- /.aside-slider__inner -->
+							<div class="aside-slider__inner">
+								<div class="sm-card">
+									<div class="sm-card__img">
+										<img src="img/aside-slider_2.jpg" alt="">
+										<div class="p-logo p-logo_sm sm-card__p-logo">
+											<img src="img/s-logo_2_sm.png" alt="">
+										</div>
+									</div>
+									<div class="sm-card__content">
+										<div class="sm-card__header">
+											<a href="#" class="sm-card__title">Фотостудия “Barbara”</a>
+											<span class="i-favorites i-favorites_sm sm-card__i-favorites"></span>	
+										</div>
+										<div class="sm-card__info-wrap">
+											<span class="sm-card__info">от 1000 руб/час</span>
+											<span class="sm-card__info">г. Челябинск</span>
+										</div>
+									</div>
+								</div>
+								<!-- /.sm-card -->
+							</div>
+							<!-- /.aside-slider__inner -->
+						</div>
+						<!-- /.aside-slider__wrap -->
+					</div>
+					<!-- /.aside-slider -->
+					<a href="#" class="btn sidebar__link">Искать другие студии <i class="fas fa-long-arrow-alt-right"></i></a>
+					<div class="banner post__banner">
+						<img src="img/banner.jpg" alt="">
+						<div class="banner__text">по промокоду: <span class="banner__promo-code">KADR</span></div>
+					</div>
+					<!-- /.banner -->
+					<div class="tags post__tags">
+						<div class="tags__title">Теги:</div>
+						<ul class="tags__list">
+							<li class="tags__item">
+								<a href="#">Фотостудия</a>
+							</li>
+							<li class="tags__item">
+								<a href="#">Создать</a>
+							</li>
+							<li class="tags__item">
+								<a href="#">Фотосессии</a>
+							</li>
+							<li class="tags__item">
+								<a href="#">Фотобизнес</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.tags -->
+				</aside>
+				<main>
+					<article class="article">
+						<header class="article__header">
+							<h1 class="article__title">Дом для фотосессий: как открыть фотостудию?</h1>
+							<div class="article__img">
+								<img src="img/article-img.jpg" alt="">
+								<span class="article__count article__count_views">
+									<i class="far fa-eye"></i>
+									(10)
+								</span>
+								<span class="article__count article__count_comments">
+									<i class="fas fa-comments"></i>
+									(4)
+								</span>
+							</div>
+							<div class="article__info">
+								<div class="article__info-item">
+									<i class="fas fa-user"></i>
+									Ирина Иванова
+								</div>	
+								<div class="article__info-item">
+									<i class="fas fa-calendar-alt"></i>
+									23 апреля 2019
+								</div>
+							</div>
+							<!-- /.article__info -->	
+						</header>
+						<div class="article__text-block">
+							<p><b>Решаем задачу, как открыть интерьерную фотостудию с нуля. Дано: творческий человек, который хочет реализовать способности декоратора Условия: 700 тыс. рублей. Найти: возможность прибыльного бизнеса.</b></p>
+							 <p>Сегодня фотографии — это неотъемлемая часть нашей жизни. Настолько привычная, что уже сложно представить,  как люди жили без возможности запечатлевать памятные события на фото. Сейчас же у каждого под рукой смартфоны с камерой, с помощью которой ежедневно делаются снимки. Однако большинству из нас все равно хочется качественных и красивых фотографий, сделанных профессиональным фотографом в красивой обстановке.</p>
+							 <p>Рынок фотостудий пережил огромные изменения. Помните, как выглядели фотостудии раньше? Белое полотно, на фоне которого ты позируешь с незамысловатым реквизитом. Сейчас же интерьер фотостудий можно считать произведением искусства. Обычно, студии предлагают несколько интерьеров для съемки на выбор. Каждый интерьер – четко продуман, полон интересных локаций и деталей, которые можно задействовать в съемке. От оригинальности оформления зависит, захочет ли человек прийти в студию на фотосессию. Интерьер – главная составляющая успеха для фотостудии.</p>
+							 <p>Однако помимо творческой составляющей, фотобизнес имеет множество организационных моментов, которые необходимо понять для открытия своей фотостудии.</p>
+							 <blockquote class="article__quote">Планирование своей фотостудии необходимо  начать с четкого позиционирования. Какой вид услуг вы будете оказывать?</blockquote>
+							 <p>Вариантов может быть два: вы либо предоставляете интерьерное помещение для фотографов, которые проводят там съемки; либо организуете фотосессии, оказывая целый спектр услуг – от предоставления студии до визажа и, непосредственно, съемки. Первый вариант менее затратный. Здесь владелец бизнес сосредоточен на создании интерьера. Второй вариант более сложный, потому что требует целой команды профессионалов (фотограф, визажист, костюмер или стилист, администратор), и более дорогостоящий. Если предприниматель – фотограф, то ему рациональнее выбрать второй вариант. Но по условиям задачи, предприниматель – творческая личность, которая намерена самостоятельно заняться оформлением интерьера фотостудии. Поэтому суть проекта заключается в предоставлении в аренду интерьерной студии для фотосессий.</p>
+						</div>
+						<!-- /.article__text-block -->
+						<div class="article__text-block">
+							<h2 class="article__block-title">Как проанализировать рынок фотобизнеса</h2>
+							<p>Чтобы проанализировать рынок, необязательно проводить масштабное маркетинговое исследование. Достаточно узнать, сколько фотостудий работает в вашем городе и изучить их примерный перечень услуг. Ваш главный помощник – интернет. Сегодня почти все фотостудии имеют свой сайт или аккаунт в социальных сетях. Посмотрите, какие интерьеры представлены там, сколько стоит аренда фотостудии, определите их территориальное расположение (помогут Яндекс.Карты, Google Maps или 2ГИС). На основе собранных данных, вы сможете более обдуманно планировать свой бизнес и формировать конкурентные преимущества.</p>
+							<p>Для привлечения клиентов вам придется предложить то, что другие фотостудии еще не предлагали. В поиске свежих идей и вдохновения посмотрите, что есть на рынке в других регионах. Также следует понимать, что ваши идеи должны нравиться в первую очередь аудитории. Поэтому советуем узнать, какая тема актуальна среди населения города, какой спрос на уже существующие услуги. Эта информация позволит избежать лишних трат.</p>
+						</div>
+						<!-- /.article__text-block -->
+						<div class="article__text-block">
+							<h2 class="article__block-title">Как выбрать помещение для фотостудии</h2>
+							<p>Если ваша студия будет располагаться в центре города – это идеальный вариант. Но достичь этого идеала не так просто: во-первых, к помещению фотостудии предъявляется много требований, которые не так просто выполнить; во-вторых, аренда помещений в центре – удовольствие не из дешевых. Поэтому можно рассмотреть варианты, расположенные в центре города, но на менее проходимых улицах. Забираться далеко, в промзоны, до которых придется добираться пару часов, не самый лучший вариант. Фотостудию в спальном районе тоже не разместишь, ведь она не оказывает услуги первой необходимости, чтобы привлекать жителей ближайших домов. Вы должны привлечь людей со всего города, поэтому наиболее логичным будет отдать предпочтение центру.</p>
+							<p>Теперь перейдем к соблюдению всех требований к самому помещению фотостудии:</p>
+							<ul class="list-num">
+								<li class="list-num__item">
+									<span class="list-num__count">1</span>
+									высокие потолки – от 3-х метров;
+								</li>
+								<li class="list-num__item">
+									<span class="list-num__count">2</span>
+									площадь помещения не менее 60 кв.м., рекомендуемая площадь – 100 кв.м.;
+								</li>
+								<li class="list-num__item">
+									<span class="list-num__count">3</span>
+									 длина студии не менее 8-10 м.;
+								</li>
+								<li class="list-num__item">
+									<span class="list-num__count">4</span>
+									требуемый ремонт должен быть косметическим, иначе вы потратите много денег и времени на переделку;
+								</li>
+								<li class="list-num__item">
+									<span class="list-num__count">5</span>
+									пространство не должно разделяться вертикальными балками;
+								</li>
+								<li class="list-num__item">
+									<span class="list-num__count">6</span>
+									выбирая напольное покрытие, следует отдать предпочтение темному цвету и высокой износостойкости. Иначе пол быстро потеряет свой привлекательный вид.
+								</li>
+							</ul>
+							<p>В среднем, стоимость помещения площадью 80 кв.м., арендуемой в центре города, составляет 50 тыс. рублей.</p>
+							<p>Когда помещение выбрано, можно задуматься о планировке. Комнату нужно разбить на несколько зон, в каждой из которой разместится локация для съемки. Хорошая фотостудия должна располагать не менее чем тремя локациями. Также не забудьте, что кроме рабочего пространства, следует предусмотреть зону для приема посетителей и туалет.</p>
+						</div>
+						<!-- /.article__text-block -->
+						<div class="article__text-block">
+							<h2 class="article__block-title">Как выбрать интерьер фотостудии</h2>
+							<p>Вот мы и подошли к главному – планированию интерьера фотостудии. Главным героем, определяющим интерьер студии, является сам предприниматель. Здесь он может реализовать все свои творческие идеи, дать волю фантазии и покреативить.</p>
+							<p>Нужно отметить, что, как бы ни изощрялись оформители, наибольшей популярностью пользуются следующие тематики локаций:</p>
+							<ul class="list-check">
+								<li class="list-check__item">романтические – они рассчитаны на клиентов, которые покупают семейные фотосессии или love-story. Такая локация должна быть средних размеров, чтобы вместить семью. Обычно романтические локации выполняются в светлых тонах, с цветочными мотивами;</li>
+								<li class="list-check__item">стильные локации, которые популярны среди более юной публики. Стиль дизайна приближен к лофту или модерну и чаще всего оформляется в темных тонах;</li>
+								<li class="list-check__item">третья комната обычно называется «хамелеоном», потому что интерьер в ней меняется для проведения сезонных съемок. Здесь придется часто менять обстановку, что позволит повторно привлекать клиентов и приглашать новых клиентов в преддверии различных событий. Обычно, локации исполняются в тематике времен года.</li>
+							</ul>
+							<p><b>Для вдохновения мы собрали несколько интересных интерьер-концепций для оформления фотостудии:</b></p>
+							<div class="article-slider">
+								<figure>
+									<img src="img/article-slider-img.jpg" alt="">
+									 <figcaption>
+									 	Поддержать романтический стиль можно шикарной подвесной кроватью, украшенной балдахином и цветами. Смотрится очень красиво и нежно. Интересно будут смотреться и миниатюрные качели, которые помогут создать живые кадры в движении. Но романтичный интерьер не обязан быть в светлых тонах. Стильно и неизбито будет смотреться локация в стиле кантри – сеновал, романтичная надпись на деревянной стене и мини-пикник. Чем не романтика?
+									 </figcaption>
+								</figure>
+								<figure>
+									<img src="img/article-slider-img.jpg" alt="">
+									 <figcaption>
+									 	Поддержать романтический стиль можно шикарной подвесной кроватью, украшенной балдахином и цветами. Смотрится очень красиво и нежно. Интересно будут смотреться и миниатюрные качели, которые помогут создать живые кадры в движении. Но романтичный интерьер не обязан быть в светлых тонах. Стильно и неизбито будет смотреться локация в стиле кантри – сеновал, романтичная надпись на деревянной стене и мини-пикник. Чем не романтика?
+									 </figcaption>
+								</figure>
+							</div>
+						</div>
+						<!-- /.article__text-block -->
+						<div class="article__text-block">
+							<h2 class="article__block-title">Как оценить риски фотостудии</h2>
+							<p>Любой бизнес сопряжен с риском. Следует учитывать все возможные сложности, которые могут возникнуть при открытии и работе фотостудии. Это позволит оперативно реагировать на угрозы или избегать их вовсе.</p>
+							<p>Первый риск – устаревший реквизит. Специфика работы фотостудии предполагает постоянное обновление локаций и реквизита. Неактуальный, вышедший из моды реквизит вряд ли украсит фотографию и заинтересует клиента. Поэтому владелец фотостудии всегда должен быть в тренде – отслеживать тенденции и вовремя менять наполнение студии.</p>
+							<p>Следующий вид риска – рост конкуренции на рынке. Чтобы снизить влияние этого риска, необходимо регулярно вкладывать деньги в маркетинг, повышать уровень сервиса, вести грамотную работу с клиентами, создавать уникальные предложения на рынке.</p>
+							<p>Еще один риск – сезонность бизнеса. В летние месяцы наблюдается снижение спроса, а вот самые активные месяцы для фотостудий – ноябрь, декабрь, февраль и март. Чтобы минимизировать риск, во время низких продаж устраивайте конкурсы на бесплатные фотосессии, распространяйте подарочные сертификаты. Также можно расширить перечень услуг. Например, сдавать помещение в аренду для проведения каких-либо мероприятий (дней рождений, мастер-классов и т.д.).</p>
+							<p>Таким образом, можно определить основные преимущества и недостатки открытия своей фотостудии. Взвесив все «за» и «против» можно принять окончательное решение об открытии данного бизнеса.</p>
+							<p>Организовать фотостудию, потратив не более 700 тыс. рублей вполне реально.</p>
+						</div>
+						<!-- /.article__text-block -->
+					</article>
+				</main>
+				<div class="posts-nav">
+					<a href="#" class="posts-nav__link">« Предыдущая статья</a>
+					<a href="#" class="posts-nav__link">Следующая статья »</a>
+				</div>
+				<div class="comments comments_bg comments_padding ">
+						<div class="comments__title">Комментарии (4):</div>
+						<div class="comment-box comments__comment-box">
+							<div class="comment-box__av">
+								<img src="img/avatar_1.png" alt="">
+							</div>
+							<!-- /.comment-box__info -->
+							<div class="comment-box__text">
+								<div class="comment-box__text-header">
+									<div class="comment-box__header-inner">
+										<span class="comment-box__a-name">Ирина Петрова</span>
+										<span class="comment-box__date">Март 31, 2019 в 11:00</span>
+									</div>
+									<button class="comment-box__btn">Ответить »</button>
+								</div>
+								<!-- /.comment-box__text-inner -->
+								<p class="comment-box__comment">Продвинуть свою студию можно благодаря сотрудничеству с фотографами. И здесь будет уместно модное нынче слово «коллаборации».</p>
+							</div>
+							<!-- /.comment-box__text -->
+						</div>
+						<!-- /.comment-box -->
+						<div class="comment-box comments__comment-box">
+							<div class="comment-box__av">
+								<img src="img/avatar_2.png" alt="">
+							</div>
+							<!-- /.comment-box__info -->
+							<div class="comment-box__text">
+								<div class="comment-box__text-header">
+									<div  class="comment-box__header-inner">
+										<span class="comment-box__a-name">Иван Зацепин</span>
+										<span class="comment-box__date">Март 31, 2019 в 11:15 </span>
+									</div>
+									<button class="comment-box__btn">Ответить »</button>
+								</div>
+								<!-- /.comment-box__text-inner -->
+								<p class="comment-box__comment">Также можно привлечь клиентов выгодными акциями и предложениями. Устройте розыгрыш сертификата на фотосессию в вашей студии; предоставьте скидку в определенные дни; организуйте акцию в поддержку семейных фотосессий со скидкой. Все эти действия положительно отразятся на продвижении вашей студии.</p>
+							</div>
+							<!-- /.comment-box__text -->
+						</div>
+						<!-- /.comment-box -->
+						<div class="form">
+							<div class="form__title">Написать отзыв</div>
+							<div class="form__desc">Ваш электронный адрес не будет опубликован *</div>
+							<form action="#">
+								<textarea class="form__message" placeholder="Комментарий" required></textarea>
+								<input type="text" class="form__input" placeholder="Имя*" required>
+								<input type="text" class="form__input" placeholder="Email*" required>
+								<div class="form__btn-wrap btn-wrap btn-wrap_left">
+									<button class="form__btn">Отправить <i class="fas fa-long-arrow-alt-right"></i></button>
+								</div>
+							</form>
+						</div>
+						<!-- /.form -->
+					</div>
+					<!-- /.comments -->
+			</div>
+			<!-- /.content-wrap -->
+		</div>
+		<!-- /.wrapper -->
+		<section class="blog-recommended post__blog-recommended">
+			<div class="wrapper">
+				<div class="sect-header sect-header_padding_r blog-recommended__sect-header js-blog-btn">
+					<h2 class="sect-title ">Похожие статьи</h2>
+				</div>
+				<!-- /.sect-header -->
+				<div class="blog-carusel">
+					<div class="post-card-inner">
+						<div class="post-card">
+							<h3 class="post-card__title">Дом для фотосессий: как открыть фотостудию?</h3>
+							<div class="post-card__body" style="background-image: url(img/post_1.jpg)">
+								<span class="post-card__count post-card__count_views"><i class="far fa-eye"></i> (10)</span>
+								<span class="post-card__count post-card__count_comments "><i class="fas fa-comments"></i> (4)</span>
+								<p class="post-card__excerpt">Сегодня фотографии — это неотъемлемая часть нашей жизни.Настолько привычная, что уже сложно представить,
+								 как люди жилибез возможности запечатлевать памятные события на фото.</p>
+							</div>
+							<div class="post-card__footer">
+								<div class="post-card__info">
+									<div class="post-card__info-item"><i class="fas fa-user"></i> Ирина Иванова</div>
+									<div class="post-card__info-item"><i class="fas fa-calendar-alt"></i> 23 апреля 2019</div>
+								</div>
+								<a href="" class="post-card__link">Читать статью</a>
+							</div>
+						</div>
+						<!-- /.post-card -->
+					</div>
+					<!-- /.card-inner -->
+					<div class="post-card-inner">
+						<div class="post-card">
+							<h3 class="post-card__title">Как проанализировать рынок фотобизнеса?</h3>
+							<div class="post-card__body" style="background-image: url(img/post_2.jpg)">
+								<span class="post-card__count post-card__count_views"><i class="far fa-eye"></i> (5)</span>
+								<span class="post-card__count post-card__count_comments "><i class="fas fa-comments"></i> (2)</span>
+								<p class="post-card__excerpt">Сегодня фотографии — это неотъемлемая часть нашей жизни.Настолько привычная, что уже сложно представить,
+								 как люди жилибез возможности запечатлевать памятные события на фото.</p>
+							</div>
+							<div class="post-card__footer">
+								<div class="post-card__info">
+									<div class="post-card__info-item"><i class="fas fa-user"></i> Ирина Иванова</div>
+									<div class="post-card__info-item"><i class="fas fa-calendar-alt"></i> 23 апреля 2019</div>
+								</div>
+								<a href="" class="post-card__link">Читать статью</a>
+							</div>
+						</div>
+						<!-- /.post-card -->
+					</div>
+					<!-- /.card-inner -->
+					<div class="post-card-inner">
+						<div class="post-card">
+							<h3 class="post-card__title">Дом для фотосессий: как открыть фотостудию?</h3>
+							<div class="post-card__body" style="background-image: url(img/post_1.jpg)">
+								<span class="post-card__count post-card__count_views"><i class="far fa-eye"></i> (10)</span>
+								<span class="post-card__count post-card__count_comments "><i class="fas fa-comments"></i> (4)</span>
+								<p class="post-card__excerpt">Сегодня фотографии — это неотъемлемая часть нашей жизни.Настолько привычная, что уже сложно представить,
+								 как люди жилибез возможности запечатлевать памятные события на фото.</p>
+							</div>
+							<div class="post-card__footer">
+								<div class="post-card__info">
+									<div class="post-card__info-item"><i class="fas fa-user"></i> Ирина Иванова</div>
+									<div class="post-card__info-item"><i class="fas fa-calendar-alt"></i> 23 апреля 2019</div>
+								</div>
+								<a href="" class="post-card__link">Читать статью</a>
+							</div>
+						</div>
+						<!-- /.post-card -->
+					</div>
+					<!-- /.card-inner -->
+				</div>
+				<!-- /.blog-carusel -->
+			</div>
+			<!-- /.wrapper -->
+		</section>
+		<!-- /.posts-recommended -->
+	</div>
+	<!-- /.post -->
+	<footer class="footer">
+		<div class="wrapper">
+			<button class="arrow-up"><img src="img/angle-top.png" alt=""></button>
+			<div class="footer-row">
+				<div class="footer-info">
+					<a href="#" class="footer-info__logo">
+						<img src="img/footer-logo.png" alt="">
+					</a>
+					<p class="footer-info__desc">Использование сайта, в том числе размещение фотостудии в каталоге, означает согласие 
+					с пользовательским соглашением. Все логотипы и торговые марки представленные на сайте являются собственностью их владельца.</p>
+				</div>
+				<!-- /.footer-info-->
+				<nav class="footer-nav">
+					<div class="footer-nav__title">Меню</div>
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item">
+							<a href="#">Оферта</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Условия использования</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">О нас</a>
+						</li>
+						<li class="footer-nav__item current">
+							<a href="#">Реклама на сайте</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Контакты</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Фотостудии</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Сайты фотостудий</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Блог</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer-nav footer-nav_flex">
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item">
+							<a href="#">Челябинск</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Вознесенское</a>
+						</li>				
+						<li class="footer-nav__item">
+							<a href="#">Мужи</a>
+						</li>					
+						<li class="footer-nav__item">
+							<a href="#">Красноусольский</a>
+						</li>					
+						<li class="footer-nav__item">
+							<a href="#">Яшкуль</a>
+						</li>					
+						<li class="footer-nav__item">
+							<a href="#">Старощербиновская</a>
+						</li>					
+						<li class="footer-nav__item">
+							<a href="#">Жуковский</a>
+						</li>					
+						<li class="footer-nav__item">
+							<a href="#">Ириклинский</a>
+						</li>					
+						<li class="footer-nav__item">
+							<a href="#">Гусь Железный</a>
+						</li>					
+						<li class="footer-nav__item">
+							<a href="#">Кировград</a>
+						</li>					
+						<li class="footer-nav__item">
+							<a href="#">Варегово</a>
+						</li>					
+					</ul>
+					<!-- /.footer-cities -->
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item">
+							<a href="#">Варегово</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Лесной</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Кумертау</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Володарск</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Тбилисская</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Загорск</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Кувандык</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Елатьма</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Краснотурьинск</a>
+						</li>
+						<li class="footer-nav__item">
+							<a href="#">Надым</a>
+						</li>
+						<li class="footer-nav__item footer-nav__item_marker">
+							<a href="#">Другой город</a>
+						</li>
+					</ul>
+					<!-- /.footer-nav__list -->
+				</div>
+				<div class="btn-wrap footer__btn-wrap btn-wrap_column">
+					<a href="#" class="btn footer__btn btn_add-studio">Добавить фотостудию</a>
+					<a href="#" class="btn btn_balance">Пополнить счет</a>
+				</div>
+				<!-- /.btn-wrap -->
+			</div>
+			<!-- /.footer-row -->
+			<div class="footer__bottom">
+				<div class="policy">© 2019 / ООО “Название компании” /
+				<a href="#" class="policy__link">Политика конфиденциальности</a>
+				</div>
+				<!-- /.policy -->
+			</div>
+			<!-- /.footer-bottom -->
+		</div>
+		<!-- /.wrapper -->
+	</footer>
+	<!-- /.footer -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="scripts/slick.min.js"></script>
+	<script src="scripts/jquery.formstyler.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
