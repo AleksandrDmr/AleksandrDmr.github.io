@@ -1324,6 +1324,10 @@ body {
   margin-bottom: 60px;
 }
 
+.map__block-title {
+  margin-bottom: 60px;
+}
+
 .i-favorites {
   color: #f44336;
   position: absolute;
@@ -1922,6 +1926,10 @@ body {
   margin-left: 5px;
 }
 
+.sidebar__link:hover {
+  background-color: #0092d9;
+}
+
 .aside-filter__title {
   background-color: #039be5;
   color: #fff;
@@ -1961,6 +1969,10 @@ body {
 
 .aside-filter__link i {
   font-size: 12px;
+}
+
+.aside-filter__link:hover {
+  background-color: #0092d9;
 }
 
 .aside-filter-box {
@@ -2421,6 +2433,13 @@ body {
   width: 106px;
   height: 30px;
   border: none;
+  -webkit-transition: background-color 0.15s linear;
+  -o-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
+}
+
+.comment-box__btn:hover {
+  background-color: #0092d9;
 }
 
 .comment-box__comment {
@@ -2484,11 +2503,18 @@ body {
   padding: 11.5px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: background-color 0.15s linear;
+  -o-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
 }
 
 .form__btn i {
   font-size: 12px;
   margin-left: 5px;
+}
+
+.form__btn:hover {
+  background-color: #0092d9;
 }
 
 .post {
@@ -2647,6 +2673,10 @@ body {
 
 .page-studio__sidebar-toggle {
   margin-bottom: 40px;
+}
+
+.page-studio__map {
+  margin-top: 70px;
 }
 
 .studio__block-title {
