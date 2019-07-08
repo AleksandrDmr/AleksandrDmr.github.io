@@ -786,12 +786,12 @@ body {
   -webkit-transition: opacity .15s linear;
   -o-transition: opacity .15s linear;
   transition: opacity .15s linear;
-  opacity: .7;
+  opacity: .8;
 }
 
 .category-box:hover .btn_orange {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(89, 39, 0, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(89, 39, 0, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(89, 39, 0, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(89, 39, 0, 0.31);
 }
 
 .category-box:hover .btn_pink {
@@ -800,63 +800,63 @@ body {
 }
 
 .category-box:hover .btn_d-blue {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(82, 94, 138, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(82, 94, 138, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(82, 94, 138, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(82, 94, 138, 0.31);
 }
 
 .category-box:hover .btn_green {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(9, 210, 97, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(9, 210, 97, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(9, 210, 97, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(9, 210, 97, 0.31);
 }
 
 .category-box:hover .btn_beige {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(218, 167, 85, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(218, 167, 85, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(218, 167, 85, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(218, 167, 85, 0.31);
 }
 
 .category-box:hover .btn_red {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(207, 81, 46, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(207, 81, 46, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(207, 81, 46, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(207, 81, 46, 0.31);
 }
 
 .category-box:hover .btn_blue {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(33, 178, 219, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(33, 178, 219, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(33, 178, 219, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(33, 178, 219, 0.31);
 }
 
 .category-box:hover .btn_d-pink {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(231, 145, 151, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(231, 145, 151, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(231, 145, 151, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(231, 145, 151, 0.31);
 }
 
 .category-box:hover .btn_d-red {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(142, 41, 39, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(142, 41, 39, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(142, 41, 39, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(142, 41, 39, 0.31);
 }
 
 .category-box:hover .btn_gray {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(54, 54, 54, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(54, 54, 54, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(54, 54, 54, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(54, 54, 54, 0.31);
 }
 
 .category-box:hover .btn_purple {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(97, 60, 94, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(97, 60, 94, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(97, 60, 94, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(97, 60, 94, 0.31);
 }
 
 .category-box:hover .btn_b-blue {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(55, 56, 254, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(55, 56, 254, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(55, 56, 254, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(55, 56, 254, 0.31);
 }
 
 .category-box:hover .btn_yellow {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(252, 193, 56, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(252, 193, 56, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(252, 193, 56, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(252, 193, 56, 0.31);
 }
 
 .category-box:hover .btn_brown {
-  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(129, 113, 104, 0.21);
-  box-shadow: 0px 5px 11.83px 1.17px rgba(129, 113, 104, 0.21);
+  -webkit-box-shadow: 0px 5px 11.83px 1.17px rgba(129, 113, 104, 0.31);
+  box-shadow: 0px 5px 11.83px 1.17px rgba(129, 113, 104, 0.31);
 }
 
 .category-box img {
