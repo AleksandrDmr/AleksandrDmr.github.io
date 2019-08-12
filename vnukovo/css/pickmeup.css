@@ -63,8 +63,9 @@ border-radius: 3px;
 }
 
 .pickmeup .pmu-instance .pmu-disabled,.pickmeup .pmu-instance .pmu-disabled:hover {
-color:#333;
+color:#D0D0D0;;
 cursor:default;
+background-color: transparent;
 }
 
 .pickmeup .pmu-instance .pmu-selected {
