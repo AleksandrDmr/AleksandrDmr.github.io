@@ -1,0 +1,757 @@
+@media only screen and (max-width: 1025px) {
+body {
+	min-width: initial;
+}
+.container {
+	padding: 0;
+	width: 748px;
+}
+
+.mobile-menu {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding-top: 0;
+    position: relative;
+    height: 55px;
+    width: 35px;
+    background: url(../images/menu1.png) center no-repeat;
+    float: left;
+    z-index: 99;
+}
+.menu-container {
+    display: none;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 9;
+    top: 0;
+    padding: 10px 0;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+}
+.menu_top ul li a {
+    line-height: initial;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.center-header > .info-header {
+    display: none;
+}
+.zakaz-header .telh {
+    display: none;
+}
+header .container > .logo-container {
+    display: none;
+}
+.center-header {
+    width: auto;
+    margin-left: 0;
+}
+.zakaz-header {
+    padding-top: 2px;
+}
+.zakaz-btn {
+    background: #2072E1;
+    color: #fff;
+}
+.f-nav header {
+    top: 0;
+}
+.f-nav .zakaz-header {
+    padding-top: 2px;
+}
+header {
+    height: auto;
+}
+.menu-logo {
+    display: block;
+}
+.menu-res {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+}
+body {
+    padding-top: 55px;
+}
+.open .mobile-menu {
+    background: url(../images/menu2.png) center no-repeat;
+}
+.logo-container img {
+    width: 100%;
+}
+.logo-container {
+    float: right;
+    width: 130px;
+    overflow: hidden;
+    clear: both;
+    margin-right: 15px;
+    padding-top: 0;
+}
+.menu_top {
+    overflow: hidden;
+    clear: both;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.menu_top ul li {
+    float: none;
+    margin-right: 0;
+    text-align: center;
+}
+.menu_top ul li:hover a:before, .menu_top ul li.active a:before {
+    opacity: 0;
+}
+.info-header p {
+    float: none;
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-top: 20px;
+    margin-right: 0;
+}
+.info-header {
+    border-bottom: 0;
+    padding: 25px 0;
+    padding-bottom: 0;
+}
+.mailh:before {
+    left: 0;
+    top: 0px;
+    right: 0;
+    margin: auto;
+}
+.adresh:before {
+    left: 0;
+    top: 0px;
+    right: 0;
+    margin: auto;
+}
+.mobile-phone {
+    display: block;
+    float: right;
+    margin-left: 15px;
+    padding: 10px 0;
+    padding-right: 5px;
+}
+.slider-img {
+    float: none;
+    width: 100%;
+    max-height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.slider-left {
+    width: 100%;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.75);
+}
+.slider-left > p {
+    color: #000;
+}
+.slider-popap {
+    display: none;
+}
+.slider-box3:before {
+    display: none;
+}
+.slider-box > img {
+    height: 100%;
+    width: auto !important;
+    min-width: 100%;
+}
+.bron-row {
+    padding: 0 20px;
+}
+.bron-box {
+    width: 229px;
+    margin-right: 10px;
+}
+.marshrut-container p {
+    font-size: 28px;
+    float: none;
+    margin-bottom: 15px;
+}
+.marshrut-ynx {
+    margin-left: 0;
+    float: right;
+}
+.uslug-left {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.uslug-right {
+    float: none;
+    width: 100%;
+}
+.uslug-box {
+    margin: 0 15px;
+    margin-bottom: 30px;
+}
+.uslug-bottom .container > img {
+    left: -65px;
+    top: 0;
+    width: 450px;
+    bottom: 0;
+    margin: auto;
+}
+.uslug-bottom {
+    height: auto;
+}
+.uslug-box p {
+    font-size: 16px;
+    line-height: 20px;
+}
+#uslug {
+    padding-top: 15px;
+}
+.price-container {
+    float: none;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.price-box:after {
+    width: 75%;
+}
+.rewiev-container {
+    float: none;
+    width: 100%;
+}
+.zag {
+    font-size: 28px;
+    line-height: initial;
+}
+.slick-list {
+    padding-left: 26%!important;
+    padding-right: 26%!important;
+}
+.slick-sprev {
+    transform: translate3d(-55%, 0, -25px);
+}
+.slick-snext {
+    transform: translate3d(55%, 0, -25px);
+}
+#pricerewiev {
+    padding-top: 45px;
+    padding-bottom: 0;
+}
+#carta {
+    padding-top: 45px;
+}
+.carta-box p {
+    width: 350px;
+    font-size: 24px;
+    line-height: initial;
+    padding-top: 80px;
+}
+.carta-container > img {
+    top: 10px;
+    right: 50px;
+    width: 300px;
+}
+.vopros-row {
+    float: none;
+    width: 100%;
+    padding-top: 0;
+}
+.vopros-left {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+#vopros {
+    padding-top: 0;
+}
+#textbox {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.footer-info {
+    display: none;
+}
+.footer-menu {
+    display: none;
+}
+.footer-top {
+    padding-bottom: 5px;
+}
+.footer-middle {
+    padding-bottom: 15px;
+}
+.footer-soc {
+    float: none;
+    text-align: center;
+}
+.socf {
+    display: inline-block;
+    float: none;
+    margin-left: 0;
+    margin: 0 5px;
+}
+.uslug-row {
+    padding-left: 225px;
+}
+
+.f-nav .logo-container {
+    display: block;
+}
+.f-nav header .telh {
+    position: relative;
+    right: auto;
+    bottom: auto;
+}
+.rewiev-btn {
+    width: 200px;
+}
+.zag-page {
+    font-size: 28px;
+    line-height: initial;
+    max-width: 450px;
+    padding: 10px 0;
+}
+.kalk-container {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+}
+.slider-box1 > img {
+    max-width: 100%;
+    float: none;
+    max-height: 400px;
+}
+.slider-box2 > img {
+    max-width: 100%;
+    float: none;
+    max-height: 400px;
+}
+#slider .owl-dots .owl-dot:hover span {
+    background: #e2e2e2;
+}
+#slider .owl-dots {
+    top: 37%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 769px) {
+.container {
+	width: 480px;
+}
+.slider-left > p {
+    line-height: initial;
+    margin-bottom: 5px;
+}
+.slider-left > span {
+    font-size: 28px;
+    line-height: initial;
+    margin-bottom: 15px;
+}
+.slider-left {
+    height: 345px;
+    padding-top: 55px;
+}
+.slider-box > img {
+    max-height: 345px;
+}
+.slider-text > span {
+    font-size: 28px;
+    line-height: initial;
+    margin-bottom: 15px;
+}
+.slider-text > p {
+    line-height: initial;
+    margin-bottom: 5px;
+}
+.slider-box3 .slider-text {
+    max-width: 350px;
+    max-height: 185px;
+    padding: 20px;
+    padding-right: 35px;
+}
+.bron-top > p {
+    font-size: 20px;
+}
+.bron-box {
+    width: 100%;
+    margin-right: 0;
+    float: none;
+}
+.bron-row {
+    padding: 0 35px;
+}
+.bron-container {
+    height: initial;
+}
+.marshrut-ynx {
+    float: none;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.marshrut-btn {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+.marshrut-container p {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.uslug-bottom .container > img {
+    display: none;
+}
+.uslug-row {
+    padding-left: 0;
+}
+.uslug-box {
+    margin: 0 7px;
+    margin-bottom: 25px;
+}
+.zag {
+    text-align: center;
+}
+.price-box:before {
+    right: -100px;
+}
+.price-text p {
+    font-size: 16px;
+}
+.price-bottom p {
+    font-size: 14px;
+    line-height: initial;
+    max-width: 250px;
+}
+.slick-list {
+    padding-left: 13%!important;
+    padding-right: 13%!important;
+}
+.slick-sprev {
+    transform: translate3d(-30%, 0, -25px);
+}
+.slick-snext {
+    transform: translate3d(30%, 0, -25px);
+}
+.carta-box p {
+    width: 200px;
+    font-size: 20px;
+    line-height: initial;
+    padding-top: 80px;
+}
+.carta-container > img {
+    top: 30px;
+    right: 30px;
+    width: 250px;
+}
+#pricerewiev {
+}
+.vopros-left > img {
+    width: 250px;
+    margin-left: 45px;
+}
+.vopros-logo img {
+    width: 220px;
+}
+.vopros-li > span {
+    font-size: 18px;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
+.price-box {
+    overflow: hidden;
+}
+.rewiev-btn {
+    position: relative;
+    margin: 0 auto;
+    top: auto;
+    right: auto;
+    margin-top: 15px;
+}
+#page-top .container {
+    position: relative;
+    height: 100%;
+}
+.zag-page {
+    font-size: 24px;
+    max-width: 100%;
+}
+#page-top {
+    height: 150px;
+}
+
+
+.kalk-container form {
+    padding: 0 15px;
+    padding-top: 15px;
+}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+.container {
+	width: 300px;
+}
+.test {
+    width: 300px;
+}
+.slick-list {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.rewiev-box {
+    box-shadow: none;
+    height: 335px;
+    border: 1px solid #ccc;
+}
+.rewiev-text {
+    width: 165px;
+}
+.marshrut-btn {
+    width: 100%;
+}
+.marshrut-btn .btn-text {
+    width: 240px;
+}
+.bron-container > p {
+    padding: 5px 15px;
+}
+.vopros-left {
+    width: 100%;
+}
+.vopros-left > img {
+    margin-left: 15px;
+}
+.mobile-phone {
+    margin-left: 25px;
+}
+#slider .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 10px;
+}
+#slider .owl-theme .owl-dots .owl-dot span {
+    margin: 0;
+}
+#slider .owl-controls {
+    top: auto;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+#slider .owl-controls {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+}
+.slider-akcuatext {
+    padding-left: 0;
+}
+.slider-btn {
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.slider-left {
+    height: 360px;
+    padding: 45px 15px;
+    text-align: center;
+}
+.slider-img img {
+    max-height: 100%;
+    height: 100%;
+    width: auto !important;
+}
+.slider-box3 .slider-text {
+    max-width: 95%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.slider-text > span {
+    font-size: 24px;
+}
+.slider-box4 .slider-text {
+    left: 0;
+    right: 0;
+    padding-right: 0;
+    max-width: 95%;
+    text-align: center;
+}
+#slider .owl-dots {
+    background: none;
+    box-shadow: none;
+    width: 100%;
+}
+.slider-box > img {
+    max-height: 386px;
+}
+.slider-left > span {
+    font-size: 24px;
+}
+.bron-top > p {
+    padding: 0 15px;
+}
+.marshrut-container p {
+    font-size: 24px;
+}
+.uslug-left > span {
+    font-size: 28px;
+	line-height: initial;
+}
+.uslug-left p {
+    font-size: 17px;
+    line-height: initial;
+}
+.uslug-right p {
+    text-align: center;
+}
+.uslug-box {
+    margin: 0;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.price-box {
+    overflow: initial;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+	height: auto;
+}
+.price-box:before {
+    display: none;
+}
+.price-box:after {
+    display: none;
+}
+.price-text {
+    padding: 5px 10px;
+}
+.price-text p {
+    font-size: 14px;
+    line-height: initial;
+    padding: 12px 0;
+}
+.price-text p span {
+    color: #2072e0;
+    position: relative;
+    right: 0;
+    top: 0;
+    float: right;
+}
+.price-bottom p {
+    max-width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.price-btn {
+    float: none;
+    margin: 0 auto;
+}
+.zag {
+    font-size: 24px;
+}
+.carta-container > img {
+    display: none;
+}
+.carta-box p {
+    width: 261px;
+    border-radius: 20px;
+}
+.vopros-li > span {
+    font-size: 14px;
+    line-height: initial;
+    padding-left: 45px;
+    padding-right: 40px;
+}
+.vopros-li > span:after {
+    left: 10px;
+}
+.vopros-li > span:before {
+    right: 10px;
+}
+.textbox-container {
+    padding: 25px 10px;
+}
+.footer-tel {
+    display: none;
+}
+.footer-logo {
+    float: none;
+    text-align: center;
+}
+.kalk-container form {
+    padding: 0 10px;
+    padding-top: 15px;
+}
+.kalk-box p {
+    font-size: 12px;
+}
+#slider .owl-dots {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    top: initial;
+    padding: 2px 0;
+    background: #fff;
+    border-radius: 0;
+}
+#slider .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 3px;
+    vertical-align: middle;
+}
+
+.datepicker {
+    width: 210px;
+    
+}
+.datepicker:before {
+    display: none;
+}
+.datepicker__input-wrap {
+    width: 100%;
+}
+.datepicker__input {
+    float: right;
+}
+.datepicker__head {
+   order: 1;
+}
+.pickmeup {
+    order: 2;
+}
+.datepicker__title {
+    display: none;
+}
+.datepicker__t-mob {
+    display: block;
+}
+    
+}
