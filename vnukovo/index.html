@@ -626,7 +626,8 @@
 	});
 
 	$('.datepicker__btn-apply').on('click', function(event) {
-		if(time.length == 2 && dateRange.length) {
+		if(time[0] && time.length == 2 && dateRange.length) {
+			console.log(time);
 			$("#datatime1").val( dateRange.join() + '/' + time.join('-') );
 			$(".datepicker").removeClass('datepicker_visible');
 
