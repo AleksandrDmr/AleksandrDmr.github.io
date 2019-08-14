@@ -738,7 +738,7 @@ h3 {
 .datepicker__input-wrap {
     width: 100%;
 }
-.datepicker__input-wrap:first-child {
+.datepicker__input-wrap{
    margin-bottom: 10px;
 }
 .datepicker__input {

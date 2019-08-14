@@ -159,22 +159,29 @@
 									</div>
 									<div class="datepicker__time">
 										<div class="datepicker__input-wrap">
-											Время заезда
-											<input type="text" class="datepicker__input" value="12:00">
-											<div class="datepicker__arrows">
+											<span>Время заезда</span>
+											<input type="text" class="datepicker__input" id="first-time" required>
+											<!-- <div class="datepicker__arrows">
 												<div class="datepicker__arrow datepicker__arrow_up"></div>
 												<div class="datepicker__arrow datepicker__arrow_down"></div>
-											</div>
+											</div> -->
+											<div class="datepicker__tooltip">Пожалуйста, укажите время заезда</div>
 										</div>
 										<div class="datepicker__input-wrap">
-											Время выезда
-											<div class="datepicker__arrows">
+											<span>Время выезда</span>
+											<!-- <div class="datepicker__arrows">
 												<div class="datepicker__arrow datepicker__arrow_up"></div>
 												<div class="datepicker__arrow datepicker__arrow_down"></div>
-											</div>
-											<input type="text" class="datepicker__input" value="12:00">
+											</div> -->
+											<input type="text" class="datepicker__input" id="last-time" required>
+											<div class="datepicker__tooltip">Пожалуйста, укажите время выезда</div>
 										</div>
-									</div>	
+									</div>
+
+									<div class="datepicker__btn-apply">
+										Применить
+										<div class="datepicker__tooltip datepicker__tooltip_date">Пожалуйста, укажите диапазон дат</div>
+									</div>
 								</div>
 								
 							</div>
@@ -505,10 +512,10 @@
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript" src="./js/moment.min.js"></script>
-<script type="text/javascript" src="./js/jquery.daterangepicker.min.js"></script>
+<!-- <script type="text/javascript" src="./js/jquery.daterangepicker.min.js"></script> -->
 
 <script src="./js/owl.carousel.js" type="text/javascript"></script>
-<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.js"></script>
 <script src="./js/slick.min.js" type="text/javascript"></script>
 
 <script src="./js/jquery.classyloader.min.js" type="text/javascript"></script>
@@ -541,9 +548,11 @@
 	           return {};
 	       } 
 	});
-
+	var dateRange = [];
 	document.querySelector('.datepicker').addEventListener('pickmeup-change', function (e) {
-	    $('#datatime1').val(e.detail.formatted_date);
+	   dateRange[0] = (e.detail.formatted_date);
+	   $('.datepicker__btn-apply').children('.datepicker__tooltip').removeClass('datepicker__tooltip_visible');
+
 	})
 
 	$('.datepicker__input').mask('99:99',{
@@ -558,7 +567,8 @@
 	$('.datepicker__input').focus(function() {
 		$(this).select();
 	});
-	$('.datepicker__arrow').on('click', function() {
+	
+	/*$('.datepicker__arrow').on('click', function() {
 			var input = $(this).parents('.datepicker__input-wrap').children('.datepicker__input'),
 				inputVal = input.val(),
 				inputArray = inputVal.split(':');
@@ -590,17 +600,47 @@
 			}
 		 input.val( inputArray.join(':') ); 
 
-	});
+	});*/
 	$("#datatime1").focusin(function() {
 		$(".datepicker").addClass('datepicker_visible');
 	});
-	$(document).mouseup(function (e){ 
+
+	/*$(document).mouseup(function (e){ 
 			var el = $(".datepicker"), 
 				input = $("#datatime1");
 			if (!el.is(e.target)  && el.has(e.target).length === 0 && !input.is(e.target)) { 
 				el.removeClass('datepicker_visible');
 			}
-		});
+		});*/
+
+	var time = [];
+	$('.datepicker__input').change( function(event) {
+		if ( $(this).is('#first-time')) {
+			time[0] = $(this).val();
+		} else {
+			time[1] = $(this).val();
+		}	
+	});
+	$('.datepicker__input').keyup(function(event) {
+		$(this).next('.datepicker__tooltip').removeClass('datepicker__tooltip_visible');
+	});
+
+	$('.datepicker__btn-apply').on('click', function(event) {
+		if(time.length == 2 && dateRange.length) {
+			$("#datatime1").val( dateRange.join() + '/' + time.join('-') );
+			$(".datepicker").removeClass('datepicker_visible');
+
+		}  if(!time[0]) {
+			$('#first-time').next('.datepicker__tooltip').addClass('datepicker__tooltip_visible');
+		}
+		 if(!time[1]) {
+			$('#last-time').next('.datepicker__tooltip').addClass('datepicker__tooltip_visible');
+		}
+		if(!dateRange[0]) {
+			$(this).children('.datepicker__tooltip').addClass('datepicker__tooltip_visible');
+		}
+	});
+			
 
 var timeout = 5000;
     var owl = $('#slider-car.owl-carousel').owlCarousel({
@@ -632,7 +672,11 @@ var timeout = 5000;
 
 (function($){
 		$(window).on("load",function(){
-			$(".scrollbar").mCustomScrollbar();
+			$(".scrollbar").mCustomScrollbar({
+				mouseWheel:{ 
+					enable: true 
+				}
+			});
 		});
 	})(jQuery);
 	
@@ -724,7 +768,7 @@ $('#touch-menu').click(function() {
 	$("header").toggleClass('open') ;
 });
 
-$('#datatime1').dateRangePicker(
+/*$('#datatime1').dateRangePicker(
 	{
 		startOfWeek: 'monday',
     	separator : ' ~ ',
@@ -745,7 +789,7 @@ $('#datatime2').dateRangePicker(
 		time: {
 			enabled: true
 		}
-	});
+	});*/
 
 
 </script>

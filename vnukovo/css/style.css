@@ -1874,22 +1874,27 @@ header .container {
 
 }
 .datepicker__input-wrap {
-    color: #919191;
+    color: #7C7F88;
     position: relative;
-    border-bottom: 2px solid #F7F7F7;
-    padding: 0 23px 5px 0;
+}
+.datepicker__input-wrap span {
+    vertical-align: sub;
 }
 .datepicker__input[type="text"] {
+    border: 1px solid #7B7F89;
     width: 50px;
-    border: none;
-    width: 50px;
-    height: 20px;
+    height: auto;
+    padding: 3px;
     display: inline-block;
     margin: 0 0 0 20px;
-    font-size: 18px;
-    color: #333;
+    font-size: 16px;
+    color: #7C7F88;
+    border-radius: 5px;
 }
-.datepicker__arrows {
+.datepicker__input[type="text"].warning {
+    border-color: red;
+}
+/* .datepicker__arrows {
 position: absolute;
 top: -7px;
 right: 10px;
@@ -1932,7 +1937,72 @@ right: 10px;
 }
 .datepicker__arrow_down:after {
     transform: rotate(-45deg) translate(3px);
-}
+} */
 .datepicker__t-mob{
     display: none;
+}
+.datepicker__btn-apply {
+    background-color: #2072e0;
+    border: 1px solid transparent;
+    text-align: center;
+    border-radius: 10px;
+    order: 3;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: all .15s linear;
+    width: 100px;
+    margin: 10px 10px 10px auto;
+    position: relative;
+}
+.datepicker__btn-apply:hover {
+    background-color: transparent;
+    border-color: #2072e0;
+    color: #2072e0;
+}
+.datepicker__tooltip {
+    position: absolute;
+    bottom: -5px;
+    transform: translateY(100%);
+    border-radius: 5px;
+    z-index: 1;
+    font-size: 10px;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 10px 0 rgba(0,0,0,0.2);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .15s linear;
+    color: #919191;
+    text-align: left;
+
+}
+.datepicker__tooltip_visible {
+    opacity: 1;
+    z-index: 1;
+}
+.datepicker__tooltip:after{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.datepicker__tooltip:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 15px;
+    box-shadow: 0px 0px 10px 0 rgba(0,0,0,0.2);
+    transform: rotate(45deg) translateY(-50%);
+    width: 10px;
+    height: 10px;
+    z-index: -2;
+    background-color: #fff;
+
 }
