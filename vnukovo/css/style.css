@@ -1812,7 +1812,6 @@ header .container {
 /* ---------------------------------------------------- */
 .bron-box__inner {
     position: relative;
-    z-index: 99;
 }
 .datepicker {
     position: absolute;
