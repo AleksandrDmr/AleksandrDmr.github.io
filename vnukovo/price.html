@@ -479,12 +479,15 @@ document.querySelector('.datepicker').addEventListener('pickmeup-change', functi
 
 $("#datatime2").focusin(function() {
 	$(this).next(".datepicker").addClass('datepicker_visible');
+	$(this).parent(".bron-box__inner").css('z-index', '99');
+
 });
 
 $('.datepicker__btn-apply').on('click', function(event) {
 	if(dateRange.length) {
 		$("#datatime2").val(dateRange.join());
 		$(this).parent('.datepicker').removeClass('datepicker_visible');
+		$(this).parents(".bron-box__inner").css('z-index', '0');
 	}else {
 		$(this).children('.datepicker__tooltip').addClass('datepicker__tooltip_visible');
 	}
