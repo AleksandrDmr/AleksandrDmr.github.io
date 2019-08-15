@@ -1529,7 +1529,6 @@ footer {
 }
 
 #pricekalk {
-    overflow: hidden;
     padding-bottom: 25px;
     padding-top: 45px;
 }
@@ -1595,7 +1594,6 @@ footer {
 .kalk-container form {
     padding: 0 75px;
     padding-top: 15px;
-    overflow: hidden;
 }
 input.datatime {
     background: #fff url(../images/calendar.png) right center no-repeat;
@@ -1814,6 +1812,7 @@ header .container {
 /* ---------------------------------------------------- */
 .bron-box__inner {
     position: relative;
+    z-index: 99;
 }
 .datepicker {
     position: absolute;
@@ -1876,6 +1875,8 @@ header .container {
 .datepicker__input-wrap {
     color: #7C7F88;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .datepicker__input-wrap span {
     vertical-align: sub;
@@ -1885,9 +1886,8 @@ header .container {
     width: 50px;
     height: auto;
     padding: 3px;
-    display: inline-block;
-    margin: 0 0 0 20px;
-    font-size: 16px;
+    margin: 0 0 0 50px;
+    font-size: 17px;
     color: #7C7F88;
     border-radius: 5px;
 }
@@ -2005,4 +2005,9 @@ right: 10px;
     z-index: -2;
     background-color: #fff;
 
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
